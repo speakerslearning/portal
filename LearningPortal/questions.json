@@ -1,0 +1,6769 @@
+[
+  {
+    "id": 1,
+    "sentence": "___ it was raining, we went for a hike.",
+    "answers": [
+      "Although",
+      "although"
+    ],
+    "hint": "Shows contrast.",
+    "explanation": "connector: although + clause",
+    "topic": "connectors"
+  },
+  {
+    "id": 2,
+    "sentence": "___ she's allergic to cats, she adopted one!",
+    "answers": [
+      "Although",
+      "although"
+    ],
+    "hint": "Shows contrast.",
+    "explanation": "connector: although + clause",
+    "topic": "connectors"
+  },
+  {
+    "id": 3,
+    "sentence": "I love coffee ___ I don't drink it after 6 PM.",
+    "answers": [
+      "but",
+      "But"
+    ],
+    "hint": "Shows contrast between two ideas.",
+    "explanation": "connector: but - used to introduce a contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 4,
+    "sentence": "She studied hard ___ she passed the exam.",
+    "answers": [
+      "so",
+      "So"
+    ],
+    "hint": "Shows result or consequence.",
+    "explanation": "connector: so - introduces a result",
+    "topic": "connectors"
+  },
+  {
+    "id": 5,
+    "sentence": "___ the traffic, we arrived on time.",
+    "answers": [
+      "Despite",
+      "despite"
+    ],
+    "hint": "Shows contrast with a noun phrase.",
+    "explanation": "connector: despite + noun/gerund",
+    "topic": "connectors"
+  },
+  {
+    "id": 6,
+    "sentence": "I'd love to go to the party, ___ I have to work tomorrow.",
+    "answers": [
+      "but",
+      "yet"
+    ],
+    "hint": "Shows contrast between two ideas",
+    "explanation": "but/yet - connectors showing contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 7,
+    "sentence": "___ being tired, she finished all her homework.",
+    "answers": [
+      "Despite",
+      "despite"
+    ],
+    "hint": "Contrast with a gerund phrase",
+    "explanation": "despite + gerund phrase shows contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 8,
+    "sentence": "He went to bed early ___ he was exhausted.",
+    "answers": [
+      "because",
+      "since",
+      "as"
+    ],
+    "hint": "Shows reason or cause",
+    "explanation": "because/since/as - introduce reasons",
+    "topic": "connectors"
+  },
+  {
+    "id": 9,
+    "sentence": "We need to hurry; ___, we'll be late.",
+    "answers": [
+      "otherwise"
+    ],
+    "hint": "Shows what will happen if you don't do something",
+    "explanation": "otherwise - shows alternative consequence",
+    "topic": "connectors"
+  },
+  {
+    "id": 10,
+    "sentence": "___ the weather was bad, we enjoyed our holiday.",
+    "answers": [
+      "Although",
+      "although",
+      "Though",
+      "though"
+    ],
+    "hint": "Shows contrast at the beginning",
+    "explanation": "although/though + clause (contrast)",
+    "topic": "connectors"
+  },
+  {
+    "id": 11,
+    "sentence": "The hotel was expensive. ___, it was worth it.",
+    "answers": [
+      "However",
+      "Nevertheless",
+      "Nonetheless"
+    ],
+    "hint": "Formal connector showing contrast after a period",
+    "explanation": "however/nevertheless/nonetheless - formal contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 12,
+    "sentence": "It was raining, ___ we stayed indoors.",
+    "answers": [
+      "so"
+    ],
+    "hint": "Shows result or consequence",
+    "explanation": "so - introduces a result",
+    "topic": "connectors"
+  },
+  {
+    "id": 13,
+    "sentence": "___ the high cost, many people buy organic food.",
+    "answers": [
+      "Despite",
+      "despite"
+    ],
+    "hint": "Contrast with a noun phrase",
+    "explanation": "despite + noun shows contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 14,
+    "sentence": "I'll start cooking ___ you get home.",
+    "answers": [
+      "when",
+      "once",
+      "after"
+    ],
+    "hint": "Time connector",
+    "explanation": "when/once/after - time connectors",
+    "topic": "connectors"
+  },
+  {
+    "id": 15,
+    "sentence": "She speaks quietly, ___ everyone listens carefully.",
+    "answers": [
+      "yet",
+      "but"
+    ],
+    "hint": "Shows unexpected contrast",
+    "explanation": "yet/but - show unexpected contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 16,
+    "sentence": "The film was long. ___, it was very entertaining.",
+    "answers": [
+      "However",
+      "Nevertheless",
+      "Nonetheless"
+    ],
+    "hint": "Formal connector after a period",
+    "explanation": "however/nevertheless/nonetheless - formal contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 17,
+    "sentence": "___ having little money, they were very happy.",
+    "answers": [
+      "Despite",
+      "despite"
+    ],
+    "hint": "Contrast with gerund phrase",
+    "explanation": "despite + having = contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 18,
+    "sentence": "She's intelligent ___ also very kind.",
+    "answers": [
+      "and",
+      "but"
+    ],
+    "hint": "Adding information",
+    "explanation": "and/but - linking qualities",
+    "topic": "connectors"
+  },
+  {
+    "id": 19,
+    "sentence": "I didn't go out ___ I was feeling unwell.",
+    "answers": [
+      "because",
+      "as",
+      "since"
+    ],
+    "hint": "Giving a reason",
+    "explanation": "because/as/since - stating reasons",
+    "topic": "connectors"
+  },
+  {
+    "id": 20,
+    "sentence": "He's not only smart ___ also hardworking.",
+    "answers": [
+      "but"
+    ],
+    "hint": "Part of \"not only...but also\" structure",
+    "explanation": "not only...but also - emphasizing two qualities",
+    "topic": "connectors"
+  },
+  {
+    "id": 21,
+    "sentence": "I'll wait here ___ you return.",
+    "answers": [
+      "until",
+      "till"
+    ],
+    "hint": "Time connector showing duration",
+    "explanation": "until/till - up to a specific time",
+    "topic": "connectors"
+  },
+  {
+    "id": 22,
+    "sentence": "___ I was tired, I couldn't sleep.",
+    "answers": [
+      "Although",
+      "although",
+      "Though",
+      "though"
+    ],
+    "hint": "Shows unexpected situation",
+    "explanation": "although/though - unexpected contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 23,
+    "sentence": "She failed the test ___ she hadn't studied.",
+    "answers": [
+      "because",
+      "as",
+      "since"
+    ],
+    "hint": "Shows reason",
+    "explanation": "because/as/since - explaining why",
+    "topic": "connectors"
+  },
+  {
+    "id": 24,
+    "sentence": "You can have tea ___ coffee.",
+    "answers": [
+      "or"
+    ],
+    "hint": "Showing choice between options",
+    "explanation": "or - presenting alternatives",
+    "topic": "connectors"
+  },
+  {
+    "id": 25,
+    "sentence": "I enjoy swimming, ___ I don't like diving.",
+    "answers": [
+      "but",
+      "yet"
+    ],
+    "hint": "Contrasting two preferences",
+    "explanation": "but/yet - contrast connector",
+    "topic": "connectors"
+  },
+  {
+    "id": 26,
+    "sentence": "Study hard ___ you want to pass the exam.",
+    "answers": [
+      "if"
+    ],
+    "hint": "Conditional connector",
+    "explanation": "if - introduces a condition",
+    "topic": "connectors"
+  },
+  {
+    "id": 27,
+    "sentence": "The weather was terrible. ___, we had a great time.",
+    "answers": [
+      "Nevertheless",
+      "However",
+      "Nonetheless"
+    ],
+    "hint": "Formal contrast after a period",
+    "explanation": "nevertheless/however/nonetheless - formal contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 28,
+    "sentence": "I love travelling ___ I hate flying.",
+    "answers": [
+      "but",
+      "yet"
+    ],
+    "hint": "Contrasting two statements",
+    "explanation": "but/yet - showing contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 29,
+    "sentence": "___ he was late, he didn't miss the meeting.",
+    "answers": [
+      "Although",
+      "although",
+      "Though",
+      "though"
+    ],
+    "hint": "Unexpected contrast",
+    "explanation": "although/though - contrast connector",
+    "topic": "connectors"
+  },
+  {
+    "id": 30,
+    "sentence": "She smiled ___ she was feeling sad inside.",
+    "answers": [
+      "although",
+      "though",
+      "while",
+      "whilst"
+    ],
+    "hint": "Contrasting external and internal states",
+    "explanation": "although/though/while - showing contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 31,
+    "sentence": "I'll come ___ I finish my work.",
+    "answers": [
+      "when",
+      "once",
+      "after"
+    ],
+    "hint": "Time connector",
+    "explanation": "when/once/after - time relationships",
+    "topic": "connectors"
+  },
+  {
+    "id": 32,
+    "sentence": "He ran fast ___ he could catch the bus.",
+    "answers": [
+      "so"
+    ],
+    "hint": "Shows purpose or result",
+    "explanation": "so - expressing purpose/result",
+    "topic": "connectors"
+  },
+  {
+    "id": 33,
+    "sentence": "The shop was closed, ___ I went home.",
+    "answers": [
+      "so"
+    ],
+    "hint": "Shows consequence",
+    "explanation": "so - showing result/consequence",
+    "topic": "connectors"
+  },
+  {
+    "id": 34,
+    "sentence": "___ the bad weather, the flight was on time.",
+    "answers": [
+      "Despite",
+      "despite"
+    ],
+    "hint": "Contrast with noun phrase",
+    "explanation": "despite + noun - showing contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 35,
+    "sentence": "She succeeded ___ she worked very hard.",
+    "answers": [
+      "because",
+      "as",
+      "since"
+    ],
+    "hint": "Giving a reason",
+    "explanation": "because/as/since - explaining reasons",
+    "topic": "connectors"
+  },
+  {
+    "id": 36,
+    "sentence": "I've been here ___ Monday.",
+    "answers": [
+      "since"
+    ],
+    "hint": "Time connector for duration from a starting point",
+    "explanation": "since - indicates starting point in time",
+    "topic": "connectors"
+  },
+  {
+    "id": 37,
+    "sentence": "She didn't come to the party ___ she was ill.",
+    "answers": [
+      "because",
+      "as",
+      "since"
+    ],
+    "hint": "Giving a reason",
+    "explanation": "because/as/since - stating reasons",
+    "topic": "connectors"
+  },
+  {
+    "id": 38,
+    "sentence": "He's rich, ___ he's not happy.",
+    "answers": [
+      "but",
+      "yet"
+    ],
+    "hint": "Showing contrast",
+    "explanation": "but/yet - contrast connector",
+    "topic": "connectors"
+  },
+  {
+    "id": 39,
+    "sentence": "___ I get home, I'll call you.",
+    "answers": [
+      "When",
+      "Once",
+      "After"
+    ],
+    "hint": "Time connector",
+    "explanation": "when/once/after - time relationship",
+    "topic": "connectors"
+  },
+  {
+    "id": 40,
+    "sentence": "Take your coat ___ you'll get cold.",
+    "answers": [
+      "or",
+      "otherwise"
+    ],
+    "hint": "Shows alternative consequence",
+    "explanation": "or/otherwise - warning of consequence",
+    "topic": "connectors"
+  },
+  {
+    "id": 41,
+    "sentence": "The movie was boring. ___, I stayed until the end.",
+    "answers": [
+      "Nevertheless",
+      "However",
+      "Nonetheless"
+    ],
+    "hint": "Formal contrast after period",
+    "explanation": "nevertheless/however/nonetheless - formal contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 42,
+    "sentence": "___ the noise, I managed to sleep well.",
+    "answers": [
+      "Despite",
+      "despite"
+    ],
+    "hint": "Contrast with noun",
+    "explanation": "despite + noun - showing contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 43,
+    "sentence": "I'll lend you my book ___ you promise to return it.",
+    "answers": [
+      "if",
+      "provided"
+    ],
+    "hint": "Condition",
+    "explanation": "if/provided - introducing conditions",
+    "topic": "connectors"
+  },
+  {
+    "id": 44,
+    "sentence": "She was tired, ___ she kept working.",
+    "answers": [
+      "but",
+      "yet"
+    ],
+    "hint": "Showing contrast",
+    "explanation": "but/yet - contrast between states",
+    "topic": "connectors"
+  },
+  {
+    "id": 45,
+    "sentence": "We'll go to the beach ___ it's sunny tomorrow.",
+    "answers": [
+      "if"
+    ],
+    "hint": "Conditional connector",
+    "explanation": "if - introduces condition",
+    "topic": "connectors"
+  },
+  {
+    "id": 46,
+    "sentence": "They arrived late ___ there was heavy traffic.",
+    "answers": [
+      "because",
+      "as",
+      "since"
+    ],
+    "hint": "Explaining the reason",
+    "explanation": "because/as/since - giving reasons",
+    "topic": "connectors"
+  },
+  {
+    "id": 47,
+    "sentence": "I studied English ___ three years.",
+    "answers": [
+      "for"
+    ],
+    "hint": "Duration of time",
+    "explanation": "for - showing duration",
+    "topic": "connectors"
+  },
+  {
+    "id": 48,
+    "sentence": "The plan seemed good. ___, it didn't work.",
+    "answers": [
+      "However",
+      "Nevertheless",
+      "Nonetheless"
+    ],
+    "hint": "Formal contrast after period",
+    "explanation": "however/nevertheless/nonetheless - formal contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 49,
+    "sentence": "___ being young, she's very mature.",
+    "answers": [
+      "Despite",
+      "despite"
+    ],
+    "hint": "Contrast with gerund",
+    "explanation": "despite + gerund - showing contrast",
+    "topic": "connectors"
+  },
+  {
+    "id": 50,
+    "sentence": "Work hard ___ you won't succeed.",
+    "answers": [
+      "or",
+      "otherwise"
+    ],
+    "hint": "Warning of negative consequence",
+    "explanation": "or/otherwise - showing alternative consequence",
+    "topic": "connectors"
+  },
+  {
+    "id": 51,
+    "sentence": "I'm interested ___ learning Spanish.",
+    "answers": [
+      "in"
+    ],
+    "hint": "Which preposition follows 'interested'?",
+    "explanation": "interested + in + gerund/noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 52,
+    "sentence": "She's good ___ mathematics.",
+    "answers": [
+      "at"
+    ],
+    "hint": "Which preposition goes with 'good'?",
+    "explanation": "good/bad + at + noun/gerund",
+    "topic": "prepositions"
+  },
+  {
+    "id": 53,
+    "sentence": "He apologized ___ being late.",
+    "answers": [
+      "for"
+    ],
+    "hint": "What preposition follows 'apologize'?",
+    "explanation": "apologize + for + gerund/noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 54,
+    "sentence": "They arrived ___ the airport early.",
+    "answers": [
+      "at"
+    ],
+    "hint": "Which preposition is used with specific locations?",
+    "explanation": "at is used for specific points/locations",
+    "topic": "prepositions"
+  },
+  {
+    "id": 55,
+    "sentence": "She's afraid ___ spiders.",
+    "answers": [
+      "of"
+    ],
+    "hint": "What preposition goes with 'afraid'?",
+    "explanation": "afraid + of + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 56,
+    "sentence": "She's responsible ___ the project.",
+    "answers": [
+      "for"
+    ],
+    "hint": "What preposition goes with 'responsible'?",
+    "explanation": "responsible + for + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 57,
+    "sentence": "He depends ___ his parents for support.",
+    "answers": [
+      "on",
+      "upon"
+    ],
+    "hint": "What preposition follows 'depends'?",
+    "explanation": "depend + on/upon + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 58,
+    "sentence": "I'm looking forward ___ seeing you.",
+    "answers": [
+      "to"
+    ],
+    "hint": "Preposition in this phrasal expression",
+    "explanation": "look forward + to + gerund",
+    "topic": "prepositions"
+  },
+  {
+    "id": 59,
+    "sentence": "She's keen ___ learning new languages.",
+    "answers": [
+      "on"
+    ],
+    "hint": "What preposition goes with 'keen'?",
+    "explanation": "keen + on + gerund/noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 60,
+    "sentence": "He arrived ___ the station at 8 o'clock.",
+    "answers": [
+      "at"
+    ],
+    "hint": "Preposition for specific locations",
+    "explanation": "arrive + at + specific place",
+    "topic": "prepositions"
+  },
+  {
+    "id": 61,
+    "sentence": "She's bad ___ remembering names.",
+    "answers": [
+      "at"
+    ],
+    "hint": "What preposition follows 'bad'?",
+    "explanation": "bad/good + at + gerund/noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 62,
+    "sentence": "They live ___ London.",
+    "answers": [
+      "in"
+    ],
+    "hint": "Preposition for cities",
+    "explanation": "in + city/country/continent",
+    "topic": "prepositions"
+  },
+  {
+    "id": 63,
+    "sentence": "I'm tired ___ waiting.",
+    "answers": [
+      "of"
+    ],
+    "hint": "What preposition goes with 'tired'?",
+    "explanation": "tired + of + gerund/noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 64,
+    "sentence": "She complained ___ the noise.",
+    "answers": [
+      "about"
+    ],
+    "hint": "What preposition follows 'complained'?",
+    "explanation": "complain + about + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 65,
+    "sentence": "He's famous ___ his paintings.",
+    "answers": [
+      "for"
+    ],
+    "hint": "What preposition goes with 'famous'?",
+    "explanation": "famous + for + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 66,
+    "sentence": "She succeeded ___ passing the exam.",
+    "answers": [
+      "in"
+    ],
+    "hint": "What preposition goes with 'succeeded'?",
+    "explanation": "succeed + in + gerund",
+    "topic": "prepositions"
+  },
+  {
+    "id": 67,
+    "sentence": "He's proud ___ his achievements.",
+    "answers": [
+      "of"
+    ],
+    "hint": "What preposition follows 'proud'?",
+    "explanation": "proud + of + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 68,
+    "sentence": "I'm worried ___ the results.",
+    "answers": [
+      "about"
+    ],
+    "hint": "What preposition goes with 'worried'?",
+    "explanation": "worried + about + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 69,
+    "sentence": "She insists ___ paying for dinner.",
+    "answers": [
+      "on"
+    ],
+    "hint": "What preposition follows 'insists'?",
+    "explanation": "insist + on + gerund/noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 70,
+    "sentence": "The book belongs ___ me.",
+    "answers": [
+      "to"
+    ],
+    "hint": "Preposition showing possession",
+    "explanation": "belong + to + person",
+    "topic": "prepositions"
+  },
+  {
+    "id": 71,
+    "sentence": "We arrived ___ Paris yesterday.",
+    "answers": [
+      "in"
+    ],
+    "hint": "Preposition for cities/countries",
+    "explanation": "arrive + in + city/country",
+    "topic": "prepositions"
+  },
+  {
+    "id": 72,
+    "sentence": "I'm thinking ___ changing my job.",
+    "answers": [
+      "of",
+      "about"
+    ],
+    "hint": "What preposition goes with 'thinking'?",
+    "explanation": "think + of/about + gerund/noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 73,
+    "sentence": "She's allergic ___ nuts.",
+    "answers": [
+      "to"
+    ],
+    "hint": "What preposition follows 'allergic'?",
+    "explanation": "allergic + to + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 74,
+    "sentence": "He's addicted ___ coffee.",
+    "answers": [
+      "to"
+    ],
+    "hint": "What preposition goes with 'addicted'?",
+    "explanation": "addicted + to + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 75,
+    "sentence": "They agreed ___ the proposal.",
+    "answers": [
+      "to",
+      "with"
+    ],
+    "hint": "What preposition follows 'agreed'?",
+    "explanation": "agree + to/with + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 76,
+    "sentence": "She reminds me ___ my sister.",
+    "answers": [
+      "of"
+    ],
+    "hint": "What preposition goes with 'reminds'?",
+    "explanation": "remind + of + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 77,
+    "sentence": "He's jealous ___ his brother's success.",
+    "answers": [
+      "of"
+    ],
+    "hint": "What preposition follows 'jealous'?",
+    "explanation": "jealous + of + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 78,
+    "sentence": "I'm amazed ___ her talent.",
+    "answers": [
+      "at",
+      "by"
+    ],
+    "hint": "What preposition goes with 'amazed'?",
+    "explanation": "amazed + at/by + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 79,
+    "sentence": "She's popular ___ her classmates.",
+    "answers": [
+      "with"
+    ],
+    "hint": "What preposition follows 'popular'?",
+    "explanation": "popular + with + people",
+    "topic": "prepositions"
+  },
+  {
+    "id": 80,
+    "sentence": "He's angry ___ being treated unfairly.",
+    "answers": [
+      "about",
+      "at"
+    ],
+    "hint": "What preposition goes with 'angry'?",
+    "explanation": "angry + about/at + gerund/noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 81,
+    "sentence": "I'm satisfied ___ the results.",
+    "answers": [
+      "with"
+    ],
+    "hint": "What preposition follows 'satisfied'?",
+    "explanation": "satisfied + with + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 82,
+    "sentence": "She's capable ___ doing better.",
+    "answers": [
+      "of"
+    ],
+    "hint": "What preposition goes with 'capable'?",
+    "explanation": "capable + of + gerund",
+    "topic": "prepositions"
+  },
+  {
+    "id": 83,
+    "sentence": "I'm sorry ___ the delay.",
+    "answers": [
+      "for",
+      "about"
+    ],
+    "hint": "What preposition follows 'sorry'?",
+    "explanation": "sorry + for/about + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 84,
+    "sentence": "He concentrates ___ his work.",
+    "answers": [
+      "on"
+    ],
+    "hint": "What preposition goes with 'concentrates'?",
+    "explanation": "concentrate + on + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 85,
+    "sentence": "We're waiting ___ the bus.",
+    "answers": [
+      "for"
+    ],
+    "hint": "What preposition follows 'waiting'?",
+    "explanation": "wait + for + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 86,
+    "sentence": "She's upset ___ losing her phone.",
+    "answers": [
+      "about"
+    ],
+    "hint": "What preposition goes with 'upset'?",
+    "explanation": "upset + about + gerund/noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 87,
+    "sentence": "I believe ___ working hard.",
+    "answers": [
+      "in"
+    ],
+    "hint": "What preposition follows 'believe'?",
+    "explanation": "believe + in + gerund/noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 88,
+    "sentence": "He's married ___ a doctor.",
+    "answers": [
+      "to"
+    ],
+    "hint": "What preposition goes with 'married'?",
+    "explanation": "married + to + person",
+    "topic": "prepositions"
+  },
+  {
+    "id": 89,
+    "sentence": "She's engaged ___ her boyfriend.",
+    "answers": [
+      "to"
+    ],
+    "hint": "What preposition follows 'engaged'?",
+    "explanation": "engaged + to + person",
+    "topic": "prepositions"
+  },
+  {
+    "id": 90,
+    "sentence": "I'm pleased ___ your progress.",
+    "answers": [
+      "with",
+      "about"
+    ],
+    "hint": "What preposition goes with 'pleased'?",
+    "explanation": "pleased + with/about + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 91,
+    "sentence": "He's hopeless ___ cooking.",
+    "answers": [
+      "at"
+    ],
+    "hint": "What preposition follows 'hopeless'?",
+    "explanation": "hopeless + at + gerund/noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 92,
+    "sentence": "I'm aware ___ the problem.",
+    "answers": [
+      "of"
+    ],
+    "hint": "What preposition goes with 'aware'?",
+    "explanation": "aware + of + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 93,
+    "sentence": "She's impressed ___ his performance.",
+    "answers": [
+      "by",
+      "with"
+    ],
+    "hint": "What preposition follows 'impressed'?",
+    "explanation": "impressed + by/with + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 94,
+    "sentence": "We're heading ___ the city center.",
+    "answers": [
+      "for",
+      "to"
+    ],
+    "hint": "What preposition goes with 'heading'?",
+    "explanation": "head + for/to + place",
+    "topic": "prepositions"
+  },
+  {
+    "id": 95,
+    "sentence": "He's guilty ___ cheating.",
+    "answers": [
+      "of"
+    ],
+    "hint": "What preposition follows 'guilty'?",
+    "explanation": "guilty + of + gerund/noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 96,
+    "sentence": "I'm curious ___ what happened.",
+    "answers": [
+      "about"
+    ],
+    "hint": "What preposition goes with 'curious'?",
+    "explanation": "curious + about + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 97,
+    "sentence": "She's ashamed ___ her behavior.",
+    "answers": [
+      "of"
+    ],
+    "hint": "What preposition follows 'ashamed'?",
+    "explanation": "ashamed + of + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 98,
+    "sentence": "He's disappointed ___ the result.",
+    "answers": [
+      "with",
+      "at",
+      "by"
+    ],
+    "hint": "What preposition goes with 'disappointed'?",
+    "explanation": "disappointed + with/at/by + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 99,
+    "sentence": "I'm confident ___ my ability.",
+    "answers": [
+      "in",
+      "of",
+      "about"
+    ],
+    "hint": "What preposition follows 'confident'?",
+    "explanation": "confident + in/of/about + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 100,
+    "sentence": "She's grateful ___ your help.",
+    "answers": [
+      "for"
+    ],
+    "hint": "What preposition goes with 'grateful'?",
+    "explanation": "grateful + for + noun",
+    "topic": "prepositions"
+  },
+  {
+    "id": 101,
+    "sentence": "If I ___ rich, I would travel the world.",
+    "answers": [
+      "were",
+      "was"
+    ],
+    "hint": "Second conditional structure",
+    "explanation": "if + past simple, would + infinitive (hypothetical present)",
+    "topic": "conditionals"
+  },
+  {
+    "id": 102,
+    "sentence": "If she ___ studied harder, she would have passed.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Third conditional structure",
+    "explanation": "if + past perfect, would have + past participle",
+    "topic": "conditionals"
+  },
+  {
+    "id": 103,
+    "sentence": "If it ___ tomorrow, we'll stay home.",
+    "answers": [
+      "rains"
+    ],
+    "hint": "First conditional - present simple in if-clause",
+    "explanation": "if + present simple, will + infinitive (real possibility)",
+    "topic": "conditionals"
+  },
+  {
+    "id": 104,
+    "sentence": "If you heat ice, it ___.",
+    "answers": [
+      "melts"
+    ],
+    "hint": "Zero conditional - general truth",
+    "explanation": "if + present simple, present simple (general truths)",
+    "topic": "conditionals"
+  },
+  {
+    "id": 105,
+    "sentence": "If I ___ you, I would apologize.",
+    "answers": [
+      "were"
+    ],
+    "hint": "Second conditional with 'to be'",
+    "explanation": "if I were you - standard form in conditionals",
+    "topic": "conditionals"
+  },
+  {
+    "id": 106,
+    "sentence": "If it ___ sunny tomorrow, we'll go to the beach.",
+    "answers": [
+      "is",
+      "'s"
+    ],
+    "hint": "First conditional - present simple",
+    "explanation": "if + present simple, will + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 107,
+    "sentence": "I would buy a car if I ___ enough money.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Second conditional - past simple",
+    "explanation": "if + past simple, would + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 108,
+    "sentence": "If I ___ known, I would have told you.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Third conditional - past perfect",
+    "explanation": "if + past perfect, would have + past participle",
+    "topic": "conditionals"
+  },
+  {
+    "id": 109,
+    "sentence": "Water ___ if you heat it to 100 degrees.",
+    "answers": [
+      "boils"
+    ],
+    "hint": "Zero conditional - general truth",
+    "explanation": "if + present simple, present simple (facts)",
+    "topic": "conditionals"
+  },
+  {
+    "id": 110,
+    "sentence": "If she ___ harder, she would pass the exam.",
+    "answers": [
+      "studied",
+      "worked",
+      "tried"
+    ],
+    "hint": "Second conditional",
+    "explanation": "if + past simple, would + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 111,
+    "sentence": "I'll help you if I ___ time.",
+    "answers": [
+      "have"
+    ],
+    "hint": "First conditional - present simple",
+    "explanation": "if + present simple, will + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 112,
+    "sentence": "If they ___ left earlier, they wouldn't have missed the train.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Third conditional",
+    "explanation": "if + past perfect, would have + past participle",
+    "topic": "conditionals"
+  },
+  {
+    "id": 113,
+    "sentence": "If I ___ you, I'd accept the job.",
+    "answers": [
+      "were",
+      "was"
+    ],
+    "hint": "Second conditional with 'be'",
+    "explanation": "if I were/was - hypothetical advice",
+    "topic": "conditionals"
+  },
+  {
+    "id": 114,
+    "sentence": "___ you don't hurry, you'll miss the bus.",
+    "answers": [
+      "If"
+    ],
+    "hint": "First conditional connector",
+    "explanation": "if + present simple, will + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 115,
+    "sentence": "If you ___ ice, it melts.",
+    "answers": [
+      "heat",
+      "warm"
+    ],
+    "hint": "Zero conditional - general truth",
+    "explanation": "if + present simple, present simple",
+    "topic": "conditionals"
+  },
+  {
+    "id": 116,
+    "sentence": "If she ___ been more careful, she wouldn't have had an accident.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Third conditional - past perfect",
+    "explanation": "if + past perfect, would have + past participle",
+    "topic": "conditionals"
+  },
+  {
+    "id": 117,
+    "sentence": "I ___ tell you if I knew.",
+    "answers": [
+      "would",
+      "'d"
+    ],
+    "hint": "Second conditional result clause",
+    "explanation": "if + past simple, would + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 118,
+    "sentence": "If it ___ been raining, we would have stayed home.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Third conditional with continuous aspect",
+    "explanation": "if + past perfect, would have + past participle",
+    "topic": "conditionals"
+  },
+  {
+    "id": 119,
+    "sentence": "___ I had more time, I'd learn another language.",
+    "answers": [
+      "If"
+    ],
+    "hint": "Second conditional connector",
+    "explanation": "if + past simple, would + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 120,
+    "sentence": "She'll be angry if you ___ late.",
+    "answers": [
+      "are",
+      "'re"
+    ],
+    "hint": "First conditional - present simple",
+    "explanation": "if + present simple, will + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 121,
+    "sentence": "If he ___ asked me, I would have helped.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Third conditional",
+    "explanation": "if + past perfect, would have + past participle",
+    "topic": "conditionals"
+  },
+  {
+    "id": 122,
+    "sentence": "What would you do if you ___ a million dollars?",
+    "answers": [
+      "had",
+      "won"
+    ],
+    "hint": "Second conditional",
+    "explanation": "if + past simple, would + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 123,
+    "sentence": "___ he had studied, he would have passed.",
+    "answers": [
+      "If"
+    ],
+    "hint": "Third conditional connector",
+    "explanation": "if + past perfect, would have + past participle",
+    "topic": "conditionals"
+  },
+  {
+    "id": 124,
+    "sentence": "If I ___ taller, I could be a basketball player.",
+    "answers": [
+      "were",
+      "was"
+    ],
+    "hint": "Second conditional with 'be'",
+    "explanation": "if + past simple (were/was), could + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 125,
+    "sentence": "You ___ get wet if it rains.",
+    "answers": [
+      "will",
+      "'ll"
+    ],
+    "hint": "First conditional result",
+    "explanation": "if + present simple, will + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 126,
+    "sentence": "If we ___ enough money, we would have bought the house.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Third conditional",
+    "explanation": "if + past perfect, would have + past participle",
+    "topic": "conditionals"
+  },
+  {
+    "id": 127,
+    "sentence": "I'll be surprised if she ___ on time.",
+    "answers": [
+      "is",
+      "'s"
+    ],
+    "hint": "First conditional - present simple",
+    "explanation": "if + present simple, will + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 128,
+    "sentence": "If you ___ the button, the machine stops.",
+    "answers": [
+      "press",
+      "push"
+    ],
+    "hint": "Zero conditional - general instruction",
+    "explanation": "if + present simple, present simple",
+    "topic": "conditionals"
+  },
+  {
+    "id": 129,
+    "sentence": "___ they had invited me, I would have gone.",
+    "answers": [
+      "If"
+    ],
+    "hint": "Third conditional connector",
+    "explanation": "if + past perfect, would have + past participle",
+    "topic": "conditionals"
+  },
+  {
+    "id": 130,
+    "sentence": "She ___ be happier if she had more free time.",
+    "answers": [
+      "would",
+      "'d"
+    ],
+    "hint": "Second conditional result",
+    "explanation": "if + past simple, would + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 131,
+    "sentence": "If I ___ seen you, I would have said hello.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Third conditional",
+    "explanation": "if + past perfect, would have + past participle",
+    "topic": "conditionals"
+  },
+  {
+    "id": 132,
+    "sentence": "___ you need help, just call me.",
+    "answers": [
+      "If"
+    ],
+    "hint": "First conditional connector",
+    "explanation": "if + present simple, imperative/will",
+    "topic": "conditionals"
+  },
+  {
+    "id": 133,
+    "sentence": "He would travel more if he ___ time.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Second conditional",
+    "explanation": "if + past simple, would + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 134,
+    "sentence": "If it ___ raining, we'll cancel the picnic.",
+    "answers": [
+      "is",
+      "'s"
+    ],
+    "hint": "First conditional - present continuous",
+    "explanation": "if + present continuous, will + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 135,
+    "sentence": "I ___ have gone if you had told me earlier.",
+    "answers": [
+      "would",
+      "'d"
+    ],
+    "hint": "Third conditional result",
+    "explanation": "if + past perfect, would have + past participle",
+    "topic": "conditionals"
+  },
+  {
+    "id": 136,
+    "sentence": "Unless you ___ now, you'll miss the train.",
+    "answers": [
+      "leave",
+      "go"
+    ],
+    "hint": "Unless = if not",
+    "explanation": "unless + present simple, will + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 137,
+    "sentence": "If I ___ feeling better, I would go to work.",
+    "answers": [
+      "were",
+      "was"
+    ],
+    "hint": "Second conditional with 'be'",
+    "explanation": "if + past simple (were/was), would + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 138,
+    "sentence": "She ___ have been upset if she had known.",
+    "answers": [
+      "would",
+      "'d"
+    ],
+    "hint": "Third conditional result",
+    "explanation": "if + past perfect, would have + past participle",
+    "topic": "conditionals"
+  },
+  {
+    "id": 139,
+    "sentence": "___ you see her, please give her this message.",
+    "answers": [
+      "If"
+    ],
+    "hint": "First conditional connector",
+    "explanation": "if + present simple, imperative",
+    "topic": "conditionals"
+  },
+  {
+    "id": 140,
+    "sentence": "If they ___ harder, they would succeed.",
+    "answers": [
+      "worked",
+      "tried"
+    ],
+    "hint": "Second conditional",
+    "explanation": "if + past simple, would + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 141,
+    "sentence": "What ___ you do if you lost your job?",
+    "answers": [
+      "would",
+      "'d"
+    ],
+    "hint": "Second conditional question",
+    "explanation": "if + past simple, would + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 142,
+    "sentence": "If you ___ the answer, please tell me.",
+    "answers": [
+      "know"
+    ],
+    "hint": "First conditional - present simple",
+    "explanation": "if + present simple, imperative",
+    "topic": "conditionals"
+  },
+  {
+    "id": 143,
+    "sentence": "I wouldn't have believed it if I ___ seen it myself.",
+    "answers": [
+      "hadn't",
+      "had not"
+    ],
+    "hint": "Third conditional negative",
+    "explanation": "if + past perfect negative, would have + past participle",
+    "topic": "conditionals"
+  },
+  {
+    "id": 144,
+    "sentence": "___ it's cold, water freezes.",
+    "answers": [
+      "If",
+      "When"
+    ],
+    "hint": "Zero conditional connector",
+    "explanation": "if/when + present simple, present simple",
+    "topic": "conditionals"
+  },
+  {
+    "id": 145,
+    "sentence": "If she ___ more careful, she wouldn't make mistakes.",
+    "answers": [
+      "were",
+      "was"
+    ],
+    "hint": "Second conditional with 'be'",
+    "explanation": "if + past simple (were/was), would + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 146,
+    "sentence": "If only I ___ listened to your advice!",
+    "answers": [
+      "had"
+    ],
+    "hint": "Expressing regret about the past",
+    "explanation": "if only + past perfect (regret)",
+    "topic": "conditionals"
+  },
+  {
+    "id": 147,
+    "sentence": "Provided that you ___ hard, you'll pass.",
+    "answers": [
+      "work",
+      "study"
+    ],
+    "hint": "Alternative to 'if' (formal)",
+    "explanation": "provided that = if (formal condition)",
+    "topic": "conditionals"
+  },
+  {
+    "id": 148,
+    "sentence": "If I ___ a bird, I could fly.",
+    "answers": [
+      "were",
+      "was"
+    ],
+    "hint": "Second conditional with 'be'",
+    "explanation": "if + past simple (were/was), could + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 149,
+    "sentence": "You ___ succeed if you don't try.",
+    "answers": [
+      "won't",
+      "will not",
+      "can't",
+      "cannot"
+    ],
+    "hint": "First conditional negative result",
+    "explanation": "if + present simple negative, won't/can't + infinitive",
+    "topic": "conditionals"
+  },
+  {
+    "id": 150,
+    "sentence": "If he ___ arrived on time, we wouldn't have left.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Third conditional",
+    "explanation": "if + past perfect, would have + past participle",
+    "topic": "conditionals"
+  },
+  {
+    "id": 151,
+    "sentence": "The book ___ I'm reading is fascinating.",
+    "answers": [
+      "that",
+      "which"
+    ],
+    "hint": "Relative pronoun for things",
+    "explanation": "relative clause with that/which for objects",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 152,
+    "sentence": "The woman ___ lives next door is a doctor.",
+    "answers": [
+      "who",
+      "that"
+    ],
+    "hint": "Relative pronoun for people",
+    "explanation": "relative clause with who/that for people",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 153,
+    "sentence": "This is the house ___ I grew up.",
+    "answers": [
+      "where"
+    ],
+    "hint": "Relative pronoun for places",
+    "explanation": "relative clause with where for locations",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 154,
+    "sentence": "That's the reason ___ I called you.",
+    "answers": [
+      "why"
+    ],
+    "hint": "Relative pronoun for reasons",
+    "explanation": "relative clause with why for reasons",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 155,
+    "sentence": "The car ___ windows were broken was towed away.",
+    "answers": [
+      "whose"
+    ],
+    "hint": "Shows possession in relative clauses",
+    "explanation": "whose shows possession in relative clauses",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 156,
+    "sentence": "The man ___ called you is my brother.",
+    "answers": [
+      "who",
+      "that"
+    ],
+    "hint": "Relative pronoun for people (subject)",
+    "explanation": "who/that for people as subject",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 157,
+    "sentence": "This is the place ___ we first met.",
+    "answers": [
+      "where"
+    ],
+    "hint": "Relative pronoun for places",
+    "explanation": "where for locations",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 158,
+    "sentence": "The girl ___ bag was stolen reported it to the police.",
+    "answers": [
+      "whose"
+    ],
+    "hint": "Shows possession",
+    "explanation": "whose shows possession in relative clauses",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 159,
+    "sentence": "Do you know the reason ___ she left?",
+    "answers": [
+      "why"
+    ],
+    "hint": "Relative pronoun for reasons",
+    "explanation": "why for reasons",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 160,
+    "sentence": "The movie ___ we watched was fantastic.",
+    "answers": [
+      "that",
+      "which"
+    ],
+    "hint": "Relative pronoun for things (object)",
+    "explanation": "that/which for things as object",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 161,
+    "sentence": "The woman ___ you met is my teacher.",
+    "answers": [
+      "who",
+      "that",
+      "whom"
+    ],
+    "hint": "Relative pronoun for people (object)",
+    "explanation": "who/that/whom for people as object",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 162,
+    "sentence": "That's the hotel ___ we stayed last summer.",
+    "answers": [
+      "where"
+    ],
+    "hint": "Relative pronoun for places",
+    "explanation": "where for locations",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 163,
+    "sentence": "People ___ exercise regularly are healthier.",
+    "answers": [
+      "who",
+      "that"
+    ],
+    "hint": "Relative pronoun for people (subject)",
+    "explanation": "who/that for people as subject",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 164,
+    "sentence": "The car ___ engine broke down was very old.",
+    "answers": [
+      "whose"
+    ],
+    "hint": "Shows possession",
+    "explanation": "whose shows possession",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 165,
+    "sentence": "This is the year ___ I graduated.",
+    "answers": [
+      "when"
+    ],
+    "hint": "Relative pronoun for time",
+    "explanation": "when for time references",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 166,
+    "sentence": "The day ___ I met her was unforgettable.",
+    "answers": [
+      "when"
+    ],
+    "hint": "Relative pronoun for time",
+    "explanation": "when for time references",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 167,
+    "sentence": "Anyone ___ wants to join can come.",
+    "answers": [
+      "who",
+      "that"
+    ],
+    "hint": "Relative pronoun for people (subject)",
+    "explanation": "who/that for people as subject",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 168,
+    "sentence": "The computer ___ I bought is already broken.",
+    "answers": [
+      "that",
+      "which"
+    ],
+    "hint": "Relative pronoun for things (object)",
+    "explanation": "that/which for things as object",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 169,
+    "sentence": "The restaurant ___ we ate was expensive.",
+    "answers": [
+      "where"
+    ],
+    "hint": "Relative pronoun for places",
+    "explanation": "where for locations",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 170,
+    "sentence": "The teacher ___ class I'm in is very strict.",
+    "answers": [
+      "whose"
+    ],
+    "hint": "Shows possession",
+    "explanation": "whose shows possession",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 171,
+    "sentence": "Everything ___ he said was true.",
+    "answers": [
+      "that"
+    ],
+    "hint": "After 'everything', use this pronoun",
+    "explanation": "that (not which) after everything/anything/nothing",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 172,
+    "sentence": "The children ___ were playing outside have gone home.",
+    "answers": [
+      "who",
+      "that"
+    ],
+    "hint": "Relative pronoun for people (subject)",
+    "explanation": "who/that for people as subject",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 173,
+    "sentence": "That's the moment ___ everything changed.",
+    "answers": [
+      "when"
+    ],
+    "hint": "Relative pronoun for time",
+    "explanation": "when for specific moments in time",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 174,
+    "sentence": "The friend ___ house we visited lives abroad.",
+    "answers": [
+      "whose"
+    ],
+    "hint": "Shows possession",
+    "explanation": "whose shows possession",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 175,
+    "sentence": "The job ___ she applied for was very competitive.",
+    "answers": [
+      "that",
+      "which"
+    ],
+    "hint": "Relative pronoun for things (object)",
+    "explanation": "that/which for things as object",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 176,
+    "sentence": "The city ___ I was born has changed a lot.",
+    "answers": [
+      "where"
+    ],
+    "hint": "Relative pronoun for places",
+    "explanation": "where for locations",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 177,
+    "sentence": "The person ___ is sitting next to you is my colleague.",
+    "answers": [
+      "who",
+      "that"
+    ],
+    "hint": "Relative pronoun for people (subject)",
+    "explanation": "who/that for people as subject",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 178,
+    "sentence": "That's the man ___ dog bit me.",
+    "answers": [
+      "whose"
+    ],
+    "hint": "Shows possession",
+    "explanation": "whose shows possession",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 179,
+    "sentence": "Something ___ happened yesterday made me think.",
+    "answers": [
+      "that",
+      "which"
+    ],
+    "hint": "Relative pronoun for things (subject)",
+    "explanation": "that/which for things as subject",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 180,
+    "sentence": "The summer ___ we moved house was very hot.",
+    "answers": [
+      "when"
+    ],
+    "hint": "Relative pronoun for time",
+    "explanation": "when for time periods",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 181,
+    "sentence": "Those ___ arrive late will not be admitted.",
+    "answers": [
+      "who",
+      "that"
+    ],
+    "hint": "Relative pronoun for people (subject)",
+    "explanation": "who/that for people as subject",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 182,
+    "sentence": "The town ___ he grew up is very small.",
+    "answers": [
+      "where"
+    ],
+    "hint": "Relative pronoun for places",
+    "explanation": "where for locations",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 183,
+    "sentence": "The lady ___ I spoke to was very helpful.",
+    "answers": [
+      "who",
+      "that",
+      "whom"
+    ],
+    "hint": "Relative pronoun for people (object)",
+    "explanation": "who/that/whom for people as object",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 184,
+    "sentence": "This is the house ___ roof needs repairing.",
+    "answers": [
+      "whose"
+    ],
+    "hint": "Shows possession",
+    "explanation": "whose shows possession",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 185,
+    "sentence": "Nothing ___ you say will change my mind.",
+    "answers": [
+      "that"
+    ],
+    "hint": "After 'nothing', use this pronoun",
+    "explanation": "that (not which) after nothing/anything/everything",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 186,
+    "sentence": "The shop ___ I usually buy bread has closed.",
+    "answers": [
+      "where"
+    ],
+    "hint": "Relative pronoun for places",
+    "explanation": "where for locations",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 187,
+    "sentence": "The student ___ won the prize is in my class.",
+    "answers": [
+      "who",
+      "that"
+    ],
+    "hint": "Relative pronoun for people (subject)",
+    "explanation": "who/that for people as subject",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 188,
+    "sentence": "The week ___ she arrived was very busy.",
+    "answers": [
+      "when"
+    ],
+    "hint": "Relative pronoun for time",
+    "explanation": "when for time periods",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 189,
+    "sentence": "The animal ___ tail is longest is the giraffe.",
+    "answers": [
+      "whose"
+    ],
+    "hint": "Shows possession",
+    "explanation": "whose shows possession",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 190,
+    "sentence": "All ___ you need is patience.",
+    "answers": [
+      "that"
+    ],
+    "hint": "After 'all', use this pronoun",
+    "explanation": "that (not which) after all",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 191,
+    "sentence": "The solution ___ we found was simple.",
+    "answers": [
+      "that",
+      "which"
+    ],
+    "hint": "Relative pronoun for things (object)",
+    "explanation": "that/which for things as object",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 192,
+    "sentence": "The people ___ live upstairs are very noisy.",
+    "answers": [
+      "who",
+      "that"
+    ],
+    "hint": "Relative pronoun for people (subject)",
+    "explanation": "who/that for people as subject",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 193,
+    "sentence": "That's the park ___ we play football.",
+    "answers": [
+      "where"
+    ],
+    "hint": "Relative pronoun for places",
+    "explanation": "where for locations",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 194,
+    "sentence": "The gentleman ___ you are looking for has left.",
+    "answers": [
+      "who",
+      "that",
+      "whom"
+    ],
+    "hint": "Relative pronoun for people (object)",
+    "explanation": "who/that/whom for people as object",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 195,
+    "sentence": "The novel ___ ending surprised me was excellent.",
+    "answers": [
+      "whose"
+    ],
+    "hint": "Shows possession",
+    "explanation": "whose shows possession",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 196,
+    "sentence": "The boy ___ sister you know is very talented.",
+    "answers": [
+      "whose"
+    ],
+    "hint": "Shows possession",
+    "explanation": "whose shows possession",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 197,
+    "sentence": "The country ___ she's from is very beautiful.",
+    "answers": [
+      "that",
+      "which"
+    ],
+    "hint": "Relative pronoun for things",
+    "explanation": "that/which for things",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 198,
+    "sentence": "The evening ___ we met was magical.",
+    "answers": [
+      "when"
+    ],
+    "hint": "Relative pronoun for time",
+    "explanation": "when for time references",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 199,
+    "sentence": "Anyone ___ needs help should ask.",
+    "answers": [
+      "who",
+      "that"
+    ],
+    "hint": "Relative pronoun for people (subject)",
+    "explanation": "who/that for people as subject",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 200,
+    "sentence": "The beach ___ we went last year was crowded.",
+    "answers": [
+      "where"
+    ],
+    "hint": "Relative pronoun for places",
+    "explanation": "where for locations",
+    "topic": "relative-pronouns"
+  },
+  {
+    "id": 201,
+    "sentence": "You ___ wear a seatbelt. It's the law.",
+    "answers": [
+      "must"
+    ],
+    "hint": "Strong obligation or law",
+    "explanation": "must - strong obligation/necessity",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 202,
+    "sentence": "She ___ be at home. Her car is in the driveway.",
+    "answers": [
+      "must"
+    ],
+    "hint": "Strong logical deduction",
+    "explanation": "must - logical deduction (almost certain)",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 203,
+    "sentence": "You ___ smoke in the hospital.",
+    "answers": [
+      "mustn't",
+      "must not"
+    ],
+    "hint": "Strong prohibition",
+    "explanation": "mustn't - prohibition",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 204,
+    "sentence": "___ you help me with this?",
+    "answers": [
+      "Could",
+      "Can",
+      "could",
+      "can"
+    ],
+    "hint": "Polite request",
+    "explanation": "could/can - making requests",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 205,
+    "sentence": "I ___ swim when I was five.",
+    "answers": [
+      "could"
+    ],
+    "hint": "Past ability",
+    "explanation": "could - past ability",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 206,
+    "sentence": "You ___ be tired after such a long journey.",
+    "answers": [
+      "must"
+    ],
+    "hint": "Logical deduction (almost certain)",
+    "explanation": "must - strong logical deduction",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 207,
+    "sentence": "We ___ leave now or we'll be late.",
+    "answers": [
+      "must",
+      "should"
+    ],
+    "hint": "Strong necessity",
+    "explanation": "must/should - expressing necessity",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 208,
+    "sentence": "___ I borrow your pen?",
+    "answers": [
+      "May",
+      "Can",
+      "Could"
+    ],
+    "hint": "Polite request",
+    "explanation": "may/can/could - asking permission politely",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 209,
+    "sentence": "She ___ speak three languages fluently.",
+    "answers": [
+      "can"
+    ],
+    "hint": "Present ability",
+    "explanation": "can - expressing ability",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 210,
+    "sentence": "You ___ not smoke in here.",
+    "answers": [
+      "must",
+      "can",
+      "may"
+    ],
+    "hint": "Prohibition",
+    "explanation": "must/can/may + not - prohibition",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 211,
+    "sentence": "He ___ be at home. I just saw him leave.",
+    "answers": [
+      "can't",
+      "cannot"
+    ],
+    "hint": "Impossibility (negative deduction)",
+    "explanation": "can't/cannot - impossibility/negative deduction",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 212,
+    "sentence": "I ___ help you if you want.",
+    "answers": [
+      "can",
+      "could",
+      "will"
+    ],
+    "hint": "Offering help",
+    "explanation": "can/could/will - making offers",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 213,
+    "sentence": "You ___ try the new restaurant. It's great!",
+    "answers": [
+      "should",
+      "must"
+    ],
+    "hint": "Recommendation",
+    "explanation": "should/must - giving recommendations",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 214,
+    "sentence": "___ you pass me the salt, please?",
+    "answers": [
+      "Could",
+      "Can",
+      "Would"
+    ],
+    "hint": "Polite request",
+    "explanation": "could/can/would - polite requests",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 215,
+    "sentence": "They ___ arrive by 6 pm.",
+    "answers": [
+      "should",
+      "will"
+    ],
+    "hint": "Expectation",
+    "explanation": "should/will - expressing expectation",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 216,
+    "sentence": "I ___ swim when I was younger.",
+    "answers": [
+      "could"
+    ],
+    "hint": "Past ability",
+    "explanation": "could - past ability",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 217,
+    "sentence": "You ___ have told me earlier!",
+    "answers": [
+      "should",
+      "could"
+    ],
+    "hint": "Past criticism/regret",
+    "explanation": "should/could + have + past participle - criticism",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 218,
+    "sentence": "She ___ be joking! That's impossible.",
+    "answers": [
+      "must"
+    ],
+    "hint": "Strong deduction",
+    "explanation": "must - strong logical deduction",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 219,
+    "sentence": "___ I come in?",
+    "answers": [
+      "May",
+      "Can"
+    ],
+    "hint": "Asking permission",
+    "explanation": "may/can - asking permission",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 220,
+    "sentence": "We ___ not stay up too late.",
+    "answers": [
+      "should",
+      "must"
+    ],
+    "hint": "Advice/warning",
+    "explanation": "should/must + not - giving advice",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 221,
+    "sentence": "He ___ have forgotten about the meeting.",
+    "answers": [
+      "might",
+      "may",
+      "could"
+    ],
+    "hint": "Possibility in the past",
+    "explanation": "might/may/could + have + past participle - possibility",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 222,
+    "sentence": "You ___ to see a doctor about that.",
+    "answers": [
+      "ought",
+      "need"
+    ],
+    "hint": "Advice/necessity",
+    "explanation": "ought to/need to - advice",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 223,
+    "sentence": "___ you like some coffee?",
+    "answers": [
+      "Would"
+    ],
+    "hint": "Polite offer",
+    "explanation": "would - making polite offers",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 224,
+    "sentence": "It ___ rain later. Take an umbrella.",
+    "answers": [
+      "might",
+      "may",
+      "could"
+    ],
+    "hint": "Possibility",
+    "explanation": "might/may/could - expressing possibility",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 225,
+    "sentence": "I ___ rather stay home tonight.",
+    "answers": [
+      "would",
+      "'d"
+    ],
+    "hint": "Expressing preference",
+    "explanation": "would rather - expressing preference",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 226,
+    "sentence": "You ___ be more careful next time.",
+    "answers": [
+      "should",
+      "must"
+    ],
+    "hint": "Advice",
+    "explanation": "should/must - giving advice",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 227,
+    "sentence": "___ I ask you a question?",
+    "answers": [
+      "Can",
+      "May",
+      "Could"
+    ],
+    "hint": "Asking permission",
+    "explanation": "can/may/could - asking permission",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 228,
+    "sentence": "She ___ not be coming to the party.",
+    "answers": [
+      "may",
+      "might"
+    ],
+    "hint": "Possibility (negative)",
+    "explanation": "may/might + not - expressing possibility (negative)",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 229,
+    "sentence": "They ___ have left already.",
+    "answers": [
+      "must"
+    ],
+    "hint": "Strong deduction about the past",
+    "explanation": "must + have + past participle - strong deduction",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 230,
+    "sentence": "We ___ better hurry up.",
+    "answers": [
+      "had",
+      "'d"
+    ],
+    "hint": "Advice/necessity (informal)",
+    "explanation": "had better - strong advice/necessity",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 231,
+    "sentence": "You ___ have seen her. She was right there!",
+    "answers": [
+      "must"
+    ],
+    "hint": "Strong deduction about the past",
+    "explanation": "must + have + past participle - strong deduction",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 232,
+    "sentence": "He ___ be lying. I don't believe him.",
+    "answers": [
+      "must"
+    ],
+    "hint": "Strong deduction (present)",
+    "explanation": "must - expressing strong deduction",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 233,
+    "sentence": "___ we go now?",
+    "answers": [
+      "Shall",
+      "Should"
+    ],
+    "hint": "Making a suggestion",
+    "explanation": "shall/should - making suggestions",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 234,
+    "sentence": "She ___ have been more polite.",
+    "answers": [
+      "could",
+      "should"
+    ],
+    "hint": "Past criticism",
+    "explanation": "could/should + have + past participle - criticism",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 235,
+    "sentence": "You ___ to work harder if you want to succeed.",
+    "answers": [
+      "need",
+      "have",
+      "ought"
+    ],
+    "hint": "Necessity",
+    "explanation": "need/have/ought + to - expressing necessity",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 236,
+    "sentence": "I ___ understand what you mean.",
+    "answers": [
+      "can",
+      "can't",
+      "cannot"
+    ],
+    "hint": "Ability or inability",
+    "explanation": "can/can't - expressing (in)ability",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 237,
+    "sentence": "___ you mind closing the window?",
+    "answers": [
+      "Would",
+      "Could"
+    ],
+    "hint": "Polite request",
+    "explanation": "would/could + you mind - polite request",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 238,
+    "sentence": "They ___ have arrived by now.",
+    "answers": [
+      "should",
+      "must",
+      "will"
+    ],
+    "hint": "Expectation about the past",
+    "explanation": "should/must/will + have + past participle - expectation",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 239,
+    "sentence": "You ___ not have done that!",
+    "answers": [
+      "should",
+      "ought"
+    ],
+    "hint": "Past criticism/regret",
+    "explanation": "should/ought + not + have + past participle",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 240,
+    "sentence": "I ___ go to the gym more often.",
+    "answers": [
+      "should",
+      "must",
+      "ought"
+    ],
+    "hint": "Self-advice",
+    "explanation": "should/must/ought - giving oneself advice",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 241,
+    "sentence": "___ I help you with that?",
+    "answers": [
+      "Shall",
+      "Can",
+      "May"
+    ],
+    "hint": "Offering help",
+    "explanation": "shall/can/may - offering assistance",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 242,
+    "sentence": "It ___ be true, but I doubt it.",
+    "answers": [
+      "may",
+      "might",
+      "could"
+    ],
+    "hint": "Possibility with doubt",
+    "explanation": "may/might/could - expressing weak possibility",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 243,
+    "sentence": "You ___ have called me!",
+    "answers": [
+      "should",
+      "could"
+    ],
+    "hint": "Past criticism/regret",
+    "explanation": "should/could + have + past participle",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 244,
+    "sentence": "She ___ not want to come.",
+    "answers": [
+      "may",
+      "might"
+    ],
+    "hint": "Possibility (negative)",
+    "explanation": "may/might + not - negative possibility",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 245,
+    "sentence": "___ you be quiet, please?",
+    "answers": [
+      "Will",
+      "Would",
+      "Can",
+      "Could"
+    ],
+    "hint": "Request (can be firm)",
+    "explanation": "will/would/can/could - making requests",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 246,
+    "sentence": "He ___ be the new manager.",
+    "answers": [
+      "must",
+      "may",
+      "might",
+      "could"
+    ],
+    "hint": "Deduction or possibility",
+    "explanation": "must/may/might/could - deduction or possibility",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 247,
+    "sentence": "I ___ love to visit Japan someday.",
+    "answers": [
+      "would",
+      "'d"
+    ],
+    "hint": "Expressing desire",
+    "explanation": "would love to - expressing desire",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 248,
+    "sentence": "You ___ have been more careful!",
+    "answers": [
+      "should",
+      "could"
+    ],
+    "hint": "Past criticism",
+    "explanation": "should/could + have + past participle",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 249,
+    "sentence": "___ that be possible?",
+    "answers": [
+      "Could",
+      "Can"
+    ],
+    "hint": "Questioning possibility",
+    "explanation": "could/can - questioning possibility",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 250,
+    "sentence": "We ___ not leave until tomorrow.",
+    "answers": [
+      "need",
+      "can",
+      "will"
+    ],
+    "hint": "Negative necessity or ability",
+    "explanation": "need/can/will + not - negative necessity",
+    "topic": "modal-verbs"
+  },
+  {
+    "id": 251,
+    "sentence": "Can you ___ up with the answer?",
+    "answers": [
+      "come"
+    ],
+    "hint": "To think of or produce something",
+    "explanation": "come up with - to think of/produce an idea or answer",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 252,
+    "sentence": "She decided to ___ up smoking.",
+    "answers": [
+      "give"
+    ],
+    "hint": "To stop doing something",
+    "explanation": "give up - to stop/quit a habit",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 253,
+    "sentence": "I need to ___ after my little sister tonight.",
+    "answers": [
+      "look"
+    ],
+    "hint": "To take care of",
+    "explanation": "look after - to take care of someone",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 254,
+    "sentence": "The meeting was ___ off until next week.",
+    "answers": [
+      "put"
+    ],
+    "hint": "To postpone",
+    "explanation": "put off - to postpone/delay",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 255,
+    "sentence": "Can you ___ on your coat? It's cold outside.",
+    "answers": [
+      "put"
+    ],
+    "hint": "To wear/dress",
+    "explanation": "put on - to wear clothing",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 256,
+    "sentence": "They ___ into each other at the supermarket.",
+    "answers": [
+      "ran",
+      "bumped"
+    ],
+    "hint": "To meet by chance",
+    "explanation": "run into/bump into - to meet unexpectedly",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 257,
+    "sentence": "Please ___ down the music. It's too loud.",
+    "answers": [
+      "turn"
+    ],
+    "hint": "To reduce volume",
+    "explanation": "turn down - to reduce volume/intensity",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 258,
+    "sentence": "I need to ___ out what time the train leaves.",
+    "answers": [
+      "find"
+    ],
+    "hint": "To discover information",
+    "explanation": "find out - to discover/learn",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 259,
+    "sentence": "He ___ up late for the meeting.",
+    "answers": [
+      "showed",
+      "turned"
+    ],
+    "hint": "To arrive",
+    "explanation": "show up/turn up - to arrive/appear",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 260,
+    "sentence": "She ___ away all her old clothes.",
+    "answers": [
+      "threw",
+      "gave"
+    ],
+    "hint": "To discard",
+    "explanation": "throw away/give away - to discard",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 261,
+    "sentence": "I can't ___ up with his rudeness anymore.",
+    "answers": [
+      "put"
+    ],
+    "hint": "To tolerate",
+    "explanation": "put up with - to tolerate/endure",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 262,
+    "sentence": "The plane took ___ on time.",
+    "answers": [
+      "off"
+    ],
+    "hint": "When an aircraft leaves the ground",
+    "explanation": "take off - airplane departure",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 263,
+    "sentence": "Let's ___ over the details tomorrow.",
+    "answers": [
+      "go"
+    ],
+    "hint": "To review",
+    "explanation": "go over - to review/examine",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 264,
+    "sentence": "I grew ___ in a small town.",
+    "answers": [
+      "up"
+    ],
+    "hint": "To mature/become an adult",
+    "explanation": "grow up - to mature from child to adult",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 265,
+    "sentence": "Can you ___ me up at 6 am?",
+    "answers": [
+      "wake",
+      "pick"
+    ],
+    "hint": "To awaken (or collect by vehicle)",
+    "explanation": "wake up/pick up - to awaken or collect",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 266,
+    "sentence": "The event was ___ off due to rain.",
+    "answers": [
+      "called"
+    ],
+    "hint": "To cancel",
+    "explanation": "call off - to cancel",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 267,
+    "sentence": "I'm looking ___ to the weekend.",
+    "answers": [
+      "forward"
+    ],
+    "hint": "To anticipate with pleasure",
+    "explanation": "look forward to - to anticipate eagerly",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 268,
+    "sentence": "She broke ___ with her boyfriend.",
+    "answers": [
+      "up"
+    ],
+    "hint": "To end a relationship",
+    "explanation": "break up - to end a romantic relationship",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 269,
+    "sentence": "They carried ___ with the project despite difficulties.",
+    "answers": [
+      "on"
+    ],
+    "hint": "To continue",
+    "explanation": "carry on - to continue doing something",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 270,
+    "sentence": "I need to work ___ this problem.",
+    "answers": [
+      "out"
+    ],
+    "hint": "To solve or exercise",
+    "explanation": "work out - to solve or do physical exercise",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 271,
+    "sentence": "The fire fighters put ___ the fire quickly.",
+    "answers": [
+      "out"
+    ],
+    "hint": "To extinguish",
+    "explanation": "put out - to extinguish a fire",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 272,
+    "sentence": "He brought ___ three children alone.",
+    "answers": [
+      "up"
+    ],
+    "hint": "To raise/rear",
+    "explanation": "bring up - to raise children",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 273,
+    "sentence": "I'll get ___ to you about that later.",
+    "answers": [
+      "back"
+    ],
+    "hint": "To respond/contact again",
+    "explanation": "get back to - to respond or contact later",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 274,
+    "sentence": "They set ___ early in the morning.",
+    "answers": [
+      "off",
+      "out"
+    ],
+    "hint": "To begin a journey",
+    "explanation": "set off/set out - to begin a journey",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 275,
+    "sentence": "I'm trying to cut ___ on sugar.",
+    "answers": [
+      "down",
+      "back"
+    ],
+    "hint": "To reduce consumption",
+    "explanation": "cut down/cut back - to reduce",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 276,
+    "sentence": "She takes ___ her mother in appearance.",
+    "answers": [
+      "after"
+    ],
+    "hint": "To resemble",
+    "explanation": "take after - to resemble a family member",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 277,
+    "sentence": "I need to ___ out the form.",
+    "answers": [
+      "fill"
+    ],
+    "hint": "To complete a document",
+    "explanation": "fill out - to complete a form or document",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 278,
+    "sentence": "The event was ___ off due to bad weather conditions.",
+    "answers": [
+      "called"
+    ],
+    "hint": "To cancel",
+    "explanation": "call off - to cancel an event",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 279,
+    "sentence": "She ___ up smoking last year.",
+    "answers": [
+      "gave"
+    ],
+    "hint": "To stop doing something",
+    "explanation": "give up - to stop doing something",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 280,
+    "sentence": "I'll ___ after the kids while you're away.",
+    "answers": [
+      "look"
+    ],
+    "hint": "To take care of someone",
+    "explanation": "look after - to take care of someone/something",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 281,
+    "sentence": "The contract ___ out last month.",
+    "answers": [
+      "ran"
+    ],
+    "hint": "To expire",
+    "explanation": "run out - to expire/be used up",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 282,
+    "sentence": "Can you ___ up the volume?",
+    "answers": [
+      "turn"
+    ],
+    "hint": "To increase",
+    "explanation": "turn up - to increase volume/intensity",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 283,
+    "sentence": "I'll ___ you off at the station.",
+    "answers": [
+      "drop"
+    ],
+    "hint": "To take someone to a place",
+    "explanation": "drop off - to leave someone at a location",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 284,
+    "sentence": "They ___ down the invitation.",
+    "answers": [
+      "turned"
+    ],
+    "hint": "To refuse/reject",
+    "explanation": "turn down - to reject/refuse",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 285,
+    "sentence": "The children are ___ up so fast.",
+    "answers": [
+      "growing"
+    ],
+    "hint": "To mature",
+    "explanation": "grow up - to become older/mature",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 286,
+    "sentence": "I need to ___ up on my vocabulary.",
+    "answers": [
+      "brush"
+    ],
+    "hint": "To improve/review skills",
+    "explanation": "brush up - to review/improve knowledge",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 287,
+    "sentence": "The store has run ___ of milk.",
+    "answers": [
+      "out"
+    ],
+    "hint": "To have no more",
+    "explanation": "run out of - to have none left",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 288,
+    "sentence": "She ___ across an old friend yesterday.",
+    "answers": [
+      "came",
+      "ran"
+    ],
+    "hint": "To meet by chance",
+    "explanation": "come across/run across - to meet unexpectedly",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 289,
+    "sentence": "Let me ___ it over before I decide.",
+    "answers": [
+      "think"
+    ],
+    "hint": "To consider",
+    "explanation": "think over - to consider carefully",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 290,
+    "sentence": "The alarm went ___ at 6 am.",
+    "answers": [
+      "off"
+    ],
+    "hint": "To sound/activate",
+    "explanation": "go off - when an alarm sounds",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 291,
+    "sentence": "I'll ___ in my homework tomorrow.",
+    "answers": [
+      "hand",
+      "turn"
+    ],
+    "hint": "To submit",
+    "explanation": "hand in/turn in - to submit work",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 292,
+    "sentence": "The building was ___ down last year.",
+    "answers": [
+      "torn",
+      "pulled",
+      "knocked"
+    ],
+    "hint": "To demolish",
+    "explanation": "tear down/pull down/knock down - to demolish",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 293,
+    "sentence": "They're trying to ___ up a new business.",
+    "answers": [
+      "set"
+    ],
+    "hint": "To establish",
+    "explanation": "set up - to establish/create",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 294,
+    "sentence": "I can't ___ out what he means.",
+    "answers": [
+      "make",
+      "figure",
+      "work"
+    ],
+    "hint": "To understand",
+    "explanation": "make out/figure out/work out - to understand",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 295,
+    "sentence": "Please ___ out your cigarette.",
+    "answers": [
+      "put",
+      "stub"
+    ],
+    "hint": "To extinguish",
+    "explanation": "put out/stub out - to extinguish a cigarette",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 296,
+    "sentence": "I need to ___ on some warm clothes.",
+    "answers": [
+      "put"
+    ],
+    "hint": "To dress in",
+    "explanation": "put on - to wear/dress in",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 297,
+    "sentence": "The plane is about to take ___.",
+    "answers": [
+      "off"
+    ],
+    "hint": "To depart (aircraft)",
+    "explanation": "take off - airplane departure",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 298,
+    "sentence": "Don't give ___ so easily!",
+    "answers": [
+      "up"
+    ],
+    "hint": "To quit/surrender",
+    "explanation": "give up - to quit/stop trying",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 299,
+    "sentence": "I need to look ___ this word in the dictionary.",
+    "answers": [
+      "up"
+    ],
+    "hint": "To search for information",
+    "explanation": "look up - to search for information",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 300,
+    "sentence": "They called ___ the wedding.",
+    "answers": [
+      "off"
+    ],
+    "hint": "To cancel",
+    "explanation": "call off - to cancel an event",
+    "topic": "phrasal-verbs"
+  },
+  {
+    "id": 301,
+    "sentence": "There isn't ___ milk left.",
+    "answers": [
+      "much",
+      "any"
+    ],
+    "hint": "Used with uncountable nouns in negative sentences",
+    "explanation": "much/any - quantifiers for uncountable nouns",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 302,
+    "sentence": "How ___ students are in your class?",
+    "answers": [
+      "many"
+    ],
+    "hint": "Used with countable nouns in questions",
+    "explanation": "many - quantifier for countable nouns",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 303,
+    "sentence": "There are ___ people who disagree.",
+    "answers": [
+      "some",
+      "few",
+      "many"
+    ],
+    "hint": "Indefinite quantity with countable nouns",
+    "explanation": "some/few/many - indefinite quantifiers for countable nouns",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 304,
+    "sentence": "I have ___ time to finish this.",
+    "answers": [
+      "little",
+      "some",
+      "enough"
+    ],
+    "hint": "Small amount with uncountable nouns",
+    "explanation": "little/some/enough - quantifiers for uncountable nouns",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 305,
+    "sentence": "___ of the students passed the exam.",
+    "answers": [
+      "Most",
+      "All",
+      "Some",
+      "most",
+      "all",
+      "some"
+    ],
+    "hint": "Majority or portion",
+    "explanation": "most/all/some - expressing portions of a group",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 306,
+    "sentence": "I don't have ___ patience left after waiting for three hours.",
+    "answers": [
+      "much",
+      "any"
+    ],
+    "hint": "Uncountable noun in negative",
+    "explanation": "much/any - with uncountable nouns in negatives",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 307,
+    "sentence": "There are too ___ cars on the road during rush hour.",
+    "answers": [
+      "many"
+    ],
+    "hint": "Too + countable plural",
+    "explanation": "too many - with countable nouns",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 308,
+    "sentence": "I need a ___ more time to complete this project.",
+    "answers": [
+      "little",
+      "bit"
+    ],
+    "hint": "Small additional amount",
+    "explanation": "a little/a bit - small additional amount",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 309,
+    "sentence": "There are only a ___ seats remaining for tonight's show.",
+    "answers": [
+      "few"
+    ],
+    "hint": "Small number of countable items",
+    "explanation": "a few - small number with countable nouns",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 310,
+    "sentence": "___ student in the class must submit their homework by Friday.",
+    "answers": [
+      "Every",
+      "Each"
+    ],
+    "hint": "All individually (singular)",
+    "explanation": "every/each - all members individually",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 311,
+    "sentence": "I didn't see ___ people I knew at the conference yesterday.",
+    "answers": [
+      "many",
+      "any"
+    ],
+    "hint": "Negative + countable",
+    "explanation": "many/any - in negative sentences with countables",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 312,
+    "sentence": "She spent too ___ money on clothes this month.",
+    "answers": [
+      "much"
+    ],
+    "hint": "Too + uncountable",
+    "explanation": "too much - with uncountable nouns",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 313,
+    "sentence": "___ of the work has been completed, so we still have a lot to do.",
+    "answers": [
+      "None"
+    ],
+    "hint": "Zero portion (uncountable)",
+    "explanation": "none - zero amount with uncountable nouns",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 314,
+    "sentence": "There's hardly ___ hope of finding survivors after the earthquake.",
+    "answers": [
+      "any"
+    ],
+    "hint": "Hardly + any (negative sense)",
+    "explanation": "hardly any - almost none",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 315,
+    "sentence": "I have ___ time to help you right now because I'm very busy.",
+    "answers": [
+      "no"
+    ],
+    "hint": "Zero time",
+    "explanation": "no - complete absence",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 316,
+    "sentence": "___ of my friends have traveled to Asia in the last year unfortunately.",
+    "answers": [
+      "None"
+    ],
+    "hint": "Zero quantity + of",
+    "explanation": "none - zero amount with \"of\"",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 317,
+    "sentence": "There isn't ___ information available about the incident yet.",
+    "answers": [
+      "much",
+      "any"
+    ],
+    "hint": "Negative + uncountable",
+    "explanation": "much/any - with uncountable in negatives",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 318,
+    "sentence": "___ the guests had arrived before the ceremony started at noon.",
+    "answers": [
+      "All",
+      "Most"
+    ],
+    "hint": "Large/complete portion (past perfect)",
+    "explanation": "all/most - referring to entire or large group",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 319,
+    "sentence": "I've got a ___ friends coming over for dinner tonight.",
+    "answers": [
+      "few"
+    ],
+    "hint": "Small number (positive meaning)",
+    "explanation": "a few - small number, positive meaning",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 320,
+    "sentence": "There was hardly ___ traffic on the motorway this morning surprisingly.",
+    "answers": [
+      "any"
+    ],
+    "hint": "Hardly + any (uncountable)",
+    "explanation": "hardly any - almost none with uncountable",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 321,
+    "sentence": "___ the students nor the teacher knew the answer to that question.",
+    "answers": [
+      "Neither"
+    ],
+    "hint": "Negative for both groups",
+    "explanation": "neither - negative reference to two groups",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 322,
+    "sentence": "We need ___ more chairs because ten more people are coming tonight.",
+    "answers": [
+      "some",
+      "several"
+    ],
+    "hint": "Indefinite additional number",
+    "explanation": "some/several - indefinite additional amount",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 323,
+    "sentence": "___ child in the playground was given a free ice cream.",
+    "answers": [
+      "Each",
+      "Every"
+    ],
+    "hint": "All individually (singular noun)",
+    "explanation": "each/every - every individual one",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 324,
+    "sentence": "I have ___ idea what time the meeting starts tomorrow.",
+    "answers": [
+      "no"
+    ],
+    "hint": "Complete lack",
+    "explanation": "no idea - complete absence of knowledge",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 325,
+    "sentence": "He doesn't eat ___ meat because he's trying to be healthier.",
+    "answers": [
+      "much",
+      "any"
+    ],
+    "hint": "Negative + uncountable",
+    "explanation": "much/any - with uncountable in negative",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 326,
+    "sentence": "___ of the furniture in this room needs to be replaced soon.",
+    "answers": [
+      "Some",
+      "Most",
+      "Much"
+    ],
+    "hint": "Quantifier + of + uncountable (singular verb)",
+    "explanation": "some/most/much - portion of uncountable after \"of\"",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 327,
+    "sentence": "We've had very ___ rain this summer, so the gardens are dying.",
+    "answers": [
+      "little"
+    ],
+    "hint": "Very + uncountable (negative context)",
+    "explanation": "very little - small amount with negative meaning",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 328,
+    "sentence": "There are far too ___ mistakes in this essay for it to pass.",
+    "answers": [
+      "many"
+    ],
+    "hint": "Far too + countable",
+    "explanation": "too many - excessive number with countable",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 329,
+    "sentence": "I've met quite a ___ interesting people at this conference today.",
+    "answers": [
+      "few"
+    ],
+    "hint": "Quite a + countable (positive)",
+    "explanation": "quite a few - considerable number",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 330,
+    "sentence": "___ of us had ever been to Japan before this trip.",
+    "answers": [
+      "None"
+    ],
+    "hint": "Zero quantity + past perfect",
+    "explanation": "none - zero amount with \"of\" + pronoun",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 331,
+    "sentence": "___ student who fails the test will have to retake it next month.",
+    "answers": [
+      "Any",
+      "Every"
+    ],
+    "hint": "Conditional context",
+    "explanation": "any/every - in conditional sentences",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 332,
+    "sentence": "There are only a ___ tickets left for tonight's performance, so hurry.",
+    "answers": [
+      "few"
+    ],
+    "hint": "Only a + small number",
+    "explanation": "only a few - emphasizing scarcity",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 333,
+    "sentence": "I can't answer that because I have ___ knowledge of advanced physics.",
+    "answers": [
+      "no",
+      "little"
+    ],
+    "hint": "Complete/near complete lack",
+    "explanation": "no/little - absence of knowledge",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 334,
+    "sentence": "Almost ___ of the money was stolen from the safe during the robbery.",
+    "answers": [
+      "all"
+    ],
+    "hint": "Almost + complete amount",
+    "explanation": "almost all - nearly complete amount",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 335,
+    "sentence": "She doesn't have ___ experience in teaching English to young children.",
+    "answers": [
+      "much",
+      "any"
+    ],
+    "hint": "Negative + uncountable",
+    "explanation": "much/any - with uncountable in negatives",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 336,
+    "sentence": "Nearly ___ parents attended the school meeting last night surprisingly.",
+    "answers": [
+      "all"
+    ],
+    "hint": "Nearly + complete group",
+    "explanation": "nearly all - almost everyone",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 337,
+    "sentence": "There's been very ___ progress on the construction project since January.",
+    "answers": [
+      "little"
+    ],
+    "hint": "Very + small amount (negative)",
+    "explanation": "very little - emphasizing small amount",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 338,
+    "sentence": "___ side of the river is equally beautiful in the spring.",
+    "answers": [
+      "Each",
+      "Either"
+    ],
+    "hint": "Both of two sides",
+    "explanation": "each/either - referring to two things",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 339,
+    "sentence": "I've got so ___ work to do that I might have to stay late tonight.",
+    "answers": [
+      "much"
+    ],
+    "hint": "So + uncountable (consequence)",
+    "explanation": "so much - large amount causing result",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 340,
+    "sentence": "___ employee in the company must attend the mandatory training session tomorrow.",
+    "answers": [
+      "Every",
+      "Each"
+    ],
+    "hint": "All individually must attend",
+    "explanation": "every/each - all individually with obligation",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 341,
+    "sentence": "There aren't ___ good restaurants in this neighborhood unfortunately.",
+    "answers": [
+      "many",
+      "any"
+    ],
+    "hint": "Negative + countable plural",
+    "explanation": "many/any - with countable in negatives",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 342,
+    "sentence": "Only ___ of the applicants were qualified enough for the position.",
+    "answers": [
+      "some"
+    ],
+    "hint": "Only + limited number",
+    "explanation": "only some - emphasizing limited number",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 343,
+    "sentence": "There's only a ___ milk left in the fridge this morning.",
+    "answers": [
+      "little"
+    ],
+    "hint": "A + small amount remaining",
+    "explanation": "a little - small amount with uncountable",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 344,
+    "sentence": "There was so ___ noise that I couldn't hear the announcement.",
+    "answers": [
+      "much"
+    ],
+    "hint": "So + uncountable (result)",
+    "explanation": "so much - causing inability to hear",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 345,
+    "sentence": "Hardly ___ student understood the professor's explanation yesterday.",
+    "answers": [
+      "any"
+    ],
+    "hint": "Hardly + almost none",
+    "explanation": "hardly any - almost no one",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 346,
+    "sentence": "I don't expect ___ volunteers to sign up for this difficult task.",
+    "answers": [
+      "many",
+      "any"
+    ],
+    "hint": "Negative expectation + countable",
+    "explanation": "many/any - with countable in negative expectations",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 347,
+    "sentence": "Very ___ of the evidence has been examined by the police so far.",
+    "answers": [
+      "little"
+    ],
+    "hint": "Very + small amount uncountable",
+    "explanation": "very little - small amount of uncountable",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 348,
+    "sentence": "We've received a great ___ of complaints about the noise levels recently.",
+    "answers": [
+      "number",
+      "many"
+    ],
+    "hint": "Great + large quantity phrase",
+    "explanation": "great number/many - large quantity",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 349,
+    "sentence": "There's absolutely ___ doubt that climate change is happening now.",
+    "answers": [
+      "no"
+    ],
+    "hint": "Absolutely + zero doubt",
+    "explanation": "absolutely no - complete absence",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 350,
+    "sentence": "Only a ___ of the participants managed to finish the marathon yesterday.",
+    "answers": [
+      "few",
+      "handful"
+    ],
+    "hint": "Only a + small number finished",
+    "explanation": "only a few/handful - small number who completed",
+    "topic": "quantifiers"
+  },
+  {
+    "id": 351,
+    "sentence": "The letter was ___ by my secretary.",
+    "answers": [
+      "written"
+    ],
+    "hint": "Passive voice - past participle",
+    "explanation": "passive voice: be + past participle",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 352,
+    "sentence": "The new hospital will ___ opened next month by the mayor.",
+    "answers": [
+      "be"
+    ],
+    "hint": "Future passive (will + be + past participle)",
+    "explanation": "will be + past participle - future passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 353,
+    "sentence": "All the documents have ___ checked by the supervisor already.",
+    "answers": [
+      "been"
+    ],
+    "hint": "Present perfect passive (have + been + past participle)",
+    "explanation": "have/has been + past participle - present perfect passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 354,
+    "sentence": "The house ___ being painted when we drove past yesterday afternoon.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous passive (was + being + past participle)",
+    "explanation": "was/were being + past participle - past continuous passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 355,
+    "sentence": "English ___ spoken in many countries around the world today.",
+    "answers": [
+      "is"
+    ],
+    "hint": "Present simple passive (is + past participle)",
+    "explanation": "is/are + past participle - present simple passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 356,
+    "sentence": "The results will ___ announced at the end of the week.",
+    "answers": [
+      "be"
+    ],
+    "hint": "Future passive structure",
+    "explanation": "will be + past participle - future passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 357,
+    "sentence": "The car had ___ stolen before the police arrived at the scene.",
+    "answers": [
+      "been"
+    ],
+    "hint": "Past perfect passive (had + been + past participle)",
+    "explanation": "had been + past participle - past perfect passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 358,
+    "sentence": "The bridge ___ built over one hundred years ago by local workers.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past simple passive (was + past participle)",
+    "explanation": "was/were + past participle - past simple passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 359,
+    "sentence": "New employees ___ given training on their first day at work.",
+    "answers": [
+      "are"
+    ],
+    "hint": "Present simple passive with plural subject",
+    "explanation": "are + past participle - present simple passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 360,
+    "sentence": "The problem should ___ solved by tomorrow morning hopefully.",
+    "answers": [
+      "be"
+    ],
+    "hint": "Modal passive (should + be + past participle)",
+    "explanation": "modal + be + past participle - modal passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 361,
+    "sentence": "The letter must ___ sent today without any further delay.",
+    "answers": [
+      "be"
+    ],
+    "hint": "Modal passive (must + be + past participle)",
+    "explanation": "must be + past participle - modal passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 362,
+    "sentence": "The building has ___ damaged by the storm last night.",
+    "answers": [
+      "been"
+    ],
+    "hint": "Present perfect passive structure",
+    "explanation": "has/have been + past participle - present perfect passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 363,
+    "sentence": "The project is ___ completed next week according to the schedule.",
+    "answers": [
+      "being"
+    ],
+    "hint": "Present continuous passive (is + being + past participle)",
+    "explanation": "is/are being + past participle - present continuous passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 364,
+    "sentence": "The windows ___ cleaned every month by the maintenance team.",
+    "answers": [
+      "are"
+    ],
+    "hint": "Present simple passive with plural",
+    "explanation": "are + past participle - present simple passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 365,
+    "sentence": "The decision had already ___ made before we arrived at the meeting.",
+    "answers": [
+      "been"
+    ],
+    "hint": "Past perfect passive with already",
+    "explanation": "had been + past participle - past perfect passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 366,
+    "sentence": "A new school will ___ built in our neighborhood next year.",
+    "answers": [
+      "be"
+    ],
+    "hint": "Future passive construction",
+    "explanation": "will be + past participle - future passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 367,
+    "sentence": "The email should have ___ sent yesterday but there was a problem.",
+    "answers": [
+      "been"
+    ],
+    "hint": "Modal perfect passive (should have + been + past participle)",
+    "explanation": "modal + have been + past participle - modal perfect passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 368,
+    "sentence": "The roof ___ being repaired when it started to rain heavily.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous passive structure",
+    "explanation": "was/were being + past participle - past continuous passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 369,
+    "sentence": "All visitors must ___ registered at reception before entering the building.",
+    "answers": [
+      "be"
+    ],
+    "hint": "Modal passive with must",
+    "explanation": "must be + past participle - modal passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 370,
+    "sentence": "The cake ___ made by my grandmother for my birthday party.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past simple passive structure",
+    "explanation": "was/were + past participle - past simple passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 371,
+    "sentence": "The report has ___ submitted to the manager this morning already.",
+    "answers": [
+      "been"
+    ],
+    "hint": "Present perfect passive completion",
+    "explanation": "has/have been + past participle - present perfect passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 372,
+    "sentence": "The room is ___ decorated for the celebration right now.",
+    "answers": [
+      "being"
+    ],
+    "hint": "Present continuous passive in progress",
+    "explanation": "is/are being + past participle - present continuous passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 373,
+    "sentence": "The tickets can ___ purchased online or at the box office.",
+    "answers": [
+      "be"
+    ],
+    "hint": "Modal passive with can",
+    "explanation": "can be + past participle - modal passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 374,
+    "sentence": "The restaurant ___ closed down by health inspectors last month unfortunately.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past simple passive action",
+    "explanation": "was/were + past participle - past simple passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 375,
+    "sentence": "The computers will ___ installed by technicians before the office opens tomorrow.",
+    "answers": [
+      "be"
+    ],
+    "hint": "Future passive structure",
+    "explanation": "will be + past participle - future passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 376,
+    "sentence": "The package should ___ delivered by Friday at the latest.",
+    "answers": [
+      "be"
+    ],
+    "hint": "Modal passive expectation",
+    "explanation": "should be + past participle - modal passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 377,
+    "sentence": "The film ___ directed by a famous Hollywood director last year.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past simple passive",
+    "explanation": "was/were + past participle - past simple passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 378,
+    "sentence": "The information can ___ found on the company website easily.",
+    "answers": [
+      "be"
+    ],
+    "hint": "Modal passive with can",
+    "explanation": "can be + past participle - modal passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 379,
+    "sentence": "The children are ___ taught English at school three times a week.",
+    "answers": [
+      "being"
+    ],
+    "hint": "Present continuous passive structure",
+    "explanation": "are being + past participle - present continuous passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 380,
+    "sentence": "The message had ___ delivered before I arrived at the office.",
+    "answers": [
+      "been"
+    ],
+    "hint": "Past perfect passive completion",
+    "explanation": "had been + past participle - past perfect passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 381,
+    "sentence": "These products ___ made from recycled materials in our factory.",
+    "answers": [
+      "are"
+    ],
+    "hint": "Present simple passive with plural",
+    "explanation": "are + past participle - present simple passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 382,
+    "sentence": "The meeting will ___ held in the conference room tomorrow morning.",
+    "answers": [
+      "be"
+    ],
+    "hint": "Future passive arrangement",
+    "explanation": "will be + past participle - future passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 383,
+    "sentence": "The issue could ___ resolved if we work together on it.",
+    "answers": [
+      "be"
+    ],
+    "hint": "Modal passive with could",
+    "explanation": "could be + past participle - modal passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 384,
+    "sentence": "The documents have ___ signed by all the board members now.",
+    "answers": [
+      "been"
+    ],
+    "hint": "Present perfect passive completion",
+    "explanation": "have/has been + past participle - present perfect passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 385,
+    "sentence": "The new policy ___ introduced at the beginning of next month.",
+    "answers": [
+      "is",
+      "will"
+    ],
+    "hint": "Present/future passive introduction",
+    "explanation": "is being/will be + past participle - scheduled action",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 386,
+    "sentence": "All the food ___ prepared by professional chefs for the event.",
+    "answers": [
+      "was",
+      "is"
+    ],
+    "hint": "Passive preparation",
+    "explanation": "was/is + past participle - passive voice",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 387,
+    "sentence": "The castle ___ visited by thousands of tourists every summer.",
+    "answers": [
+      "is"
+    ],
+    "hint": "Present simple passive with frequency",
+    "explanation": "is/are + past participle - present simple passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 388,
+    "sentence": "The contract must ___ reviewed by our lawyer before we sign it.",
+    "answers": [
+      "be"
+    ],
+    "hint": "Modal passive necessity",
+    "explanation": "must be + past participle - modal passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 389,
+    "sentence": "The accident ___ caused by dangerous driving conditions yesterday.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past simple passive causation",
+    "explanation": "was/were + past participle - past simple passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 390,
+    "sentence": "The piano has ___ moved to the other room this afternoon.",
+    "answers": [
+      "been"
+    ],
+    "hint": "Present perfect passive action",
+    "explanation": "has/have been + past participle - present perfect passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 391,
+    "sentence": "The building is ___ renovated at the moment by a construction company.",
+    "answers": [
+      "being"
+    ],
+    "hint": "Present continuous passive in progress",
+    "explanation": "is/are being + past participle - present continuous passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 392,
+    "sentence": "The prize will ___ awarded to the winner at the ceremony tonight.",
+    "answers": [
+      "be"
+    ],
+    "hint": "Future passive ceremony",
+    "explanation": "will be + past participle - future passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 393,
+    "sentence": "The students ___ given homework every Friday without fail.",
+    "answers": [
+      "are"
+    ],
+    "hint": "Present simple passive routine",
+    "explanation": "are + past participle - present simple passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 394,
+    "sentence": "The concert had ___ cancelled due to bad weather conditions.",
+    "answers": [
+      "been"
+    ],
+    "hint": "Past perfect passive cancellation",
+    "explanation": "had been + past participle - past perfect passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 395,
+    "sentence": "The old library ___ demolished to make way for new buildings.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past simple passive demolition",
+    "explanation": "was/were + past participle - past simple passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 396,
+    "sentence": "The test results may ___ announced later this week hopefully.",
+    "answers": [
+      "be"
+    ],
+    "hint": "Modal passive with may",
+    "explanation": "may be + past participle - modal passive",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 397,
+    "sentence": "The house ___ built in 1920.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Passive voice - past simple",
+    "explanation": "passive voice: was/were + past participle",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 398,
+    "sentence": "English ___ spoken here.",
+    "answers": [
+      "is"
+    ],
+    "hint": "Passive voice - present simple",
+    "explanation": "passive voice: is/are + past participle",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 399,
+    "sentence": "The car ___ being repaired.",
+    "answers": [
+      "is"
+    ],
+    "hint": "Passive voice - present continuous",
+    "explanation": "passive voice: is/are being + past participle",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 400,
+    "sentence": "The project ___ been completed.",
+    "answers": [
+      "has"
+    ],
+    "hint": "Passive voice - present perfect",
+    "explanation": "passive voice: has/have been + past participle",
+    "topic": "passive-voice"
+  },
+  {
+    "id": 401,
+    "sentence": "She said she ___ tired.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Reported speech - 'am/is' changes to...",
+    "explanation": "reported speech: present simple → past simple",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 402,
+    "sentence": "She said that she ___ tired after the long journey.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Backshift: present → past",
+    "explanation": "Tense backshift in reported speech",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 403,
+    "sentence": "He told me that he ___ seen the film before.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Backshift: present perfect → past perfect",
+    "explanation": "had + past participle in reported speech",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 404,
+    "sentence": "They said they ___ come to the party the next day.",
+    "answers": [
+      "would"
+    ],
+    "hint": "Backshift: will → would",
+    "explanation": "Modal verb backshift in reported speech",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 405,
+    "sentence": "She told us that she ___ working on the project then.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Backshift: present continuous → past continuous",
+    "explanation": "was/were + -ing in reported speech",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 406,
+    "sentence": "He said he ___ never been to Paris before that trip.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Backshift: present perfect → past perfect",
+    "explanation": "had + past participle with never",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 407,
+    "sentence": "She told me she ___ call me the following week.",
+    "answers": [
+      "would"
+    ],
+    "hint": "Future in reported speech",
+    "explanation": "would + infinitive for future reference",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 408,
+    "sentence": "They said they ___ living in London at that time.",
+    "answers": [
+      "were"
+    ],
+    "hint": "Past continuous in reported speech",
+    "explanation": "were/was + -ing for ongoing past action",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 409,
+    "sentence": "He told us he ___ already finished his homework.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect with already",
+    "explanation": "had + past participle with already",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 410,
+    "sentence": "She said she ___ be able to help us the next day.",
+    "answers": [
+      "would"
+    ],
+    "hint": "Modal backshift: can → could or would be",
+    "explanation": "would be able to = could in reported speech",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 411,
+    "sentence": "He told me that he ___ studying English for three years.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous",
+    "explanation": "had been + -ing in reported speech",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 412,
+    "sentence": "They said they ___ going to visit their grandparents that weekend.",
+    "answers": [
+      "were"
+    ],
+    "hint": "Going to in reported speech",
+    "explanation": "were/was going to for future plans",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 413,
+    "sentence": "She told us she ___ lived there since 2010.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect with since",
+    "explanation": "had + past participle with time reference",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 414,
+    "sentence": "He said he ___ not want to go to the meeting.",
+    "answers": [
+      "did"
+    ],
+    "hint": "Negative past simple",
+    "explanation": "did not = didn't in reported speech",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 415,
+    "sentence": "They told me they ___ met him before the conference.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for earlier past",
+    "explanation": "had + past participle for prior action",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 416,
+    "sentence": "She said she ___ have to leave early the next morning.",
+    "answers": [
+      "would"
+    ],
+    "hint": "Obligation in future (reported)",
+    "explanation": "would have to for future obligation",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 417,
+    "sentence": "He told us he ___ working late that evening.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous at specific time",
+    "explanation": "was/were + -ing for specific past time",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 418,
+    "sentence": "They said they ___ enjoyed the concert very much.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for completed action",
+    "explanation": "had + past participle in reported speech",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 419,
+    "sentence": "She told me she ___ rather stay at home that night.",
+    "answers": [
+      "would"
+    ],
+    "hint": "Would rather preference",
+    "explanation": "would rather + infinitive for preference",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 420,
+    "sentence": "He said he ___ been waiting for over an hour.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous duration",
+    "explanation": "had been + -ing for duration",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 421,
+    "sentence": "They told us they ___ not seen the email yet.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect negative with yet",
+    "explanation": "had not + past participle with yet",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 422,
+    "sentence": "She said she ___ meet us at the station the following day.",
+    "answers": [
+      "would"
+    ],
+    "hint": "Future arrangement (reported)",
+    "explanation": "would + infinitive for future plan",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 423,
+    "sentence": "He told me he ___ thinking about changing his job.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous for ongoing thought",
+    "explanation": "was/were + -ing in reported speech",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 424,
+    "sentence": "They said they ___ done everything they could to help.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect completion",
+    "explanation": "had + past participle for completed action",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 425,
+    "sentence": "She told us she ___ like to come with us.",
+    "answers": [
+      "would"
+    ],
+    "hint": "Would like = want (polite)",
+    "explanation": "would like to in reported speech",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 426,
+    "sentence": "He said he ___ not understand the instructions at first.",
+    "answers": [
+      "did"
+    ],
+    "hint": "Negative past simple",
+    "explanation": "did not understand in reported speech",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 427,
+    "sentence": "He told me he ___ finished the work.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Reported speech - 'have' changes to...",
+    "explanation": "reported speech: present perfect → past perfect",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 428,
+    "sentence": "She told me she ___ seen the doctor the previous week.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for earlier action",
+    "explanation": "had + past participle for prior time",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 429,
+    "sentence": "He said he ___ be there on time despite the traffic.",
+    "answers": [
+      "would"
+    ],
+    "hint": "Future promise (reported)",
+    "explanation": "would + infinitive for future assurance",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 430,
+    "sentence": "They told us they ___ planning to move house soon.",
+    "answers": [
+      "were"
+    ],
+    "hint": "Past continuous for plans",
+    "explanation": "were/was + -ing for future plans",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 431,
+    "sentence": "She said she ___ not heard from him for months.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect negative with duration",
+    "explanation": "had not + past participle with time period",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 432,
+    "sentence": "He told me he ___ been trying to contact me all morning.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous attempt",
+    "explanation": "had been + -ing for repeated action",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 433,
+    "sentence": "They said they ___ prefer to wait until the next day.",
+    "answers": [
+      "would"
+    ],
+    "hint": "Would prefer = like more",
+    "explanation": "would prefer to in reported speech",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 434,
+    "sentence": "She told us she ___ not feeling well that day.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous state",
+    "explanation": "was/were not + -ing for temporary state",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 435,
+    "sentence": "He said he ___ just arrived when I called him.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect with just",
+    "explanation": "had just + past participle for recent past",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 436,
+    "sentence": "They told me they ___ going to the cinema that evening.",
+    "answers": [
+      "were"
+    ],
+    "hint": "Plans in reported speech",
+    "explanation": "were/was going for arranged plans",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 437,
+    "sentence": "She said she ___ love to visit us again soon.",
+    "answers": [
+      "would"
+    ],
+    "hint": "Would love = want very much",
+    "explanation": "would love to in reported speech",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 438,
+    "sentence": "He told us he ___ been feeling tired for several days.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous state",
+    "explanation": "had been + -ing for duration",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 439,
+    "sentence": "They said they ___ not know the answer to that question.",
+    "answers": [
+      "did"
+    ],
+    "hint": "Negative past simple knowledge",
+    "explanation": "did not know in reported speech",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 440,
+    "sentence": "She told me she ___ already made her decision by then.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect with already",
+    "explanation": "had already + past participle",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 441,
+    "sentence": "He said he ___ definitely come to the wedding next month.",
+    "answers": [
+      "would"
+    ],
+    "hint": "Future certainty (reported)",
+    "explanation": "would definitely + infinitive",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 442,
+    "sentence": "They told us they ___ waiting for the results anxiously.",
+    "answers": [
+      "were"
+    ],
+    "hint": "Past continuous waiting",
+    "explanation": "were/was + -ing for ongoing action",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 443,
+    "sentence": "She said she ___ never experienced anything like that before.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect with never",
+    "explanation": "had never + past participle",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 444,
+    "sentence": "He told me he ___ not agree with the new policy.",
+    "answers": [
+      "did"
+    ],
+    "hint": "Negative past simple opinion",
+    "explanation": "did not agree in reported speech",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 445,
+    "sentence": "They said they ___ been working together for five years.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous with for",
+    "explanation": "had been + -ing with time period",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 446,
+    "sentence": "She told us she ___ probably be late for the meeting.",
+    "answers": [
+      "would"
+    ],
+    "hint": "Future probability (reported)",
+    "explanation": "would probably + infinitive",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 447,
+    "sentence": "He said he ___ thinking of applying for the job.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous consideration",
+    "explanation": "was/were + -ing for consideration",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 448,
+    "sentence": "She said she ___ help me.",
+    "answers": [
+      "would"
+    ],
+    "hint": "Reported speech - 'will' changes to...",
+    "explanation": "reported speech: will → would",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 449,
+    "sentence": "He asked me ___ I was going.",
+    "answers": [
+      "where"
+    ],
+    "hint": "Reported question",
+    "explanation": "reported questions use statement word order",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 450,
+    "sentence": "She asked me ___ I could help her.",
+    "answers": [
+      "if",
+      "whether"
+    ],
+    "hint": "Reported yes/no question",
+    "explanation": "if/whether introduces reported yes/no questions",
+    "topic": "reported-speech"
+  },
+  {
+    "id": 451,
+    "sentence": "I ___ rather stay home than go out.",
+    "answers": [
+      "would",
+      "'d"
+    ],
+    "hint": "Expressing preference",
+    "explanation": "would rather - expressing preference",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 452,
+    "sentence": "I ___ not understand what you mean by that statement.",
+    "answers": [
+      "do",
+      "did"
+    ],
+    "hint": "Negative present/past simple",
+    "explanation": "do/did + not for negatives",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 453,
+    "sentence": "She ___ been working here for ten years now.",
+    "answers": [
+      "has"
+    ],
+    "hint": "Present perfect continuous",
+    "explanation": "has/have been + -ing",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 454,
+    "sentence": "They ___ not want to come with us yesterday.",
+    "answers": [
+      "did"
+    ],
+    "hint": "Negative past simple",
+    "explanation": "did not = didn't in past",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 455,
+    "sentence": "___ you finished your homework yet?",
+    "answers": [
+      "Have"
+    ],
+    "hint": "Present perfect question with yet",
+    "explanation": "Have/Has + subject + past participle",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 456,
+    "sentence": "We ___ going to visit them next weekend.",
+    "answers": [
+      "are"
+    ],
+    "hint": "Future plans with going to",
+    "explanation": "am/is/are + going to",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 457,
+    "sentence": "He ___ not come to work because he was ill.",
+    "answers": [
+      "did"
+    ],
+    "hint": "Negative past simple reason",
+    "explanation": "did not come = didn't come",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 458,
+    "sentence": "___ she speak French fluently?",
+    "answers": [
+      "Does"
+    ],
+    "hint": "Present simple question",
+    "explanation": "Does/Do + subject + infinitive",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 459,
+    "sentence": "I ___ been to Paris several times before.",
+    "answers": [
+      "have"
+    ],
+    "hint": "Present perfect experience",
+    "explanation": "have/has been for experience",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 460,
+    "sentence": "They ___ being very helpful to us during the crisis.",
+    "answers": [
+      "were"
+    ],
+    "hint": "Past continuous positive quality",
+    "explanation": "was/were being + adjective",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 461,
+    "sentence": "___ you know the answer to this question?",
+    "answers": [
+      "Do"
+    ],
+    "hint": "Present simple question",
+    "explanation": "Do/Does + subject + infinitive",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 462,
+    "sentence": "She ___ not been feeling well recently.",
+    "answers": [
+      "has"
+    ],
+    "hint": "Present perfect continuous negative",
+    "explanation": "has/have not been + -ing",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 463,
+    "sentence": "We ___ having dinner when the phone rang.",
+    "answers": [
+      "were"
+    ],
+    "hint": "Past continuous interrupted action",
+    "explanation": "was/were + -ing",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 464,
+    "sentence": "___ they arrive on time last night?",
+    "answers": [
+      "Did"
+    ],
+    "hint": "Past simple question",
+    "explanation": "Did + subject + infinitive",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 465,
+    "sentence": "I ___ not think that's a good idea at all.",
+    "answers": [
+      "do"
+    ],
+    "hint": "Present simple negative opinion",
+    "explanation": "do/does not think",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 466,
+    "sentence": "He ___ been waiting for over an hour now.",
+    "answers": [
+      "has"
+    ],
+    "hint": "Present perfect continuous duration",
+    "explanation": "has/have been + -ing with duration",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 467,
+    "sentence": "___ you going to the party tomorrow night?",
+    "answers": [
+      "Are"
+    ],
+    "hint": "Future plans question",
+    "explanation": "Am/Is/Are + subject + going to",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 468,
+    "sentence": "They ___ not live here anymore.",
+    "answers": [
+      "do"
+    ],
+    "hint": "Present simple negative",
+    "explanation": "do/does not live",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 469,
+    "sentence": "She ___ studying when I called her yesterday.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous at specific time",
+    "explanation": "was/were + -ing",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 470,
+    "sentence": "___ he enjoy the concert last weekend?",
+    "answers": [
+      "Did"
+    ],
+    "hint": "Past simple question enjoyment",
+    "explanation": "Did + subject + infinitive",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 471,
+    "sentence": "We ___ not seen them since last summer.",
+    "answers": [
+      "have"
+    ],
+    "hint": "Present perfect negative with since",
+    "explanation": "have/has not + past participle",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 472,
+    "sentence": "I ___ working from home three days a week now.",
+    "answers": [
+      "am"
+    ],
+    "hint": "Present continuous routine",
+    "explanation": "am/is/are + -ing for temporary situation",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 473,
+    "sentence": "___ you remember to lock the door this morning?",
+    "answers": [
+      "Did"
+    ],
+    "hint": "Past simple question memory",
+    "explanation": "Did + subject + infinitive",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 474,
+    "sentence": "He ___ not agree with your suggestion yesterday.",
+    "answers": [
+      "did"
+    ],
+    "hint": "Past simple negative agreement",
+    "explanation": "did not agree = didn't agree",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 475,
+    "sentence": "___ they been living here for long?",
+    "answers": [
+      "Have"
+    ],
+    "hint": "Present perfect continuous question duration",
+    "explanation": "Have/Has + subject + been + -ing",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 476,
+    "sentence": "She ___ being interviewed when I arrived at the office.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous passive at specific time",
+    "explanation": "was/were being + past participle",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 477,
+    "sentence": "___ you been waiting long?",
+    "answers": [
+      "Have"
+    ],
+    "hint": "Present perfect question",
+    "explanation": "have/has - auxiliary for present perfect",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 478,
+    "sentence": "___ your sister like classical music?",
+    "answers": [
+      "Does"
+    ],
+    "hint": "Present simple question third person",
+    "explanation": "Does + subject + infinitive",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 479,
+    "sentence": "I ___ not feeling very confident about the exam tomorrow.",
+    "answers": [
+      "am"
+    ],
+    "hint": "Present continuous negative feeling",
+    "explanation": "am/is/are not + -ing",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 480,
+    "sentence": "They ___ been living in Spain since 2015.",
+    "answers": [
+      "have"
+    ],
+    "hint": "Present perfect continuous with since",
+    "explanation": "have/has been + -ing with time reference",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 481,
+    "sentence": "___ it rain much in your country?",
+    "answers": [
+      "Does"
+    ],
+    "hint": "Present simple question about weather",
+    "explanation": "Does/Do + subject + infinitive",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 482,
+    "sentence": "She ___ watching television when the power went out.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous interrupted",
+    "explanation": "was/were + -ing",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 483,
+    "sentence": "We ___ not received your email yet unfortunately.",
+    "answers": [
+      "have"
+    ],
+    "hint": "Present perfect negative with yet",
+    "explanation": "have/has not + past participle",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 484,
+    "sentence": "___ you work late every day at your job?",
+    "answers": [
+      "Do"
+    ],
+    "hint": "Present simple question frequency",
+    "explanation": "Do/Does + subject + infinitive",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 485,
+    "sentence": "He ___ not want to discuss it right now.",
+    "answers": [
+      "does"
+    ],
+    "hint": "Present simple negative third person",
+    "explanation": "does not = doesn't",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 486,
+    "sentence": "I ___ been trying to call you all afternoon.",
+    "answers": [
+      "have"
+    ],
+    "hint": "Present perfect continuous attempt",
+    "explanation": "have/has been + -ing",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 487,
+    "sentence": "___ she understand the instructions I gave her?",
+    "answers": [
+      "Did"
+    ],
+    "hint": "Past simple question understanding",
+    "explanation": "Did + subject + infinitive",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 488,
+    "sentence": "They ___ planning to renovate their house next year.",
+    "answers": [
+      "are"
+    ],
+    "hint": "Present continuous future plan",
+    "explanation": "am/is/are + -ing for future",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 489,
+    "sentence": "___ your parents live near you?",
+    "answers": [
+      "Do"
+    ],
+    "hint": "Present simple question location",
+    "explanation": "Do/Does + subject + infinitive",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 490,
+    "sentence": "She ___ not been abroad for several years now.",
+    "answers": [
+      "has"
+    ],
+    "hint": "Present perfect negative duration",
+    "explanation": "has/have not been",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 491,
+    "sentence": "I ___ looking forward to the holiday next month.",
+    "answers": [
+      "am"
+    ],
+    "hint": "Present continuous emotion",
+    "explanation": "am/is/are + -ing",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 492,
+    "sentence": "___ they finish the project on time yesterday?",
+    "answers": [
+      "Did"
+    ],
+    "hint": "Past simple question completion",
+    "explanation": "Did + subject + infinitive",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 493,
+    "sentence": "He ___ not believe what I told him at first.",
+    "answers": [
+      "did"
+    ],
+    "hint": "Past simple negative belief",
+    "explanation": "did not = didn't",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 494,
+    "sentence": "We ___ been studying English for three years now.",
+    "answers": [
+      "have"
+    ],
+    "hint": "Present perfect continuous duration",
+    "explanation": "have/has been + -ing with for",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 495,
+    "sentence": "___ you having a good time at the party?",
+    "answers": [
+      "Are"
+    ],
+    "hint": "Present continuous question enjoyment",
+    "explanation": "Am/Is/Are + subject + -ing",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 496,
+    "sentence": "She ___ not know anyone at the conference yesterday.",
+    "answers": [
+      "did"
+    ],
+    "hint": "Past simple negative knowledge",
+    "explanation": "did not know = didn't know",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 497,
+    "sentence": "___ he been working here long?",
+    "answers": [
+      "Has"
+    ],
+    "hint": "Present perfect continuous question",
+    "explanation": "Has/Have + subject + been + -ing",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 498,
+    "sentence": "She ___ not like spicy food.",
+    "answers": [
+      "does"
+    ],
+    "hint": "Present simple negative",
+    "explanation": "does/do - auxiliary for present simple negative/questions",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 499,
+    "sentence": "___ she come to the party yesterday?",
+    "answers": [
+      "Did"
+    ],
+    "hint": "Past simple question",
+    "explanation": "did - auxiliary for past simple questions/negatives",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 500,
+    "sentence": "I ___ been working here for five years.",
+    "answers": [
+      "have",
+      "'ve"
+    ],
+    "hint": "Present perfect continuous",
+    "explanation": "have/has been - present perfect continuous auxiliary",
+    "topic": "auxiliary-verbs"
+  },
+  {
+    "id": 501,
+    "sentence": "This book is not ___ interesting as the one I read last week.",
+    "answers": [
+      "as"
+    ],
+    "hint": "As...as for equal comparison (negative)",
+    "explanation": "as...as for equal comparisons",
+    "topic": "comparisons"
+  },
+  {
+    "id": 502,
+    "sentence": "She's much ___ experienced than her colleagues at work.",
+    "answers": [
+      "more"
+    ],
+    "hint": "Much + comparative",
+    "explanation": "much + more for emphasis with adjectives",
+    "topic": "comparisons"
+  },
+  {
+    "id": 503,
+    "sentence": "The weather today is far ___ than it was yesterday.",
+    "answers": [
+      "worse",
+      "better"
+    ],
+    "hint": "Far + comparative (irregular)",
+    "explanation": "far + comparative for emphasis",
+    "topic": "comparisons"
+  },
+  {
+    "id": 504,
+    "sentence": "He speaks English ___ fluently as a native speaker now.",
+    "answers": [
+      "as"
+    ],
+    "hint": "As...as for equal comparison",
+    "explanation": "as...as for equal degree",
+    "topic": "comparisons"
+  },
+  {
+    "id": 505,
+    "sentence": "This exercise is ___ more difficult than the previous one.",
+    "answers": [
+      "much",
+      "far"
+    ],
+    "hint": "Intensifier + more",
+    "explanation": "much/far + more for strong emphasis",
+    "topic": "comparisons"
+  },
+  {
+    "id": 506,
+    "sentence": "She was ___ a talented musician that everyone admired her.",
+    "answers": [
+      "such"
+    ],
+    "hint": "Such + noun phrase (result clause)",
+    "explanation": "such a + adjective + noun",
+    "topic": "comparisons"
+  },
+  {
+    "id": 507,
+    "sentence": "It's getting ___ and colder as winter approaches now.",
+    "answers": [
+      "colder"
+    ],
+    "hint": "Comparative + and + comparative",
+    "explanation": "comparative + and + comparative for progressive change",
+    "topic": "comparisons"
+  },
+  {
+    "id": 508,
+    "sentence": "The new model is slightly ___ expensive than the old one.",
+    "answers": [
+      "more",
+      "less"
+    ],
+    "hint": "Slightly + comparative",
+    "explanation": "slightly + comparative for small difference",
+    "topic": "comparisons"
+  },
+  {
+    "id": 509,
+    "sentence": "He ran ___ fast that he won the race easily.",
+    "answers": [
+      "so"
+    ],
+    "hint": "So + adjective/adverb (result)",
+    "explanation": "so + adjective/adverb + that",
+    "topic": "comparisons"
+  },
+  {
+    "id": 510,
+    "sentence": "This is by ___ the best restaurant in the city.",
+    "answers": [
+      "far"
+    ],
+    "hint": "By far + superlative",
+    "explanation": "by far + superlative for emphasis",
+    "topic": "comparisons"
+  },
+  {
+    "id": 511,
+    "sentence": "The ___ you practice, the better you'll become at it.",
+    "answers": [
+      "more"
+    ],
+    "hint": "The + comparative, the + comparative",
+    "explanation": "the more...the better structure",
+    "topic": "comparisons"
+  },
+  {
+    "id": 512,
+    "sentence": "She's nowhere ___ as confident as she appears to be.",
+    "answers": [
+      "near"
+    ],
+    "hint": "Nowhere near as...as",
+    "explanation": "nowhere near as for strong negative comparison",
+    "topic": "comparisons"
+  },
+  {
+    "id": 513,
+    "sentence": "It was ___ an exciting match that we couldn't stop watching.",
+    "answers": [
+      "such"
+    ],
+    "hint": "Such + noun phrase + that",
+    "explanation": "such + (adjective +) noun + that",
+    "topic": "comparisons"
+  },
+  {
+    "id": 514,
+    "sentence": "The problem is ___ more serious than we initially thought.",
+    "answers": [
+      "far",
+      "much"
+    ],
+    "hint": "Strong emphasis + more",
+    "explanation": "far/much more for strong emphasis",
+    "topic": "comparisons"
+  },
+  {
+    "id": 515,
+    "sentence": "He's just ___ intelligent as his sister, if not more.",
+    "answers": [
+      "as"
+    ],
+    "hint": "Just as...as for equal comparison",
+    "explanation": "just as...as for equal degree",
+    "topic": "comparisons"
+  },
+  {
+    "id": 516,
+    "sentence": "The ___ he studied, the more confused he became unfortunately.",
+    "answers": [
+      "more"
+    ],
+    "hint": "The comparative...the comparative",
+    "explanation": "the more...the more structure",
+    "topic": "comparisons"
+  },
+  {
+    "id": 517,
+    "sentence": "This laptop is considerably ___ than the previous model we had.",
+    "answers": [
+      "better",
+      "worse",
+      "faster",
+      "slower"
+    ],
+    "hint": "Considerably + comparative",
+    "explanation": "considerably + comparative for significant difference",
+    "topic": "comparisons"
+  },
+  {
+    "id": 518,
+    "sentence": "There were ___ many people that we couldn't find seats.",
+    "answers": [
+      "so"
+    ],
+    "hint": "So + many/much + that",
+    "explanation": "so many/much + that for result",
+    "topic": "comparisons"
+  },
+  {
+    "id": 519,
+    "sentence": "Her performance was nowhere ___ as good as last year's show.",
+    "answers": [
+      "near"
+    ],
+    "hint": "Nowhere near as...as (negative)",
+    "explanation": "nowhere near as for strong negative comparison",
+    "topic": "comparisons"
+  },
+  {
+    "id": 520,
+    "sentence": "This solution is a lot ___ effective than the alternative method.",
+    "answers": [
+      "more",
+      "less"
+    ],
+    "hint": "A lot + comparative",
+    "explanation": "a lot + comparative for emphasis",
+    "topic": "comparisons"
+  },
+  {
+    "id": 521,
+    "sentence": "It's becoming ___ and more expensive to live in this city.",
+    "answers": [
+      "more"
+    ],
+    "hint": "More and more + adjective",
+    "explanation": "more and more for progressive increase",
+    "topic": "comparisons"
+  },
+  {
+    "id": 522,
+    "sentence": "He had ___ much work that he stayed late every night.",
+    "answers": [
+      "so"
+    ],
+    "hint": "So + much (uncountable) + that",
+    "explanation": "so much + that for result",
+    "topic": "comparisons"
+  },
+  {
+    "id": 523,
+    "sentence": "The new system is significantly ___ efficient than the old one.",
+    "answers": [
+      "more",
+      "less"
+    ],
+    "hint": "Significantly + comparative",
+    "explanation": "significantly + comparative for notable difference",
+    "topic": "comparisons"
+  },
+  {
+    "id": 524,
+    "sentence": "She's almost ___ tall as her mother now at age fifteen.",
+    "answers": [
+      "as"
+    ],
+    "hint": "Almost as...as",
+    "explanation": "almost as...as for near equality",
+    "topic": "comparisons"
+  },
+  {
+    "id": 525,
+    "sentence": "The ___ you wait, the harder it will be to start.",
+    "answers": [
+      "longer",
+      "more"
+    ],
+    "hint": "The comparative...the comparative",
+    "explanation": "the longer/more...the harder structure",
+    "topic": "comparisons"
+  },
+  {
+    "id": 526,
+    "sentence": "The results were not ___ good as we had hoped for.",
+    "answers": [
+      "as"
+    ],
+    "hint": "Not as...as (negative comparison)",
+    "explanation": "not as...as for negative comparison",
+    "topic": "comparisons"
+  },
+  {
+    "id": 527,
+    "sentence": "She's getting ___ and better at playing the piano now.",
+    "answers": [
+      "better"
+    ],
+    "hint": "Comparative + and + comparative",
+    "explanation": "better and better for progressive improvement",
+    "topic": "comparisons"
+  },
+  {
+    "id": 528,
+    "sentence": "This task is ___ less complicated than the last one we did.",
+    "answers": [
+      "much",
+      "far"
+    ],
+    "hint": "Intensifier + less",
+    "explanation": "much/far + less for strong emphasis",
+    "topic": "comparisons"
+  },
+  {
+    "id": 529,
+    "sentence": "It was ___ hot that we had to turn on the air conditioning.",
+    "answers": [
+      "so"
+    ],
+    "hint": "So + adjective + that (result)",
+    "explanation": "so + adjective + that for consequence",
+    "topic": "comparisons"
+  },
+  {
+    "id": 530,
+    "sentence": "The ___ we invest now, the more we'll save later on.",
+    "answers": [
+      "more"
+    ],
+    "hint": "The more...the more structure",
+    "explanation": "the more...the more for correlation",
+    "topic": "comparisons"
+  },
+  {
+    "id": 531,
+    "sentence": "He's nearly ___ tall as his father already at thirteen.",
+    "answers": [
+      "as"
+    ],
+    "hint": "Nearly as...as",
+    "explanation": "nearly as...as for approximate equality",
+    "topic": "comparisons"
+  },
+  {
+    "id": 532,
+    "sentence": "They were ___ friendly people that we immediately felt welcome.",
+    "answers": [
+      "such"
+    ],
+    "hint": "Such + adjective + plural noun + that",
+    "explanation": "such + (adjective +) noun + that",
+    "topic": "comparisons"
+  },
+  {
+    "id": 533,
+    "sentence": "This method is marginally ___ effective than the traditional approach.",
+    "answers": [
+      "more",
+      "less"
+    ],
+    "hint": "Marginally + comparative",
+    "explanation": "marginally + comparative for slight difference",
+    "topic": "comparisons"
+  },
+  {
+    "id": 534,
+    "sentence": "The situation is getting ___ and worse every day unfortunately.",
+    "answers": [
+      "worse"
+    ],
+    "hint": "Worse and worse",
+    "explanation": "comparative + and + comparative for decline",
+    "topic": "comparisons"
+  },
+  {
+    "id": 535,
+    "sentence": "She speaks ___ quickly that I can barely understand her.",
+    "answers": [
+      "so"
+    ],
+    "hint": "So + adverb + that",
+    "explanation": "so + adverb + that for result",
+    "topic": "comparisons"
+  },
+  {
+    "id": 536,
+    "sentence": "This year's exam was nowhere ___ as difficult as last year's.",
+    "answers": [
+      "near"
+    ],
+    "hint": "Nowhere near as...as (negative)",
+    "explanation": "nowhere near as for strong negative comparison",
+    "topic": "comparisons"
+  },
+  {
+    "id": 537,
+    "sentence": "The ___ you eat, the hungrier you seem to become strangely.",
+    "answers": [
+      "more"
+    ],
+    "hint": "The more...the more paradox",
+    "explanation": "the more...the more for correlation",
+    "topic": "comparisons"
+  },
+  {
+    "id": 538,
+    "sentence": "He's twice ___ old as his youngest brother.",
+    "answers": [
+      "as"
+    ],
+    "hint": "Twice as...as",
+    "explanation": "twice/three times as...as for multiples",
+    "topic": "comparisons"
+  },
+  {
+    "id": 539,
+    "sentence": "The new regulations are substantially ___ strict than before.",
+    "answers": [
+      "more",
+      "less"
+    ],
+    "hint": "Substantially + comparative",
+    "explanation": "substantially + comparative for major difference",
+    "topic": "comparisons"
+  },
+  {
+    "id": 540,
+    "sentence": "It's ___ a beautiful view that we come here every weekend.",
+    "answers": [
+      "such"
+    ],
+    "hint": "Such + noun phrase + that",
+    "explanation": "such + (adjective +) noun + that",
+    "topic": "comparisons"
+  },
+  {
+    "id": 541,
+    "sentence": "The prices are rising ___ and higher in this area.",
+    "answers": [
+      "higher"
+    ],
+    "hint": "Higher and higher",
+    "explanation": "comparative + and + comparative for increase",
+    "topic": "comparisons"
+  },
+  {
+    "id": 542,
+    "sentence": "This apartment is not quite ___ spacious as the previous one.",
+    "answers": [
+      "as"
+    ],
+    "hint": "Not quite as...as",
+    "explanation": "not quite as...as for slight inequality",
+    "topic": "comparisons"
+  },
+  {
+    "id": 543,
+    "sentence": "There was ___ little time that we had to rush everything.",
+    "answers": [
+      "so"
+    ],
+    "hint": "So + little (small amount) + that",
+    "explanation": "so little + that for result",
+    "topic": "comparisons"
+  },
+  {
+    "id": 544,
+    "sentence": "The ___ carefully you plan, the smoother everything will go.",
+    "answers": [
+      "more"
+    ],
+    "hint": "The more...the + comparative",
+    "explanation": "the more + adverb...the + comparative",
+    "topic": "comparisons"
+  },
+  {
+    "id": 545,
+    "sentence": "She's every bit ___ talented as her famous sister.",
+    "answers": [
+      "as"
+    ],
+    "hint": "Every bit as...as (emphasis)",
+    "explanation": "every bit as...as for emphatic equality",
+    "topic": "comparisons"
+  },
+  {
+    "id": 546,
+    "sentence": "The film was dramatically ___ than the book version.",
+    "answers": [
+      "better",
+      "worse",
+      "different"
+    ],
+    "hint": "Dramatically + comparative",
+    "explanation": "dramatically + comparative for striking difference",
+    "topic": "comparisons"
+  },
+  {
+    "id": 547,
+    "sentence": "He was ___ a brilliant speaker that everyone was captivated.",
+    "answers": [
+      "such"
+    ],
+    "hint": "Such + noun phrase + that",
+    "explanation": "such + (adjective +) noun + that",
+    "topic": "comparisons"
+  },
+  {
+    "id": 548,
+    "sentence": "The traffic is getting ___ and heavier during rush hour.",
+    "answers": [
+      "heavier"
+    ],
+    "hint": "Heavier and heavier",
+    "explanation": "comparative + and + comparative for progression",
+    "topic": "comparisons"
+  },
+  {
+    "id": 549,
+    "sentence": "This version is fractionally ___ than the previous release.",
+    "answers": [
+      "better",
+      "worse",
+      "faster",
+      "slower"
+    ],
+    "hint": "Fractionally + comparative",
+    "explanation": "fractionally + comparative for tiny difference",
+    "topic": "comparisons"
+  },
+  {
+    "id": 550,
+    "sentence": "The ___ effort you make, the better the outcome will be.",
+    "answers": [
+      "more",
+      "greater"
+    ],
+    "hint": "The more/greater...the better",
+    "explanation": "the more/greater...the better structure",
+    "topic": "comparisons"
+  },
+  {
+    "id": 551,
+    "sentence": "When I arrived at the party, everyone ___ already left for the night.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for action before past",
+    "explanation": "had left - past perfect for action completed before another past action",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 552,
+    "sentence": "She was reading a book while her children ___ playing in the garden.",
+    "answers": [
+      "were"
+    ],
+    "hint": "Past continuous for simultaneous actions",
+    "explanation": "were playing - past continuous for parallel past actions",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 553,
+    "sentence": "By the time the ambulance arrived, the injured man ___ been waiting for twenty minutes.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous for duration before past",
+    "explanation": "had been waiting - past perfect continuous for action in progress before another past action",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 554,
+    "sentence": "He realized he ___ met her somewhere before that evening.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for earlier past action",
+    "explanation": "had met - past perfect for action before the realization",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 555,
+    "sentence": "The sun ___ shining and birds were singing that beautiful morning.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous for background description",
+    "explanation": "was shining - past continuous for setting/atmosphere",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 556,
+    "sentence": "I didn't recognize him because he ___ grown a beard since our last meeting.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for change before past",
+    "explanation": "had grown - past perfect for completed action before seeing him",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 557,
+    "sentence": "While we ___ having dinner, the phone rang several times.",
+    "answers": [
+      "were"
+    ],
+    "hint": "Past continuous interrupted by past simple",
+    "explanation": "were having - past continuous for ongoing action interrupted",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 558,
+    "sentence": "They ___ been living in that house for ten years before they decided to move.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous for duration before past decision",
+    "explanation": "had been living - past perfect continuous for long-term action before another past event",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 559,
+    "sentence": "As I walked home, I ___ thinking about what she had said.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous for action in progress",
+    "explanation": "was thinking - past continuous for mental activity during another action",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 560,
+    "sentence": "The streets were wet because it ___ been raining all morning long.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous for recent past activity with visible result",
+    "explanation": "had been raining - past perfect continuous for action before with present evidence",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 561,
+    "sentence": "She ___ cooking when suddenly she remembered the appointment.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous interrupted",
+    "explanation": "was cooking - past continuous for interrupted action",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 562,
+    "sentence": "He couldn't find his keys because he ___ left them at the office.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for earlier action",
+    "explanation": "had left - past perfect for action before looking for keys",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 563,
+    "sentence": "The children ___ watching TV while their parents were preparing dinner.",
+    "answers": [
+      "were"
+    ],
+    "hint": "Past continuous for simultaneous actions",
+    "explanation": "were watching - past continuous for parallel activities",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 564,
+    "sentence": "By the time I got to the station, my train ___ already departed.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for action before arrival",
+    "explanation": "had departed - past perfect for completed action before another",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 565,
+    "sentence": "She felt tired because she ___ been working overtime all week.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous for period causing result",
+    "explanation": "had been working - past perfect continuous for exhausting activity",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 566,
+    "sentence": "The audience ___ clapping enthusiastically when the curtain finally fell.",
+    "answers": [
+      "was",
+      "were"
+    ],
+    "hint": "Past continuous at moment of another action",
+    "explanation": "was/were clapping - past continuous for ongoing action",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 567,
+    "sentence": "I knew I ___ seen that film before somewhere.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for previous experience",
+    "explanation": "had seen - past perfect for action before the knowing",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 568,
+    "sentence": "While he ___ driving to work, he listened to the news on the radio.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous during another action",
+    "explanation": "was driving - past continuous for action in progress",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 569,
+    "sentence": "They were exhausted because they ___ been traveling for two days straight.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous causing tiredness",
+    "explanation": "had been traveling - past perfect continuous for extended activity",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 570,
+    "sentence": "The phone ___ ringing when I stepped into the shower annoyingly.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous at specific moment",
+    "explanation": "was ringing - past continuous for action in progress at that time",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 571,
+    "sentence": "She discovered that someone ___ eaten all the chocolate she had bought.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for completed action before discovery",
+    "explanation": "had eaten - past perfect for action before she discovered",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 572,
+    "sentence": "The baby ___ sleeping peacefully when the doorbell suddenly rang.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous interrupted by sudden event",
+    "explanation": "was sleeping - past continuous for interrupted peaceful state",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 573,
+    "sentence": "By the end of the day, we ___ been walking for eight hours.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous for duration by specific time",
+    "explanation": "had been walking - past perfect continuous for accumulated activity",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 574,
+    "sentence": "As the plane ___ taking off, I noticed smoke from the engine.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous during observation",
+    "explanation": "was taking off - past continuous for action in progress when noticed",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 575,
+    "sentence": "He was upset because his team ___ lost the championship final.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for reason of emotion",
+    "explanation": "had lost - past perfect for event causing the upset feeling",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 576,
+    "sentence": "The teacher ___ explaining the lesson when the fire alarm went off.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous interrupted",
+    "explanation": "was explaining - past continuous for interrupted action",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 577,
+    "sentence": "By midnight, they ___ been dancing for four hours without stopping.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous for duration by specific time",
+    "explanation": "had been dancing - past perfect continuous for extended activity",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 578,
+    "sentence": "I ___ walking along the beach when I found this beautiful shell.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous when something happened",
+    "explanation": "was walking - past continuous for action in progress",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 579,
+    "sentence": "She couldn't answer the question because she ___ been paying attention.",
+    "answers": [
+      "hadn't"
+    ],
+    "hint": "Past perfect continuous negative for lack of action",
+    "explanation": "hadn't been paying - negative past perfect continuous",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 580,
+    "sentence": "The guests ___ arriving when the host realized there wasn't enough food.",
+    "answers": [
+      "were"
+    ],
+    "hint": "Past continuous at moment of realization",
+    "explanation": "were arriving - past continuous for ongoing arrival",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 581,
+    "sentence": "He ___ never traveled abroad before that trip to Spain.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for first experience",
+    "explanation": "had never traveled - past perfect for lack of prior experience",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 582,
+    "sentence": "While the band ___ performing, someone in the crowd fainted.",
+    "answers": [
+      "was",
+      "were"
+    ],
+    "hint": "Past continuous when incident occurred",
+    "explanation": "was/were performing - past continuous for background action",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 583,
+    "sentence": "The roads were blocked because a lorry ___ overturned earlier that morning.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for earlier event causing result",
+    "explanation": "had overturned - past perfect for prior accident",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 584,
+    "sentence": "She ___ wearing a red dress and looked absolutely stunning.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous for description",
+    "explanation": "was wearing - past continuous for what she had on",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 585,
+    "sentence": "By the time we arrived, the meeting ___ been going on for an hour.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous for duration before arrival",
+    "explanation": "had been going - past perfect continuous for ongoing activity",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 586,
+    "sentence": "The dog ___ barking loudly when the postman approached the gate.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous at specific moment",
+    "explanation": "was barking - past continuous for action in progress",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 587,
+    "sentence": "I recognized her immediately because we ___ worked together years ago.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for shared past experience",
+    "explanation": "had worked - past perfect for earlier connection",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 588,
+    "sentence": "The wind ___ blowing and leaves were falling from the trees.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous for atmospheric description",
+    "explanation": "was blowing - past continuous for weather setting",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 589,
+    "sentence": "They told me they ___ been trying to contact me all week.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous for repeated attempts",
+    "explanation": "had been trying - past perfect continuous for ongoing effort",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 590,
+    "sentence": "As the sun ___ setting, we decided to head back home.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous for gradual change",
+    "explanation": "was setting - past continuous for process in progress",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 591,
+    "sentence": "She felt nervous because she ___ never spoken in public before.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for lack of prior experience",
+    "explanation": "had never spoken - past perfect for first time situation",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 592,
+    "sentence": "The children ___ playing football when it started to rain heavily.",
+    "answers": [
+      "were"
+    ],
+    "hint": "Past continuous interrupted by weather",
+    "explanation": "were playing - past continuous for interrupted activity",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 593,
+    "sentence": "By the time the doctor arrived, the patient ___ been suffering for hours.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous for duration of suffering",
+    "explanation": "had been suffering - past perfect continuous for ongoing pain",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 594,
+    "sentence": "I ___ sitting in the cafe when I heard the news.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous at moment of hearing",
+    "explanation": "was sitting - past continuous for position when something happened",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 595,
+    "sentence": "The house was in darkness because the owners ___ gone on holiday.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect for reason of current state",
+    "explanation": "had gone - past perfect for departure before observation",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 596,
+    "sentence": "She ___ humming a tune while she tidied her room.",
+    "answers": [
+      "was"
+    ],
+    "hint": "Past continuous during another action",
+    "explanation": "was humming - past continuous for simultaneous activity",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 597,
+    "sentence": "He was disappointed because he ___ been expecting better results.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous for prior expectation",
+    "explanation": "had been expecting - past perfect continuous for hope before disappointment",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 598,
+    "sentence": "The crowd ___ cheering wildly when the winning goal was scored.",
+    "answers": [
+      "was",
+      "were"
+    ],
+    "hint": "Past continuous at dramatic moment",
+    "explanation": "was/were cheering - past continuous for reaction in progress",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 599,
+    "sentence": "I finally understood why she ___ been acting so strangely lately.",
+    "answers": [
+      "had"
+    ],
+    "hint": "Past perfect continuous for recent behavior",
+    "explanation": "had been acting - past perfect continuous for period of strange behavior",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 600,
+    "sentence": "As we ___ leaving the building, we noticed smoke coming from upstairs.",
+    "answers": [
+      "were"
+    ],
+    "hint": "Past continuous when something was noticed",
+    "explanation": "were leaving - past continuous for action in progress at that moment",
+    "topic": "narrative-tenses"
+  },
+  {
+    "id": 601,
+    "sentence": "I haven't finished my homework ___ , but I'll do it later.",
+    "answers": [
+      "yet"
+    ],
+    "hint": "Yet for unfinished actions (negatives/questions)",
+    "explanation": "yet - used in negatives for actions not completed",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 602,
+    "sentence": "Have you ___ been to Italy on holiday before now?",
+    "answers": [
+      "ever"
+    ],
+    "hint": "Ever in questions for lifetime experience",
+    "explanation": "ever - at any time (used in questions)",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 603,
+    "sentence": "They've ___ left for the airport, so you've missed them.",
+    "answers": [
+      "already"
+    ],
+    "hint": "Already for completed action before expected",
+    "explanation": "already - action completed sooner than expected",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 604,
+    "sentence": "He's ___ arrived, so the meeting can start now.",
+    "answers": [
+      "just"
+    ],
+    "hint": "Just for very recent action",
+    "explanation": "just - for actions that happened moments ago",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 605,
+    "sentence": "We'll be leaving ___ , so please get ready quickly.",
+    "answers": [
+      "soon"
+    ],
+    "hint": "Soon for near future",
+    "explanation": "soon - for action happening in near future",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 606,
+    "sentence": "I ___ thought he was telling the truth, but now I know better.",
+    "answers": [
+      "once"
+    ],
+    "hint": "Once for past time",
+    "explanation": "once - at some point in the past",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 607,
+    "sentence": "She had dinner and ___ went straight to bed feeling exhausted.",
+    "answers": [
+      "afterwards",
+      "then"
+    ],
+    "hint": "Afterwards/then for sequence",
+    "explanation": "afterwards/then - following that event",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 608,
+    "sentence": "Have you been to this restaurant ___ ? It looks familiar somehow.",
+    "answers": [
+      "before"
+    ],
+    "hint": "Before for previous time",
+    "explanation": "before - at an earlier time",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 609,
+    "sentence": "I've ___ been to Australia, so I'd really love to go.",
+    "answers": [
+      "never"
+    ],
+    "hint": "Never for no previous experience",
+    "explanation": "never - at no time in the past",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 610,
+    "sentence": "She was reading ___ her brother was playing video games loudly.",
+    "answers": [
+      "while"
+    ],
+    "hint": "While for simultaneous actions",
+    "explanation": "while - during the same time",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 611,
+    "sentence": "We've been waiting ___ over an hour for the bus to arrive.",
+    "answers": [
+      "for"
+    ],
+    "hint": "For + duration of time",
+    "explanation": "for - indicating duration of time",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 612,
+    "sentence": "I'll call you ___ as I get home from the office tonight.",
+    "answers": [
+      "once"
+    ],
+    "hint": "Once meaning 'as soon as'",
+    "explanation": "once - meaning as soon as",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 613,
+    "sentence": "Has the postman delivered the package ___ this morning?",
+    "answers": [
+      "yet"
+    ],
+    "hint": "Yet in questions for expected action",
+    "explanation": "yet - in questions for actions expected to happen",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 614,
+    "sentence": "They've ___ arrived at the hotel and checked into their room.",
+    "answers": [
+      "already",
+      "just"
+    ],
+    "hint": "Already/just for recent completion",
+    "explanation": "already/just - recently completed action",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 615,
+    "sentence": "We met ___ lunch and discussed the new project thoroughly.",
+    "answers": [
+      "after"
+    ],
+    "hint": "After for time sequence",
+    "explanation": "after - following a particular time",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 616,
+    "sentence": "He'll be here ___ , so let's wait a few more minutes.",
+    "answers": [
+      "soon"
+    ],
+    "hint": "Soon for near future",
+    "explanation": "soon - in a short time from now",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 617,
+    "sentence": "Have you ___ seen such a beautiful sunset in your life?",
+    "answers": [
+      "ever"
+    ],
+    "hint": "Ever for any time (questions)",
+    "explanation": "ever - at any time (question form)",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 618,
+    "sentence": "She hasn't called me back ___ , which is rather unusual for her.",
+    "answers": [
+      "yet"
+    ],
+    "hint": "Yet for expected action not done",
+    "explanation": "yet - for action not yet completed",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 619,
+    "sentence": "I ___ lived in that house when I was a young child.",
+    "answers": [
+      "once"
+    ],
+    "hint": "Once for past time",
+    "explanation": "once - at a time in the past",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 620,
+    "sentence": "We had coffee and ___ took a walk along the riverbank.",
+    "answers": [
+      "then",
+      "afterwards"
+    ],
+    "hint": "Then/afterwards for next action",
+    "explanation": "then/afterwards - following that",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 621,
+    "sentence": "They've been friends ___ many years now, since primary school actually.",
+    "answers": [
+      "for"
+    ],
+    "hint": "For + period of time",
+    "explanation": "for - indicating duration",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 622,
+    "sentence": "He's ___ finished the report, so we can submit it now.",
+    "answers": [
+      "just",
+      "already"
+    ],
+    "hint": "Just/already for recent completion",
+    "explanation": "just/already - recently completed",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 623,
+    "sentence": "I've ___ tried that restaurant, but I've heard it's excellent.",
+    "answers": [
+      "never"
+    ],
+    "hint": "Never for no experience",
+    "explanation": "never - not at any time",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 624,
+    "sentence": "___ I was shopping, my phone battery died completely.",
+    "answers": [
+      "While",
+      "When"
+    ],
+    "hint": "While/When for action in progress",
+    "explanation": "while/when - during the time that",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 625,
+    "sentence": "The train should arrive ___ , according to the departure board.",
+    "answers": [
+      "soon"
+    ],
+    "hint": "Soon for imminent future",
+    "explanation": "soon - in the near future",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 626,
+    "sentence": "I haven't seen him ___ last Tuesday at the office meeting.",
+    "answers": [
+      "since"
+    ],
+    "hint": "Since + specific point in time",
+    "explanation": "since - from a point in the past until now",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 627,
+    "sentence": "They've ___ been married for twenty-five years this summer.",
+    "answers": [
+      "already"
+    ],
+    "hint": "Already for duration achieved",
+    "explanation": "already - emphasizing time period reached",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 628,
+    "sentence": "Have you finished your essay ___ ? The deadline is tomorrow morning.",
+    "answers": [
+      "yet"
+    ],
+    "hint": "Yet in questions for completion",
+    "explanation": "yet - asking if action is completed",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 629,
+    "sentence": "She ___ goes to that gym anymore since she moved house.",
+    "answers": [
+      "never"
+    ],
+    "hint": "Never for stopped habit",
+    "explanation": "never - not anymore/no longer",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 630,
+    "sentence": "We should leave ___ or we'll miss the start of the film.",
+    "answers": [
+      "soon"
+    ],
+    "hint": "Soon for necessary timing",
+    "explanation": "soon - in the near future (urgency)",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 631,
+    "sentence": "I met him ___ at a conference several years ago.",
+    "answers": [
+      "once"
+    ],
+    "hint": "Once for single past occasion",
+    "explanation": "once - on one occasion in the past",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 632,
+    "sentence": "He finished his work and ___ left the office for the day.",
+    "answers": [
+      "then",
+      "afterwards"
+    ],
+    "hint": "Then/afterwards for next action",
+    "explanation": "then/afterwards - immediately after that",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 633,
+    "sentence": "Have you ___ visited the new museum in the city centre?",
+    "answers": [
+      "ever"
+    ],
+    "hint": "Ever for any time (questions)",
+    "explanation": "ever - at any point up to now",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 634,
+    "sentence": "I've lived here ___ ten years now and still love it.",
+    "answers": [
+      "for"
+    ],
+    "hint": "For + duration",
+    "explanation": "for - indicating length of time",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 635,
+    "sentence": "She was cooking dinner ___ I was setting the table.",
+    "answers": [
+      "while"
+    ],
+    "hint": "While for simultaneous actions",
+    "explanation": "while - at the same time as",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 636,
+    "sentence": "The package hasn't arrived ___ , but it should be here tomorrow.",
+    "answers": [
+      "yet"
+    ],
+    "hint": "Yet for expected action (negative)",
+    "explanation": "yet - not by now (but expected)",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 637,
+    "sentence": "They'll announce the results ___ , so keep checking the website.",
+    "answers": [
+      "soon"
+    ],
+    "hint": "Soon for future announcement",
+    "explanation": "soon - in the near future",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 638,
+    "sentence": "I ___ knew her when we were at university together.",
+    "answers": [
+      "once"
+    ],
+    "hint": "Once for past acquaintance",
+    "explanation": "once - at a time in the past",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 639,
+    "sentence": "We've ___ seen the new exhibition at the gallery last week.",
+    "answers": [
+      "already"
+    ],
+    "hint": "Already for completed action",
+    "explanation": "already - action done (sometimes with past time)",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 640,
+    "sentence": "Have you been to this part of town ___ today?",
+    "answers": [
+      "before"
+    ],
+    "hint": "Before for previous time",
+    "explanation": "before - at an earlier time",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 641,
+    "sentence": "I've ___ tasted anything so delicious in my entire life.",
+    "answers": [
+      "never"
+    ],
+    "hint": "Never for unique experience",
+    "explanation": "never - not at any time before",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 642,
+    "sentence": "___ he heard the news, he immediately called his family.",
+    "answers": [
+      "Once",
+      "When",
+      "After"
+    ],
+    "hint": "Once/When/After for time of action",
+    "explanation": "once/when/after - at the moment he heard",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 643,
+    "sentence": "She's ___ completed the course, so she can apply for jobs now.",
+    "answers": [
+      "just",
+      "already"
+    ],
+    "hint": "Just/already for recent completion",
+    "explanation": "just/already - recently finished",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 644,
+    "sentence": "We've been waiting here ___ two hours without any information.",
+    "answers": [
+      "for"
+    ],
+    "hint": "For + time period",
+    "explanation": "for - indicating duration of waiting",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 645,
+    "sentence": "The meeting starts ___ , so we'd better hurry up now.",
+    "answers": [
+      "soon"
+    ],
+    "hint": "Soon for imminent start",
+    "explanation": "soon - in a short time",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 646,
+    "sentence": "I haven't spoken to her ___ the argument we had.",
+    "answers": [
+      "since"
+    ],
+    "hint": "Since + event in past",
+    "explanation": "since - from that time until now",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 647,
+    "sentence": "Have you ___ been skiing? It's really exciting and fun.",
+    "answers": [
+      "ever"
+    ],
+    "hint": "Ever for lifetime experience",
+    "explanation": "ever - at any time in your life",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 648,
+    "sentence": "They arrived ___ the concert had started, unfortunately.",
+    "answers": [
+      "after"
+    ],
+    "hint": "After for sequence",
+    "explanation": "after - following the start time",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 649,
+    "sentence": "___ I was walking home, I bumped into an old friend.",
+    "answers": [
+      "While",
+      "When"
+    ],
+    "hint": "While/When for action in progress",
+    "explanation": "while/when - during that time",
+    "topic": "adverbs-of-time"
+  },
+  {
+    "id": 650,
+    "sentence": "The shops will close ___ , so we need to go shopping now.",
+    "answers": [
+      "soon"
+    ],
+    "hint": "Soon for imminent closing",
+    "explanation": "soon - in the near future",
+    "topic": "adverbs-of-time"
+  }
+]

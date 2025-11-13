@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2 FCE Cambridge Test - Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>B2 First (FCE) Cambridge English Test</h1>
+            <p class="test-info">Practice Test - FCE001</p>
+        </header>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div class="test-section" id="part1" style="display: block;">
+            <h2>Part 1 - Multiple Choice Cloze</h2>
+            <p class="instructions">For questions 1–8, read the text below and decide which answer (A, B, C or D) best fits each gap.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Messages from the Stone Age</h3>
+                
+                <p>The incredible pre-historic Chauvet cave art in France is painted in bright colours and dates back to a period around thirty thousand years ago when early humans first started to create rock art. Although various 
+                <select class="inline-select" name="q1" onchange="saveDropdownAnswer(1, this.value)">
+                    <option value="">— 1 —</option>
+                    <option value="A">illustrations</option>
+                    <option value="B">models</option>
+                    <option value="C">cases</option>
+                    <option value="D">examples</option>
+                </select>
+                of this art have been found in caves in Western Europe, very few people have seen the art at Chauvet because it is located 
+                <select class="inline-select" name="q2" onchange="saveDropdownAnswer(2, this.value)">
+                    <option value="">— 2 —</option>
+                    <option value="A">deep</option>
+                    <option value="B">thick</option>
+                    <option value="C">long</option>
+                    <option value="D">dense</option>
+                </select>
+                inside an inaccessible underground cave system. Those who have seen it say that it is very impressive, showing animals 
+                <select class="inline-select" name="q3" onchange="saveDropdownAnswer(3, this.value)">
+                    <option value="">— 3 —</option>
+                    <option value="A">by means of</option>
+                    <option value="B">apart from</option>
+                    <option value="C">as well as</option>
+                    <option value="D">such as</option>
+                </select>
+                horses, rhinos and cows, and that the artwork is good enough to 
+                <select class="inline-select" name="q4" onchange="saveDropdownAnswer(4, this.value)">
+                    <option value="">— 4 —</option>
+                    <option value="A">rival</option>
+                    <option value="B">compare</option>
+                    <option value="C">compete</option>
+                    <option value="D">oppose</option>
+                </select>
+                modern compositions.</p>
+                
+                <p>The first scientists to 
+                <select class="inline-select" name="q5" onchange="saveDropdownAnswer(5, this.value)">
+                    <option value="">— 5 —</option>
+                    <option value="A">arrive</option>
+                    <option value="B">reach</option>
+                    <option value="C">meet</option>
+                    <option value="D">know</option>
+                </select>
+                the Chauvet paintings missed some other important 
+                <select class="inline-select" name="q6" onchange="saveDropdownAnswer(6, this.value)">
+                    <option value="">— 6 —</option>
+                    <option value="A">instances</option>
+                    <option value="B">matters</option>
+                    <option value="C">details</option>
+                    <option value="D">issues</option>
+                </select>, however. The walls of the cave are also marked with a series of lines and symbols that were initially 
+                <select class="inline-select" name="q7" onchange="saveDropdownAnswer(7, this.value)">
+                    <option value="">— 7 —</option>
+                    <option value="A">believed</option>
+                    <option value="B">regarded</option>
+                    <option value="C">thought</option>
+                    <option value="D">agreed</option>
+                </select>
+                as insignificant. But recent research has suggested that these marks may represent humankind's first steps towards the development of writing, which is 
+                <select class="inline-select" name="q8" onchange="saveDropdownAnswer(8, this.value)">
+                    <option value="">— 8 —</option>
+                    <option value="A">resulting</option>
+                    <option value="B">having</option>
+                    <option value="C">making</option>
+                    <option value="D">causing</option>
+                </select>
+                people to rethink their ideas about when written communication first started.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 2</button>
+            </div>
+        </div>
+
+        <!-- Part 2 - Open Cloze -->
+        <div class="test-section" id="part2" style="display: none;">
+            <h2>Part 2 - Open Cloze</h2>
+            <p class="instructions">For questions 9–16, read the text below and think of the word which best fits each gap. Use only one word in each gap. Write your answers IN CAPITAL LETTERS.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>Swimming with seals</h3>
+                
+                <p>The UK is home to half the world's population of grey seals and there are many local boat trips offering sightseeing tours out to the islands and sandbanks 
+                <input type="text" class="inline-input" name="q9" maxlength="15" placeholder="9" oninput="saveTextAnswer(9, this.value)" style="text-transform: uppercase;">
+                the animals are most regularly found.</p>
+                
+                <p>But if you really want to get close 
+                <input type="text" class="inline-input" name="q10" maxlength="15" placeholder="10" oninput="saveTextAnswer(10, this.value)" style="text-transform: uppercase;">
+                the seals and understand something about their way of life, then you need to go on an underwater seal-watching trip. On these trips, you have the chance to go over the side of the boat and, equipped 
+                <input type="text" class="inline-input" name="q11" maxlength="15" placeholder="11" oninput="saveTextAnswer(11, this.value)" style="text-transform: uppercase;">
+                a wetsuit, mask and snorkel, spend time in the water alongside the animals.</p>
+                
+                <p>Seals are extremely inquisitive creatures and, once you're in the water, they will swim past you trying to work 
+                <input type="text" class="inline-input" name="q12" maxlength="15" placeholder="12" oninput="saveTextAnswer(12, this.value)" style="text-transform: uppercase;">
+                who you are and 
+                <input type="text" class="inline-input" name="q13" maxlength="15" placeholder="13" oninput="saveTextAnswer(13, this.value)" style="text-transform: uppercase;">
+                you're doing there. 
+                <input type="text" class="inline-input" name="q14" maxlength="15" placeholder="14" oninput="saveTextAnswer(14, this.value)" style="text-transform: uppercase;">
+                they can appear shy at first, seals soon 
+                <input type="text" class="inline-input" name="q15" maxlength="15" placeholder="15" oninput="saveTextAnswer(15, this.value)" style="text-transform: uppercase;">
+                used to you being in the water, and will come and play around you. Young pups especially like to 
+                <input type="text" class="inline-input" name="q16" maxlength="15" placeholder="16" oninput="saveTextAnswer(16, this.value)" style="text-transform: uppercase;">
+                contact with divers, and often use their teeth, gently biting masks, fins and cameras out of curiosity. It can be a thrilling experience.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 1</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 3</button>
+            </div>
+        </div>
+
+        <!-- Part 3 - Word Formation -->
+        <div class="test-section" id="part3" style="display: none;">
+            <h2>Part 3 - Word Formation</h2>
+            <p class="instructions">For questions 17–24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. Write your answers IN CAPITAL LETTERS.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>Brain games</h3>
+                
+                <p>According to experts, doing puzzles keeps our brains fit and healthy. As well as gaining <span class="word-given">SATISFY</span> 
+                <input type="text" class="inline-input" name="q17" maxlength="20" placeholder="17" oninput="saveTextAnswer(17, this.value)" style="text-transform: uppercase;">
+                from finding the correct answer to a difficult problem, we give our brains a good workout in the process. To help us do this, all sorts of handheld 'brain games' are now available in the shops, and the most <span class="word-given">SUCCESS</span> 
+                <input type="text" class="inline-input" name="q18" maxlength="20" placeholder="18" oninput="saveTextAnswer(18, this.value)" style="text-transform: uppercase;">
+                games have sold in their millions.</p>
+                
+                <p>What's more, people <span class="word-given">COVER</span> 
+                <input type="text" class="inline-input" name="q19" maxlength="20" placeholder="19" oninput="saveTextAnswer(19, this.value)" style="text-transform: uppercase;">
+                that the more they play the games, the easier it is to find a <span class="word-given">SOLVE</span> 
+                <input type="text" class="inline-input" name="q20" maxlength="20" placeholder="20" oninput="saveTextAnswer(20, this.value)" style="text-transform: uppercase;">
+                to the problems posed. They see this as proof that there has been an <span class="word-given">IMPROVE</span> 
+                <input type="text" class="inline-input" name="q21" maxlength="20" placeholder="21" oninput="saveTextAnswer(21, this.value)" style="text-transform: uppercase;">
+                in the power of their brains. Unfortunately, however, this may be a false impression.</p>
+                
+                <p>Some <span class="word-given">SCIENCE</span> 
+                <input type="text" class="inline-input" name="q22" maxlength="20" placeholder="22" oninput="saveTextAnswer(22, this.value)" style="text-transform: uppercase;">
+                argue that the brain gets better at any task the more often it is repeated. In other words, the improvement in the <span class="word-given">PERFORM</span> 
+                <input type="text" class="inline-input" name="q23" maxlength="20" placeholder="23" oninput="saveTextAnswer(23, this.value)" style="text-transform: uppercase;">
+                of the brain is something that happens naturally.</p>
+                
+                <p>So although these brain games are obviously fun to play, it remains <span class="word-given">CERTAIN</span> 
+                <input type="text" class="inline-input" name="q24" maxlength="20" placeholder="24" oninput="saveTextAnswer(24, this.value)" style="text-transform: uppercase;">
+                whether they are actually helping to boost brainpower or not.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 2</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 4</button>
+            </div>
+        </div>
+
+        <!-- Part 4 - Key Word Transformations -->
+        <div class="test-section" id="part4" style="display: none;">
+            <h2>Part 4 - Key Word Transformations</h2>
+            <p class="instructions">For questions 25–30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between two and five words, including the word given. Write your answers IN CAPITAL LETTERS.</p>
+            <p class="instructions"><strong>Note:</strong> Each question is worth up to 2 points (1 point for each key part of the answer).</p>
+
+            <div class="reading-passage">
+                <div class="transformation-question">
+                    <p><strong>25.</strong> Brad speaks English better than his parents do.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">AS</span></p>
+                    <p>Brad's parents don't <input type="text" class="inline-input-long" name="q25" maxlength="50" placeholder="25" oninput="saveTextAnswer(25, this.value)" style="text-transform: uppercase;"> he does.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>26.</strong> Cycling is not allowed in the park.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">SUPPOSED</span></p>
+                    <p>You <input type="text" class="inline-input-long" name="q26" maxlength="50" placeholder="26" oninput="saveTextAnswer(26, this.value)" style="text-transform: uppercase;"> in the park.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>27.</strong> "I'm sorry I didn't let you know I was going to be late, Ann," said Jamie.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">APOLOGISED</span></p>
+                    <p>Jamie <input type="text" class="inline-input-long" name="q27" maxlength="50" placeholder="27" oninput="saveTextAnswer(27, this.value)" style="text-transform: uppercase;"> Ann know that he was going to be late.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>28.</strong> A heavy fall of snow prevented them from getting home that night.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">ABLE</span></p>
+                    <p>They <input type="text" class="inline-input-long" name="q28" maxlength="50" placeholder="28" oninput="saveTextAnswer(28, this.value)" style="text-transform: uppercase;"> home that night because of a heavy fall of snow.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>29.</strong> Ursula was disappointed not to win the competition.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">CAME</span></p>
+                    <p>Not winning the competition <input type="text" class="inline-input-long" name="q29" maxlength="50" placeholder="29" oninput="saveTextAnswer(29, this.value)" style="text-transform: uppercase;"> to Ursula.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>30.</strong> I paid far more money for my new computer than I expected to.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">SO</span></p>
+                    <p>I didn't expect <input type="text" class="inline-input-long" name="q30" maxlength="50" placeholder="30" oninput="saveTextAnswer(30, this.value)" style="text-transform: uppercase;"> money for my new computer.</p>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 3</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 5</button>
+            </div>
+        </div>
+
+        <!-- Part 5 - Multiple Choice Reading -->
+        <div class="test-section" id="part5" style="display: none;">
+            <h2>Part 5 - Multiple Choice Reading</h2>
+            <p class="instructions">You are going to read an article about a woman's career. For questions 31–36, choose the answer (A, B, C or D) which you think fits best according to the text.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>A Varied Career</h3>
+                <p><em>Chloe Kelling, a successful model and singer-songwriter, now has a new venture.</em></p>
+                
+                <p>I arrive for my interview with Chloe Kelling and I'm asked to wait in the garden. I hardly have time to start looking round at the carefully tended flowerbeds when Chloe appears. Every bit as tall and striking as I'd expected, Chloe emerges from the house wearing an oversized man's jacket, a delicately patterned top and jeans. Chloe is known for her slightly quirky sense of fashion and, of course, she looks great as she makes her way towards me through the flowerbeds.</p>
+
+                <p>'Let's talk in my office,' she says, leading the way not back to the house, but instead to an ancient caravan parked up next to it. As we climb inside the compact little van, the smell of fresh baking greets us. A tiny table is piled high with cupcakes, each iced in a different colour. Chloe's been busy, and there's a real sense of playing tea parties in a secret den! But what else should I have expected from a woman with such a varied and interesting career?</p>
+
+                <p>Chloe originally trained as a make-up artist, having left her home in the country at nineteen to try and make her name as a model in London, and soon got work in adverts and the fashion business. 'I went to Japan to work for a short period, but felt very homesick at first,' she recalls. 'It was very demanding work and, though I met loads of nice people, it was too much to take on at nineteen. If I'd stayed longer, I might have settled in better.'</p>
+
+                <p>Alongside the modelling, Chloe was also beginning to make contacts in the music business. 'I'd been the typical kid, singing with a hairbrush in front of the mirror, dreaming of being a star one day,' she laughs. She joined a girl band which 'broke up before we got anywhere', before becoming the lead singer with the band Whoosh, which features on a best-selling clubbing album. Unusually though, Chloe also sings with two other bands, one based in Sweden and another in London, and each of these has a distinct style.</p>
+
+                <p>It was her work with Whoosh that originally led to Chloe's link with Sweden. She was offered a song-writing job there with a team that was responsible for songs for some major stars, but gradually became more involved in writing music for her own band.</p>
+
+                <p>Although she now divides her time between London and Sweden, her first stay there turned out to be much longer than she'd bargained for. 'The rooms are very tall over there and so people have these rather high beds that you climb up to,' she explains. 'I fell as I climbed up the ladder and cracked three ribs. Although the people at the hospital were very kind, I was stuck there for a while, which was very frustrating. Sneezing and laughing were so painful at first, let alone singing!'</p>
+
+                <p>It was while recovering from her injuries that Chloe hit upon the idea of staging what she calls vintage fairs. 'It was snowing in Sweden and I wanted something nice to look forward to.' Chloe had always loved vintage clothes, particularly from the 1950s, and decided to stage an event for others who shared her passion. The first fair was held in her home village and featured stalls selling all sorts of clothes and crafts dating back to the 1950s. It was a huge hit, with 300 people turning up.</p>
+
+                <p>'When I had the idea of the first fair, it was only meant to be a one-off, but we had so many compliments, I decided to go ahead with more,' says Chloe. 'There's something for all ages and people find old things have more character than stuff you buy in modern shops. It also fits perfectly with the idea of recycling.' Looking round Chloe's caravan, I can see what she means.</p>
+            </div>
+
+            <!-- Questions -->
+            <div class="questions-container">
+                <!-- Question 31 -->
+                <div class="question">
+                    <div class="question-number">Question 31</div>
+                    <div class="question-text">
+                        <p><strong>What does the writer suggest about Chloe in the first paragraph?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q31" value="A" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>A. Her unusual dress sense is reflected in her choice of home.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="B" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>B. She does not want to talk to the writer immediately.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="C" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>C. Her appearance is very much as the writer had imagined.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="D" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>D. She looks rather uncomfortable dressed in a man's jacket.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 32 -->
+                <div class="question">
+                    <div class="question-number">Question 32</div>
+                    <div class="question-text">
+                        <p><strong>In the second paragraph, the writer uses the word 'den' to suggest that</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q32" value="A" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>A. the caravan is too small for its purpose.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="B" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>B. the caravan is a private place of Chloe's own.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="C" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>C. Chloe enjoys entertaining her friends in the caravan.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="D" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>D. Chloe's behaviour seems rather childish.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 33 -->
+                <div class="question">
+                    <div class="question-number">Question 33</div>
+                    <div class="question-text">
+                        <p><strong>What does Chloe say about working in Japan?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q33" value="A" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>A. She regrets having left after such a short time.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="B" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>B. She feels she was not experienced enough for the work.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="C" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>C. She was disappointed by the people she worked with.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="D" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>D. She found the lifestyle did not suit her.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 34 -->
+                <div class="question">
+                    <div class="question-number">Question 34</div>
+                    <div class="question-text">
+                        <p><strong>What point does Chloe make about singing with different bands?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q34" value="A" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>A. Each band has its own type of music.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="B" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>B. She has always wanted to become well-known.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="C" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>C. It takes a long time for bands to become successful.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="D" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>D. She has met people who helped her with her career.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 35 -->
+                <div class="question">
+                    <div class="question-number">Question 35</div>
+                    <div class="question-text">
+                        <p><strong>According to Chloe, what was frustrating about her accident in Sweden?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q35" value="A" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>A. It meant she was unable to work for a while.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="B" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>B. It made her feel unhappy being so far from home.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="C" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>C. She found the hospital treatment was inadequate.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="D" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>D. She knew she should have been more careful.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 36 -->
+                <div class="question">
+                    <div class="question-number">Question 36</div>
+                    <div class="question-text">
+                        <p><strong>What does Chloe suggest about her vintage fairs?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q36" value="A" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>A. They provide an environmentally-friendly way of shopping.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="B" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>B. They attract mainly people over the age of fifty.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="C" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>C. They have been less successful than she expected.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="D" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>D. They are more popular in Sweden than in Britain.</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 4</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 6</button>
+            </div>
+        </div>
+
+        <!-- Part 6 - Gapped Text -->
+        <div class="test-section" id="part6" style="display: none;">
+            <h2>Part 6 - Gapped Text</h2>
+            <p class="instructions">You are going to read an article about a boxer. Six sentences have been removed from the article. Choose from the sentences A–G the one which fits each gap (37–42). There is one extra sentence which you do not need to use.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>In defence of women's boxing</h3>
+                <p><em>Lucy O'Connor thinks that women's boxing is widely misunderstood.</em></p>
+                
+                <p>Women's boxing is a new addition to the list of sports included at the Olympic Games. But according to Lucy O'Connor, winner of various international competitions, it's still widely misunderstood — a situation that Lucy's hoping to change. After graduating, Lucy took up boxing on the advice of a sports coach, who thought it would improve her general fitness. But Lucy soon set her sights on competitions and it wasn't long before she was boxing at the National Championships, which she eventually went on to win.</p>
+
+                <p>As a result of her success, Lucy was accepted on to what the navy calls its 'elite sportsman's programme'.</p>
+                <div class="gap-carousel" id="gap37" onclick="openSentenceModal(37)">
+                    <strong>37</strong>
+                    <div class="selected-sentence" id="display37">
+                        <span class="placeholder-text">Click to select sentence...</span>
+                    </div>
+                </div>
+                <p>Every day now starts with a run at 7 a.m., followed by a skill and technique session or a strength and conditioning circuit. Come the afternoon, there are more aerobic workouts, before Lucy gets into the ring and practises with other elite boxers.</p>
+
+                <p>As with all competitors, diet is a huge part of Lucy's life. Since she first started boxing, she's had to shed twenty-eight kilos. Losing the last six, which took her into the flyweight category, required great determination.</p>
+                <div class="gap-carousel" id="gap38" onclick="openSentenceModal(38)">
+                    <strong>38</strong>
+                    <div class="selected-sentence" id="display38">
+                        <span class="placeholder-text">Click to select sentence...</span>
+                    </div>
+                </div>
+                <p>As she explains: 'I don't go out to party anymore. Thankfully, I'm married to my boxing coach, so at least I've got some sort of social life!' Lucy's husband boxed as a heavyweight himself and he's in her corner for all her domestic competitions.</p>
+
+                <p>Lucy's mum works as a buyer at a big department store, and Lucy has been testing out products for the store's sports division. Whilst preparing for a recent international championship, Lucy wore a new titanium-based sports clothing range designed to improve circulation and aid recovery.</p>
+                <div class="gap-carousel" id="gap39" onclick="openSentenceModal(39)">
+                    <strong>39</strong>
+                    <div class="selected-sentence" id="display39">
+                        <span class="placeholder-text">Click to select sentence...</span>
+                    </div>
+                </div>
+                <p>But how does her family react to her taking part in competitions? 'Mum tends to admire me boxing from afar, but Dad just loves it!'</p>
+
+                <p>Lucy has clearly answered questions about safety concerns before and cites all the protective gear boxers strap on before a fight such as hand bandages, head guards, gum shields and much more. 'Amateur boxing is not dangerous,' she says definitively. 'It's so safety-orientated and the rules are so stringent it's actually difficult to get hurt. We approach it more as a skill and point-scoring exercise, rather than as a fight.</p>
+                <div class="gap-carousel" id="gap40" onclick="openSentenceModal(40)">
+                    <strong>40</strong>
+                    <div class="selected-sentence" id="display40">
+                        <span class="placeholder-text">Click to select sentence...</span>
+                    </div>
+                </div>
+                <p>Boxers win points by landing the white knuckle part of their gloves on the opponent's scoring area — essentially the upper body and head — cleanly and with sufficient force. In five years of competitive boxing, Lucy's suffered only a few bruises and a broken thumb.</p>
+
+                <p>And in response to those who think it's 'inappropriate' to see women boxing at the Olympics, Lucy is quick to point out that women have been competing in martial arts such as taekwondo and judo for years.</p>
+                <div class="gap-carousel" id="gap41" onclick="openSentenceModal(41)">
+                    <strong>41</strong>
+                    <div class="selected-sentence" id="display41">
+                        <span class="placeholder-text">Click to select sentence...</span>
+                    </div>
+                </div>
+
+                <p>Her biggest concern is that people confuse amateur boxing competitions with professional fights, where the focus is more on aggression and hurting your opponents. 'Female amateur boxing is about showing skill, speed and stamina,' she says.</p>
+                <div class="gap-carousel" id="gap42" onclick="openSentenceModal(42)">
+                    <strong>42</strong>
+                    <div class="selected-sentence" id="display42">
+                        <span class="placeholder-text">Click to select sentence...</span>
+                    </div>
+                </div>
+                <p>'I find it so satisfying to be changing people's opinion.'</p>
+            </div>
+
+            <!-- Sentence Options Reference -->
+            <div class="sentence-options">
+                <h4>Available Sentences (A-G):</h4>
+                <div class="sentence-option">
+                    <strong>A</strong> All that hard work certainly paid off and the competition itself brought out the best in Lucy.
+                </div>
+                <div class="sentence-option">
+                    <strong>B</strong> That's because in order to reach that target, she had to totally rethink her lifestyle.
+                </div>
+                <div class="sentence-option">
+                    <strong>C</strong> Having access to this space-age training kit was certainly an advantage.
+                </div>
+                <div class="sentence-option">
+                    <strong>D</strong> If the sport was more in the public eye, then fewer people would make that mistake.
+                </div>
+                <div class="sentence-option">
+                    <strong>E</strong> Nobody complained about women taking part in those events when it was introduced.
+                </div>
+                <div class="sentence-option">
+                    <strong>F</strong> That's why I've always regarded it as a thinking girl's sport really.
+                </div>
+                <div class="sentence-option">
+                    <strong>G</strong> What this meant, in effect, was that she was able to train full-time.
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 5</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 7</button>
+            </div>
+        </div>
+
+        <!-- Part 7 - Multiple Matching -->
+        <div class="test-section" id="part7" style="display: none;">
+            <h2>Part 7 - Multiple Matching</h2>
+            <p class="instructions">You are going to read a magazine article about students who travelled around Australia alone during their long summer vacation. For questions 43–52, choose from the students (A–D). The students may be chosen more than once.</p>
+
+            <!-- Reading Passages -->
+            <div class="reading-passage">
+                <h3>Solo travel in Australia</h3>
+                
+                <div class="traveller-section">
+                    <h4>A - Phil Morston</h4>
+                    <p>I remember sitting in the plane thinking to myself: 'What have I let myself in for?' The first few days were scary: I was all on my own on the other side of the world with nothing planned. But I soon met up with people to travel with. Of course, some you get on with, others you don't. Some, for example, had every day planned out in minute detail, when in practice things can change and it's great to have the freedom to go with the flow. And that's easy enough to do. You can take the Oz Experience bus down the west coast, jumping off whenever you want, then catching the next bus when you're ready to move on again. Being away for a year, you do occasionally get lonely. To cheer myself up, I'd sit down and write a fortnightly email home about everything I'd been up to.</p>
+                </div>
+
+                <div class="traveller-section">
+                    <h4>B - Leila Stuart</h4>
+                    <p>Without doubt, you meet all sorts of people when travelling alone. I even made a friend on the plane out there. Some people are keener to make friends than others, of course, but if someone's chosen to do the same type of trip as you, you've probably got lots of ideas in common. The advantages of a pre-planned tour are that you can get an agency to take care of all the arrangements, which can be time-consuming to do yourself — but it does mean that you're tied to a predetermined itinerary, which wouldn't suit everyone. There's also the safety aspect in terms of the places you visit often being very remote. If you go off trekking in the wilds of a foreign country alone, it could be difficult to get help if things went wrong.</p>
+                </div>
+
+                <div class="traveller-section">
+                    <h4>C - Danny Holt</h4>
+                    <p>Travelling solo creates opportunities to meet people. There's no substitute for sharing the experiences of the day with a companion, and being alone forces you to seek someone out. I'd never have met so many people if I'd been travelling with friends. There's also the wonderful freedom to do what you like, when you like, without having to convince anybody that it's a good idea. However, there are downsides; meal times are something I've never really got to grips with in all the years I've travelled alone. But my advice would be to give solo travel a go — it can be very liberating. Maybe try a short trip to begin with, just in case it's not for you. Another thing is stay in the nicest places your budget permits. Miserable hostels can really spoil a trip. And if you really are happy being anti-social, a pair of headphones can ensure the person in the next seat doesn't bore you to death on the plane!</p>
+                </div>
+
+                <div class="traveller-section">
+                    <h4>D - Kerry Winterton</h4>
+                    <p>Fun as it is, travelling solo also has its low points, including occasional loneliness and the pressure that you're under to make your own mind up about everything. I chose to travel alone because I wanted to do something different, but I did miss people from home, and sometimes fell out with other travellers I'd teamed up with along the way. But I learnt to accept that some people have different attitudes to mine; that you have to put up with irritating people in hostels and accept not having as much privacy as you're used to at home. The best thing for me about travelling alone was that it was a brilliant experience that enhanced my independence and helped me feel more self-assured. I knew I was on my own, which made me make more effort to speak to people and by doing so I made lots of great friends.</p>
+                </div>
+            </div>
+
+            <!-- Matching Questions -->
+            <div class="matching-questions">
+                <h4>Which student mentions...</h4>
+                
+                <div class="match-question" onclick="openMatchModal(43)">
+                    <div class="match-number">43</div>
+                    <div class="match-text">a daily activity that was not enjoyable alone?</div>
+                    <div class="match-answer" id="match43">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(44)">
+                    <div class="match-number">44</div>
+                    <div class="match-text">a good way of keeping travel plans flexible?</div>
+                    <div class="match-answer" id="match44">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(45)">
+                    <div class="match-number">45</div>
+                    <div class="match-text">appreciating not having to waste time organising practical details?</div>
+                    <div class="match-answer" id="match45">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(46)">
+                    <div class="match-number">46</div>
+                    <div class="match-text">becoming more tolerant of other people?</div>
+                    <div class="match-answer" id="match46">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(47)">
+                    <div class="match-number">47</div>
+                    <div class="match-text">feeling better after keeping in touch with others?</div>
+                    <div class="match-answer" id="match47">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(48)">
+                    <div class="match-number">48</div>
+                    <div class="match-text">having doubts at the beginning of a trip?</div>
+                    <div class="match-answer" id="match48">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(49)">
+                    <div class="match-number">49</div>
+                    <div class="match-text">liking not having to agree an itinerary with others?</div>
+                    <div class="match-answer" id="match49">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(50)">
+                    <div class="match-number">50</div>
+                    <div class="match-text">meeting people with a similar outlook on life?</div>
+                    <div class="match-answer" id="match50">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(51)">
+                    <div class="match-number">51</div>
+                    <div class="match-text">missing having someone to help with decision-making?</div>
+                    <div class="match-answer" id="match51">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(52)">
+                    <div class="match-number">52</div>
+                    <div class="match-text">the advisability of going for the best accommodation you can afford?</div>
+                    <div class="match-answer" id="match52">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 6</button>
+                <button class="btn btn-primary" onclick="finishTest()">Finish Test</button>
+            </div>
+        </div>
+
+        <!-- Student Selection Modal -->
+        <div id="matchModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select a student for question <span id="modalMatchNumber"></span></h3>
+                    <button class="modal-close" onclick="closeMatchModal()">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="student-choice" onclick="selectMatch(43, 'A')">
+                        <strong>A</strong> Phil Morston
+                    </div>
+                    <div class="student-choice" onclick="selectMatch(43, 'B')">
+                        <strong>B</strong> Leila Stuart
+                    </div>
+                    <div class="student-choice" onclick="selectMatch(43, 'C')">
+                        <strong>C</strong> Danny Holt
+                    </div>
+                    <div class="student-choice" onclick="selectMatch(43, 'D')">
+                        <strong>D</strong> Kerry Winterton
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sentence Selection Modal -->
+        <div id="sentenceModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select a sentence for gap <span id="modalGapNumber"></span></h3>
+                    <button class="modal-close" onclick="closeSentenceModal()">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="sentence-choice" onclick="selectSentence(37, 'A')">
+                        <strong>A</strong> All that hard work certainly paid off and the competition itself brought out the best in Lucy.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence(37, 'B')">
+                        <strong>B</strong> That's because in order to reach that target, she had to totally rethink her lifestyle.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence(37, 'C')">
+                        <strong>C</strong> Having access to this space-age training kit was certainly an advantage.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence(37, 'D')">
+                        <strong>D</strong> If the sport was more in the public eye, then fewer people would make that mistake.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence(37, 'E')">
+                        <strong>E</strong> Nobody complained about women taking part in those events when it was introduced.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence(37, 'F')">
+                        <strong>F</strong> That's why I've always regarded it as a thinking girl's sport really.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence(37, 'G')">
+                        <strong>G</strong> What this meant, in effect, was that she was able to train full-time.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="test-section" id="results" style="display: none;">
+            <h2>Test Complete!</h2>
+            <div id="resultsContent"></div>
+            <div class="navigation">
+                <button class="btn btn-success" onclick="downloadPDF()">📄 Save Results as PDF</button>
+                <button class="btn btn-primary" onclick="window.location.href='index.html'">← Back to Portal</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // FCE001 - Answer key and test code
+        const TEST_CODE = 'FCE001';
+        
+        // Answer key for FCE001
+        const answers = {
+            part1: {
+                q1: 'D', q2: 'A', q3: 'D', q4: 'A',
+                q5: 'B', q6: 'C', q7: 'B', q8: 'D'
+            },
+            part2: {
+                q9: 'WHERE', q10: 'TO', q11: 'WITH', q12: 'OUT',
+                q13: 'WHAT', q14: 'ALTHOUGH', q15: 'GET', q16: 'MAKE'
+            },
+            part3: {
+                q17: 'SATISFACTION', q18: 'SUCCESSFUL', q19: 'DISCOVER', q20: 'SOLUTION',
+                q21: 'IMPROVEMENT', q22: 'SCIENTISTS', q23: 'PERFORMANCE', q24: 'UNCERTAIN'
+            },
+            part4: {
+                q25: { full: 'SPEAK ENGLISH AS WELL AS', part1: 'SPEAK ENGLISH', part2: 'AS WELL AS' },
+                q26: { full: 'ARE NOT SUPPOSED TO CYCLE', part1: 'ARE NOT SUPPOSED', part2: 'TO CYCLE' },
+                q27: { full: 'APOLOGISED FOR NOT LETTING', part1: 'APOLOGISED FOR', part2: 'NOT LETTING' },
+                q28: { full: ['WERE NOT ABLE TO GET', 'WERE NOT ABLE TO GO'], part1: 'WERE NOT ABLE', part2: ['TO GET', 'TO GO'] },
+                q29: { full: 'CAME AS A DISAPPOINTMENT', part1: 'CAME AS', part2: 'A DISAPPOINTMENT' },
+                q30: { full: 'TO PAY SO MUCH', part1: 'TO PAY', part2: 'SO MUCH' }
+            },
+            part5: {
+                q31: 'C', q32: 'A', q33: 'D', q34: 'B', q35: 'C', q36: 'B'
+            },
+            part6: {
+                q37: 'G', q38: 'B', q39: 'C', q40: 'F', q41: 'E', q42: 'D'
+            },
+            part7: {
+                q43: 'C', q44: 'A', q45: 'B', q46: 'D', q47: 'A',
+                q48: 'A', q49: 'C', q50: 'B', q51: 'D', q52: 'C'
+            }
+        };
+
+        // Sentence texts for Part 6
+        const sentenceTexts = {
+            'A': 'All that hard work certainly paid off and the competition itself brought out the best in Lucy.',
+            'B': 'That\'s because in order to reach that target, she had to totally rethink her lifestyle.',
+            'C': 'Having access to this space-age training kit was certainly an advantage.',
+            'D': 'If the sport was more in the public eye, then fewer people would make that mistake.',
+            'E': 'Nobody complained about women taking part in those events when it was introduced.',
+            'F': 'That\'s why I\'ve always regarded it as a thinking girl\'s sport really.',
+            'G': 'What this meant, in effect, was that she was able to train full-time.'
+        };
+    </script>
+    <script src="script-FCE001.js"></script>
+</body>
+</html>
