@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>ClozeCat Mobile - Start</title>
+  <link rel="stylesheet" href="catstyle.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    
+    /* Unified container for start screen */
+    #startScreen {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-height: 100vh !important;
+      padding: 20px !important;
+      margin: 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+      position: relative !important;
+    }
+    
+    /* Start Screen */
+    #startScreen img:first-of-type {
+      width: 70%;
+      max-width: 280px;
+      margin: 60px 0 30px 0;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+      opacity: 1;
+    }
+    
+    #startButton {
+      padding: 18px 48px !important;
+      font-size: 18px !important;
+      background: #5cacee;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      margin-top: 20px;
+      min-width: 200px;
+      min-height: 50px;
+      opacity: 1;
+    }
+    
+    #startButton:disabled {
+      background: #9ca3af;
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+    
+    #startButton:active {
+      transform: scale(0.95);
+    }
+    
+    /* Back button */
+    button[onclick*="mainmenu.html"] {
+      position: fixed !important;
+      top: 15px !important;
+      left: 15px !important;
+      font-size: 24px !important;
+      padding: 10px 15px !important;
+      background: #5cacee !important;
+      color: white !important;
+      border: none !important;
+      border-radius: 8px !important;
+      cursor: pointer !important;
+      z-index: 10000 !important;
+      min-width: 50px !important;
+      min-height: 50px !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+    }
+    
+    /* Animation containers */
+    #startCatAnimation {
+      height: 140px !important;
+      width: 140px !important;
+      margin: 20px auto !important;
+      position: relative !important;
+      overflow: hidden !important;
+      opacity: 1;
+    }
+    
+    #catAnimationImg {
+      width: 140px !important;
+      height: 140px !important;
+      object-fit: contain !important;
+      display: block !important;
+      margin: 0 auto !important;
+    }
+    
+    /* Loading Screen */
+    #loadingScreen {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      text-align: center;
+      display: none;
+    }
+    
+    #loadingScreen img {
+      width: 70%;
+      max-width: 250px;
+      margin-bottom: 20px;
+    }
+    
+    #loadingScreen h3 {
+      font-size: 18px;
+      color: #5cacee;
+      margin: 15px 0;
+    }
+    
+    .loading-bar-container {
+      width: 200px;
+      height: 8px;
+      background: #ddd;
+      border-radius: 4px;
+      margin: 10px auto;
+      overflow: hidden;
+    }
+    
+    #loadingBar {
+      width: 0%;
+      height: 100%;
+      background: #5cacee;
+      transition: width 0.3s;
+    }
+    
+    #loadingText {
+      font-size: 14px;
+      color: #666;
+      margin-top: 10px;
+    }
+    
+    .loading-animation {
+      height: 120px;
+      width: 120px;
+      margin: 10px auto;
+    }
+    
+    .loading-animation img {
+      width: 120px !important;
+      height: 120px !important;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loadingScreen">
+    <img src="title.png" alt="ClozeCat">
+    
+    <div class="loading-animation">
+      <img src="cattyping.gif" alt="Loading">
+    </div>
+    
+    <h3>Loading questions...</h3>
+    <div class="loading-bar-container">
+      <div id="loadingBar"></div>
+    </div>
+    <p id="loadingText">Preparing your game...</p>
+  </div>
+
+  <!-- Start Screen -->
+  <div id="startScreen" class="app-card">
+    <!-- Back button -->
+    <button onclick="window.location.href='mainmenu.html#games'">←</button>
+    
+    <img src="title.png" alt="ClozeCat">
+    
+    <!-- Cat animation sequence container -->
+    <div id="startCatAnimation">
+      <img id="catAnimationImg" src="cattyping.gif" alt="Cat typing">
+    </div>
+    
+    <button id="startButton">Start</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const startButton = document.getElementById('startButton');
+      const catAnimationImg = document.getElementById('catAnimationImg');
+      
+      // Cat blinking animation frames
+      const blinkFrames = ['catstill.png', 'catblink.png'];
+      let isTyping = false;
+      
+      // Typing animation frames
+      const typingFrames = ['type2.png', 'type3.png', 'type4.png'];
+      let typingFrameIndex = 0;
+      let typingInterval;
+      
+      // Meow sounds array
+      const meowSounds = ['catr2.wav', 'catr3.wav', 'catr4.wav', 'catr5.wav', 'catr6.wav', 'kitty.wav'];
+      
+      // Initialize audio
+      const typeSound = new Audio('type.wav');
+      typeSound.loop = true;
+      typeSound.volume = 1.0;
+      
+      // Start blinking animation
+      function startBlinking() {
+        if (isTyping) return;
+        
+        setInterval(() => {
+          if (isTyping) return;
+          
+          // Blink every 3-5 seconds randomly
+          const blinkDelay = Math.random() * 2000 + 3000;
+          
+          setTimeout(() => {
+            if (isTyping) return;
+            catAnimationImg.src = 'catblink.png';
+            
+            setTimeout(() => {
+              if (isTyping) return;
+              catAnimationImg.src = 'catstill.png';
+            }, 200);
+          }, blinkDelay);
+        }, 5000);
+      }
+      
+      // Start cat blinking animation after page loads
+      setTimeout(() => {
+        catAnimationImg.src = 'catstill.png';
+        startBlinking();
+      }, 1000);
+      
+      // Typing animation
+      function startTypingAnimation() {
+        isTyping = true;
+        typingFrameIndex = 0;
+        
+        typingInterval = setInterval(() => {
+          catAnimationImg.src = typingFrames[typingFrameIndex];
+          typingFrameIndex = (typingFrameIndex + 1) % typingFrames.length;
+        }, 150);
+      }
+      
+      function stopTypingAnimation() {
+        if (typingInterval) {
+          clearInterval(typingInterval);
+          typingInterval = null;
+        }
+        isTyping = false;
+      }
+      
+      // Start button click handler
+      startButton.addEventListener('click', async () => {
+        // Disable button and gray it out
+        startButton.disabled = true;
+        startButton.textContent = 'Loading...';
+        
+        // Start typing animation and sound
+        startTypingAnimation();
+        typeSound.play();
+        
+        // Wait 1 second
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        
+        // Stop typing animation and sound
+        stopTypingAnimation();
+        typeSound.pause();
+        typeSound.currentTime = 0;
+        
+        // Change to talking cat
+        catAnimationImg.src = 'cattalk.gif';
+        
+        // Play random meow sound
+        const randomMeow = meowSounds[Math.floor(Math.random() * meowSounds.length)];
+        const meowSound = new Audio(randomMeow);
+        meowSound.volume = 1.0;
+        
+        meowSound.play();
+        
+        // Wait for meow sound to finish, then navigate
+        meowSound.addEventListener('ended', () => {
+          window.location.href = 'clozecat-topicsandgameplay-mobile.html';
+        });
+        
+        // Fallback in case sound doesn't play or gets stuck (after 2 seconds)
+        setTimeout(() => {
+          window.location.href = 'clozecat-topicsandgameplay-mobile.html';
+        }, 2000);
+      });
+    });
+  </script>
+</body>
+</html>

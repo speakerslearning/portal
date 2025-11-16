@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAE005 - C1 Advanced Cambridge English Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>C1 Advanced (CAE) Cambridge English Test</h1>
+            <p class="test-info">Practice Test - CAE005</p>
+        </header>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div class="test-section" id="part1" style="display: block;">
+            <h2>Part 1 - Multiple Choice Cloze</h2>
+            <p class="instructions">For questions 1–8, read the text below and decide which answer (A, B, C or D) best fits each gap.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Teenagers and digital technology</h3>
+                
+                <p>In many countries, there is a widespread belief that teenagers' lives nowadays are 
+                <select class="inline-select" name="q1" onchange="saveDropdownAnswer(1, this.value)">
+                    <option value="">— 1 —</option>
+                    <option value="A">mastered</option>
+                    <option value="B">dominated</option>
+                    <option value="C">prevailed</option>
+                    <option value="D">commanded</option>
+                </select>
+                by technology. However, information 
+                <select class="inline-select" name="q2" onchange="saveDropdownAnswer(2, this.value)">
+                    <option value="">— 2 —</option>
+                    <option value="A">amounted</option>
+                    <option value="B">gained</option>
+                    <option value="C">achieved</option>
+                    <option value="D">gathered</option>
+                </select>
+                in a recent study of Australian teenagers' use of and attitudes towards technology suggests that this view doesn't 
+                <select class="inline-select" name="q3" onchange="saveDropdownAnswer(3, this.value)">
+                    <option value="">— 3 —</option>
+                    <option value="A">repeat</option>
+                    <option value="B">reproduce</option>
+                    <option value="C">reflect</option>
+                    <option value="D">recreate</option>
+                </select>
+                the reality of their everyday existence. The research by academics from the University of Canberra in Australia found that, while most teenagers had ready access to home computers, mobile phones and other electronic devices, they generally spent more time on traditional 
+                <select class="inline-select" name="q4" onchange="saveDropdownAnswer(4, this.value)">
+                    <option value="">— 4 —</option>
+                    <option value="A">pursuits</option>
+                    <option value="B">events</option>
+                    <option value="C">operations</option>
+                    <option value="D">processes</option>
+                </select>
+                such as talking to family and friends, doing homework, and enjoying hobbies and sports than on using technology. Accessing social media and playing computer games 
+                <select class="inline-select" name="q5" onchange="saveDropdownAnswer(5, this.value)">
+                    <option value="">— 5 —</option>
+                    <option value="A">classed</option>
+                    <option value="B">ranked</option>
+                    <option value="C">valued</option>
+                    <option value="D">graded</option>
+                </select>
+                as low as ninth and tenth 
+                <select class="inline-select" name="q6" onchange="saveDropdownAnswer(6, this.value)">
+                    <option value="">— 6 —</option>
+                    <option value="A">subsequently</option>
+                    <option value="B">separately</option>
+                    <option value="C">correspondingly</option>
+                    <option value="D">respectively</option>
+                </select>
+                among the ten most common after-school activities.</p>
+                
+                <p>Fifteen-year-old Laura Edmonds is one of the teenagers surveyed. She admits to being very 
+                <select class="inline-select" name="q7" onchange="saveDropdownAnswer(7, this.value)">
+                    <option value="">— 7 —</option>
+                    <option value="A">related</option>
+                    <option value="B">attached</option>
+                    <option value="C">absorbed</option>
+                    <option value="D">fastened</option>
+                </select>
+                to her smartphone and makes full use of various apps, but if she needs to 
+                <select class="inline-select" name="q8" onchange="saveDropdownAnswer(8, this.value)">
+                    <option value="">— 8 —</option>
+                    <option value="A">unwind</option>
+                    <option value="B">unfold</option>
+                    <option value="C">unload</option>
+                    <option value="D">unbend</option>
+                </select>
+                after a hard day at school, she tends to 'hang out with my friends, listen to music or chat with my mum and dad'.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 2</button>
+            </div>
+        </div>
+
+        <!-- Part 2 - Open Cloze -->
+        <div class="test-section" id="part2" style="display: none;">
+            <h2>Part 2 - Open Cloze</h2>
+            <p class="instructions">For questions 9–16, read the text below and think of the word which best fits each gap. Use only one word in each gap. Write your answers IN CAPITAL LETTERS.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>Animals that migrate</h3>
+                
+                <p>Animal migration comes in many different forms – long or short, seasonal or daily, predictable or seemingly random. But 
+                <input type="text" class="inline-input" name="q9" maxlength="15" placeholder="9" oninput="saveTextAnswer(9, this.value)" style="text-transform: uppercase;">
+                one thing unites all migratory species, it is the fight to survive. 
+                <input type="text" class="inline-input" name="q10" maxlength="15" placeholder="10" oninput="saveTextAnswer(10, this.value)" style="text-transform: uppercase;">
+                this means looking for food, finding mates or laying eggs, survival is the fundamental motivation. But how do animals travel huge distances to precise destinations 
+                <input type="text" class="inline-input" name="q11" maxlength="15" placeholder="11" oninput="saveTextAnswer(11, this.value)" style="text-transform: uppercase;">
+                a map or GPS? 
+                <input type="text" class="inline-input" name="q12" maxlength="15" placeholder="12" oninput="saveTextAnswer(12, this.value)" style="text-transform: uppercase;">
+                single answer to this is available. Monarch butterflies, for example, are believed to use the sun to navigate from North America to Mexico. Leatherback turtles, on the other 
+                <input type="text" class="inline-input" name="q13" maxlength="15" placeholder="13" oninput="saveTextAnswer(13, this.value)" style="text-transform: uppercase;">, which can migrate 20,000 kilometres across the ocean, are thought to be guided by the earth's magnetic field.</p>
+                
+                <p>A seabird called the sooty shearwater flies 
+                <input type="text" class="inline-input" name="q14" maxlength="15" placeholder="14" oninput="saveTextAnswer(14, this.value)" style="text-transform: uppercase;">
+                average of 64,000 kilometres yearly over the Pacific Ocean. In 
+                <input type="text" class="inline-input" name="q15" maxlength="15" placeholder="15" oninput="saveTextAnswer(15, this.value)" style="text-transform: uppercase;">
+                so, it executes a figure-of-eight between New Zealand, where it breeds, and stopovers in Japan, Alaska and California. This bird seemingly has a variety of tools 
+                <input type="text" class="inline-input" name="q16" maxlength="15" placeholder="16" oninput="saveTextAnswer(16, this.value)" style="text-transform: uppercase;">
+                its disposal, using the earth's magnetic field, the sun and the stars, and even sight and smell when flying over familiar territory.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 1</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 3</button>
+            </div>
+        </div>
+
+        <!-- Part 3 - Word Formation -->
+        <div class="test-section" id="part3" style="display: none;">
+            <h2>Part 3 - Word Formation</h2>
+            <p class="instructions">For questions 17–24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. Write your answers IN CAPITAL LETTERS.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>Note taking</h3>
+                
+                <p>Of all the skills you need to make a success of your college or university studies, note taking is still one of the most important, even in this digital age. Whether you do it by hand or on a laptop, taking good notes will <span class="word-given">SIMPLE</span> 
+                <input type="text" class="inline-input" name="q17" maxlength="20" placeholder="17" oninput="saveTextAnswer(17, this.value)" style="text-transform: uppercase;">
+                things greatly when you come to do revision and write <span class="word-given">ASSIGN</span> 
+                <input type="text" class="inline-input" name="q18" maxlength="20" placeholder="18" oninput="saveTextAnswer(18, this.value)" style="text-transform: uppercase;">.</p>
+                
+                <p>Nowadays, lecture slides and handouts are often uploaded onto the college or university intranet. The <span class="word-given">DOWN</span> 
+                <input type="text" class="inline-input" name="q19" maxlength="20" placeholder="19" oninput="saveTextAnswer(19, this.value)" style="text-transform: uppercase;">
+                of this guaranteed availability is that there can be a <span class="word-given">TEMPT</span> 
+                <input type="text" class="inline-input" name="q20" maxlength="20" placeholder="20" oninput="saveTextAnswer(20, this.value)" style="text-transform: uppercase;">
+                to stop listening carefully to the lecturer. The advantage, however, is that you can focus on the difficult parts of what is said. Taking notes can aid concentration, but you need to do it <span class="word-given">SELECT</span> 
+                <input type="text" class="inline-input" name="q21" maxlength="20" placeholder="21" oninput="saveTextAnswer(21, this.value)" style="text-transform: uppercase;">, recording only what is most useful to you.</p>
+                
+                <p>Lecturers often cover a lot of material swiftly, and to <span class="word-given">SURE</span> 
+                <input type="text" class="inline-input" name="q22" maxlength="20" placeholder="22" oninput="saveTextAnswer(22, this.value)" style="text-transform: uppercase;">
+                that you record everything you need, some form of shorthand will help. Use abbreviations (e.g.) and symbols (→), and you can <span class="word-given">SHORT</span> 
+                <input type="text" class="inline-input" name="q23" maxlength="20" placeholder="23" oninput="saveTextAnswer(23, this.value)" style="text-transform: uppercase;">
+                certain words ('btwn' for 'between'). It is also important to be systematic in recording information like sources of quotes and other <span class="word-given">BIBLIOGRAPHY</span> 
+                <input type="text" class="inline-input" name="q24" maxlength="20" placeholder="24" oninput="saveTextAnswer(24, this.value)" style="text-transform: uppercase;">
+                details.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 2</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 4</button>
+            </div>
+        </div>
+
+        <!-- Part 4 - Key Word Transformations -->
+        <div class="test-section" id="part4" style="display: none;">
+            <h2>Part 4 - Key Word Transformations</h2>
+            <p class="instructions">For questions 25–30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given. Write your answers IN CAPITAL LETTERS.</p>
+            <p class="instructions"><strong>Note:</strong> Each question is worth up to 2 points (1 point for each key part of the answer).</p>
+
+            <div class="reading-passage">
+                <div class="transformation-question">
+                    <p><strong>25.</strong> I'm sorry now that we didn't save a bit more money for the holidays.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">SET</span></p>
+                    <p>I wish <input type="text" class="inline-input-long" name="q25" maxlength="60" placeholder="25" oninput="saveTextAnswer(25, this.value)" style="text-transform: uppercase;"> a bit more money for the holidays.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>26.</strong> When people treated Emily like a child, she didn't like it.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">RESENTED</span></p>
+                    <p>Emily <input type="text" class="inline-input-long" name="q26" maxlength="60" placeholder="26" oninput="saveTextAnswer(26, this.value)" style="text-transform: uppercase;"> she was a child.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>27.</strong> Reducing the time we spend on boring paperwork would be good for all of us.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">INTEREST</span></p>
+                    <p>It would be in <input type="text" class="inline-input-long" name="q27" maxlength="60" placeholder="27" oninput="saveTextAnswer(27, this.value)" style="text-transform: uppercase;"> on the time we spend on boring paperwork.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>28.</strong> My cousins, Joe and Ben, are identical twins and when they were small my dad could never work out who was who.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">DIFFERENCE</span></p>
+                    <p>My cousins, Joe and Ben, are identical twins and when they were small my dad could never <input type="text" class="inline-input-long" name="q28" maxlength="60" placeholder="28" oninput="saveTextAnswer(28, this.value)" style="text-transform: uppercase;"> of them.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>29.</strong> Stefano thought that no one had done much to prepare for Alicia's farewell party.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">THAT</span></p>
+                    <p>Stefano was under <input type="text" class="inline-input-long" name="q29" maxlength="60" placeholder="29" oninput="saveTextAnswer(29, this.value)" style="text-transform: uppercase;"> done to prepare for Alicia's farewell party.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>30.</strong> People usually need specific qualifications to get onto the nursing course, but they said they would treat Maria differently because of her practical experience.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">EXCEPTION</span></p>
+                    <p>People usually need specific qualifications to get onto the nursing course, but they agreed <input type="text" class="inline-input-long" name="q30" maxlength="60" placeholder="30" oninput="saveTextAnswer(30, this.value)" style="text-transform: uppercase;"> case because of her practical experience.</p>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 3</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 5</button>
+            </div>
+        </div>
+
+        <!-- Part 5 - Multiple Choice Reading -->
+        <div class="test-section" id="part5" style="display: none;">
+            <h2>Part 5 - Multiple Choice Reading</h2>
+            <p class="instructions">You are going to read an article about artificial reefs. For questions 31–36, choose the answer (A, B, C or D) which you think fits best according to the text.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Artificial reefs</h3>
+                <p><em>Rocks under the sea attract lots of marine life. The best-known of these reefs are the spectacular coral reefs, but artificial, man-made reefs are also significant, as Stephen Harrigan reports.</em></p>
+                
+                <p>When the 160-metre-long Vandenberg was deliberately sunk in May 2009, it joined many other shipwrecks in the Gulf of Mexico, off the coast of Florida in the USA. People around the world have long known that shipwrecks are prime fishing sites, and in modern times reefs have been created out of all sorts of objects including old refrigerators, cars, train carriages and oil drilling rigs.</p>
+
+                <p>The process of how a man-made hulk like the Vandenberg becomes an undersea garden is governed by variables such as depth, water temperature, currents and the composition of the seabed. But most artificial reefs attract marine life in a more or less predictable sequence of events. First, water currents deposit plankton to provide a reliable feeding spot for small fish, which then draw in bigger predators like blue fin tuna and sharks. Next come the creatures seeking protection from the ocean's lethal openness – hole and crevice dwellers like eels. Opportunistic predators such as jack and barracuda are also quick to come, waiting for their prey to show themselves. In time – maybe months, maybe years, maybe a decade, depending on the ocean's moods – the steel will be encrusted with algae, hard and soft corals, sponges and other forms of sea life.</p>
+
+                <p>For decades, oil and gas platforms in the Gulf of Mexico have been prime sites for recreational fishing, since many species of fish seek shelter in their underwater structures. Michael Miglini, the captain of a charter boat called Orion that takes fishermen and divers out to rigs off Port Aransas – an area blessedly spared from the oil that spilled into the Gulf after the Deepwater Horizon catastrophe in 2010 – knows the attraction of artificial reefs for water sports enthusiasts, and the revenue and jobs they generated. He says: 'Creating habitat is akin to creating oases in the desert. An artificial reef is a way of boosting the ocean's capacity to create fish, to increase the life of the Gulf.' Biologists suggest, however, that artificial reefs may simply attract fish from natural reefs and become killing zones for certain species, such as red snapper, one of the Gulf's most sought-after game fish.</p>
+
+                <p>'When it comes to red snappers, artificial reefs are bait,' says James Cowan, a professor of oceanography and coastal sciences. 'If success is judged solely by an increase in harvest, then artificial reefs are pretty successful. But if those structures – usually deployed in shallow waters to make them more accessible to fishing – are pulling fish off natural reefs farther from the coast, they may actually be increasing the overfishing of species that are already under stress.'</p>
+
+                <p>Some artificial reefs have become hazards to navigation and a toxic threat to the waters in which they rest. The danger of pollution is the reason almost 70% of the Vandenberg's $8.4 million sinking budget went to clean-up efforts, including the removal of more than ten tons of asbestos and more than 250,000 metres of electrical wire. And for every metre of wire there was a metre of red tape, since artificial reefs must now be created in strict accordance with the US government's National Artificial Reef Plan.</p>
+
+                <p>Even scrupulously planned wrecks can go very wrong. When the Spiegel Grove went down in 2002, the ship landed upside down with one corner of her stern on the bottom and part of her bow above the waterline, ready to serve as a can opener to unsuspecting vessels using the marine sanctuary. It took a massive effort to get her over on her side and fully underwater, and it wasn't until three years later that Hurricane Dennis finally gave her the intended upright – and harmless to traffic – profile.</p>
+
+                <p>The notorious Osborne Tire Reef project off the Florida coast was initially thought to be a good idea in the early 1970s, a win-win scheme that would liberate the nation's landfills of up to two million discarded tires to create a thriving marine habitat. But it turned out that vulcanized rubber is actually a poor base for coral growth, and that bundled tires, instead of helping to augment two adjacent natural reefs, ended up smothering and bashing into their fragile organisms. When the bundles broke apart, the tires washed up on beaches. The hopeful Osborne Tire Reef initiative has now given way to its expensive remedy, the Osborne Reef Waste Tire Removal Project.</p>
+            </div>
+
+            <!-- Questions -->
+            <div class="questions-container">
+                <!-- Question 31 -->
+                <div class="question">
+                    <div class="question-number">Question 31</div>
+                    <div class="question-text">
+                        <p><strong>The main purpose of the second paragraph is to</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q31" value="A" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>A. highlight the length of time required for an artificial reef to work.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="B" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>B. outline the different stages through which an artificial reef develops.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="C" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>C. emphasise the range of sea creatures that are attracted to artificial reefs.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="D" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>D. explain the diverse factors that determine how successful an artificial reef is.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 32 -->
+                <div class="question">
+                    <div class="question-number">Question 32</div>
+                    <div class="question-text">
+                        <p><strong>What point does the writer make about artificial reefs in the third paragraph?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q32" value="A" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>A. They can stimulate economic growth in coastal areas.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="B" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>B. Their impact is appreciated by scientists and fishermen alike.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="C" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>C. Their primary function is to improve the marine environment.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="D" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>D. They have helped the Gulf of Mexico recover from an oil disaster.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 33 -->
+                <div class="question">
+                    <div class="question-number">Question 33</div>
+                    <div class="question-text">
+                        <p><strong>What does James Cowan suggest about artificial reefs?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q33" value="A" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>A. Certain species of fish are driven away by them.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="B" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>B. People excited by fishing from them may move on to natural reefs.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="C" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>C. They should be established in parts of the ocean that are very deep.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="D" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>D. Consideration should be given to the criteria used to assess their value.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 34 -->
+                <div class="question">
+                    <div class="question-number">Question 34</div>
+                    <div class="question-text">
+                        <p><strong>Which aspect of artificial reefs does the writer seek to underline with the words 'for every metre of wire there was a metre of red tape'?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q34" value="A" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>A. the various dangers they can pose</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="B" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>B. the regulations governing their creation</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="C" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>C. the costs incurred in putting them in place</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="D" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>D. the laws determining what they should look like</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 35 -->
+                <div class="question">
+                    <div class="question-number">Question 35</div>
+                    <div class="question-text">
+                        <p><strong>What point does the writer make about the Spiegel Grove?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q35" value="A" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>A. Boats and ships have to carefully avoid the sunken ship.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="B" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>B. Extreme weather conditions caused the ship to sink.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="C" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>C. The ship is an unsuitable shape to serve as a reef.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="D" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>D. The ship initially settled in an unhelpful position.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 36 -->
+                <div class="question">
+                    <div class="question-number">Question 36</div>
+                    <div class="question-text">
+                        <p><strong>What does the writer say about the Osborne Tire Reef?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q36" value="A" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>A. It would have worked better in a different location.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="B" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>B. It has provided the inspiration for a similar scheme.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="C" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>C. It was meant to benefit the environment in two ways.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="D" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>D. It shows how little people cared about the ocean in the past.</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 4</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 6</button>
+            </div>
+        </div>
+
+        <!-- Part 6 - Cross-text Multiple Matching -->
+        <div class="test-section" id="part6" style="display: none;">
+            <h2>Part 6 - Cross-text Multiple Matching</h2>
+            <p class="instructions">You are going to read four comments on reality TV. For questions 37–40, choose from comments A–D. The comments may be chosen more than once.</p>
+
+            <!-- Reading Passages -->
+            <div class="reading-passage">
+                <h3>Reality TV</h3>
+                <p class="instructions">Reality TV programmes such as Big Brother, Survivor and X Factor have come to dominate the schedules of many television stations in the past decade. Four social commentators offer their thoughts on the phenomenon.</p>
+                
+                <div class="review-section">
+                    <h4>A</h4>
+                    <p>The bottom line is that reality TV programmes attract audiences of all ages and types. Viewers want to be entertained, but, at the same time, are often happy to learn something – from a show set in a restaurant kitchen or a fitness camp, for example. Criticisms that particular combinations of people are selected and placed in unrealistic settings, and so reality TV is not real, miss the point. Audiences know that shows like Big Brother do not replicate real life, but they do offer us opportunities to observe how people like us, or not like us, interact and deal with challenges. In these unusual situations the participants' behaviour may at times be strange, ill-considered or even offensive, but society is imperfect and audiences know this. People generally watch reality TV shows in an analytical, critical spirit, making judgements about what they see rather than simply wanting to copy it.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>B</h4>
+                    <p>There are many different types of reality TV programmes, of course. Lots of them focus obsessively on appearance, consumerism and celebrity status, and imply that anyone can become famous without working hard or displaying a particular talent. The concern is that impressionable viewers, taking what they see to be real life, may absorb the message uncritically, overlooking the fact that the narrative is invariably manipulated by clever programme makers. Other programmes, however, are more positive and even instructive. One show, Jamie's Kitchen, offered jobless youngsters the chance to train as chefs and lead a campaign to improve the quality of school meals. The programme was a valuable learning experience for audiences and participants, and even had an impact on government policy. More programmes like Jamie's Kitchen would be welcome. The fact is, however, that the quality as well as the sheer quantity of reality programmes shown on our television screens reflects market demand.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>C</h4>
+                    <p>There seems to be a huge appetite for reality TV, and it is hard to argue with programme makers who claim they are just producing shows their audiences want. The unfortunate thing is that most reality TV is of very poor quality. Not only is it fundamentally dishonest in pretending to show 'reality', when in fact it is a strange mix of fiction and fact, distorted to suit the programme makers' requirements, but it so often relies on humiliation and conflict to create excitement, sending a message that crude, self-centred, empty-headed behaviour is the norm and that celebrity is a worthy aspiration. There are a few reality shows which purport to do good by showing us something we can learn from, some insight perhaps into human behaviour, but even in these cases a straightforward documentary format would be far more informative and trustworthy than these odd fabricated social experiments.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>D</h4>
+                    <p>The most interesting thing about reality TV is that it is not what its label implies and perhaps what many believe it to be. Typically, a group of people are filmed in unusual situations over a period of time – not reality for most of us. Occasionally, some 'reality shows' are supposed to reveal something new about people – how they interact, change or deal with a problem, for example – but such revelations invariably turn out to be utterly banal. What is sometimes forgotten is that reality TV is a cheap means to ensure there is always something on TV in this age of multiple channels and 24-hour programming. The fact that it fills the gaps does not mean that audiences want it, however. In fact, many reality shows have extremely low viewing figures, and some TV stations, like the Italian state broadcaster RAI, have decided to remove all reality shows from their schedules.</p>
+                </div>
+            </div>
+
+            <!-- Matching Questions -->
+            <div class="cross-text-questions">
+                <h4>Which comment</h4>
+                
+                <div class="match-question" onclick="openReviewModal(37)">
+                    <div class="match-number">37</div>
+                    <div class="match-text">shares B's opinion regarding the educational content of some reality TV?</div>
+                    <div class="match-answer" id="match37">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(38)">
+                    <div class="match-number">38</div>
+                    <div class="match-text">has a different opinion from the others about the authenticity of reality TV?</div>
+                    <div class="match-answer" id="match38">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(39)">
+                    <div class="match-number">39</div>
+                    <div class="match-text">expresses a different view from the others about the popularity of reality TV?</div>
+                    <div class="match-answer" id="match39">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(40)">
+                    <div class="match-number">40</div>
+                    <div class="match-text">takes a similar view to C regarding the values represented in many reality TV shows?</div>
+                    <div class="match-answer" id="match40">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 5</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 7</button>
+            </div>
+        </div>
+
+        <!-- Part 7 - Gapped Text -->
+        <div class="test-section" id="part7" style="display: none;">
+            <h2>Part 7 - Gapped Text</h2>
+            <p class="instructions">You are going to read an article about studying art history. Six paragraphs have been removed from the article. Choose from the paragraphs A-G the one which fits each gap (41-46). There is one extra paragraph which you do not need to use.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Studying art history</h3>
+                
+                <p>In many countries, doing a degree in the history of art is considered something of a minority choice. While no one would deny that art is a fascinating subject with a longer and more diverse history than, say, literature, history of art tends to exist on the margins at most universities, the preserve of a few dedicated students.</p>
+
+                <div class="gap-carousel" id="gap41" onclick="openSentenceModal(41)">
+                    <strong>41</strong>
+                    <div class="selected-sentence" id="display41">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>As Janice Burton, a former student at the Courtauld Institute, a specialist university in the UK that focuses entirely on the subject, explains: 'History of art is more than simply the study of creativity and aesthetics. It incorporates all aspects of history, as well as philosophy, anthropology, politics and religion. Art represents an insight into the spirit of a particular period, as well as supplying some of history's most fascinating protagonists.'</p>
+
+                <div class="gap-carousel" id="gap42" onclick="openSentenceModal(42)">
+                    <strong>42</strong>
+                    <div class="selected-sentence" id="display42">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>So it's clearly a very interesting subject to study, covering a huge slice of the human experience, but what can you do with it? History of art lecturer Natalia Mellor believes her subject is crucial for the development of public culture. 'Our degree courses produce the museum directors of the future,' she says.</p>
+
+                <div class="gap-carousel" id="gap43" onclick="openSentenceModal(43)">
+                    <strong>43</strong>
+                    <div class="selected-sentence" id="display43">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>Not everyone who attains a degree in history of art is forced into the art world, however. Jerome Hasler, for instance, now works for a crisis management consultancy. 'It's not a directly vocational position,' he admits, but history of art has still been very beneficial. 'It taught me to be creative, to research thoroughly and to appreciate that many factors can contribute to a final product, things I use and value every day in my job.'</p>
+
+                <div class="gap-carousel" id="gap44" onclick="openSentenceModal(44)">
+                    <strong>44</strong>
+                    <div class="selected-sentence" id="display44">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>There is a perception, perhaps, that history of art is an elitist subject. Professor Joanna Woodall, who teaches at the Courtauld, is at pains to disagree. 'People often think of art history as elitist, but it's a subject in which everyone has something to contribute. People notice different things and ask different questions,' she says. When considering applications from potential students wanting to take her courses, she is interested in people who clearly have a passion for art and art history rather than those who have traditional qualifications.</p>
+
+                <div class="gap-carousel" id="gap45" onclick="openSentenceModal(45)">
+                    <strong>45</strong>
+                    <div class="selected-sentence" id="display45">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>And what, in practical terms, does studying history of art entail? How is the programme organised, particularly for newcomers to the subject as an academic discipline? Rebecca Murphy, who graduated from the Courtauld last year, enjoyed every minute of it.</p>
+
+                <div class="gap-carousel" id="gap46" onclick="openSentenceModal(46)">
+                    <strong>46</strong>
+                    <div class="selected-sentence" id="display46">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>'As you progress,' she says, 'you cover all the different aspects of theory, and every term you get to learn about a different period. In the first couple of years you get to build up this knowledge and then in the third you get the opportunity to tackle more specialist topics of your choice.' Like many of her peers, she is convinced it was worth it. 'The degree enabled me to acquire a lot of knowledge about important subjects, some good transferrable skills and a great bunch of friends too.'</p>
+            </div>
+
+            <!-- Paragraph Options Reference -->
+            <div class="sentence-options">
+                <h4>Available Paragraphs (A-G):</h4>
+                <div class="sentence-option">
+                    <strong>A</strong> Burton concurs: 'Had I wanted to work in an auction house, curate or write for an art magazine, then I would have been very well placed, especially if I'd continued on with a master's degree, and there were some tempting options at the Courtauld, such as art restoration. But history of art led me into writing, specifically journalism, and achieving a good degree from a prestigious university did my job prospects no harm at all.'
+                </div>
+                <div class="sentence-option">
+                    <strong>B</strong> However absorbing or enriching history of art may be, this view of it as being accessible to and useful for only a small and probably privileged group of people can deter many with a genuine interest in it.
+                </div>
+                <div class="sentence-option">
+                    <strong>C</strong> Although it has a limited following, it is anything but insignificant in scope or academic rigour, however. It's about art, of course, but it's by no means confined to staring at paintings and stroking one's chin.
+                </div>
+                <div class="sentence-option">
+                    <strong>D</strong> 'If you've never formally studied the subject before, you start with a leveller course,' she says. This introduction provides an overall perspective on the degree. 'You then move on to a more in-depth look, and the chance to learn about things you're personally interested in.'
+                </div>
+                <div class="sentence-option">
+                    <strong>E</strong> In fact, anyone who wants to be seriously involved in museum and gallery curation needs to ensure they have a solid academic grounding in the subject. You don't get to run a major gallery without a deep knowledge of the art world as a whole – one you can't just get from avidly attending exhibitions.
+                </div>
+                <div class="sentence-option">
+                    <strong>F</strong> Another recent history of art graduate agrees: 'It gave me the opportunity to explore the stories within works of art, addressing social, political or personal reasons behind their particular appearance or fame.'
+                </div>
+                <div class="sentence-option">
+                    <strong>G</strong> 'We try to look for someone who shows a demonstrable interest in the subject – but that doesn't mean they have to know reams about art history. Those coming to history of art from other disciplines bring something different and enliven the discipline for everyone.'
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 6</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 8</button>
+            </div>
+        </div>
+
+        <!-- Part 8 - Multiple Matching -->
+        <div class="test-section" id="part8" style="display: none;">
+            <h2>Part 8 - Multiple Matching</h2>
+            <p class="instructions">You are going to read an article in which four people talk about museum work. For questions 47–56, choose from the people A–D. The people may be chosen more than once.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Museum work</h3>
+                
+                <div class="review-section" style="margin-bottom: 30px;">
+                    <h4>A – Melanie Kershaw</h4>
+                    <p>Melanie Kershaw works as a museum curator in Scotland. Her typical day might involve working on the museum's computer documentation system, packing up an exhibition of local artists, dealing with security issues or taking guided tours round the galleries. 'It'd be nice if I could focus on the natural history collection, where I have real expertise,' she says. 'But it's only a small museum so I get roped into all sorts of things. We do lots of work with local children and I give talks to geology societies in the area.' Melanie took her first degree in biology and then went into teaching. 'Dealing with school kids for a few years taught me how to communicate with groups, which serves me well here.' She left teaching after doing a part-time museum studies course and has been in her current post for four years now. She feels no real desire to climb the career ladder. 'What appeals to me is researching, documenting and displaying objects, not being in charge of other people, but I'll probably move to a bigger museum eventually.'</p>
+                </div>
+
+                <div class="review-section" style="margin-bottom: 30px;">
+                    <h4>B – Angela Garcia</h4>
+                    <p>There's no traditional route into fundraising for museums and galleries, according to Angela Garcia, the head of development for a museum of culture in the north of Spain. 'You figure things out as you go along. It's not ideal, but that's how it is,' says Angela. 'Lots of my colleagues have come to it in an ad hoc way through an arts degree, some voluntary work, maybe some marketing and then into fundraising.' She manages a team of two development officers and an assistant, oversees a corporate patrons' scheme, administers a development trust and raises other sponsorship for exhibitions throughout the year. 'Networking is crucial,' she says. 'Not just with potential donors, but also with museum visitors, the press and colleagues from my museum and other institutions – it's good to keep up with what's happening elsewhere.' She says the work is challenging with only average financial rewards, but it's far from dull. 'For some people, the idea of museum work still conjures up images of geeks in dusty archives detached from the real world,' she says. 'If they only knew!'</p>
+                </div>
+
+                <div class="review-section" style="margin-bottom: 30px;">
+                    <h4>C – Laura Johansson</h4>
+                    <p>As registrar for a regional museum service, Laura Johansson is responsible for all information relating to the objects kept in eight public museums. 'It could be information about what the object is and where it's come from, or it could be movement records,' says Laura. 'I'm involved with things such as documentation procedures and collections management policies. And unlike some registrars, I'm in charge of the information management system.' With advances in digital technology, it is a fast-moving field. 'That makes it exciting,' she says. 'But I don't really have the time or resources to stay abreast of all the developments in the way I should.' Like many people working in museums and galleries, Laura's career path has not been wholly predictable. After graduating in history, she managed a clothes store for five years, before realising she wanted something different. She completed a diploma in heritage studies and then documented items in a toy museum for three years. That led to her current post.</p>
+                </div>
+
+                <div class="review-section" style="margin-bottom: 30px;">
+                    <h4>D – Yasmin Kumar</h4>
+                    <p>Yasmin Kumar is a sculpture conservator. 'You've got to know what an object's made from, how long it's been in its environment, the aesthetics of it, and be able to work on it,' she explains. She started by volunteering in museums to get practical experience, but she also has a degree in fine art and an MA in historic artefacts conservation. She is now one of four permanent staff who restore objects and get them ready for display and for going out on loan. 'It's quite narrow,' she says. 'And it can be hard to switch to anything else – we're all aware of that. On the other hand, there aren't many people with our expertise, so we're in demand. I'm often away for several days at a time, travelling with objects or going to work on artefacts in other countries.' Yasmin feels fulfilled, despite the uninspiring pay scales. 'I'd like the chance to earn more, of course,' she says. 'But, like everyone who works in this sector, I know it's not going to happen.'</p>
+                </div>
+            </div>
+
+            <!-- Matching Questions -->
+            <div class="cross-text-questions">
+                <h4>Questions 47-56</h4>
+                <p><strong>Which person</strong></p>
+                
+                <div class="match-question" onclick="openReviewModal(47)">
+                    <div class="match-number">47</div>
+                    <div class="match-text">mentions the difficulty of keeping her professional knowledge up to date?</div>
+                    <div class="match-answer" id="match47">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(48)">
+                    <div class="match-number">48</div>
+                    <div class="match-text">points out the advantage of specialising in a particular type of work?</div>
+                    <div class="match-answer" id="match48">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(49)">
+                    <div class="match-number">49</div>
+                    <div class="match-text">is reluctant to take on a managerial role?</div>
+                    <div class="match-answer" id="match49">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(50)">
+                    <div class="match-number">50</div>
+                    <div class="match-text">claims that people in her field are realistic about their career prospects?</div>
+                    <div class="match-answer" id="match50">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(51)">
+                    <div class="match-number">51</div>
+                    <div class="match-text">mentions a misconception about the field she is in?</div>
+                    <div class="match-answer" id="match51">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(52)">
+                    <div class="match-number">52</div>
+                    <div class="match-text">is grateful for the skills she acquired in a previous, different career?</div>
+                    <div class="match-answer" id="match52">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(53)">
+                    <div class="match-number">53</div>
+                    <div class="match-text">points out that her responsibilities differ from those of other people in similar jobs?</div>
+                    <div class="match-answer" id="match53">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(54)">
+                    <div class="match-number">54</div>
+                    <div class="match-text">emphasises the importance of talking to a wide range of people in her work?</div>
+                    <div class="match-answer" id="match54">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(55)">
+                    <div class="match-number">55</div>
+                    <div class="match-text">regrets the range of duties she has to undertake?</div>
+                    <div class="match-answer" id="match55">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(56)">
+                    <div class="match-number">56</div>
+                    <div class="match-text">regrets the lack of formal training available for her job?</div>
+                    <div class="match-answer" id="match56">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 7</button>
+                <button class="btn btn-primary" onclick="finishTest()">Finish Test</button>
+            </div>
+        </div>
+
+        <!-- Sentence Selection Modal (for Part 7) -->
+        <div id="sentenceModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select paragraph for gap <span id="modalSentenceNumber"></span></h3>
+                    <button class="modal-close" onclick="closeSentenceModal()">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="sentence-choice" onclick="selectSentence('A')">
+                        <strong>A</strong> Burton concurs: 'Had I wanted to work in an auction house, curate or write for an art magazine, then I would have been very well placed, especially if I'd continued on with a master's degree, and there were some tempting options at the Courtauld, such as art restoration. But history of art led me into writing, specifically journalism, and achieving a good degree from a prestigious university did my job prospects no harm at all.'
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('B')">
+                        <strong>B</strong> However absorbing or enriching history of art may be, this view of it as being accessible to and useful for only a small and probably privileged group of people can deter many with a genuine interest in it.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('C')">
+                        <strong>C</strong> Although it has a limited following, it is anything but insignificant in scope or academic rigour, however. It's about art, of course, but it's by no means confined to staring at paintings and stroking one's chin.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('D')">
+                        <strong>D</strong> 'If you've never formally studied the subject before, you start with a leveller course,' she says. This introduction provides an overall perspective on the degree. 'You then move on to a more in-depth look, and the chance to learn about things you're personally interested in.'
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('E')">
+                        <strong>E</strong> In fact, anyone who wants to be seriously involved in museum and gallery curation needs to ensure they have a solid academic grounding in the subject. You don't get to run a major gallery without a deep knowledge of the art world as a whole – one you can't just get from avidly attending exhibitions.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('F')">
+                        <strong>F</strong> Another recent history of art graduate agrees: 'It gave me the opportunity to explore the stories within works of art, addressing social, political or personal reasons behind their particular appearance or fame.'
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('G')">
+                        <strong>G</strong> 'We try to look for someone who shows a demonstrable interest in the subject – but that doesn't mean they have to know reams about art history. Those coming to history of art from other disciplines bring something different and enliven the discipline for everyone.'
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review Selection Modal -->
+        <div id="reviewModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="reviewModalTitle">Select answer for question <span id="modalReviewNumber"></span></h3>
+                    <button class="modal-close" onclick="closeReviewModal()">×</button>
+                </div>
+                <div class="modal-body" id="reviewModalBody">
+                    <!-- Content will be dynamically inserted by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="test-section" id="results" style="display: none;">
+            <h2>C1 Advanced (CAE) - Test Complete!</h2>
+            <div id="resultsContent"></div>
+            <div class="navigation">
+                <button class="btn btn-success" onclick="downloadPDF()">📄 Save Results as PDF</button>
+                <button class="btn btn-primary" onclick="window.location.href='index.html'">← Back to Portal</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // CAE005 - Answer key and test code
+        const TEST_CODE = 'CAE005';
+        
+        // Answer key for CAE005
+        const answers = {
+            part1: {
+                q1: 'B', q2: 'D', q3: 'C', q4: 'A',
+                q5: 'B', q6: 'D', q7: 'B', q8: 'A'
+            },
+            part2: {
+                q9: 'IF', q10: 'WHETHER', q11: 'WITHOUT', q12: 'NO',
+                q13: 'HAND', q14: 'AN', q15: 'DOING', q16: 'AT'
+            },
+            part3: {
+                q17: 'SIMPLIFY', q18: 'ASSIGNMENTS', q19: 'DOWNSIDE', q20: 'TEMPTATION',
+                q21: 'SELECTIVELY', q22: 'ENSURE', q23: 'SHORTEN', q24: 'BIBLIOGRAPHICAL'
+            },
+            part4: {
+                q25: { 
+                    full: ['WE HAD SET ASIDE', 'WE\'D SET ASIDE'], 
+                    part1: ['WE HAD', 'WE\'D'], 
+                    part2: 'SET ASIDE' 
+                },
+                q26: { 
+                    full: ['RESENTED BEING TREATED AS IF', 'RESENTED BEING TREATED AS THOUGH'], 
+                    part1: 'RESENTED BEING TREATED', 
+                    part2: ['AS IF', 'AS THOUGH'] 
+                },
+                q27: { 
+                    full: ['EVERYONE\'S INTEREST TO CUT DOWN', 'EVERYBODY\'S INTEREST TO CUT DOWN', 'EVERYONE\'S INTEREST IF WE CUT DOWN', 'EVERYBODY\'S INTEREST IF WE CUT DOWN'], 
+                    part1: ['EVERYONE\'S INTEREST', 'EVERYBODY\'S INTEREST'], 
+                    part2: ['TO CUT DOWN', 'IF WE CUT DOWN'] 
+                },
+                q28: { 
+                    full: 'TELL THE DIFFERENCE BETWEEN THE TWO', 
+                    part1: 'TELL THE DIFFERENCE', 
+                    part2: 'BETWEEN THE TWO' 
+                },
+                q29: { 
+                    full: 'THE IMPRESSION THAT LITTLE HAD BEEN', 
+                    part1: 'THE IMPRESSION THAT', 
+                    part2: 'LITTLE HAD BEEN' 
+                },
+                q30: { 
+                    full: 'TO MAKE AN EXCEPTION IN MARIA\'S', 
+                    part1: 'TO MAKE AN EXCEPTION', 
+                    part2: 'IN MARIA\'S' 
+                }
+            },
+            part5: {
+                q31: 'B', q32: 'A', q33: 'D', q34: 'B', q35: 'D', q36: 'C'
+            },
+            part6: {
+                q37: 'A', q38: 'A', q39: 'D', q40: 'B'
+            },
+            part7: {
+                q41: 'C', q42: 'F', q43: 'E', q44: 'A', q45: 'G', q46: 'D'
+            },
+            part8: {
+                q47: 'C', q48: 'D', q49: 'A', q50: 'D', q51: 'B', 
+                q52: 'A', q53: 'C', q54: 'B', q55: 'A', q56: 'B'
+            }
+        };
+    </script>
+    <script src="script-CAE005.js"></script>
+</body>
+</html>

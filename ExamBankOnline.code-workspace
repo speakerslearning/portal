@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../TransformerCat"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ExamBankOnline"
+	}
+}

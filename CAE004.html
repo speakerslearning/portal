@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAE004 - C1 Advanced Cambridge English Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>C1 Advanced (CAE) Cambridge English Test</h1>
+            <p class="test-info">Practice Test - CAE004</p>
+        </header>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div class="test-section" id="part1" style="display: block;">
+            <h2>Part 1 - Multiple Choice Cloze</h2>
+            <p class="instructions">For questions 1–8, read the text below and decide which answer (A, B, C or D) best fits each gap.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>The world's oldest pots</h3>
+                
+                <p>While 
+                <select class="inline-select" name="q1" onchange="saveDropdownAnswer(1, this.value)">
+                    <option value="">— 1 —</option>
+                    <option value="A">uncovering</option>
+                    <option value="B">excavating</option>
+                    <option value="C">unearthing</option>
+                    <option value="D">exposing</option>
+                </select>
+                in Xianrendong Cave in south-east China recently, archaeologists discovered the oldest fragments of pottery ever found. These pieces of clay pots have been 
+                <select class="inline-select" name="q2" onchange="saveDropdownAnswer(2, this.value)">
+                    <option value="">— 2 —</option>
+                    <option value="A">referred</option>
+                    <option value="B">counted</option>
+                    <option value="C">chased</option>
+                    <option value="D">traced</option>
+                </select>
+                back 20,000 years to a time when many parts of the earth were covered by huge ice sheets. At this time, food was relatively 
+                <select class="inline-select" name="q3" onchange="saveDropdownAnswer(3, this.value)">
+                    <option value="">— 3 —</option>
+                    <option value="A">faint</option>
+                    <option value="B">scarce</option>
+                    <option value="C">seldom</option>
+                    <option value="D">bare</option>
+                </select>. Fat, an important 
+                <select class="inline-select" name="q4" onchange="saveDropdownAnswer(4, this.value)">
+                    <option value="">— 4 —</option>
+                    <option value="A">source</option>
+                    <option value="B">cause</option>
+                    <option value="C">base</option>
+                    <option value="D">root</option>
+                </select>
+                of energy was hard to 
+                <select class="inline-select" name="q5" onchange="saveDropdownAnswer(5, this.value)">
+                    <option value="">— 5 —</option>
+                    <option value="A">stand</option>
+                    <option value="B">go</option>
+                    <option value="C">come</option>
+                    <option value="D">get</option>
+                </select>
+                by, so cooking was essential to 
+                <select class="inline-select" name="q6" onchange="saveDropdownAnswer(6, this.value)">
+                    <option value="">— 6 —</option>
+                    <option value="A">relieve</option>
+                    <option value="B">release</option>
+                    <option value="C">restore</option>
+                    <option value="D">retain</option>
+                </select>
+                energy from various food sources such as potatoes and meat. Marrow found in animal bones is very 
+                <select class="inline-select" name="q7" onchange="saveDropdownAnswer(7, this.value)">
+                    <option value="">— 7 —</option>
+                    <option value="A">lavish</option>
+                    <option value="B">ample</option>
+                    <option value="C">deep</option>
+                    <option value="D">rich</option>
+                </select>
+                in fat, and archaeologists believe the cave dwellers may have cooked bones to obtain it. There is also some evidence that they cooked other food items like shellfish.</p>
+                
+                <p>One important 
+                <select class="inline-select" name="q8" onchange="saveDropdownAnswer(8, this.value)">
+                    <option value="">— 8 —</option>
+                    <option value="A">outlook</option>
+                    <option value="B">factor</option>
+                    <option value="C">aspect</option>
+                    <option value="D">form</option>
+                </select>
+                of the pottery found in Xianrendong Cave is that it was made several thousand years before the birth of agriculture. This discovery, along with other recent ones in east Asia, disproves the long-held conventional theory that farming and permanent settlements had to be established before people could begin to make pottery.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 2</button>
+            </div>
+        </div>
+
+        <!-- Part 2 - Open Cloze -->
+        <div class="test-section" id="part2" style="display: none;">
+            <h2>Part 2 - Open Cloze</h2>
+            <p class="instructions">For questions 9–16, read the text below and think of the word which best fits each gap. Use only one word in each gap. Write your answers IN CAPITAL LETTERS.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>A computer called Baby</h3>
+                
+                <p>When the machine jokingly named Baby whirred into life on 21 June 1948, it became the world's first modern computer. And nothing 
+                <input type="text" class="inline-input" name="q9" maxlength="15" placeholder="9" oninput="saveTextAnswer(9, this.value)" style="text-transform: uppercase;">
+                ever be the same again. Developed by Tom Kilburn and Freddie Williams, two scientists at Manchester University in the UK, Baby was the first device to have all the components now regarded 
+                <input type="text" class="inline-input" name="q10" maxlength="15" placeholder="10" oninput="saveTextAnswer(10, this.value)" style="text-transform: uppercase;">
+                characteristic of the basic computer. It could store 
+                <input type="text" class="inline-input" name="q11" maxlength="15" placeholder="11" oninput="saveTextAnswer(11, this.value)" style="text-transform: uppercase;">
+                only data, but also a short user programme in electronic memory and process it at electronic speed. In many respects, Baby, which was big enough to fill a room, was completely 
+                <input type="text" class="inline-input" name="q12" maxlength="15" placeholder="12" oninput="saveTextAnswer(12, this.value)" style="text-transform: uppercase;">
+                today's small, powerful computers. A smartphone can store several hundred million 
+                <input type="text" class="inline-input" name="q13" maxlength="15" placeholder="13" oninput="saveTextAnswer(13, this.value)" style="text-transform: uppercase;">
+                more bytes of data than Baby could. But it was a key breakthrough.</p>
+                
+                <p><input type="text" class="inline-input" name="q14" maxlength="15" placeholder="14" oninput="saveTextAnswer(14, this.value)" style="text-transform: uppercase;">
+                being a British invention, however, the original research was not fully exploited in the UK, and other countries soon raced ahead in harnessing the new technology. Both inventors had successful academic careers, but 
+                <input type="text" class="inline-input" name="q15" maxlength="15" placeholder="15" oninput="saveTextAnswer(15, this.value)" style="text-transform: uppercase;">
+                ever made the money of people like Bill Gates, the billionaire founder of Microsoft, who was as 
+                <input type="text" class="inline-input" name="q16" maxlength="15" placeholder="16" oninput="saveTextAnswer(16, this.value)" style="text-transform: uppercase;">
+                unborn when Baby first came to life.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 1</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 3</button>
+            </div>
+        </div>
+
+        <!-- Part 3 - Word Formation -->
+        <div class="test-section" id="part3" style="display: none;">
+            <h2>Part 3 - Word Formation</h2>
+            <p class="instructions">For questions 17–24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. Write your answers IN CAPITAL LETTERS.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>Overhearing mobile phone conversations</h3>
+                
+                <p>For many people, unintentionally hearing a mobile phone conversation causes more annoyance and frustration than the general background noise of people talking to each other.</p>
+                
+                <p>Scientists from the University of San Diego recently carried out an interesting study with a group of <span class="word-given">VOLUNTARY</span> 
+                <input type="text" class="inline-input" name="q17" maxlength="20" placeholder="17" oninput="saveTextAnswer(17, this.value)" style="text-transform: uppercase;">
+                to investigate this phenomenon in a controlled way. The <span class="word-given">PARTICIPATE</span> 
+                <input type="text" class="inline-input" name="q18" maxlength="20" placeholder="18" oninput="saveTextAnswer(18, this.value)" style="text-transform: uppercase;">
+                were asked to solve a series of anagram puzzles while, <span class="word-given">KNOW</span> 
+                <input type="text" class="inline-input" name="q19" maxlength="20" placeholder="19" oninput="saveTextAnswer(19, this.value)" style="text-transform: uppercase;">
+                to them, researchers conducted a scripted conversation in the background, either between two people in the room or between someone on a phone and a caller not in the room.</p>
+                
+                <p><span class="word-given">OVERWHELM</span> 
+                <input type="text" class="inline-input" name="q20" maxlength="20" placeholder="20" oninput="saveTextAnswer(20, this.value)" style="text-transform: uppercase;">, subjects found the one-sided phone conversation more <span class="word-given">MEMORY</span> 
+                <input type="text" class="inline-input" name="q21" maxlength="20" placeholder="21" oninput="saveTextAnswer(21, this.value)" style="text-transform: uppercase;">
+                and distracting than the two-sided interaction. One of the researchers, Dr Rosa Vessal, suggested that two-way conversations are less distracting because they are easier to follow. "The content of a phone conversation is <span class="word-given">PREDICT</span> 
+                <input type="text" class="inline-input" name="q22" maxlength="20" placeholder="22" oninput="saveTextAnswer(22, this.value)" style="text-transform: uppercase;">," she said. "Not knowing where it's heading is distracting."</p>
+                
+                <p>What are the <span class="word-given">IMPLY</span> 
+                <input type="text" class="inline-input" name="q23" maxlength="20" placeholder="23" oninput="saveTextAnswer(23, this.value)" style="text-transform: uppercase;">
+                of the research? One might be that we should not <span class="word-given">ESTIMATE</span> 
+                <input type="text" class="inline-input" name="q24" maxlength="20" placeholder="24" oninput="saveTextAnswer(24, this.value)" style="text-transform: uppercase;">
+                how distracting overheard phone conversations can be for drivers.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 2</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 4</button>
+            </div>
+        </div>
+
+        <!-- Part 4 - Key Word Transformations -->
+        <div class="test-section" id="part4" style="display: none;">
+            <h2>Part 4 - Key Word Transformations</h2>
+            <p class="instructions">For questions 25–30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given. Write your answers IN CAPITAL LETTERS.</p>
+            <p class="instructions"><strong>Note:</strong> Each question is worth up to 2 points (1 point for each key part of the answer).</p>
+
+            <div class="reading-passage">
+                <div class="transformation-question">
+                    <p><strong>25.</strong> I was really surprised to bump into Marianne at the airport.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">LAST</span></p>
+                    <p>Marianne <input type="text" class="inline-input-long" name="q25" maxlength="60" placeholder="25" oninput="saveTextAnswer(25, this.value)" style="text-transform: uppercase;"> to bump into at the airport.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>26.</strong> I was amazed that John stopped eating meat completely in an attempt to improve his health.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">GAVE</span></p>
+                    <p>Much <input type="text" class="inline-input-long" name="q26" maxlength="60" placeholder="26" oninput="saveTextAnswer(26, this.value)" style="text-transform: uppercase;"> eating meat completely in an attempt to improve his health.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>27.</strong> Like many students, Joe would find it very difficult to pay for everything he needs if his parents didn't help him.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">ENDS</span></p>
+                    <p>Like many students, Joe would have great <input type="text" class="inline-input-long" name="q27" maxlength="60" placeholder="27" oninput="saveTextAnswer(27, this.value)" style="text-transform: uppercase;"> the help of his parents.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>28.</strong> My tutor says she's been too busy to read my essay, but she'll mark it by the end of the week.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">ROUND</span></p>
+                    <p>My tutor says she <input type="text" class="inline-input-long" name="q28" maxlength="60" placeholder="28" oninput="saveTextAnswer(28, this.value)" style="text-transform: uppercase;"> my essay yet, but she'll mark it by the end of the week.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>29.</strong> You can understand why Andrew's comments upset Sofia so much.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">BLAMED</span></p>
+                    <p>Sofia can't <input type="text" class="inline-input-long" name="q29" maxlength="60" placeholder="29" oninput="saveTextAnswer(29, this.value)" style="text-transform: uppercase;"> at Andrew's comments.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>30.</strong> 'I promise I will never tell anyone about the missing files,' said Jenny.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">WORD</span></p>
+                    <p>Jenny <input type="text" class="inline-input-long" name="q30" maxlength="60" placeholder="30" oninput="saveTextAnswer(30, this.value)" style="text-transform: uppercase;"> never tell anyone about the missing files.</p>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 3</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 5</button>
+            </div>
+        </div>
+
+        <!-- Part 5 - Multiple Choice Reading -->
+        <div class="test-section" id="part5" style="display: none;">
+            <h2>Part 5 - Multiple Choice Reading</h2>
+            <p class="instructions">You are going to read an article about extinct animals. For questions 31–36, choose the answer (A, B, C or D) which you think fits best according to the text.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Australia's lost giants</h3>
+                <p><em>Thousands of years ago, Australia had large populations of huge animals. What happened to them?</em></p>
+                
+                <p>Across Australia, scientists have discovered thousands of fossils of ancient megafauna, huge animals that lived 100,000 to 40,000 years ago, during the Pleistocene era. The remains include those of giant snakes, huge flightless birds, two-and-a-half-metre-tall kangaroos, hippo-like beasts and six-metre-long lizards. These animals dominated their ecosystems, and then were gone in an extinction spasm that swept away nearly every animal weighing 50 kilogrammes or more. What happened exactly? Given how much ink has been spilled on the extinction of the dinosaurs 65 million years ago, it's a wonder that more hasn't been devoted to the fate of the Pleistocene megafauna, creatures that were both dramatically large and, for some time, co-existent with humans.</p>
+
+                <p>In the Americas, native megafauna died out relatively soon after the arrival of humans, about 13,000 years ago. In the 1960s, scientist Paul Martin developed what became known as the 'blitzkrieg hypothesis' to explain the extinction process: humans created havoc as they spread through the Americas, wielding stone-tipped spears to annihilate animal populations. But it wasn't comprehensive; North America kept its deer, bears, bison and moose, while South America retained jaguars and llamas.</p>
+
+                <p>What happened to Australia's megafauna is one of the planet's most baffling palaeontological mysteries. Kangaroos – hardly giants – are the largest indigenous land animals to have survived on the continent. For years, scientists blamed climate change. Indeed, Australia has been drying out for a million years or more, and megafauna were faced with a continent that became increasingly parched and denuded of vegetation. Palaeontologist Tim Flannery suggests, somewhat differently, that humans, who arrived on the continent around 50,000 years ago, used fire to hunt, which led to deforestation and a dramatic disruption of the water cycle. What's certain, Flannery says, is that something dramatic happened to Australia's large creatures – abruptly (how abruptly is a matter of debate) – around 46,000 years ago, strikingly soon after the invasion of a tool-wielding, intelligent predator. There does appear to be more than mere coincidence here.</p>
+
+                <p>Flannery advanced the Australian version of Martin's 'blitzkrieg hypothesis' in a book called The Future Eaters. He also put forward an even more ambitious thesis that human beings, generally, are prone to ruining ecosystems and destroying their own futures. The book proved highly controversial. Some viewed it as critical of the Aborigines, the first Australians, who pride themselves on living in harmony with nature. The more basic problem is that nothing has been found to prove that humans killed any megafauna – not one animal skeleton with a spear tip in it, for example. Such kill sites have been found in the Americas, but there's no archaeological analog in Australia. One scientist said: "If this were a murder trial, it wouldn't get past first base."</p>
+
+                <p>The debate about megafauna pivots, substantially, on dating old bones and sediments. If scientists can show that the animals disappeared within a few hundred years, or even a couple of thousand years, of the arrival of humans, there's a strong case that one thing was the direct result of the other. Flannery contends that islands hold another clue to the mystery. Some species of megafauna survived on Tasmania and other islands until 40,000 years ago, when falling sea levels allowed humans to finally reach them, Flannery says. This argument relies on the lack of fossil evidence for a prolonged human–megafauna overlap. If, however, we find evidence that human beings and megafauna co-existed for thousands of years, then the role of humans in the extinctions would become blurry at best. Certainly it would rule out a rapid, Martin-Flannery-style blitzkrieg.</p>
+
+                <p>Although the data currently available is limited and inconclusive, there would seem to be great value in investigating what happened. The blitzkrieg hypothesis paints an alarming picture of human beings rapidly wiping out a great number of animals. But there's an even more ominous scenario: the extinctions didn't happen because of overkill but rather through an incremental sequence of events, including climate change, during which people involved could not fully discern what was happening to their environment. This brings us to today. "The way we've lived and are living is destroying our future," Flannery says. Yet we're only gradually figuring out how we're changing our world and the extent to which we're harming or even driving to extinction countless species.</p>
+            </div>
+
+            <!-- Questions -->
+            <div class="questions-container">
+                <!-- Question 31 -->
+                <div class="question">
+                    <div class="question-number">Question 31</div>
+                    <div class="question-text">
+                        <p><strong>What does the writer suggest in the first paragraph about the large animals of the Pleistocene period?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q31" value="A" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>A. They were historically less important than the dinosaurs.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="B" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>B. More is known about them than about dinosaurs.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="C" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>C. Relatively little has been written about them.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="D" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>D. They were larger than is often thought.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 32 -->
+                <div class="question">
+                    <div class="question-number">Question 32</div>
+                    <div class="question-text">
+                        <p><strong>What does the word 'it' in line 11 refer to?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q32" value="A" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>A. the spread of humans in the Americas</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="B" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>B. the disappearance of megafauna</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="C" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>C. the human practice of hunting</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="D" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>D. the theory Martin put forward</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 33 -->
+                <div class="question">
+                    <div class="question-number">Question 33</div>
+                    <div class="question-text">
+                        <p><strong>What point does the writer make about the extinction of ancient Australian megafauna in the third paragraph?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q33" value="A" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>A. The idea that humans contributed to it is plausible.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="B" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>B. It is likely to have been more gradual than previously thought.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="C" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>C. The theory that it resulted from climate change has been disproved.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="D" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>D. It is hard to understand why kangaroos survived while other species didn't.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 34 -->
+                <div class="question">
+                    <div class="question-number">Question 34</div>
+                    <div class="question-text">
+                        <p><strong>The writer quotes a scientist in line 28 in order to emphasise that</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q34" value="A" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>A. it is a mistake to compare different continents.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="B" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>B. humans are being unfairly characterised as criminals.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="C" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>C. there is no real evidence to support Flannery's theory.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="D" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>D. Australian Aborigines should be allowed to defend themselves.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 35 -->
+                <div class="question">
+                    <div class="question-number">Question 35</div>
+                    <div class="question-text">
+                        <p><strong>According to the fifth paragraph, what is the key information dating techniques need to provide?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q35" value="A" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>A. how long humans have lived on various islands</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="B" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>B. when humans became capable of long sea journeys</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="C" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>C. when megafauna first appeared in a certain locations</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="D" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>D. how long humans and megafauna lived alongside each other</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 36 -->
+                <div class="question">
+                    <div class="question-number">Question 36</div>
+                    <div class="question-text">
+                        <p><strong>What is the writer doing in the final paragraph?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q36" value="A" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>A. anticipating further research developments</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="B" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>B. introducing an opposing point of view</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="C" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>C. illustrating a point made previously</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="D" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>D. raising some wider concerns</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 4</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 6</button>
+            </div>
+        </div>
+
+        <!-- Part 6 - Cross-text Multiple Matching -->
+        <div class="test-section" id="part6" style="display: none;">
+            <h2>Part 6 - Cross-text Multiple Matching</h2>
+            <p class="instructions">You are going to read four opinions about the future of printed newspapers. For questions 37–40, choose from opinions A–D. The opinions may be chosen more than once.</p>
+
+            <!-- Reading Passages -->
+            <div class="reading-passage">
+                <h3>Does the printed newspaper have a future?</h3>
+                <p class="instructions">As more and more people use TV, the internet and various forms of social media as sources of news and information, the future of the traditional newspaper is the subject of much debate. Can the printed format survive? Four media analysts offer their thoughts.</p>
+                
+                <div class="review-section">
+                    <h4>A</h4>
+                    <p>The traditional newspaper clearly faces stiff competition from television and the internet, but reports of its terminal decline are greatly exaggerated. In China, India and much of Latin America, newspaper sales have actually risen in recent years, and if news organisations work in an intelligent way – combining print and digital operations as many already do – then the future of news on paper should be assured. The format has a lot going for it, not least that people generally trust newspapers as sources of reliable, detailed information. Print journalists have time to check facts carefully and are able to present stories in well-written, coherent forms. So much reporting on TV and online, on the other hand, is instant, speculative and lacks the bigger picture. The other key factor is that people like to touch and hold paper, and newsprint tends to be much easier on the eyes than text on a screen.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>B</h4>
+                    <p>There is something very satisfying about turning the pages of a newspaper, glancing across the headlines, then settling down to read an article that catches your eye. It is a feeling many people miss when accessing news in a digital format, but for the generations who have grown up reading electronic media, it is not something they will have any great attachment to. For most younger people, printed newspapers make little sense. The entire contents of a newspaper, and so much more, can be found on the website of the same title. Some people have welcomed the replacement of newspapers with digital media for environmental reasons – fewer newspapers mean fewer trees cut down – but this is not a real issue as most newspapers nowadays are printed on recycled paper. The key point is that, with rapidly declining readership, printed newspapers represent an increasingly antiquated business model, which is unlikely ever to recover.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>C</h4>
+                    <p>A respected media analyst recently looked at current trends in the American printed newspaper industry and calculated that within 30 years it would be extinct. And there is no reason to believe that the fate of newspapers elsewhere in the world would be very different. Those who champion the traditional format have some strong arguments to make: that newspapers are friendlier objects to handle than electronic gadgets, that forestry and paper production are no less sustainable as industries than those which manufacture and power digital technology, and that the content of newspapers tends to be of greater depth, accuracy and trustworthiness than in any other form of media. These are all fine points worth making, but the bottom line is that the traditional newspaper is an obsolete format and, as such, is destined to perish sooner or later.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>D</h4>
+                    <p>The printed newspaper has had a long life: over 500 years since the invention of the printing press. Fundamentally, however, it is just a piece of technology, a device now approaching the end of its natural lifespan. Its successor, digital technology, can do everything the newspaper does and much more. The vastness of the internet means it can provide information in a great variety of ways. Long, detailed investigations can be found as easily as brief, ephemeral updates. Technological developments mean that digital devices are as easy to handle and read as newspapers, and give far wider and more flexible access to information. In terms of energy and material resources, digital technology is much more efficient, as you only use it when content is actually required, whereas newspapers are printed whether they are read or not. The demise of a historically significant piece of technology is bound to cause distress but it will happen, whether we like it or not.</p>
+                </div>
+            </div>
+
+            <!-- Matching Questions -->
+            <div class="cross-text-questions">
+                <h4>Which analyst...</h4>
+                
+                <div class="match-question" onclick="openReviewModal(37)">
+                    <div class="match-number">37</div>
+                    <div class="match-text">has a different opinion from the others about the physical experience of reading printed newspapers?</div>
+                    <div class="match-answer" id="match37">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(38)">
+                    <div class="match-number">38</div>
+                    <div class="match-text">takes a similar view to C regarding the quality of news reporting in printed newspapers as compared with digital media?</div>
+                    <div class="match-answer" id="match38">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(39)">
+                    <div class="match-number">39</div>
+                    <div class="match-text">shares B's opinion about the environmental impact of printed newspapers?</div>
+                    <div class="match-answer" id="match39">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(40)">
+                    <div class="match-number">40</div>
+                    <div class="match-text">takes a different view from the others regarding the long-term viability of printed newspapers?</div>
+                    <div class="match-answer" id="match40">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 5</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 7</button>
+            </div>
+        </div>
+
+        <!-- Part 7 - Gapped Text -->
+        <div class="test-section" id="part7" style="display: none;">
+            <h2>Part 7 - Gapped Text</h2>
+            <p class="instructions">You are going to read an article about wildlife reserves in Kenya. Six paragraphs have been removed from the article. Choose from the paragraphs A-G the one which fits each gap (41-46). There is one extra paragraph which you do not need to use.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Kenya's great wildlife – exploring two nature reserves in east Africa</h3>
+                
+                <p>'Is that a black or white rhino?' Our guide Joseph tested how much attention we had been paying. We had seen a white rhino first, extremely close up, casually grazing while we took pictures. That's the first clue. Black rhino are much more nervous and aggressive, and you shouldn't get close. Second clue, the shape of its back. Finally, look at the mouth. It turns out 'white' was coined by happy accident many years ago, when the Afrikaans word for 'wide' was mistaken and the name stuck; in contrast, the black rhino has a thinner, beak-like lip.</p>
+
+                <div class="gap-carousel" id="gap41" onclick="openSentenceModal(41)">
+                    <strong>41</strong>
+                    <div class="selected-sentence" id="display41">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>Our trip was organised by an organisation called Farside Africa, whose passionate support for conservation efforts enabled us to get right to the heart of projects in Kenya. First stop was Lewa House, part of Lewa Wildlife Conservancy, a private reserve north of Nairobi, with a small airstrip a short drive away.</p>
+
+                <div class="gap-carousel" id="gap42" onclick="openSentenceModal(42)">
+                    <strong>42</strong>
+                    <div class="selected-sentence" id="display42">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>At the forefront of rhino conservation in Kenya, Lewa currently has 71 black and 56 white rhino, more than ten per cent of Kenya's total rhino population – counted daily by a team of rangers. Huge resources have been channelled into their protection, but unfortunately the illegal hunters still sometimes win the day, their reward guaranteed by a buoyant black market in which the price of black rhino horn exceeds that of gold.</p>
+
+                <div class="gap-carousel" id="gap43" onclick="openSentenceModal(43)">
+                    <strong>43</strong>
+                    <div class="selected-sentence" id="display43">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>Lewa House itself is perched on a hill, secluded cottages with dramatic vistas across the rolling landscape: mighty elephants trundling along the horizon, a zebra wandering through your garden. Guests gather for lunch by the pool or dinner in the house, where Calum and Sophie welcome them like extended family.</p>
+
+                <div class="gap-carousel" id="gap44" onclick="openSentenceModal(44)">
+                    <strong>44</strong>
+                    <div class="selected-sentence" id="display44">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>The second half of our trip was a couple of hours' drive away, in Laikipia, at Ol Pejeta Conservancy, another reserve dedicated to the protection of rhino and the development of local communities. While Lewa relies heavily on donors, Ol Pejeta is striving to create a sustainable project and, together with revenue from tourism, uses innovative ventures in combining livestock and arable farming with wildlife.</p>
+
+                <div class="gap-carousel" id="gap45" onclick="openSentenceModal(45)">
+                    <strong>45</strong>
+                    <div class="selected-sentence" id="display45">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>In Ol Pejeta Conservancy, we were hosted at Kicheche Camp by Andy and Sonja. By 'camp' you may read 'canvas', but the comparison with traditional camping ends there; they have designed a cosy retreat with all creature comforts and personal touches. The only reminder we were in a tent came from our obvious proximity to a variety of animal calls that pierced the night.</p>
+
+                <div class="gap-carousel" id="gap46" onclick="openSentenceModal(46)">
+                    <strong>46</strong>
+                    <div class="selected-sentence" id="display46">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>Oh, and we ticked the big cat box too. Both by day and by night, we encountered lion, witnessing what incredible beasts they are as they sauntered majestically through their kingdom. Somewhat lazily, they gave chase to some baby warthog and resting ostriches, and came away without a catch, but our immediate proximity to each event was exhilarating.</p>
+            </div>
+
+            <!-- Paragraph Options Reference -->
+            <div class="sentence-options">
+                <h4>Available Paragraphs (A-G):</h4>
+                <div class="sentence-option">
+                    <strong>A</strong> They have steadily built a fine base for exploring, and we saw more than we could have hoped: graceful giraffe, endangered Grevy's zebra, large families of elephant, no less than four species of eagle and, of course, the rhino. Alas, we were not to see a big cat as the grass was high after the rains, and they proved elusive.
+                </div>
+                <div class="sentence-option">
+                    <strong>B</strong> As the sun dipped behind the hills at the end of each fantastic day, however, we were able to enjoy the serenity of the wilderness, along with enthralling conversation about Kenyan wildlife and culture.
+                </div>
+                <div class="sentence-option">
+                    <strong>C</strong> It's so disturbing it hardly bears thinking about, but when we were offered the chance to talk to the security team about their work, we took it. They treated us to a demonstration: from the scent of a single footprint, a specially trained dog expertly tracked a 'poacher' through the scrub, an exercise that has helped the team make hundreds of arrests.
+                </div>
+                <div class="sentence-option">
+                    <strong>D</strong> We steadily approached, and as the animal treated our arrival calmly, we could work out which it was. Sadly, the few of these remarkable creatures we were lucky enough to see are part of a declining population – though, fortunately, there are many people battling to save them.
+                </div>
+                <div class="sentence-option">
+                    <strong>E</strong> Perhaps because the landscape was drier and flatter, we saw even more wildlife here than in the previous reserve, more than making up for the interrupted sleep. Swathes of warthog were an obvious addition, along with many jackal and a solitary hyena.
+                </div>
+                <div class="sentence-option">
+                    <strong>F</strong> Joseph came to collect us there, and needlessly explained that we would see much more than rhino; either side of the runway gathered zebra, a couple of giraffe and an ostrich before our very eyes.
+                </div>
+                <div class="sentence-option">
+                    <strong>G</strong> Besides this income diversification, there is a successful campaign to demonstrate that grazing cattle can regenerate grasslands and give back to the wildlife. Among the animals here are four of only seven remaining northern white rhino worldwide. They are in an enclosed reserve with added security, their horns trimmed to be less enticing to poachers.
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 6</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 8</button>
+            </div>
+        </div>
+
+        <!-- Part 8 - Multiple Matching -->
+        <div class="test-section" id="part8" style="display: none;">
+            <h2>Part 8 - Multiple Matching</h2>
+            <p class="instructions">You are going to read an article in which four composers write about their own favourite modern composers. For questions 47–56, choose from composers A–D. The composers may be chosen more than once.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Modern composers</h3>
+                
+                <div class="review-section">
+                    <h4>A – Mark-Anthony Turnage on Louis Andriessen</h4>
+                    <p>I marvel at the extreme individualism of Louis Andriessen. Every time you hear a piece of his music, you know it's by him. When I first heard his composition De Staat, I was struck by the fact that although it was minimalist music, it was so much more harmonically interesting and hard-edged than most works in that genre. He's influenced a lot by Stravinsky, who is probably my idol, and he has in turn greatly influenced me in his directness, bold colours and harmonic language. He has an emotional depth and a sense of magic that a lot of modern music lacks. A big part of me regrets not studying with him, although he's such an overwhelming figure I might have become merely a bad copy. Andriessen's rigour would have been good for me because he is a master of structure and planning, which I struggle with. He is one of the few composers working today whose music will survive, whereas many of the current big names will sink without trace.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>B – Michael Berkeley on Harrison Birtwistle</h4>
+                    <p>I like several modern composers, but the one who, for me, seems to build inexorably on his own intensely personal vision with consistent integrity, is Harrison Birtwistle. Take a piece such as The Triumph of Time, seemingly hewn from stone, yet a simple little melodic motif rises up and soon takes on a haunting and unforgettable quality, like the cry of some ancient creature. I seized the opportunity to create a cantata (Love Cries) based on the love music from Birtwistle's opera The Second Mrs Kong, because I knew that in compiling it I would learn so much. And I did — Harry moves ideas around like children's building bricks. 'Try that passage upside-down,' he would say. A sense of theatre permeates not only the operas, but even chamber works such as Ritual Fragment and Secret Theatre. Ultimately, though, it's what I cannot quantify that transfixes me — as Pierre Boulez said of him: 'Where does it come from, this music?'</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>C – Sally Beamish on Peter Maxwell Davies</h4>
+                    <p>What I love about Max is that he is constantly surprising — from the intense complexity of Eight Songs For a Mad King, to the unaffected simplicity of Farewell to Stromness, which I recently heard played by guitarist Allan Neave. His opera Taverner was my first introduction to the world of 'contemporary' music, at 16, and I was fascinated by it. I then discovered St Thomas Wake: the toughness of the musical language thrown into relief by foxtrots. I finally met Max in person when I joined the Scottish Chamber Orchestra as a viola player, and he was conducting. I was on the brink of taking the plunge as a composer, and he encouraged and advised me, inviting me to be his assistant on his composers' course. I felt unequal to the job and wished profoundly I had simply applied as a participant, but I learnt an immense amount, things I have never forgotten. His works still enthral me; every new piece brings fresh surprises and is always an interaction with his performers, and often with the community on Orkney, the Scottish island where he lives.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>D – David Sawer on Benedict Mason</h4>
+                    <p>Benedict Mason's pieces always seem to walk the tightrope between perfection and total chaos. They are fresh, playful and ridiculous, and usually of such impossible complexity that they threaten to self-destruct. Animals and The Origins of Dance, a sequence of 12 dance movements, each precisely 90 seconds long, has the ensemble playing jitterbugs and bossa novas at up to 12 different tempi, coordinated by 12 different click tracks. Hinterstoisser Traverse is a 12-minute piece based on one note. The series of pieces Music for Concert Halls plays with the acoustical properties of the venues for which they were written. They are more like installations for orchestra, elegantly evoking space and distance through the choreographed movements of the musicians in and around the whole building, while the audience remain in their seats. His experiments are extreme and uncompromising, but entirely logical. The pieces push at the boundaries and point to future possibilities for the concert-going experience.</p>
+                </div>
+            </div>
+
+            <!-- Matching Questions -->
+            <div class="cross-text-questions">
+                <h4>Questions 47-56</h4>
+                <p><strong>Which writer says the following about their favourite composer?</strong></p>
+                
+                <div class="match-question" onclick="openReviewModal(47)">
+                    <div class="match-number">47</div>
+                    <div class="match-text">He works closely with the people who interpret his music.</div>
+                    <div class="match-answer" id="match47">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(48)">
+                    <div class="match-number">48</div>
+                    <div class="match-text">All his compositions have a dramatic quality to them.</div>
+                    <div class="match-answer" id="match48">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(49)">
+                    <div class="match-number">49</div>
+                    <div class="match-text">He composes music with specific locations in mind.</div>
+                    <div class="match-answer" id="match49">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(50)">
+                    <div class="match-number">50</div>
+                    <div class="match-text">He creates music that defies analysis.</div>
+                    <div class="match-answer" id="match50">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(51)">
+                    <div class="match-number">51</div>
+                    <div class="match-text">He may not be the ideal teacher.</div>
+                    <div class="match-answer" id="match51">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(52)">
+                    <div class="match-number">52</div>
+                    <div class="match-text">His compositions tend to be difficult to play.</div>
+                    <div class="match-answer" id="match52">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(53)">
+                    <div class="match-number">53</div>
+                    <div class="match-text">His artistic output will outlive that of many of his contemporaries.</div>
+                    <div class="match-answer" id="match53">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(54)">
+                    <div class="match-number">54</div>
+                    <div class="match-text">His compositions vary considerably in style.</div>
+                    <div class="match-answer" id="match54">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(55)">
+                    <div class="match-number">55</div>
+                    <div class="match-text">His compositions seem to be ahead of their time.</div>
+                    <div class="match-answer" id="match55">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(56)">
+                    <div class="match-number">56</div>
+                    <div class="match-text">The music he composes is instantly recognisable as his.</div>
+                    <div class="match-answer" id="match56">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 7</button>
+                <button class="btn btn-primary" onclick="finishTest()">Finish Test</button>
+            </div>
+        </div>
+
+        <!-- Sentence Selection Modal (for Part 7) -->
+        <div id="sentenceModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select paragraph for gap <span id="modalSentenceNumber"></span></h3>
+                    <button class="modal-close" onclick="closeSentenceModal()">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="sentence-choice" onclick="selectSentence('A')">
+                        <strong>A</strong> They have steadily built a fine base for exploring, and we saw more than we could have hoped: graceful giraffe, endangered Grevy's zebra, large families of elephant, no less than four species of eagle and, of course, the rhino. Alas, we were not to see a big cat as the grass was high after the rains, and they proved elusive.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('B')">
+                        <strong>B</strong> As the sun dipped behind the hills at the end of each fantastic day, however, we were able to enjoy the serenity of the wilderness, along with enthralling conversation about Kenyan wildlife and culture.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('C')">
+                        <strong>C</strong> It's so disturbing it hardly bears thinking about, but when we were offered the chance to talk to the security team about their work, we took it. They treated us to a demonstration: from the scent of a single footprint, a specially trained dog expertly tracked a 'poacher' through the scrub, an exercise that has helped the team make hundreds of arrests.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('D')">
+                        <strong>D</strong> We steadily approached, and as the animal treated our arrival calmly, we could work out which it was. Sadly, the few of these remarkable creatures we were lucky enough to see are part of a declining population – though, fortunately, there are many people battling to save them.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('E')">
+                        <strong>E</strong> Perhaps because the landscape was drier and flatter, we saw even more wildlife here than in the previous reserve, more than making up for the interrupted sleep. Swathes of warthog were an obvious addition, along with many jackal and a solitary hyena.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('F')">
+                        <strong>F</strong> Joseph came to collect us there, and needlessly explained that we would see much more than rhino; either side of the runway gathered zebra, a couple of giraffe and an ostrich before our very eyes.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('G')">
+                        <strong>G</strong> Besides this income diversification, there is a successful campaign to demonstrate that grazing cattle can regenerate grasslands and give back to the wildlife. Among the animals here are four of only seven remaining northern white rhino worldwide. They are in an enclosed reserve with added security, their horns trimmed to be less enticing to poachers.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review Selection Modal -->
+        <div id="reviewModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="reviewModalTitle">Select answer for question <span id="modalReviewNumber"></span></h3>
+                    <button class="modal-close" onclick="closeReviewModal()">×</button>
+                </div>
+                <div class="modal-body" id="reviewModalBody">
+                    <!-- Content will be dynamically inserted by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="test-section" id="results" style="display: none;">
+            <h2>C1 Advanced (CAE) - Test Complete!</h2>
+            <div id="resultsContent"></div>
+            <div class="navigation">
+                <button class="btn btn-success" onclick="downloadPDF()">📄 Save Results as PDF</button>
+                <button class="btn btn-primary" onclick="window.location.href='index.html'">← Back to Portal</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // CAE004 - Answer key and test code
+        const TEST_CODE = 'CAE004';
+        
+        // Answer key for CAE004
+        const answers = {
+            part1: {
+                q1: 'D', q2: 'B', q3: 'A', q4: 'C',
+                q5: 'B', q6: 'D', q7: 'C', q8: 'A'
+            },
+            part2: {
+                q9: 'WOULD', q10: 'AS', q11: 'NOT', q12: 'UNLIKE',
+                q13: 'TIMES', q14: 'DESPITE', q15: 'NEITHER', q16: 'YET'
+            },
+            part3: {
+                q17: 'VOLUNTEERS', q18: 'PARTICIPANTS', q19: 'UNKNOWN', q20: 'OVERWHELMINGLY',
+                q21: 'MEMORABLE', q22: 'UNPREDICTABLE', q23: 'IMPLICATIONS', q24: 'UNDERESTIMATE'
+            },
+            part4: {
+                q25: { 
+                    full: 'WAS THE LAST PERSON I EXPECTED', 
+                    part1: 'WAS THE LAST PERSON', 
+                    part2: 'I EXPECTED' 
+                },
+                q26: { 
+                    full: 'TO MY AMAZEMENT JOHN GAVE UP', 
+                    part1: 'TO MY AMAZEMENT', 
+                    part2: 'JOHN GAVE UP' 
+                },
+                q27: { 
+                    full: ['DIFFICULTY MAKING ENDS MEET WITHOUT', 'TROUBLE MAKING ENDS MEET WITHOUT'], 
+                    part1: ['DIFFICULTY MAKING ENDS MEET', 'TROUBLE MAKING ENDS MEET'], 
+                    part2: 'WITHOUT' 
+                },
+                q28: { 
+                    full: ['HAS NOT GOT ROUND TO READING', 'HASN\'T GOT ROUND TO READING', 'HAS NOT GOTTEN ROUND TO READING', 'HASN\'T GOTTEN ROUND TO READING'], 
+                    part1: ['HAS NOT GOT ROUND TO', 'HASN\'T GOT ROUND TO', 'HAS NOT GOTTEN ROUND TO', 'HASN\'T GOTTEN ROUND TO'], 
+                    part2: 'READING' 
+                },
+                q29: { 
+                    full: ['BE BLAMED FOR GETTING UPSET', 'BE BLAMED FOR BEING UPSET', 'BE BLAMED FOR FEELING UPSET'], 
+                    part1: 'BE BLAMED FOR', 
+                    part2: ['GETTING UPSET', 'BEING UPSET', 'FEELING UPSET'] 
+                },
+                q30: { 
+                    full: ['GAVE HER WORD THAT SHE WOULD', 'GAVE HER WORD SHE WOULD'], 
+                    part1: ['GAVE HER WORD THAT', 'GAVE HER WORD'], 
+                    part2: 'SHE WOULD' 
+                }
+            },
+            part5: {
+                q31: 'C', q32: 'B', q33: 'A', q34: 'C', q35: 'D', q36: 'D'
+            },
+            part6: {
+                q37: 'D', q38: 'A', q39: 'C', q40: 'A'
+            },
+            part7: {
+                q41: 'D', q42: 'F', q43: 'C', q44: 'A', q45: 'G', q46: 'E'
+            },
+            part8: {
+                q47: 'C', q48: 'B', q49: 'D', q50: 'B', q51: 'A', 
+                q52: 'D', q53: 'A', q54: 'C', q55: 'D', q56: 'A'
+            }
+        };
+    </script>
+    <script src="script-CAE004.js"></script>
+</body>
+</html>

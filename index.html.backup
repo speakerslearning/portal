@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers' Learning Portal</title>
+    <link rel="stylesheet" href="index-style.css">
+</head>
+<body>
+    <!-- Password Protection Overlay -->
+    <div id="passwordOverlay" class="password-overlay">
+        <div class="password-box">
+            <div class="password-logo">
+                <img src="speakerslogo.png" alt="Speakers Logo" onerror="this.style.display='none'">
+            </div>
+            <div class="password-title-logo">
+                <img src="Learning Portal.png" alt="Learning Portal" onerror="this.style.display='none'">
+            </div>
+            <p>Please enter your access password</p>
+            <input type="password" id="passwordInput" placeholder="Enter password" autocomplete="off">
+            <button onclick="checkPassword()">Enter</button>
+            <p id="passwordError" class="password-error"></p>
+        </div>
+    </div>
+
+    <div class="container" id="mainContent" style="display: none;">
+        <!-- Top Banner Header -->
+        <header class="top-banner">
+            <div class="corner-logo">
+                <img src="speakerslogo.png" alt="Speakers Corner" onerror="this.style.display='none'">
+            </div>
+            <div class="banner-content">
+                <div class="logo-area">
+                    <img src="learningportalwhitetext.png" alt="Learning Portal" class="portal-logo" onerror="this.src='Learning Portal.png'">
+                </div>
+                <nav class="page-tabs">
+                    <a href="#" class="tab active" onclick="goBackToMain(); return false;">Home</a>
+                    <a href="#" class="tab" onclick="navigateToSection('exams'); return false;">Exams</a>
+                    <a href="#" class="tab" onclick="navigateToSection('games'); return false;">Games</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <div class="screen" id="mainMenu">
+            <h2>Choose Your Activity</h2>
+            <p class="instruction">Select from our range of learning resources:</p>
+            
+            <div class="main-menu-grid">
+                <div class="menu-card exams" onclick="navigateToSection('exams')">
+                    <div class="menu-icon">�</div>
+                    <h3>Exams</h3>
+                    <p class="menu-desc">Practice full Cambridge English tests</p>
+                </div>
+
+                <div class="menu-card games" onclick="navigateToSection('games')">
+                    <div class="menu-icon">🎲</div>
+                    <h3>Games</h3>
+                    <p class="menu-desc">Learn English through fun interactive games</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Level Selection Screen -->
+        <div class="screen" id="levelScreen" style="display: none;">
+            <div class="screen-header">
+                <button class="back-btn" onclick="goBackToMain()">← Back to Menu</button>
+                <h2>Select Your Level</h2>
+            </div>
+            <p class="instruction">Choose the Cambridge English level you want to practice:</p>
+            <p class="instruction" style="color: #f59e0b; font-weight: 600; margin-top: -20px;">💡 Recommendation: Complete these exams using a tablet or computer</p>
+            
+            <div class="level-cards">
+                <div class="level-card" onclick="selectLevel('B1')">
+                    <div class="level-badge b1">B1</div>
+                    <h3>PET</h3>
+                    <p class="level-name">Preliminary English Test</p>
+                    <p class="level-desc">For learners with intermediate English skills</p>
+                </div>
+
+                <div class="level-card" onclick="selectLevel('B2')">
+                    <div class="level-badge b2">B2</div>
+                    <h3>FCE</h3>
+                    <p class="level-name">First Certificate in English</p>
+                    <p class="level-desc">For learners with upper-intermediate English skills</p>
+                </div>
+
+                <div class="level-card" onclick="selectLevel('C1')">
+                    <div class="level-badge c1">C1</div>
+                    <h3>CAE</h3>
+                    <p class="level-name">Certificate in Advanced English</p>
+                    <p class="level-desc">For learners with advanced English skills</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Test Selection Screen -->
+        <div class="screen" id="testScreen" style="display: none;">
+            <div class="screen-header">
+                <button class="back-btn" onclick="goBack()">← Back to Levels</button>
+                <h2 id="selectedLevelTitle"></h2>
+            </div>
+
+            <p class="instruction">Select a test from the list below:</p>
+
+            <div class="test-list" id="testList">
+                <!-- Tests will be populated here -->
+            </div>
+
+            <div class="start-section">
+                <button class="start-btn" id="startBtn" onclick="startTest()" disabled>
+                    Start Test →
+                </button>
+            </div>
+        </div>
+
+        <!-- Games Screen -->
+        <div class="screen" id="gamesScreen" style="display: none;">
+            <div class="screen-header">
+                <button class="back-btn" onclick="goBackToMain()">← Back to Menu</button>
+                <h2>Games</h2>
+            </div>
+            <p class="instruction">Choose a game to practice your English skills:</p>
+
+            <div class="games-grid">
+                <div class="game-card" onclick="navigateToGame('clozecat')">
+                    <div class="game-logo">
+                        <img src="title.png" alt="ClozeCat" style="max-width: 200px; width: 100%;" onerror="this.style.display='none'">
+                    </div>
+                    <div class="game-animation">
+                        <img src="cattyping.gif" alt="Cat typing" style="width: 100px; height: 100px;" onerror="this.style.display='none'">
+                    </div>
+                    <h3>ClozeCat</h3>
+                    <p class="game-desc">Fill in the blanks with the correct words to complete sentences</p>
+                </div>
+
+                <div class="game-card" onclick="navigateToGame('transformercat')">
+                    <div class="game-logo">
+                        <img src="TransformerCatb2.png" alt="TransformerCat" style="max-width: 200px; width: 100%;" onerror="this.style.display='none'">
+                    </div>
+                    <div class="game-animation">
+                        <img src="catcoffeekeyboard.gif" alt="Cat at keyboard" style="width: 100px; height: 100px;" onerror="this.style.display='none'">
+                    </div>
+                    <h3>TransformerCat</h3>
+                    <p class="game-desc">Transform sentences using key words in this B2 challenge</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index-script.js"></script>
+</body>
+</html>

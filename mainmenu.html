@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers' Learning Portal</title>
+    <link rel="stylesheet" href="mainmenu-style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Top Banner Header -->
+        <header class="top-banner">
+            <div class="corner-logo">
+                <img src="speakerslogo.png" alt="Speakers Corner" onerror="this.style.display='none'">
+            </div>
+            <div class="banner-content">
+                <div class="logo-area">
+                    <img src="learningportalwhitetext.png" alt="Learning Portal" class="portal-logo" onerror="this.src='Learning Portal.png'">
+                </div>
+                <nav class="page-tabs">
+                    <a href="#" class="tab active" onclick="navigateToSection('home'); return false;">Home</a>
+                    <a href="#" class="tab" onclick="navigateToSection('exams'); return false;">Exams</a>
+                    <a href="#" class="tab" onclick="navigateToSection('games'); return false;">Games</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <div class="main-content-area" id="mainMenu">
+            <div class="content-wrapper">
+                <!-- Hero Welcome Section -->
+                <section class="hero-welcome">
+                    <h1 class="hero-title">Welcome to Speakers' Learning Portal</h1>
+                    <p class="hero-description">Practice B1, B2, and C1 Use of English & Reading tests online with instant feedback. Play interactive grammar games to strengthen your language skills in a fun and engaging way.</p>
+                </section>
+
+                <!-- Featured Resources -->
+                <section class="featured-section">
+                    <h2 class="content-heading">Choose Your Learning Path</h2>
+                    
+                    <div class="resource-cards">
+                        <!-- Exams Card -->
+                        <div class="resource-card large" onclick="navigateToSection('exams')">
+                            <div class="card-content">
+                                <div class="card-icon-wrapper">
+                                    <span class="card-emoji">📝</span>
+                                </div>
+                                <h3 class="card-heading">Cambridge Exams</h3>
+                                <p class="card-text">Practice comprehensive Cambridge English tests including PET (B1), FCE (B2), and CAE (C1) with instant feedback. Perfect your exam technique with authentic practice materials.</p>
+                                <button class="card-button">
+                                    <span>Start Practicing</span>
+                                    <span class="arrow">→</span>
+                                </button>
+                            </div>
+                            <div class="card-gradient exam-gradient"></div>
+                        </div>
+
+                        <!-- Games Card -->
+                        <div class="resource-card large" onclick="navigateToSection('games')">
+                            <div class="card-content">
+                                <div class="card-icon-wrapper">
+                                    <span class="card-emoji">&#127922;</span>
+                                </div>
+                                <h3 class="card-heading">Interactive Games</h3>
+                                <p class="card-text">Practice Grammar and Use of English through our new, fun games ClozeCat B2 and TransformerCat B2. Improve your language skills in an engaging and entertaining way.</p>
+                                <button class="card-button game-button">
+                                    <span>Play Now</span>
+                                    <span class="arrow">→</span>
+                                </button>
+                            </div>
+                            <div class="card-gradient game-gradient"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quick Stats -->
+                <section class="quick-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Exam Levels</div>
+                        <div class="stat-detail">B1, B2, C1</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Practice Tests</div>
+                        <div class="stat-detail">Multiple exams per level</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Fun Games</div>
+                        <div class="stat-detail">ClozeCat & TransformerCat</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Level Selection Screen -->
+        <div class="screen" id="levelScreen" style="display: none;">
+            <div class="exam-hero">
+                <h1 class="exam-hero-title">Cambridge English Exams</h1>
+                <p class="exam-hero-description">Select your level and start practicing with authentic exam materials. Get instant feedback and track your progress.</p>
+            </div>
+            
+            <div class="exam-content">
+                <div class="screen-header">
+                    <h2>Choose Your Level</h2>
+                </div>
+                <p class="instruction">💡 <strong>Recommendation:</strong> Complete these exams using a tablet or computer for the best experience</p>
+                
+                <div class="level-cards">
+                    <div class="level-card" onclick="selectLevel('B1')">
+                        <div class="level-badge b1">B1</div>
+                        <h3>PET</h3>
+                        <p class="level-name">Preliminary English Test</p>
+                        <p class="level-desc">For learners with intermediate English skills</p>
+                    </div>
+
+                    <div class="level-card" onclick="selectLevel('B2')">
+                        <div class="level-badge b2">B2</div>
+                        <h3>FCE</h3>
+                        <p class="level-name">First Certificate in English</p>
+                        <p class="level-desc">For learners with upper-intermediate English skills</p>
+                    </div>
+
+                    <div class="level-card" onclick="selectLevel('C1')">
+                        <div class="level-badge c1">C1</div>
+                        <h3>CAE</h3>
+                        <p class="level-name">Certificate in Advanced English</p>
+                        <p class="level-desc">For learners with advanced English skills</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Test Selection Screen -->
+        <div class="screen" id="testScreen" style="display: none;">
+            <div class="test-hero">
+                <div class="test-level-badge" id="testLevelBadge"></div>
+                <h1 class="test-hero-title" id="selectedLevelTitle"></h1>
+                <p class="test-hero-description">Select a practice test below and start improving your English skills with instant feedback.</p>
+            </div>
+            
+            <div class="test-content">
+                <div class="screen-header">
+                    <button class="back-btn" onclick="goBack()">← Back to Levels</button>
+                    <h2>Available Practice Tests</h2>
+                </div>
+
+                <div class="test-list" id="testList">
+                    <!-- Tests will be populated here -->
+                </div>
+
+                <div class="start-section">
+                    <button class="start-btn" id="startBtn" onclick="startTest()" disabled>
+                        Start Test →
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Games Screen -->
+        <div class="screen" id="gamesScreen" style="display: none;">
+            <div class="games-hero">
+                <h1 class="games-hero-title">Interactive Learning Games</h1>
+                <p class="games-hero-description">Practice grammar and vocabulary through fun, interactive games. Choose a game below and start learning while having fun!</p>
+            </div>
+            
+            <div class="games-content">
+                <div class="screen-header">
+                    <h2>Choose Your Game</h2>
+                </div>
+
+                <div class="games-grid">
+                    <div class="game-card">
+                        <div class="game-logo">
+                            <img src="title.png" alt="ClozeCat" onerror="this.style.display='none'">
+                        </div>
+                        <div class="game-animation">
+                            <img src="cattyping.gif" alt="Cat typing" onerror="this.style.display='none'">
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">ClozeCat B2</h3>
+                            <p class="game-desc">Fill in the blanks with the correct words to complete sentences. Perfect for practicing Use of English skills.</p>
+                            <div class="game-buttons">
+                                <button class="game-play-btn mobile" onclick="navigateToGame('clozecat-mobile')">
+                                    <span>📱 Play on Mobile</span>
+                                </button>
+                                <button class="game-play-btn desktop" onclick="navigateToGame('clozecat-desktop')">
+                                    <span>💻 Play on Tablet/PC</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-card">
+                        <div class="game-logo">
+                            <img src="TransformerCatb2.png" alt="TransformerCat" onerror="this.style.display='none'">
+                        </div>
+                        <div class="game-animation">
+                            <img src="catcoffeekeyboard.gif" alt="Cat at keyboard" onerror="this.style.display='none'">
+                        </div>
+                        <div class="game-info">
+                            <h3 class="game-title">TransformerCat B2</h3>
+                            <p class="game-desc">Transform sentences using key words in this B2 challenge. Master sentence transformation skills.</p>
+                            <button class="game-play-btn" onclick="navigateToGame('transformercat')">
+                                <span>Play Now</span>
+                                <span class="arrow">→</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index-script.js"></script>
+</body>
+</html>
+

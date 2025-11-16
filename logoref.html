@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers' Corner - Test Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 60px 50px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .logo {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            margin: 0 auto 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+            font-weight: 700;
+            box-shadow: 0 25px 50px rgba(102, 126, 234, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            padding: 8px;
+        }
+
+        .logo-image {
+            width: 110%;
+            height: 110%;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        .logo::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            right: -6px;
+            bottom: -6px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 30px 60px rgba(102, 126, 234, 0.4);
+        }
+
+        .logo:hover::before {
+            opacity: 0.3;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 25px 50px rgba(102, 126, 234, 0.3);
+            }
+            50% {
+                box-shadow: 0 25px 55px rgba(102, 126, 234, 0.5);
+            }
+        }
+
+        .logo {
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        h1 {
+            color: #2d3748;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: #718096;
+            font-size: 16px;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .input-group {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            color: #4a5568;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 20px 24px;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            background: #f7fafc;
+            font-family: 'Inter', sans-serif;
+            min-height: 60px;
+            text-transform: uppercase;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .error-message {
+            color: #e53e3e;
+            font-size: 14px;
+            margin-top: 10px;
+            display: none;
+            text-align: left;
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #a0aec0;
+            font-size: 12px;
+        }
+
+        /* Admin Panel Styles */
+        .admin-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .admin-section {
+            background: #f8fafc;
+            border-radius: 15px;
+            padding: 25px;
+            border: 2px solid #e2e8f0;
+        }
+        
+        .admin-section h3 {
+            color: #2d3748;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .link-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .admin-link {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .test-link {
+            background: linear-gradient(135deg, #48bb78, #38a169);
+            color: white;
+        }
+        
+        .test-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(72, 187, 120, 0.3);
+        }
+        
+        .results-link {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        
+        .results-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+        
+        .editor-link {
+            background: linear-gradient(135deg, #ed8936, #dd6b20);
+            color: white;
+        }
+        
+        .editor-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(237, 137, 54, 0.3);
+        }
+        
+        .viewer-link {
+            background: linear-gradient(135deg, #38b2ac, #319795);
+            color: white;
+        }
+        
+        .viewer-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(56, 178, 172, 0.3);
+        }
+        
+        .back-btn {
+            margin-top: 30px;
+            padding: 12px 24px;
+            background: #e2e8f0;
+            color: #4a5568;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: #cbd5e0;
+            transform: translateY(-1px);
+        }
+
+        /* Test Selection Styles */
+        .test-selection {
+            display: grid;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .test-option {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .test-option:hover {
+            border-color: #667eea;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+        }
+        
+        .test-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .test-option h3 {
+            color: #2d3748;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .test-option p {
+            color: #718096;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 40px 30px;
+                margin: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .admin-grid {
+                gap: 20px;
+            }
+            
+            .admin-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="speakerslogo copy.png" alt="Speakers' Corner Logo" class="logo-image">
+        </div>
+        <h1>Speakers' Corner</h1>
+        <p class="subtitle">English Language Test Portal</p>
+        
+        <form id="accessForm">
+            <div class="input-group">
+                <label for="accessCode">Enter Access Code</label>
+                <input type="text" id="accessCode" name="accessCode" required oninput="this.value = this.value.toUpperCase()">
+                <div class="error-message" id="errorMessage">Invalid access code. Please try again.</div>
+            </div>
+            
+            <button type="submit" class="submit-btn">Access Test</button>
+        </form>
+        
+        <div class="footer">
+            Secure testing environment • Cambridge English aligned
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('accessForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const accessCode = document.getElementById('accessCode').value.trim().toUpperCase();
+            const errorMessage = document.getElementById('errorMessage');
+            
+            // Hide error message initially
+            errorMessage.style.display = 'none';
+            
+            // Validate 6-character format for test codes
+            const testCodePattern = /^[A-Z0-9]{6}$/;
+            // Accept any B1R, B2R, or C1R pattern with 3 digits
+            const validTestCodePattern = /^(B1R|B2R|C1R)[0-9]{3}$/;
+            
+            // Check if it's a 6-character test code format
+            if (testCodePattern.test(accessCode)) {
+                const isValidTestCode = validTestCodePattern.test(accessCode);
+                
+                if (!isValidTestCode) {
+                    errorMessage.textContent = 'Invalid test code format. Please enter a valid 6-character test code (e.g., B1R001, B2R001, C1R001).';
+                    errorMessage.style.display = 'block';
+                    document.getElementById('accessCode').value = '';
+                    document.getElementById('accessCode').focus();
+                    return;
+                }
+            }
+            
+            // Student database with access codes and pre-filled information (updated to new format)
+            const studentDatabase = {
+                'ADAM001': {
+                    name: 'Adam Pergande',
+                    email: 'adam@speakerscorner.com',
+                    testCode: 'B1R001'
+                },
+                'STUDENT001': {
+                    name: 'John Smith',
+                    email: 'john.smith@email.com',
+                    testCode: 'B1R001'
+                },
+                'STUDENT002': {
+                    name: 'Sarah Johnson',
+                    email: 'sarah.johnson@email.com',
+                    testCode: 'B1R002'
+                },
+                'STUDENT003': {
+                    name: 'Michael Brown',
+                    email: 'michael.brown@email.com',
+                    testCode: 'B1R003'
+                },
+                'B2STUDENT001': {
+                    name: 'Emma Wilson',
+                    email: 'emma.wilson@email.com',
+                    testCode: 'B2R001'
+                },
+                'B2STUDENT002': {
+                    name: 'David Garcia',
+                    email: 'david.garcia@email.com',
+                    testCode: 'B2R002'
+                }
+            };
+
+            // Valid test codes - now using pattern matching instead of fixed list
+            const adminCodes = ['ADMIN'];
+            const generalCodes = ['TEST123', 'DEMO'];
+            const specialCodes = ['BANANA'];
+            
+            // Function to check if access code is a valid test code pattern
+            function isValidTestCode(code) {
+                return validTestCodePattern.test(code) || specialCodes.includes(code);
+            }
+            
+            const allValidCodes = [...adminCodes, ...generalCodes, ...specialCodes, ...Object.keys(studentDatabase)];
+            
+            if (allValidCodes.includes(accessCode) || isValidTestCode(accessCode)) {
+                // Check if it's an admin code
+                if (adminCodes.includes(accessCode)) {
+                    showAdminPanel();
+                } else if (studentDatabase[accessCode]) {
+                    // Student with pre-registered information
+                    const student = studentDatabase[accessCode];
+                    const params = new URLSearchParams({
+                        test: student.testCode,
+                        name: student.name,
+                        email: student.email,
+                        prefill: 'true'
+                    });
+                    
+                    // Route to correct template based on test code (6-character format)
+                    if (student.testCode.startsWith('C1R')) {
+                        window.location.href = 'C1 Reading/c1readingtemplate.html?' + params.toString();
+                    } else if (student.testCode.startsWith('B2R')) {
+                        window.location.href = 'B2 Reading/b2template.html?' + params.toString();
+                    } else if (student.testCode.startsWith('B1R')) {
+                        window.location.href = 'B1 Reading/b1template.html?' + params.toString();
+                    }
+                } else if (isValidTestCode(accessCode)) {
+                    // Direct test code access (6-character format)
+                    if (accessCode.startsWith('C1R')) {
+                        window.location.href = 'C1 Reading/c1readingtemplate.html?test=' + accessCode;
+                    } else if (accessCode.startsWith('B2R')) {
+                        window.location.href = 'B2 Reading/b2template.html?test=' + accessCode;
+                    } else if (accessCode.startsWith('B1R')) {
+                        window.location.href = 'B1 Reading/b1template.html?test=' + accessCode;
+                    }
+                } else if (generalCodes.includes(accessCode)) {
+                    // General access - show test selection
+                    showTestSelection();
+                } else {
+                    alert('Access granted! Welcome to the test portal.');
+                }
+            } else {
+                // Show specific error message based on input
+                if (accessCode.length !== 6) {
+                    errorMessage.textContent = 'Test codes must be exactly 6 characters long (e.g., B1R001, B2U003).';
+                } else if (!testCodePattern.test(accessCode)) {
+                    errorMessage.textContent = 'Test codes must contain only letters and numbers (e.g., B1R001, C1U005).';
+                } else {
+                    errorMessage.textContent = 'Invalid access code. Please check your test code and try again.';
+                }
+                errorMessage.style.display = 'block';
+                document.getElementById('accessCode').value = '';
+                document.getElementById('accessCode').focus();
+            }
+        });
+
+        // Show admin panel with all template links
+        function showAdminPanel() {
+            const container = document.querySelector('.container');
+            container.innerHTML = `
+                <div class="logo">SC</div>
+                <h1>Admin Panel</h1>
+                <p class="subtitle">Test Portal Management</p>
+                
+                <div class="admin-grid">
+                    <div class="admin-section">
+                        <h3>B1 Student Tests</h3>
+                        <div class="link-group">
+                            <a href="B1 Reading/b1template.html?test=B1R001" class="admin-link test-link">
+                                📝 B1 Reading Test 001
+                            </a>
+                            <a href="B1 Reading/b1template.html?test=B1R002" class="admin-link test-link">
+                                📝 B1 Reading Test 002
+                            </a>
+                            <a href="B1 Reading/b1template.html?test=B1R003" class="admin-link test-link">
+                                📝 B1 Reading Test 003
+                            </a>
+                            <a href="B1 Reading/b1template.html?test=B1R004" class="admin-link test-link">
+                                📝 B1 Reading Test 004
+                            </a>
+                            <a href="B1 Reading/b1template.html?test=B1R005" class="admin-link test-link">
+                                📝 B1 Reading Test 005
+                            </a>
+                            <a href="B1 Reading/b1template.html?test=B1R006" class="admin-link test-link">
+                                📝 B1 Reading Test 006
+                            </a>
+                        </div>
+                        <div style="margin-top: 15px; font-size: 12px; color: #666;">
+                            <strong>Test Codes:</strong> B1R001-B1R006+ (accepts any B1RXXX format)<br>
+                            <strong>Sample Student Codes:</strong> ADAM001, STUDENT001, STUDENT002, STUDENT003
+                        </div>
+                    </div>
+                    
+                    <div class="admin-section">
+                        <h3>B2 Student Tests</h3>
+                        <div class="link-group">
+                            <a href="B2 Reading/b2template.html?test=B2R001" class="admin-link test-link">
+                                📚 B2 Reading Test 001
+                            </a>
+                            <a href="B2 Reading/b2template.html?test=B2R002" class="admin-link test-link">
+                                📚 B2 Reading Test 002
+                            </a>
+                        </div>
+                        <div style="margin-top: 15px; font-size: 12px; color: #666;">
+                            <strong>Reading Tests:</strong> B2R001-B2R002<br>
+                            <strong>Test Students:</strong> B2STUDENT001, B2STUDENT002
+                        </div>
+                    </div>
+                    
+                    <div class="admin-section">
+                        <h3>C1 Advanced Tests</h3>
+                        <div class="link-group">
+                            <a href="C1 Reading/c1readingtemplate.html?test=C1R001" class="admin-link test-link">
+                                📚 C1 Reading Test 001
+                            </a>
+                        </div>
+                        <div style="margin-top: 15px; font-size: 12px; color: #666;">
+                            <strong>Reading Tests:</strong> C1R001<br>
+                            <strong>Access Codes:</strong> Direct test codes or student codes
+                        </div>
+                    </div>
+                    
+                    <div class="admin-section">
+                        <h3>Results & Reports</h3>
+                        <div class="link-group">
+                            <a href="B1 Reading/b1readingresults.html" class="admin-link results-link">
+                                📊 B1 Test Results
+                            </a>
+                            <a href="B2 Reading/b2readingresults.html" class="admin-link results-link">
+                                📈 B2 Reading Results
+                            </a>
+                            <a href="C1 Reading/c1readingresults.html" class="admin-link results-link">
+                                📊 C1 Reading Results
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-section">
+                        <h3>Test Management</h3>
+                        <div class="link-group">
+                            <a href="admin/json-editor.html" class="admin-link editor-link">
+                                🔧 JSON Editor (Full Control)
+                            </a>
+                            <a href="admin/test-maker.html" class="admin-link editor-link">
+                                ✏️ Test Maker (Simple)
+                            </a>
+                            <a href="test-viewer.html" class="admin-link viewer-link">
+                                👁️ Test Viewer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="goBack()" class="back-btn">← Back to Login</button>
+            `;
+        }
+        
+        // Show test selection for general access codes
+        function showTestSelection() {
+            const container = document.querySelector('.container');
+            container.innerHTML = `
+                <div class="logo">SC</div>
+                <h1>Select Test</h1>
+                <p class="subtitle">Choose your test from the available options</p>
+                
+                <div class="test-selection">
+                    <div class="test-option" onclick="selectTest('B1R001')">
+                        <div class="test-icon">📖</div>
+                        <h3>B1 Reading Test 001</h3>
+                        <p>Cambridge B1 Preliminary Reading Test - Version 001</p>
+                    </div>
+                    
+                    <div class="test-option" onclick="selectTest('B1R002')">
+                        <div class="test-icon">📚</div>
+                        <h3>B1 Reading Test 002</h3>
+                        <p>Cambridge B1 Preliminary Reading Test - Version 002</p>
+                    </div>
+                    
+                    <div class="test-option" onclick="selectTest('B1R003')">
+                        <div class="test-icon">📝</div>
+                        <h3>B1 Reading Test 003</h3>
+                        <p>Cambridge B1 Preliminary Reading Test - Version 003</p>
+                    </div>
+                    
+                    <div class="test-option" onclick="selectTest('B2R001')">
+                        <div class="test-icon">🎯</div>
+                        <h3>B2 First Certificate Test 001</h3>
+                        <p>Cambridge B2 First Reading & Use of English Test - Version 001</p>
+                    </div>
+                    
+                    <div class="test-option" onclick="selectTest('B2U001')">
+                        <div class="test-icon">✏️</div>
+                        <h3>B2 Use of English Test 001</h3>
+                        <p>Cambridge B2 First Use of English Only Test - Version 001</p>
+                    </div>
+                </div>
+                
+                <button onclick="goBack()" class="back-btn">← Back to Login</button>
+            `;
+        }
+        
+        // Select a specific test (6-character format)
+        function selectTest(testCode) {
+            if (testCode.startsWith('C1R')) {
+                window.location.href = 'C1 Reading/c1readingtemplate.html?test=' + testCode;
+            } else if (testCode.startsWith('B2R')) {
+                window.location.href = 'B2 Reading/b2template.html?test=' + testCode;
+            } else if (testCode.startsWith('B1R')) {
+                window.location.href = 'B1 Reading/b1template.html?test=' + testCode;
+            }
+        }
+        
+        // Go back to main login screen
+        function goBack() {
+            // Clear all test-related data when returning to main portal
+            clearTestData();
+            location.reload();
+        }
+        
+        // Function to clear all test-related localStorage data
+        function clearTestData() {
+            const keysToRemove = [
+                'testResults',
+                'testTiming', 
+                'studentName',
+                'studentEmail',
+                'currentTestId',
+                'allTestResults'
+            ];
+            
+            // Remove specific test data keys
+            keysToRemove.forEach(key => {
+                localStorage.removeItem(key);
+            });
+            
+            // Remove any emergency backup keys (pattern: testResults_emergency_*)
+            Object.keys(localStorage).forEach(key => {
+                if (key.startsWith('testResults_emergency_') || key.startsWith('testResult_')) {
+                    localStorage.removeItem(key);
+                }
+            });
+            
+            console.log('✅ Cleared all test data from localStorage');
+        }
+
+        // Focus on input when page loads
+        window.addEventListener('load', function() {
+            // Clear any previous test data when loading the main portal
+            clearTestData();
+            document.getElementById('accessCode').focus();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers' Learning Portal - Login</title>
+    <link rel="stylesheet" href="password-style.css">
+</head>
+<body>
+    <div class="password-overlay">
+        <div class="password-box">
+            <div class="password-logo">
+                <img src="speakerslogo.png" alt="Speakers Logo" onerror="this.style.display='none'">
+            </div>
+            <div class="password-title-logo">
+                <img src="Learning Portal.png" alt="Learning Portal" onerror="this.style.display='none'">
+            </div>
+            <p class="password-instruction">Please enter your access password</p>
+            <input type="password" id="passwordInput" placeholder="Enter password" autocomplete="off">
+            <button onclick="checkPassword()">Enter</button>
+            <p id="passwordError" class="password-error"></p>
+        </div>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const passwordInput = document.getElementById('passwordInput');
+            const passwordError = document.getElementById('passwordError');
+            const correctPassword = 'student25';
+
+            if (passwordInput.value === correctPassword) {
+                // Redirect to main menu
+                window.location.href = 'mainmenu.html';
+            } else {
+                passwordError.textContent = 'Incorrect password. Please try again.';
+                passwordInput.value = '';
+                passwordInput.focus();
+            }
+        }
+
+        // Allow Enter key to submit
+        document.getElementById('passwordInput').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                checkPassword();
+            }
+        });
+    </script>
+</body>
+</html>

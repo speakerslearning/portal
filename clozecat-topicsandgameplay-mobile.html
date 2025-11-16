@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>ClozeCat Mobile - Topics</title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="catstyle.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    
+    /* Unified container for topic selection */
+    #topicSelection {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-height: 100vh !important;
+      padding: 10px !important;
+      margin: 0 !important;
+      display: flex;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+      position: relative !important;
+      padding-top: 60px !important;
+      background: white !important;
+    }
+    
+    #topicSelection img {
+      max-width: 160px !important;
+      margin-bottom: 10px !important;
+    }
+    
+    #topicSelection h3 {
+      font-size: 16px !important;
+      margin: 8px 0 3px 0 !important;
+      text-align: center !important;
+      color: #1f2937 !important;
+      font-weight: bold !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.5px !important;
+    }
+    
+    #topicSelection p {
+      font-size: 11px;
+      color: #6b7280;
+      margin: 0 0 10px 0;
+      text-align: center;
+      font-style: italic;
+    }
+    
+    #topicsList {
+      width: 100% !important;
+      max-width: 320px !important;
+      margin: 5px 0 !important;
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      gap: 6px !important;
+    }
+    
+    #topicsList > div {
+      width: 100%;
+      box-sizing: border-box;
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 6px !important;
+    }
+    
+    #topicsList label {
+      margin: 0 !important;
+      font-size: 12px !important;
+      padding: 8px 10px !important;
+      min-height: 36px !important;
+      display: flex !important;
+      align-items: center !important;
+      width: calc(50% - 3px);
+      text-align: left !important;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
+      border-radius: 8px !important;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08) !important;
+      cursor: pointer !important;
+      transition: all 0.3s ease !important;
+      border: 2px solid #e5e7eb !important;
+      font-weight: 500 !important;
+    }
+    
+    #topicsList label:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12) !important;
+    }
+    
+    #topicsList label:active {
+      transform: scale(0.98);
+    }
+    
+    #topicsList label:has(input:checked) {
+      background: linear-gradient(135deg, #5cacee 0%, #4a9fd8 100%) !important;
+      color: white !important;
+      border-color: #3b8cc4 !important;
+      box-shadow: 0 3px 8px rgba(92, 172, 238, 0.4) !important;
+      font-weight: 600 !important;
+    }
+    
+    #topicsList input[type="checkbox"] {
+      margin-right: 6px;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+      accent-color: #5cacee;
+    }
+    
+    .all-topics-toggle {
+      margin: 8px 0 10px 0 !important;
+      padding: 10px 14px !important;
+      background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%) !important;
+      border-radius: 8px !important;
+      border: 2px solid #5cacee !important;
+      width: 100%;
+      max-width: 320px;
+      box-sizing: border-box;
+      box-shadow: 0 2px 6px rgba(92, 172, 238, 0.2) !important;
+      transition: all 0.3s ease !important;
+    }
+    
+    .all-topics-toggle:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 3px 8px rgba(92, 172, 238, 0.3) !important;
+    }
+    
+    .all-topics-toggle label {
+      font-size: 13px !important;
+      font-weight: bold !important;
+      color: #2563eb !important;
+      display: flex !important;
+      align-items: center !important;
+      cursor: pointer !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.5px !important;
+    }
+    
+    .all-topics-toggle input[type="checkbox"] {
+      margin-right: 8px;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      accent-color: #5cacee;
+    }
+    
+    .sentence-count-section {
+      margin: 10px 0 8px 0;
+      padding: 12px;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border: 2px solid #e5e7eb;
+      width: 100%;
+      max-width: 320px;
+      box-sizing: border-box;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    
+    .sentence-count-section:hover {
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+    }
+    
+    .sentence-count-section label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 12px;
+      color: #1f2937;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    #sentenceCountInput {
+      padding: 8px !important;
+      width: 70px !important;
+      font-size: 14px !important;
+      text-align: center;
+      border: 2px solid #5cacee;
+      border-radius: 6px;
+      font-weight: bold;
+      color: #5cacee;
+      background: white;
+      transition: all 0.3s ease;
+    }
+    
+    #sentenceCountInput:focus {
+      outline: none;
+      border-color: #3b8cc4;
+      box-shadow: 0 0 0 3px rgba(92, 172, 238, 0.2);
+      transform: scale(1.05);
+    }
+    
+    #startGameBtn {
+      margin-top: 12px !important;
+      margin-bottom: 30px !important;
+      padding: 12px 25px !important;
+      font-size: 15px !important;
+      font-weight: bold !important;
+      min-width: 180px !important;
+      max-width: 320px !important;
+      width: 100% !important;
+      min-height: 44px !important;
+      background: linear-gradient(135deg, #5cacee 0%, #3b8cc4 100%) !important;
+      color: white !important;
+      border: none !important;
+      border-radius: 8px !important;
+      box-shadow: 0 4px 10px rgba(92, 172, 238, 0.4) !important;
+      cursor: pointer;
+      transition: all 0.3s ease !important;
+      text-transform: uppercase !important;
+      letter-spacing: 1px !important;
+      position: relative !important;
+      overflow: hidden !important;
+    }
+    
+    #startGameBtn:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+    
+    #startGameBtn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(92, 172, 238, 0.5) !important;
+    }
+    
+    #startGameBtn:hover:before {
+      width: 300px;
+      height: 300px;
+    }
+    
+    #startGameBtn:active {
+      transform: translateY(0px);
+      box-shadow: 0 2px 6px rgba(92, 172, 238, 0.4) !important;
+    }
+    
+    #startGameBtn:disabled {
+      background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%) !important;
+      cursor: not-allowed;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+      opacity: 0.6;
+      transform: none !important;
+    }
+    
+    #startGameBtn:disabled:hover {
+      transform: none !important;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    }
+    
+    /* Back button */
+    button[onclick*="mainmenu.html"] {
+      position: fixed !important;
+      top: 15px !important;
+      left: 15px !important;
+      font-size: 16px !important;
+      padding: 6px 10px !important;
+      background: #5cacee !important;
+      color: white !important;
+      border: none !important;
+      border-radius: 8px !important;
+      cursor: pointer !important;
+      z-index: 10000 !important;
+      min-width: 35px !important;
+      min-height: 35px !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+    }
+    
+    /* Animation containers */
+    #cupAnimation {
+      height: 100px !important;
+      width: 100px !important;
+      margin: 8px auto 10px auto !important;
+      position: relative !important;
+    }
+    
+    #cupAnimationImg {
+      width: 100px !important;
+      height: 100px !important;
+      object-fit: contain !important;
+      display: block !important;
+      margin: 0 auto !important;
+    }
+    
+    /* Game Section Styles */
+    #app {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-height: 100vh !important;
+      padding: 10px !important;
+      padding-top: 60px !important;
+      margin: 0 !important;
+      display: none;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      z-index: 1;
+      gap: 3px;
+      background: white !important;
+    }
+    
+    #app.visible {
+      display: flex;
+    }
+    
+    #titleImg {
+      position: fixed;
+      top: 25px;
+      left: 25px;
+      max-width: 120px !important;
+      width: 120px !important;
+      height: auto !important;
+      margin: 0 !important;
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+      z-index: 1001;
+    }
+    
+    #charContainer {
+      position: relative !important;
+      z-index: 2 !important;
+      margin: 100px auto 10px auto !important;
+      height: 120px !important;
+      width: 120px !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+    
+    #charImg {
+      width: 120px !important;
+      height: 120px !important;
+      max-width: 120px !important;
+      object-fit: contain !important;
+    }
+    
+    #speechBubble,
+    #thoughtBubble {
+      position: fixed;
+      top: 80px !important;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 18px !important;
+      font-size: 0.95rem !important;
+      max-width: 85% !important;
+      width: auto !important;
+      min-height: 50px !important;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: none;
+      z-index: 1000;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+      line-height: 1.5;
+    }
+    
+    #exclamation {
+      position: absolute !important;
+      top: -15px !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      font-size: 1.5rem !important;
+      font-weight: bold !important;
+      color: #ff6b6b !important;
+      display: none;
+    }
+    
+    #sentenceContainer {
+      position: relative !important;
+      z-index: 1 !important;
+      width: 100% !important;
+      max-width: 380px !important;
+      font-size: 1rem !important;
+      min-height: 80px !important;
+      padding: 15px !important;
+      background-color: rgba(255, 255, 255, 0.95) !important;
+      border-radius: 8px !important;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1) !important;
+      margin: 10px auto !important;
+      line-height: 1.6 !important;
+      text-align: center;
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+      /* Mobile rendering fixes */
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      will-change: contents;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    #sentenceContainer.loading {
+      color: #5cacee;
+      font-style: normal;
+      font-weight: 500;
+    }
+    
+    #sentenceContainer.loading::after {
+      content: '';
+      animation: dots 1.5s infinite;
+      display: inline-block;
+      width: 20px;
+      text-align: left;
+    }
+    
+    @keyframes dots {
+      0% { content: '.'; }
+      33% { content: '..'; }
+      66% { content: '...'; }
+      100% { content: ''; }
+    }
+    
+    #answerForm {
+      width: 100% !important;
+      max-width: 280px !important;
+      display: flex !important;
+      gap: 8px !important;
+      margin: 10px auto !important;
+    }
+    
+    #answerInput {
+      padding: 10px !important;
+      font-size: 14px !important;
+      flex: 1 !important;
+      border-radius: 6px !important;
+      border: 2px solid #ddd !important;
+      min-height: 40px !important;
+      caret-color: #5cacee;
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    /* Prevent mobile keyboard from appearing */
+    #answerInput:focus {
+      outline: none;
+      border-color: #5cacee !important;
+    }
+    
+    #submitBtn {
+      padding: 10px 20px !important;
+      font-size: 14px !important;
+      border-radius: 6px !important;
+      background-color: #5cacee !important;
+      color: white !important;
+      border: none !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+      min-width: 100px !important;
+      min-height: 50px !important;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    #submitBtn:disabled {
+      background-color: #9ca3af !important;
+      cursor: not-allowed !important;
+      opacity: 0.6 !important;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+    }
+    
+    #continueBtn,
+    #hintBtn,
+    #toggleSoundBtn,
+    #continueBtn,
+    #restartBtn {
+      padding: 10px 20px !important;
+      font-size: 14px !important;
+      margin: 5px !important;
+      border-radius: 6px !important;
+      min-height: 40px !important;
+      cursor: pointer;
+      background: #5cacee;
+      color: white;
+      border: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    
+    #continueBtn {
+      display: none;
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 0px !important;
+    }
+    
+    #restartBtn {
+      display: none;
+      width: 100%;
+      max-width: 320px;
+    }
+    
+    #feedback {
+      width: 100% !important;
+      min-height: 40px !important;
+      margin: 2px 0 !important;
+      padding: 15px !important;
+      font-size: 16px !important;
+      text-align: center !important;
+      border-radius: 8px;
+    }
+    
+    #progress {
+      width: 100% !important;
+      font-size: 14px !important;
+      margin: 5px 0 !important;
+      text-align: center;
+      order: 100 !important;
+    }
+    
+    #progressBar {
+      width: 100% !important;
+      max-width: 320px;
+      height: 8px !important;
+      margin: 8px auto !important;
+      background: #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+      order: 101 !important;
+    }
+    
+    #progressFill {
+      height: 100%;
+      background: #5cacee;
+      transition: width 0.3s ease;
+      width: 0%;
+    }
+    
+    #scoreCounter {
+      width: 100% !important;
+      max-width: 320px;
+      margin: 8px auto !important;
+      padding: 8px 10px !important;
+      background: #f8f9fa;
+      border-radius: 8px;
+      font-size: 13px !important;
+      text-align: center !important;
+      display: none;
+      order: 102 !important;
+    }
+    
+    #scoreCounter > div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: nowrap;
+    }
+    
+    #scoreCounter p {
+      margin: 5px 0;
+      flex: 1;
+      min-width: 80px;
+    }
+    
+    .button-row {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+      max-width: 320px;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    
+    /* Hint button - floating emoji */
+    #hintBtn {
+      position: fixed;
+      right: 5px;
+      top: 30%;
+      width: auto;
+      height: auto;
+      background: none;
+      border: none;
+      font-size: 240px;
+      cursor: pointer;
+      z-index: 10;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      filter: drop-shadow(0 8px 16px rgba(255, 127, 0, 0.5));
+      animation: floatBubble 3s ease-in-out infinite;
+      line-height: 1;
+      outline: none;
+      box-shadow: none;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+    
+    #hintBtn:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    
+    #hintBtn::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
+    
+    @keyframes floatBubble {
+      0%, 100% {
+        transform: translateY(-50%);
+      }
+      50% {
+        transform: translateY(-60%);
+      }
+    }
+    
+    #hintBtn:hover {
+      filter: drop-shadow(0 6px 12px rgba(255, 127, 0, 0.6));
+    }
+    
+    #hintBtn:active {
+      transform: scale(0.95);
+    }
+    
+    #hintBtn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      animation: none;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)) grayscale(100%);
+      transform: translateY(-50%);
+    }
+    
+    #hintBtn:disabled:hover {
+      transform: translateY(-50%);
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)) grayscale(100%);
+    }
+    
+    .button-row {
+      display: none;
+    }
+    
+    #toggleSoundBtn {
+      flex: none;
+      max-width: none;
+    }
+    
+    /* Sound button in top right */
+    #toggleSoundBtn {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #5cacee;
+      border: none;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: all 0.2s;
+      padding: 0;
+      min-width: 0;
+      max-width: none;
+      flex: none;
+      color: white;
+    }
+    
+    #toggleSoundBtn:active {
+      transform: scale(0.9);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    
+    #pawTap {
+      position: absolute;
+      top: 50%;
+      right: -25px;
+      transform: translateY(-50%);
+      font-size: 32px;
+      animation: bounce 1s infinite;
+      display: none;
+      z-index: 5;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    }
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    /* On-screen keyboard */
+    #onScreenKeyboard {
+      width: 100%;
+      max-width: 90vw;
+      margin: 12px auto;
+      display: none;
+      padding: 0 5px;
+    }
+    
+    .keyboard-row {
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      margin-bottom: 4px;
+    }
+    
+    .key-btn {
+      flex: 1;
+      min-width: 0;
+      max-width: 38px;
+      height: 45px;
+      padding: 0;
+      background: #fff;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #333;
+      cursor: pointer;
+      transition: all 0.1s;
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .key-btn:active {
+      background: #5cacee;
+      color: white;
+      transform: scale(0.95);
+      border-color: #5cacee;
+    }
+    
+    .key-btn.space {
+      flex: 2;
+      max-width: 180px;
+      font-size: 14px;
+    }
+    
+    .key-btn.delete {
+      background: #ff6b6b;
+      color: white;
+      border-color: #ff6b6b;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    
+    .key-btn.delete:active {
+      background: #ff5252;
+      border-color: #ff5252;
+    }
+    
+    /* Loading message on game screen */
+    #loadingMessage {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      color: #5cacee;
+      font-weight: 600;
+      text-align: center;
+      z-index: 100;
+      display: none;
+    }
+    
+    /* Loading overlay on game screen */
+    #gameLoadingOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      z-index: 9999;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #gameLoadingOverlay.active {
+      display: flex;
+    }
+    
+    #loadingCatImg {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      margin-bottom: 30px;
+    }
+    
+    #loadingBarContainer {
+      width: 80%;
+      max-width: 300px;
+      height: 8px;
+      background-color: rgba(92, 172, 238, 0.2);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    
+    #loadingBarFill {
+      height: 100%;
+      background: linear-gradient(90deg, #5cacee 0%, #3b8cc4 100%);
+      width: 0%;
+      transition: width 0.3s ease;
+      border-radius: 4px;
+    }
+    
+    #loadingText {
+      font-size: 18px;
+      color: #5cacee;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Topic Selection Section -->
+  <div id="topicSelection" class="app-card">
+    <!-- Back button -->
+    <button onclick="window.location.href='mainmenu.html#games'">←</button>
+    
+    <img src="title.png" alt="ClozeCat">
+    
+    <!-- Cup animation container -->
+    <div id="cupAnimation">
+      <img id="cupAnimationImg" src="cup1.png" alt="Cat sipping">
+    </div>
+    
+    <h3>Choose your topics:</h3>
+    <p>(Max 50 sentences per topic)</p>
+    
+    <div class="all-topics-toggle">
+      <label><input type="checkbox" id="allTopicsToggle"> Select All Topics</label>
+    </div>
+    
+    <div id="topicsList">
+      <div>
+        <label><input type="checkbox" class="topicToggle" value="connectors"> Connectors</label>
+        <label><input type="checkbox" class="topicToggle" value="prepositions"> Prepositions</label>
+        <label><input type="checkbox" class="topicToggle" value="conditionals"> Conditionals</label>
+        <label><input type="checkbox" class="topicToggle" value="relative-pronouns"> Relative Pronouns</label>
+        <label><input type="checkbox" class="topicToggle" value="modal-verbs"> Modal Verbs</label>
+        <label><input type="checkbox" class="topicToggle" value="phrasal-verbs"> Phrasal Verbs</label>
+        <label><input type="checkbox" class="topicToggle" value="quantifiers"> Quantifiers</label>
+        <label><input type="checkbox" class="topicToggle" value="passive-voice"> Passive Voice</label>
+        <label><input type="checkbox" class="topicToggle" value="reported-speech"> Reported Speech</label>
+        <label><input type="checkbox" class="topicToggle" value="auxiliary-verbs"> Auxiliary Verbs</label>
+        <label><input type="checkbox" class="topicToggle" value="comparisons"> Comparisons</label>
+        <label><input type="checkbox" class="topicToggle" value="narrative-tenses"> Narrative Tenses</label>
+        <label><input type="checkbox" class="topicToggle" value="adverbs-of-time"> Adverbs of Time</label>
+      </div>
+    </div>
+    
+    <!-- Sentence count input -->
+    <div class="sentence-count-section">
+      <label for="sentenceCountInput">How many sentences? (1-100)</label>
+      <input type="number" id="sentenceCountInput" min="1" max="100" value="20">
+    </div>
+    
+    <button id="startGameBtn">Start Game</button>
+  </div>
+
+  <script>
+    // Function to go back to main menu
+    function goBackToMainMenu() {
+      window.location.href = 'mainmenu.html#games';
+    }
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      // Set up back button
+      const backButton = document.querySelector('.back-button');
+      if (backButton) {
+        backButton.addEventListener('click', goBackToMainMenu);
+      }
+      
+      const allTopicsToggle = document.getElementById('allTopicsToggle');
+      const topicCheckboxes = document.querySelectorAll('.topicToggle');
+      const startGameBtn = document.getElementById('startGameBtn');
+      const sentenceCountInput = document.getElementById('sentenceCountInput');
+      
+      // Cup animation frames
+      const cupFrames = ['cup1.png', 'cup2.png', 'cup3.png', 'cup4.png'];
+      let cupFrameIndex = 0;
+      let cupAnimationInterval;
+      const cupImg = document.getElementById('cupAnimationImg');
+      
+      function animateCupSipping() {
+        cupAnimationInterval = setInterval(() => {
+          cupImg.src = cupFrames[cupFrameIndex];
+          cupFrameIndex = (cupFrameIndex + 1) % cupFrames.length;
+        }, 300);
+      }
+      
+      // Start cup animation
+      setTimeout(() => {
+        animateCupSipping();
+      }, 500);
+      
+      // After 3 seconds, show sipping image, then loop
+      setTimeout(() => {
+        if (cupAnimationInterval) {
+          clearInterval(cupAnimationInterval);
+        }
+        
+        // Function to handle sip cycle
+        function sipCycle() {
+          // Show sipping
+          cupImg.src = 'catsip.png';
+          
+          // After 2 seconds, go back to animation
+          setTimeout(() => {
+            animateCupSipping();
+            
+            // After 3 seconds of animation, sip again
+            setTimeout(() => {
+              if (cupAnimationInterval) {
+                clearInterval(cupAnimationInterval);
+              }
+              sipCycle(); // Loop
+            }, 3000);
+          }, 2000);
+        }
+        
+        // Start the sip cycle
+        sipCycle();
+      }, 3000);
+      
+      // Toggle all topics
+      allTopicsToggle.addEventListener('change', (e) => {
+        topicCheckboxes.forEach(checkbox => {
+          checkbox.checked = e.target.checked;
+        });
+        updateStartButton();
+      });
+      
+      // Update "Select All" checkbox when individual topics change
+      topicCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+          const allChecked = Array.from(topicCheckboxes).every(cb => cb.checked);
+          allTopicsToggle.checked = allChecked;
+          updateStartButton();
+        });
+      });
+      
+      // Update start button enabled/disabled state
+      function updateStartButton() {
+        const anyChecked = Array.from(topicCheckboxes).some(cb => cb.checked);
+        startGameBtn.disabled = !anyChecked;
+      }
+      
+      // Initial button state
+      updateStartButton();
+      
+      // Start game button handler
+      startGameBtn.addEventListener('click', () => {
+        const selectedTopics = Array.from(topicCheckboxes)
+          .filter(cb => cb.checked)
+          .map(cb => cb.value);
+        
+        const sentenceCount = parseInt(sentenceCountInput.value) || 20;
+        
+        // Validate that topics are selected
+        if (selectedTopics.length === 0) {
+          alert('Please select at least one topic!');
+          return;
+        }
+        
+        // Set global variables for the game BEFORE doing anything
+        window.selectedTopics = selectedTopics;
+        window.sentenceCount = sentenceCount;
+        
+        console.log('🎮 Starting game with topics:', selectedTopics);
+        console.log('📝 Sentence count:', sentenceCount);
+        
+        // Get elements
+        const topicSelection = document.getElementById('topicSelection');
+        const gameScreen = document.getElementById('app');
+        
+        // IMMEDIATELY hide topic selection and show game screen in same frame
+        topicSelection.style.display = 'none';
+        gameScreen.classList.add('visible');
+        
+        // Show progress bar and score counter immediately
+        const progressElement = document.getElementById('progress');
+        const progressBar = document.getElementById('progressBar');
+        const progressFill = document.getElementById('progressFill');
+        const scoreCounter = document.getElementById('scoreCounter');
+        if (progressElement) {
+          progressElement.style.display = 'block';
+          progressElement.textContent = 'Loading questions...';
+        }
+        if (progressBar) progressBar.style.display = 'block';
+        if (scoreCounter) scoreCounter.style.display = 'block';
+        
+        // Reset and animate progress bar
+        if (progressFill) {
+          progressFill.style.width = '0%';
+          progressFill.style.transition = 'width 4s linear';
+        }
+        
+        // Start progress bar animation after a tiny delay to trigger transition
+        setTimeout(() => {
+          if (progressFill) progressFill.style.width = '100%';
+        }, 100);
+        
+        // Show loading animation
+        const charImg = document.getElementById('charImg');
+        const sentenceContainer = document.getElementById('sentenceContainer');
+        
+        // Random cat-themed loading messages related to grammar
+        const loadingMessages = [
+          'Hunting for missing words',
+          'Pouncing on prepositions',
+          'Chasing grammar mice',
+          'Sniffing out the right answers',
+          'Prowling through verb tenses',
+          'Sharpening my grammar claws',
+          'Stretching my vocabulary whiskers',
+          'Napping between sentences',
+          'Purring over perfect phrases',
+          'Meow-mixing the sentences',
+          'Scratching out the blanks',
+          'Curling up with conjunctions',
+          'Pawing through participles',
+          'Grooming my grammar skills',
+          'Tail-swishing through clauses',
+          'Whisker-twitching at articles',
+          'Leaping over language gaps',
+          'Cleaning up phrasal verbs',
+          'Finding the purr-fect fit',
+          'Preparing my cloze-catching skills'
+        ];
+        
+        const randomMessage = loadingMessages[Math.floor(Math.random() * loadingMessages.length)];
+        
+        // Set loading text
+        sentenceContainer.textContent = randomMessage;
+        sentenceContainer.classList.add('loading');
+        
+        // Hide input and buttons during loading
+        const answerForm = document.getElementById('answerForm');
+        const keyboard = document.getElementById('onScreenKeyboard');
+        const hintBtn = document.getElementById('hintBtn');
+        if (answerForm) answerForm.style.visibility = 'hidden';
+        if (keyboard) keyboard.style.display = 'none';
+        if (hintBtn) hintBtn.style.visibility = 'hidden';
+        
+        // Start cup/coffee drinking animation
+        const cupFrames = ['cup1.png', 'cup2.png', 'cup3.png', 'cup4.png'];
+        let cupFrameIndex = 0;
+        
+        charImg.src = cupFrames[0];
+        
+        const cupAnimationInterval = setInterval(() => {
+          cupFrameIndex = (cupFrameIndex + 1) % cupFrames.length;
+          charImg.src = cupFrames[cupFrameIndex];
+        }, 300);
+        
+        console.log('🚀 Calling initializeGame and setting up first sentence...');
+        
+        // Directly include the game initialization inline (no waiting for catscript events)
+        // This ensures everything is ready before gameReady fires
+        
+        // Set global variables FIRST
+        window.gameIsInitialized = true;
+        
+        // Dispatch startGame event for catscript to initialize
+        const startEvent = new Event('startGame');
+        document.dispatchEvent(startEvent);
+        
+        console.log('✅ startGame event dispatched to catscript.js');
+        
+        // Wait 4 seconds for loading animation
+        setTimeout(() => {
+          clearInterval(cupAnimationInterval);
+          
+          // Show sipping image for final moment
+          charImg.src = 'catsip.png';
+          
+          setTimeout(() => {
+            // Remove loading state
+            sentenceContainer.classList.remove('loading');
+            sentenceContainer.textContent = '';
+            
+            // Reset progress bar transition and text for game
+            if (progressFill) {
+              progressFill.style.transition = 'width 0.3s ease';
+              progressFill.style.width = '0%';
+            }
+            if (progressElement) {
+              progressElement.textContent = 'Question 1 of ' + sentenceCount;
+            }
+            
+            // Reset cat to still image
+            charImg.src = 'catstill.png';
+            
+            // Show input and buttons (but keep them disabled until sequence finishes)
+            if (answerForm) answerForm.style.visibility = 'visible';
+            if (hintBtn) hintBtn.style.visibility = 'visible';
+            
+            // Force a reflow to ensure everything is rendered
+            if (sentenceContainer) sentenceContainer.offsetHeight;
+            if (app) app.offsetHeight;
+            
+            // Start the special first sentence sequence: Cat says "Meow" then types
+            console.log('🐱 Starting first sentence sequence: Meow + Type');
+            
+            // Random motivational messages the cat can say
+            const catStartMessages = [
+              "Let's do this!",
+              "Ready to ace this? 😺",
+              "Time to show off your skills!",
+              "You've got this! 💪",
+              "Let's learn together!",
+              "Grammar time! 📚",
+              "Meow! Let's begin!",
+              "I believe in you!",
+              "Let's make learning fun!",
+              "You're going to do great!",
+              "Purr-fect! Let's start!",
+              "Brain workout time! 🧠",
+              "Ready, set, learn!",
+              "Time to shine! ✨",
+              "Let's crush this!",
+              "You can do it!",
+              "Learning mode: ON! 🔥",
+              "Let's go, superstar!",
+              "Get ready to impress!",
+              "Time to level up your English!"
+            ];
+            
+            const randomMessage = catStartMessages[Math.floor(Math.random() * catStartMessages.length)];
+            
+            // Step 1: Cat talking animation with random message in speech bubble
+            const speechBubble = document.getElementById('speechBubble');
+            charImg.src = 'cattalk.gif';
+            if (speechBubble) {
+              speechBubble.textContent = randomMessage;
+              speechBubble.style.display = 'block';
+              speechBubble.style.visibility = 'visible';
+              speechBubble.style.opacity = '1';
+              speechBubble.style.zIndex = '1000';
+              console.log('💬 Speech bubble shown:', speechBubble.textContent);
+            } else {
+              console.error('❌ Speech bubble element not found!');
+            }
+            
+            // Play meow sound
+            const catSounds = ['catr2.wav', 'catr3.wav', 'catr4.wav', 'catr5.wav', 'catr6.wav'];
+            const randomCatSound = catSounds[Math.floor(Math.random() * catSounds.length)];
+            const meowSound = new Audio(randomCatSound);
+            meowSound.volume = 0.3;
+            meowSound.play().catch(e => console.log("Couldn't play cat sound: ", e));
+            
+            // Step 2: After 1.5 seconds, hide speech bubble and start the first sentence
+            setTimeout(() => {
+              charImg.src = 'catstill.png';
+              if (speechBubble) {
+                speechBubble.style.display = 'none';
+                speechBubble.textContent = '';
+                console.log('💬 Speech bubble hidden');
+              }
+              
+              // SIMPLE SOLUTION: Just call handleGameReady directly if it exists
+              // If it doesn't exist yet, wait for it with a simple poll
+              console.log('🎯 Ready to start first sentence...');
+              
+              let attempts = 0;
+              const maxAttempts = 100; // 10 seconds
+              
+              function startFirstSentence() {
+                attempts++;
+                console.log(`Attempt ${attempts}: Checking for handleGameReady...`);
+                
+                if (typeof window.handleGameReady === 'function') {
+                  console.log('✅ Found handleGameReady! Calling it now...');
+                  window.handleGameReady();
+                } else if (attempts < maxAttempts) {
+                  console.log('⏳ handleGameReady not ready yet, retrying in 100ms...');
+                  setTimeout(startFirstSentence, 100);
+                } else {
+                  console.error('❌ handleGameReady never became available after 10 seconds!');
+                  console.error('  - gameIsInitialized:', window.gameIsInitialized);
+                  console.error('  - Type of handleGameReady:', typeof window.handleGameReady);
+                  
+                  // Show error to user
+                  const sentenceContainer = document.getElementById('sentenceContainer');
+                  if (sentenceContainer) {
+                    sentenceContainer.style.cssText = `
+                      position: fixed !important;
+                      top: 50% !important;
+                      left: 50% !important;
+                      transform: translate(-50%, -50%) !important;
+                      background: red !important;
+                      color: white !important;
+                      padding: 30px !important;
+                      font-size: 24px !important;
+                      z-index: 999999 !important;
+                    `;
+                    sentenceContainer.textContent = 'Error loading game. Please refresh the page.';
+                  }
+                }
+              }
+              
+              // Start polling immediately
+              startFirstSentence();
+              
+            }, 1500); // 1.5 seconds after cat talks
+            
+          }, 500); // Half second sip animation
+        }, 4000); // 4 second loading animation
+      });
+    }
+  </script>
+  
+  <!-- Game Section -->
+  <div id="app">
+    <!-- Loading overlay for game screen -->
+    <div id="gameLoadingOverlay">
+      <img id="loadingCatImg" src="cup1.png" alt="Loading...">
+      <div id="loadingText">Loading questions...</div>
+      <div id="loadingBarContainer">
+        <div id="loadingBarFill"></div>
+      </div>
+    </div>
+    
+    <button class="back-button">←</button>
+    <button id="toggleSoundBtn">🔊</button>
+    
+    <img id="titleImg" src="clozecattitle.png" alt="OpenCloze B2">
+    
+    <div id="charContainer">
+      <img id="charImg" src="catstill.png" alt="Cat">
+      <div id="exclamation">❗</div>
+      <div id="pawTap">💡</div>
+      <button id="hintBtn" type="button">💡</button>
+    </div>
+    
+    <div id="speechBubble"></div>
+    <div id="thoughtBubble"></div>
+    
+    <div id="sentenceContainer"></div>
+    
+    <form id="answerForm">
+      <input type="text" id="answerInput" placeholder="">
+      <button type="submit" id="submitBtn">Submit</button>
+    </form>
+    
+    <!-- On-screen keyboard -->
+    <div id="onScreenKeyboard">
+      <div class="keyboard-row">
+        <button class="key-btn" type="button">Q</button>
+        <button class="key-btn" type="button">W</button>
+        <button class="key-btn" type="button">E</button>
+        <button class="key-btn" type="button">R</button>
+        <button class="key-btn" type="button">T</button>
+        <button class="key-btn" type="button">Y</button>
+        <button class="key-btn" type="button">U</button>
+        <button class="key-btn" type="button">I</button>
+        <button class="key-btn" type="button">O</button>
+        <button class="key-btn" type="button">P</button>
+      </div>
+      <div class="keyboard-row">
+        <button class="key-btn" type="button">A</button>
+        <button class="key-btn" type="button">S</button>
+        <button class="key-btn" type="button">D</button>
+        <button class="key-btn" type="button">F</button>
+        <button class="key-btn" type="button">G</button>
+        <button class="key-btn" type="button">H</button>
+        <button class="key-btn" type="button">J</button>
+        <button class="key-btn" type="button">K</button>
+        <button class="key-btn" type="button">L</button>
+      </div>
+      <div class="keyboard-row">
+        <button class="key-btn" type="button">Z</button>
+        <button class="key-btn" type="button">X</button>
+        <button class="key-btn" type="button">C</button>
+        <button class="key-btn" type="button">V</button>
+        <button class="key-btn" type="button">B</button>
+        <button class="key-btn" type="button">N</button>
+        <button class="key-btn" type="button">M</button>
+        <button class="key-btn" type="button">'</button>
+      </div>
+      <div class="keyboard-row">
+        <button class="key-btn space" type="button">SPACE</button>
+        <button class="key-btn delete" type="button">←</button>
+      </div>
+    </div>
+    
+    <button id="continueBtn">Continue</button>
+    
+    <div id="feedback"></div>
+    
+    <div id="progress">Question <span id="current">1</span> of <span id="total">20</span></div>
+    
+    <div id="progressBar">
+      <div id="progressFill"></div>
+    </div>
+    
+    <button id="restartBtn">Restart Game</button>
+    
+    <div id="scoreCounter">
+      <div>
+        <p><strong>Correct:</strong> <span id="correctCount">0</span></p>
+        <p><strong>Incorrect:</strong> <span id="incorrectCount">0</span></p>
+        <p><strong>Accuracy:</strong> <span id="accuracy">0%</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include the game logic -->
+  <script src="catscript.js"></script>
+  </body>
+</html>

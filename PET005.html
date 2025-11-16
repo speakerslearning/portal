@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B1 PET Cambridge Test - Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>B1 PET Cambridge English Test</h1>
+            <p class="test-info">Practice Test - PET005</p>
+        </header>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div class="test-section" id="part1" style="display: block;">
+            <h2>Part 1 - Reading Signs and Messages</h2>
+            <p class="instructions">For each question, choose the correct answer (A, B, or C).</p>
+
+            <!-- Question 1 -->
+            <div class="question">
+                <div class="question-number">Question 1</div>
+                <div class="question-text">
+                    <div class="message-box">
+                        Spaces are available on our climbing and diving courses.<br>
+                        Please ask at reception for full details.
+                    </div>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q1" value="A">
+                        <span>A. This leisure centre needs a new receptionist.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="B">
+                        <span>B. All the courses at this centre are full.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="C">
+                        <span>C. The receptionist will give you information about courses.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <div class="question-number">Question 2</div>
+                <div class="question-text">
+                    <div class="message-box">
+                        <strong>CUSTOMER NOTICE</strong><br>
+                        These stairs are to be used for emergency purposes only.
+                    </div>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q2" value="A">
+                        <span>A. Only the emergency services can use these stairs.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="B">
+                        <span>B. Customers are never allowed to use these stairs.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="C">
+                        <span>C. Anybody can use these stairs if there is an emergency.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <div class="question-number">Question 3</div>
+                <div class="question-text">
+                    <div class="message-box">
+                        <strong>To: Victoria</strong><br>
+                        <strong>From: Charlie</strong><br><br>
+                        I saw that history book you wanted in the library, so I borrowed it for you. I'm not going to be at our lesson this afternoon, so I've given it to Jane.
+                    </div>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q3" value="A">
+                        <span>A. Jane is going to give Victoria a book today.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="B">
+                        <span>B. Charlie needs the history book this afternoon.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="C">
+                        <span>C. This afternoon's history lesson is cancelled.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <div class="question-number">Question 4</div>
+                <div class="question-text">
+                    <div class="message-box">
+                        We're getting new lockers in the gym. If you'd like one, but you haven't reserved one yet, you should see me before Friday.<br>
+                        — Jan Harper
+                    </div>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q4" value="A">
+                        <span>A. It's still possible to have a new locker.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="B">
+                        <span>B. You will be able to use your new locker on Friday.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="C">
+                        <span>C. New lockers can be reserved from Friday.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <div class="question-number">Question 5</div>
+                <div class="question-text">
+                    <div class="message-box">
+                        <strong>To: Isabel</strong><br>
+                        <strong>From: Sam</strong><br><br>
+                        Sorry, I can't make it to band practice until 7.30. Go ahead and start without me.
+                    </div>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q5" value="A">
+                        <span>A. Sam wants to change the day of band practice.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5" value="B">
+                        <span>B. Sam is going to be late for band practice.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5" value="C">
+                        <span>C. Band practice is going to start later than planned.</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 2</button>
+            </div>
+        </div>
+
+        <!-- Part 2 - Matching Exercise -->
+        <div class="test-section" id="part2" style="display: none;">
+            <h2>Part 2 - Matching People to Birthday Venues</h2>
+            <p class="instructions">The people below all want to celebrate their birthdays on Saturday. For each question, choose the most suitable place (A-H).</p>
+
+            <!-- Question 6 -->
+            <div class="question carousel-question">
+                <div class="question-number">Question 6</div>
+                <div class="question-text">
+                    <p><strong>Carlos</strong> wants a big day out with about 20 friends. He's looking for an inexpensive activity where they can have a meal cheaply, too.</p>
+                </div>
+                
+                <!-- Carousel -->
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide('q6', -1)">‹</button>
+                    
+                    <div class="carousel-slides" id="carousel-q6">
+                        <div class="cafe-slide active" data-value="A">
+                            <div class="cafe-letter">A</div>
+                            <h4>Moody's</h4>
+                            <p>Moody's is a modern pizza café in the centre of town. It's very popular with teenagers and plays great music every afternoon. Prices are reasonable and this Saturday includes our new 'two for one' offer. Leave your parents behind and have fun at Moody's!</p>
+                        </div>
+                        <div class="cafe-slide" data-value="B">
+                            <div class="cafe-letter">B</div>
+                            <h4>Museum Madness</h4>
+                            <p>Teenagers will love this latest party offer. Spend the night at the museum! Have a guided tour when all the other visitors have gone. Enjoy party food, music and dancing. You must have one adult with you and a maximum of ten friends. Don't forget your sleeping bag!</p>
+                        </div>
+                        <div class="cafe-slide" data-value="C">
+                            <div class="cafe-letter">C</div>
+                            <h4>Oasis</h4>
+                            <p>Oasis is the most exciting place for swimming in town and Saturday afternoons are just for teenagers! Special offer this Saturday only: pay for eight tickets and get two free. Visit the café after your swim for pizzas, burgers and chips at low prices.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="D">
+                            <div class="cafe-letter">D</div>
+                            <h4>Animal Magic</h4>
+                            <p>Visit your local farm this Saturday and receive half-price tickets for your next visit. Young children will love the rabbits and the farm animals. Older brothers and sisters are more likely to enjoy one of the Sunday afternoon talks. Bring lunch with you and spend a day at the farm.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="E">
+                            <div class="cafe-letter">E</div>
+                            <h4>Mega-ride</h4>
+                            <p>Have fun at a Mega-ride theme park surrounded by beautiful countryside. Teenagers can enjoy the amazing rides while younger children can visit the play area. Tickets are expensive, but save money by bringing sandwiches and having lunch at the picnic area.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="F">
+                            <div class="cafe-letter">F</div>
+                            <h4>ABC Cinema</h4>
+                            <p>Every Saturday afternoon this month, tickets to films starting before 4 p.m. in ABC Cinemas are half price. There's also an extra discount for groups of four or more. You can buy drinks and snacks at great prices, too.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="G">
+                            <div class="cafe-letter">G</div>
+                            <h4>Pablo's</h4>
+                            <p>Enjoy wonderful Italian cooking at Pablo's! This restaurant is quite expensive, but the food is fantastic. Children and teenagers will love the regular live shows. Meet a mystery music guest this Saturday afternoon.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="H">
+                            <div class="cafe-letter">H</div>
+                            <h4>The Palace Hotel</h4>
+                            <p>Fine food in beautiful surroundings – The Palace Hotel is perfect for a special meal. Children are welcome in the dining room. The prices are high, but the food is excellent and there is a small discount for guests staying at the hotel.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn next" onclick="changeSlide('q6', 1)">›</button>
+                </div>
+                
+                <div class="carousel-indicators" id="indicators-q6"></div>
+                <input type="hidden" name="q6" id="answer-q6" value="A">
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question carousel-question">
+                <div class="question-number">Question 7</div>
+                <div class="question-text">
+                    <p><strong>Gemma's</strong> planning to celebrate by going out for a meal with a small group of friends. She wants to go to a lively place and doesn't want to spend too much.</p>
+                </div>
+                
+                <!-- Carousel -->
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide('q7', -1)">‹</button>
+                    
+                    <div class="carousel-slides" id="carousel-q7">
+                        <div class="cafe-slide active" data-value="A">
+                            <div class="cafe-letter">A</div>
+                            <h4>Moody's</h4>
+                            <p>Moody's is a modern pizza café in the centre of town. It's very popular with teenagers and plays great music every afternoon. Prices are reasonable and this Saturday includes our new 'two for one' offer. Leave your parents behind and have fun at Moody's!</p>
+                        </div>
+                        <div class="cafe-slide" data-value="B">
+                            <div class="cafe-letter">B</div>
+                            <h4>Museum Madness</h4>
+                            <p>Teenagers will love this latest party offer. Spend the night at the museum! Have a guided tour when all the other visitors have gone. Enjoy party food, music and dancing. You must have one adult with you and a maximum of ten friends. Don't forget your sleeping bag!</p>
+                        </div>
+                        <div class="cafe-slide" data-value="C">
+                            <div class="cafe-letter">C</div>
+                            <h4>Oasis</h4>
+                            <p>Oasis is the most exciting place for swimming in town and Saturday afternoons are just for teenagers! Special offer this Saturday only: pay for eight tickets and get two free. Visit the café after your swim for pizzas, burgers and chips at low prices.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="D">
+                            <div class="cafe-letter">D</div>
+                            <h4>Animal Magic</h4>
+                            <p>Visit your local farm this Saturday and receive half-price tickets for your next visit. Young children will love the rabbits and the farm animals. Older brothers and sisters are more likely to enjoy one of the Sunday afternoon talks. Bring lunch with you and spend a day at the farm.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="E">
+                            <div class="cafe-letter">E</div>
+                            <h4>Mega-ride</h4>
+                            <p>Have fun at a Mega-ride theme park surrounded by beautiful countryside. Teenagers can enjoy the amazing rides while younger children can visit the play area. Tickets are expensive, but save money by bringing sandwiches and having lunch at the picnic area.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="F">
+                            <div class="cafe-letter">F</div>
+                            <h4>ABC Cinema</h4>
+                            <p>Every Saturday afternoon this month, tickets to films starting before 4 p.m. in ABC Cinemas are half price. There's also an extra discount for groups of four or more. You can buy drinks and snacks at great prices, too.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="G">
+                            <div class="cafe-letter">G</div>
+                            <h4>Pablo's</h4>
+                            <p>Enjoy wonderful Italian cooking at Pablo's! This restaurant is quite expensive, but the food is fantastic. Children and teenagers will love the regular live shows. Meet a mystery music guest this Saturday afternoon.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="H">
+                            <div class="cafe-letter">H</div>
+                            <h4>The Palace Hotel</h4>
+                            <p>Fine food in beautiful surroundings – The Palace Hotel is perfect for a special meal. Children are welcome in the dining room. The prices are high, but the food is excellent and there is a small discount for guests staying at the hotel.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn next" onclick="changeSlide('q7', 1)">›</button>
+                </div>
+                
+                <div class="carousel-indicators" id="indicators-q7"></div>
+                <input type="hidden" name="q7" id="answer-q7" value="A">
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question carousel-question">
+                <div class="question-number">Question 8</div>
+                <div class="question-text">
+                    <p><strong>Jessica and Lucy</strong> are sisters and they're going out with their family. They want to go to a restaurant that has entertainment. Their parents are paying, so it doesn't have to be too cheap.</p>
+                </div>
+                
+                <!-- Carousel -->
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide('q8', -1)">‹</button>
+                    
+                    <div class="carousel-slides" id="carousel-q8">
+                        <div class="cafe-slide active" data-value="A">
+                            <div class="cafe-letter">A</div>
+                            <h4>Moody's</h4>
+                            <p>Moody's is a modern pizza café in the centre of town. It's very popular with teenagers and plays great music every afternoon. Prices are reasonable and this Saturday includes our new 'two for one' offer. Leave your parents behind and have fun at Moody's!</p>
+                        </div>
+                        <div class="cafe-slide" data-value="B">
+                            <div class="cafe-letter">B</div>
+                            <h4>Museum Madness</h4>
+                            <p>Teenagers will love this latest party offer. Spend the night at the museum! Have a guided tour when all the other visitors have gone. Enjoy party food, music and dancing. You must have one adult with you and a maximum of ten friends. Don't forget your sleeping bag!</p>
+                        </div>
+                        <div class="cafe-slide" data-value="C">
+                            <div class="cafe-letter">C</div>
+                            <h4>Oasis</h4>
+                            <p>Oasis is the most exciting place for swimming in town and Saturday afternoons are just for teenagers! Special offer this Saturday only: pay for eight tickets and get two free. Visit the café after your swim for pizzas, burgers and chips at low prices.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="D">
+                            <div class="cafe-letter">D</div>
+                            <h4>Animal Magic</h4>
+                            <p>Visit your local farm this Saturday and receive half-price tickets for your next visit. Young children will love the rabbits and the farm animals. Older brothers and sisters are more likely to enjoy one of the Sunday afternoon talks. Bring lunch with you and spend a day at the farm.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="E">
+                            <div class="cafe-letter">E</div>
+                            <h4>Mega-ride</h4>
+                            <p>Have fun at a Mega-ride theme park surrounded by beautiful countryside. Teenagers can enjoy the amazing rides while younger children can visit the play area. Tickets are expensive, but save money by bringing sandwiches and having lunch at the picnic area.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="F">
+                            <div class="cafe-letter">F</div>
+                            <h4>ABC Cinema</h4>
+                            <p>Every Saturday afternoon this month, tickets to films starting before 4 p.m. in ABC Cinemas are half price. There's also an extra discount for groups of four or more. You can buy drinks and snacks at great prices, too.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="G">
+                            <div class="cafe-letter">G</div>
+                            <h4>Pablo's</h4>
+                            <p>Enjoy wonderful Italian cooking at Pablo's! This restaurant is quite expensive, but the food is fantastic. Children and teenagers will love the regular live shows. Meet a mystery music guest this Saturday afternoon.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="H">
+                            <div class="cafe-letter">H</div>
+                            <h4>The Palace Hotel</h4>
+                            <p>Fine food in beautiful surroundings – The Palace Hotel is perfect for a special meal. Children are welcome in the dining room. The prices are high, but the food is excellent and there is a small discount for guests staying at the hotel.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn next" onclick="changeSlide('q8', 1)">›</button>
+                </div>
+                
+                <div class="carousel-indicators" id="indicators-q8"></div>
+                <input type="hidden" name="q8" id="answer-q8" value="A">
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question carousel-question">
+                <div class="question-number">Question 9</div>
+                <div class="question-text">
+                    <p><strong>Amelia</strong> is spending the day with a friend, her parents and her little sister. They're looking for a place that's good for all the children and will take their own food with them.</p>
+                </div>
+                
+                <!-- Carousel -->
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide('q9', -1)">‹</button>
+                    
+                    <div class="carousel-slides" id="carousel-q9">
+                        <div class="cafe-slide active" data-value="A">
+                            <div class="cafe-letter">A</div>
+                            <h4>Moody's</h4>
+                            <p>Moody's is a modern pizza café in the centre of town. It's very popular with teenagers and plays great music every afternoon. Prices are reasonable and this Saturday includes our new 'two for one' offer. Leave your parents behind and have fun at Moody's!</p>
+                        </div>
+                        <div class="cafe-slide" data-value="B">
+                            <div class="cafe-letter">B</div>
+                            <h4>Museum Madness</h4>
+                            <p>Teenagers will love this latest party offer. Spend the night at the museum! Have a guided tour when all the other visitors have gone. Enjoy party food, music and dancing. You must have one adult with you and a maximum of ten friends. Don't forget your sleeping bag!</p>
+                        </div>
+                        <div class="cafe-slide" data-value="C">
+                            <div class="cafe-letter">C</div>
+                            <h4>Oasis</h4>
+                            <p>Oasis is the most exciting place for swimming in town and Saturday afternoons are just for teenagers! Special offer this Saturday only: pay for eight tickets and get two free. Visit the café after your swim for pizzas, burgers and chips at low prices.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="D">
+                            <div class="cafe-letter">D</div>
+                            <h4>Animal Magic</h4>
+                            <p>Visit your local farm this Saturday and receive half-price tickets for your next visit. Young children will love the rabbits and the farm animals. Older brothers and sisters are more likely to enjoy one of the Sunday afternoon talks. Bring lunch with you and spend a day at the farm.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="E">
+                            <div class="cafe-letter">E</div>
+                            <h4>Mega-ride</h4>
+                            <p>Have fun at a Mega-ride theme park surrounded by beautiful countryside. Teenagers can enjoy the amazing rides while younger children can visit the play area. Tickets are expensive, but save money by bringing sandwiches and having lunch at the picnic area.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="F">
+                            <div class="cafe-letter">F</div>
+                            <h4>ABC Cinema</h4>
+                            <p>Every Saturday afternoon this month, tickets to films starting before 4 p.m. in ABC Cinemas are half price. There's also an extra discount for groups of four or more. You can buy drinks and snacks at great prices, too.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="G">
+                            <div class="cafe-letter">G</div>
+                            <h4>Pablo's</h4>
+                            <p>Enjoy wonderful Italian cooking at Pablo's! This restaurant is quite expensive, but the food is fantastic. Children and teenagers will love the regular live shows. Meet a mystery music guest this Saturday afternoon.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="H">
+                            <div class="cafe-letter">H</div>
+                            <h4>The Palace Hotel</h4>
+                            <p>Fine food in beautiful surroundings – The Palace Hotel is perfect for a special meal. Children are welcome in the dining room. The prices are high, but the food is excellent and there is a small discount for guests staying at the hotel.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn next" onclick="changeSlide('q9', 1)">›</button>
+                </div>
+                
+                <div class="carousel-indicators" id="indicators-q9"></div>
+                <input type="hidden" name="q9" id="answer-q9" value="A">
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question carousel-question">
+                <div class="question-number">Question 10</div>
+                <div class="question-text">
+                    <p><strong>Adam</strong> is meeting three friends. He wants to do an activity but he isn't interested in sport and he doesn't have much money. He's eating at home later, but would like to get a snack.</p>
+                </div>
+                
+                <!-- Carousel -->
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide('q10', -1)">‹</button>
+                    
+                    <div class="carousel-slides" id="carousel-q10">
+                        <div class="cafe-slide active" data-value="A">
+                            <div class="cafe-letter">A</div>
+                            <h4>Moody's</h4>
+                            <p>Moody's is a modern pizza café in the centre of town. It's very popular with teenagers and plays great music every afternoon. Prices are reasonable and this Saturday includes our new 'two for one' offer. Leave your parents behind and have fun at Moody's!</p>
+                        </div>
+                        <div class="cafe-slide" data-value="B">
+                            <div class="cafe-letter">B</div>
+                            <h4>Museum Madness</h4>
+                            <p>Teenagers will love this latest party offer. Spend the night at the museum! Have a guided tour when all the other visitors have gone. Enjoy party food, music and dancing. You must have one adult with you and a maximum of ten friends. Don't forget your sleeping bag!</p>
+                        </div>
+                        <div class="cafe-slide" data-value="C">
+                            <div class="cafe-letter">C</div>
+                            <h4>Oasis</h4>
+                            <p>Oasis is the most exciting place for swimming in town and Saturday afternoons are just for teenagers! Special offer this Saturday only: pay for eight tickets and get two free. Visit the café after your swim for pizzas, burgers and chips at low prices.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="D">
+                            <div class="cafe-letter">D</div>
+                            <h4>Animal Magic</h4>
+                            <p>Visit your local farm this Saturday and receive half-price tickets for your next visit. Young children will love the rabbits and the farm animals. Older brothers and sisters are more likely to enjoy one of the Sunday afternoon talks. Bring lunch with you and spend a day at the farm.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="E">
+                            <div class="cafe-letter">E</div>
+                            <h4>Mega-ride</h4>
+                            <p>Have fun at a Mega-ride theme park surrounded by beautiful countryside. Teenagers can enjoy the amazing rides while younger children can visit the play area. Tickets are expensive, but save money by bringing sandwiches and having lunch at the picnic area.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="F">
+                            <div class="cafe-letter">F</div>
+                            <h4>ABC Cinema</h4>
+                            <p>Every Saturday afternoon this month, tickets to films starting before 4 p.m. in ABC Cinemas are half price. There's also an extra discount for groups of four or more. You can buy drinks and snacks at great prices, too.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="G">
+                            <div class="cafe-letter">G</div>
+                            <h4>Pablo's</h4>
+                            <p>Enjoy wonderful Italian cooking at Pablo's! This restaurant is quite expensive, but the food is fantastic. Children and teenagers will love the regular live shows. Meet a mystery music guest this Saturday afternoon.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="H">
+                            <div class="cafe-letter">H</div>
+                            <h4>The Palace Hotel</h4>
+                            <p>Fine food in beautiful surroundings – The Palace Hotel is perfect for a special meal. Children are welcome in the dining room. The prices are high, but the food is excellent and there is a small discount for guests staying at the hotel.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn next" onclick="changeSlide('q10', 1)">›</button>
+                </div>
+                
+                <div class="carousel-indicators" id="indicators-q10"></div>
+                <input type="hidden" name="q10" id="answer-q10" value="A">
+            </div>
+
+            <!-- Museum Reviews Reference removed since they're now in carousels -->
+            <div class="reference-box" style="display: none;">
+                <h3>Museum Reviews Reference</h3>
+                <div class="cafe-grid">
+                    <div class="cafe-card">
+                        <strong>A. City Museum</strong>
+                        <p>This weekend: dinosaur drawing for children aged 4-8 (adults, please stay, you can take part too). Making a pyramid and watching a video about ancient Egypt for children aged 9-10. For children aged 12, we have tablets with the new museum app Imagine: you can look at sites where dinosaur bones have been found as if you were there.</p>
+                    </div>
+                    <div class="cafe-card">
+                        <strong>B. Transport Museum</strong>
+                        <p>Ever wondered what it was like to travel around ancient Greece? Or perhaps you would like to find out how people in Britain travelled in the 21st century? We have information, pictures and videos from different times in history and there is always something exciting to discover.</p>
+                    </div>
+                    <div class="cafe-card">
+                        <strong>C. The Glass Place</strong>
+                        <p>Come and see glass-making at the Glass Place. Watch items like bowls and decorations being made and visit our jewellery shop. After your visit, stop at the café next door, eat cake, drink hot chocolate and take a look at the clothes shops. There's plenty to see and do!</p>
+                    </div>
+                    <div class="cafe-card">
+                        <strong>D. History Museum: Looking Back</strong>
+                        <p>What were your grandparents doing 50 or more years ago? You can find out at the History Museum: Looking Back, which has a lot of information about the past 100 years. There are recordings of people talking about their lives, and there are also photos and videos to watch. We promise you won't be disappointed.</p>
+                    </div>
+                    <div class="cafe-card">
+                        <strong>E. Fun Science</strong>
+                        <p>This exciting museum is great for children and adults. There are experiments you can do yourself, a rocket simulator and 3D films. Fun Science is the best museum in the country! Don't miss the special Space Exhibition, which finishes in a few weeks. Book online before tickets run out.</p>
+                    </div>
+                    <div class="cafe-card">
+                        <strong>F. Time Museum</strong>
+                        <p>Do you want to find out about global history, learn more about ancient Egypt or Asia, or join an interactive timeline? Then come to the Time Museum. Our enthusiastic and helpful staff make sure everyone enjoys their visit here. Remember to book online for museum activities, such as Children's Week.</p>
+                    </div>
+                    <div class="cafe-card">
+                        <strong>G. Chocolate Museum</strong>
+                        <p>Did you know there is a museum all about chocolate? You can learn about the history of chocolate-making by watching a video. The museum's chocolate shop sells the finest chocolate around. Don't just take our word for it… come and see for yourself.</p>
+                    </div>
+                    <div class="cafe-card">
+                        <strong>H. Natural History: Dinosaurs</strong>
+                        <p>At the Natural History Museum, you can see moving models of dinosaurs. It's amazing! If you take your children, though, remember it might not be suitable for children under the age of 8, as the models are very realistic. For more information about facilities, ticket prices and special events, visit our website.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 1</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 3</button>
+            </div>
+        </div>
+
+        <!-- Part 3 - Reading Comprehension -->
+        <div class="test-section" id="part3" style="display: none;">
+            <h2>Part 3 - Reading Comprehension</h2>
+            <p class="instructions">Read the text and answer the questions. Choose the correct answer (A, B, C, or D).</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Painting in Spain</h3>
+                <p>My husband, David, is an artist and has always been interested in painting pictures of the Spanish countryside. We've both always loved Spanish culture and have spent many holidays in Spain. Five years ago, we decided to give up our jobs in London, sell our house and move to a small village in the south of Spain.</p>
+                
+                <p>We thought it would take months to get organized, but in just three months, we'd sold our home, found a house to rent, booked our ferry and said goodbye to our friends. We were so excited to move!</p>
+                
+                <p>At first, we thought we'd stay here for a year, but when we arrived on a beautiful September evening, we were amazed to realize immediately that we wanted to stay longer. The owners of our new house were waiting to show us around and cooked us a lovely meal. Gradually, over the following weeks, we settled into a routine. I got a job teaching English and began to learn the language while David painted.</p>
+                
+                <p>David loved the scenery and he was inspired by the wonderful landscape around us. But mostly he fell in love with the bright light of the sun in the south. As a painter, he's always looking at the contrast between colours and light. During the first six months, he spent hours outdoors painting. His paintings were always about the same landscape but each one of them had something special. The elements in his work were always changing and each new painting was even more beautiful than the previous one.</p>
+                
+                <p>The following May while we were visiting a small town, we saw an empty shop. David thought it would make a lovely art gallery and we decided to rent it for a year. We filled the shop with David's paintings and after two days, sold our first picture. Over the next few months, a lot of tourists bought paintings, but the tourists went home in November and our shop became very quiet. But we advertised online and soon business improved. We started getting orders from different places. Everyone loved David's paintings. Today our gallery is a great success and we both feel we're living a perfect life.</p>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="question">
+                <div class="question-number">Question 11</div>
+                <div class="question-text">
+                    <p><strong>Why does the writer say she moved to Spain?</strong></p>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q11" value="A">
+                        <span>A. to find out more about Spanish culture</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q11" value="B">
+                        <span>B. because she and her husband loved the country</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q11" value="C">
+                        <span>C. because she had never been there before</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q11" value="D">
+                        <span>D. because she lost her job in London</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="question">
+                <div class="question-number">Question 12</div>
+                <div class="question-text">
+                    <p><strong>What does the writer say about leaving London?</strong></p>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q12" value="A">
+                        <span>A. It was difficult to sell their home.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q12" value="B">
+                        <span>B. None of their friends wanted them to leave.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q12" value="C">
+                        <span>C. They organized everything quickly.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q12" value="D">
+                        <span>D. They rented their house to some of their friends.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question">
+                <div class="question-number">Question 13</div>
+                <div class="question-text">
+                    <p><strong>What did the writer find surprising about her first day in Spain?</strong></p>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q13" value="A">
+                        <span>A. She was offered a job teaching English.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q13" value="B">
+                        <span>B. She and her husband decided to live in Spain for more than a year.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q13" value="C">
+                        <span>C. The owners of the rented house were unfriendly.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q13" value="D">
+                        <span>D. There was already somebody living in her new house.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question">
+                <div class="question-number">Question 14</div>
+                <div class="question-text">
+                    <p><strong>When talking about the shop, the writer says that</strong></p>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q14" value="A">
+                        <span>A. they sold nothing for several weeks.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q14" value="B">
+                        <span>B. it was popular with tourists.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q14" value="C">
+                        <span>C. they sold some paintings on the first day.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q14" value="D">
+                        <span>D. it became very busy in November.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="question">
+                <div class="question-number">Question 15</div>
+                <div class="question-text">
+                    <p><strong>What might the writer say about living in Spain?</strong></p>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q15" value="A">
+                        <span>A. I'm glad we came to live here, but I wish we hadn't rented the gallery.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q15" value="B">
+                        <span>B. The gallery has been a great success, but now we'd like to move back home.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q15" value="C">
+                        <span>C. We've had very few problems. It's definitely the best thing we've ever done.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q15" value="D">
+                        <span>D. I wish we hadn't moved here. I really miss my friends and family.</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 2</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 4</button>
+            </div>
+        </div>
+
+        <!-- Part 4 - Gap Filling -->
+        <div class="test-section" id="part4" style="display: none;">
+            <h2>Part 4 - Sentence Completion</h2>
+            <p class="instructions">Five sentences have been removed from the text below. For each question, choose the correct answer. There are three extra sentences which you do not need to use.</p>
+
+            <!-- Reading Passage with Gaps -->
+            <div class="reading-passage">
+                <h3>My first marathon</h3>
+                
+                <p>The alarm went off at half-past four that morning. It was far too early to get up, and the idea of running 26 miles seemed impossible. <span class="gap-marker">16</span> <span class="inline-gap" id="gap-16">______</span> I pulled myself out of bed, showered and pulled on my running gear.</p>
+                
+                <p>By six o'clock, I was at the Dodger Stadium, where the rest of my running group was already waiting. When they saw the look of terror on my face, they laughed kindly. This was clearly my first marathon. <span class="gap-marker">17</span> <span class="inline-gap" id="gap-17">______</span> When I realized that I was just one of them, I felt a little better. Helicopters hovered overhead ready to film us as we ran through the streets of Los Angeles, passing every major landmark until we reached the sea at Santa Monica. Suddenly, I felt very lucky and proud to be a part of it. <span class="gap-marker">18</span> <span class="inline-gap" id="gap-18">______</span></p>
+                
+                <p>As I began to run, I tried to ignore the aches in my body from eight months of training. Instead, I put one foot in front of the other and kept going. By mile five, my body was complaining, and by mile eight, my muscles were screaming at me.</p>
+                
+                <p><span class="gap-marker">19</span> <span class="inline-gap" id="gap-19">______</span> I was running alone now, but I was still running. By mile 12, I was ready to give up, and by mile 15, I was moving even more slowly. By mile 18, I was in my neighbourhood. <span class="gap-marker">20</span> <span class="inline-gap" id="gap-20">______</span> But by mile 22, there were only four miles to go. Spectators yelled encouragement at me as I ran past. "You can do it! Keep going!"</p>
+                
+                <p>As the finish line came into sight, I started running faster and faster, and I crossed that line running. I grinned as the medal was placed over my head, and then I cried. I had done it. I had run my first marathon!</p>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="question">
+                <div class="question-number">Question 16</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q16" value="A" onchange="updateGap(16, 'A')">
+                        <span>A. After eight months of training, this was going to be easy.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q16" value="B" onchange="updateGap(16, 'B')">
+                        <span>B. I slowed down, and the rest of my group moved away.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q16" value="C" onchange="updateGap(16, 'C')">
+                        <span>C. But I had trained for this, and I was going to do it.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q16" value="D" onchange="updateGap(16, 'D')">
+                        <span>D. There was no way I could finish the race now.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q16" value="E" onchange="updateGap(16, 'E')">
+                        <span>E. The horn blew to start the race.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q16" value="F" onchange="updateGap(16, 'F')">
+                        <span>F. I was very tempted to turn down my street and go home.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q16" value="G" onchange="updateGap(16, 'G')">
+                        <span>G. I was so glad that I had decided to do this.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q16" value="H" onchange="updateGap(16, 'H')">
+                        <span>H. Thousands of runners from all over the world were gathered for the race.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="question">
+                <div class="question-number">Question 17</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q17" value="A" onchange="updateGap(17, 'A')">
+                        <span>A. After eight months of training, this was going to be easy.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q17" value="B" onchange="updateGap(17, 'B')">
+                        <span>B. I slowed down, and the rest of my group moved away.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q17" value="C" onchange="updateGap(17, 'C')">
+                        <span>C. But I had trained for this, and I was going to do it.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q17" value="D" onchange="updateGap(17, 'D')">
+                        <span>D. There was no way I could finish the race now.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q17" value="E" onchange="updateGap(17, 'E')">
+                        <span>E. The horn blew to start the race.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q17" value="F" onchange="updateGap(17, 'F')">
+                        <span>F. I was very tempted to turn down my street and go home.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q17" value="G" onchange="updateGap(17, 'G')">
+                        <span>G. I was so glad that I had decided to do this.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q17" value="H" onchange="updateGap(17, 'H')">
+                        <span>H. Thousands of runners from all over the world were gathered for the race.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 18 -->
+            <div class="question">
+                <div class="question-number">Question 18</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q18" value="A" onchange="updateGap(18, 'A')">
+                        <span>A. After eight months of training, this was going to be easy.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q18" value="B" onchange="updateGap(18, 'B')">
+                        <span>B. I slowed down, and the rest of my group moved away.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q18" value="C" onchange="updateGap(18, 'C')">
+                        <span>C. But I had trained for this, and I was going to do it.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q18" value="D" onchange="updateGap(18, 'D')">
+                        <span>D. There was no way I could finish the race now.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q18" value="E" onchange="updateGap(18, 'E')">
+                        <span>E. The horn blew to start the race.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q18" value="F" onchange="updateGap(18, 'F')">
+                        <span>F. I was very tempted to turn down my street and go home.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q18" value="G" onchange="updateGap(18, 'G')">
+                        <span>G. I was so glad that I had decided to do this.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q18" value="H" onchange="updateGap(18, 'H')">
+                        <span>H. Thousands of runners from all over the world were gathered for the race.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="question">
+                <div class="question-number">Question 19</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q19" value="A" onchange="updateGap(19, 'A')">
+                        <span>A. After eight months of training, this was going to be easy.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q19" value="B" onchange="updateGap(19, 'B')">
+                        <span>B. I slowed down, and the rest of my group moved away.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q19" value="C" onchange="updateGap(19, 'C')">
+                        <span>C. But I had trained for this, and I was going to do it.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q19" value="D" onchange="updateGap(19, 'D')">
+                        <span>D. There was no way I could finish the race now.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q19" value="E" onchange="updateGap(19, 'E')">
+                        <span>E. The horn blew to start the race.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q19" value="F" onchange="updateGap(19, 'F')">
+                        <span>F. I was very tempted to turn down my street and go home.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q19" value="G" onchange="updateGap(19, 'G')">
+                        <span>G. I was so glad that I had decided to do this.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q19" value="H" onchange="updateGap(19, 'H')">
+                        <span>H. Thousands of runners from all over the world were gathered for the race.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="question">
+                <div class="question-number">Question 20</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q20" value="A" onchange="updateGap(20, 'A')">
+                        <span>A. After eight months of training, this was going to be easy.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q20" value="B" onchange="updateGap(20, 'B')">
+                        <span>B. I slowed down, and the rest of my group moved away.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q20" value="C" onchange="updateGap(20, 'C')">
+                        <span>C. But I had trained for this, and I was going to do it.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q20" value="D" onchange="updateGap(20, 'D')">
+                        <span>D. There was no way I could finish the race now.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q20" value="E" onchange="updateGap(20, 'E')">
+                        <span>E. The horn blew to start the race.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q20" value="F" onchange="updateGap(20, 'F')">
+                        <span>F. I was very tempted to turn down my street and go home.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q20" value="G" onchange="updateGap(20, 'G')">
+                        <span>G. I was so glad that I had decided to do this.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q20" value="H" onchange="updateGap(20, 'H')">
+                        <span>H. Thousands of runners from all over the world were gathered for the race.</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 3</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 5</button>
+            </div>
+        </div>
+
+        <!-- Part 5 - Multiple Choice Cloze -->
+        <div class="test-section" id="part5" style="display: none;">
+            <h2>Part 5 - Multiple Choice Cloze</h2>
+            <p class="instructions">For each question, choose the correct answer to complete the text.</p>
+
+            <!-- Reading Passage with Inline Dropdown Boxes -->
+            <div class="reading-passage">
+                <h3>Stay Healthy by Walking</h3>
+                
+                <p>Everybody worries about their general health and fitness. However, what many people don't realize is that walking is one of the best ways to keep healthy.</p>
+                
+                <p>This doesn't mean that you 
+                <select class="inline-select" name="q21" onchange="saveDropdownAnswer(21, this.value)">
+                    <option value="">— 21 —</option>
+                    <option value="A">must</option>
+                    <option value="B">have</option>
+                    <option value="C">should</option>
+                    <option value="D">might</option>
+                </select> to go on long walks in the countryside. You can walk home from work or school. You can walk to the shops. You can use the stairs 
+                <select class="inline-select" name="q22" onchange="saveDropdownAnswer(22, this.value)">
+                    <option value="">— 22 —</option>
+                    <option value="A">instead</option>
+                    <option value="B">enough</option>
+                    <option value="C">else</option>
+                    <option value="D">well</option>
+                </select> of using the lift. You can even walk a dog 
+                <select class="inline-select" name="q23" onchange="saveDropdownAnswer(23, this.value)">
+                    <option value="">— 23 —</option>
+                    <option value="A">whether</option>
+                    <option value="B">if</option>
+                    <option value="C">as</option>
+                    <option value="D">that</option>
+                </select> you have one!</p>
+                
+                <p>Now let's look 
+                <select class="inline-select" name="q24" onchange="saveDropdownAnswer(24, this.value)">
+                    <option value="">— 24 —</option>
+                    <option value="A">on</option>
+                    <option value="B">at</option>
+                    <option value="C">for</option>
+                    <option value="D">with</option>
+                </select> the benefits of walking. Firstly, it's relaxing. Secondly, it improves your fitness and your health. 
+                <select class="inline-select" name="q25" onchange="saveDropdownAnswer(25, this.value)">
+                    <option value="">— 25 —</option>
+                    <option value="A">Finally</option>
+                    <option value="B">Conclusion</option>
+                    <option value="C">End</option>
+                    <option value="D">Last</option>
+                </select>, it's a great way to socialize with your friends and family.</p>
+                
+                <p>Remember, you don't need 
+                <select class="inline-select" name="q26" onchange="saveDropdownAnswer(26, this.value)">
+                    <option value="">— 26 —</option>
+                    <option value="A">many</option>
+                    <option value="B">any</option>
+                    <option value="C">various</option>
+                    <option value="D">some</option>
+                </select> expensive equipment for walking. You just need a good pair of walking boots or shoes.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 4</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 6</button>
+            </div>
+        </div>
+
+        <!-- Part 6 - Open Cloze -->
+        <div class="test-section" id="part6" style="display: none;">
+            <h2>Part 6 - Open Cloze</h2>
+            <p class="instructions">For each question, write the correct answer. Write one word for each gap.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>Book Club Invitation</h3>
+                
+                <p>My friends and I have started a book club, and we'd love it if you decided to join us. We choose one book to read every week, and then we meet up at 
+                <input type="text" class="inline-input" name="q27" maxlength="15" placeholder="27" oninput="saveTextAnswer(27, this.value)" style="text-transform: uppercase;">
+                end of the week to discuss the book.</p>
+                
+                <p>We meet every Thursday, at a different club member's house each week. The host for each week provides drinks and a 
+                <input type="text" class="inline-input" name="q28" maxlength="15" placeholder="28" oninput="saveTextAnswer(28, this.value)" style="text-transform: uppercase;">
+                snacks.</p>
+                
+                <p>We share our thoughts and ideas 
+                <input type="text" class="inline-input" name="q29" maxlength="15" placeholder="29" oninput="saveTextAnswer(29, this.value)" style="text-transform: uppercase;">
+                the books, and we usually chat about a lot of other topics, too! It's a great way to 
+                <input type="text" class="inline-input" name="q30" maxlength="15" placeholder="30" oninput="saveTextAnswer(30, this.value)" style="text-transform: uppercase;">
+                to know people and to find 
+                <input type="text" class="inline-input" name="q31" maxlength="15" placeholder="31" oninput="saveTextAnswer(31, this.value)" style="text-transform: uppercase;">
+                about some interesting books.</p>
+                
+                <p>If you'd like to join the book club, let me know, and I'll 
+                <input type="text" class="inline-input" name="q32" maxlength="15" placeholder="32" oninput="saveTextAnswer(32, this.value)" style="text-transform: uppercase;">
+                you what book we decide to read next!</p>
+            </div>
+
+            <div class="help-box">
+                <p><strong>Tip:</strong> Each gap requires only ONE word. Think about grammar and context.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 5</button>
+                <button class="btn btn-success" onclick="finishTest()">Finish Test</button>
+            </div>
+        </div>
+
+        <!-- Results section -->
+        <div class="test-section" id="results" style="display: none;">
+            <h2>Test Complete!</h2>
+            <div id="resultsContent"></div>
+            <div class="navigation">
+                <button class="btn btn-success" onclick="downloadPDF()">📄 Save Results as PDF</button>
+                <button class="btn btn-primary" onclick="window.location.href='index.html'">← Back to Portal</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // PET005 - Answer key and test code
+        const TEST_CODE = 'PET005';
+        
+        // Answer key for all parts - PET005
+        const answers = {
+            part1: {
+                q1: 'C',
+                q2: 'C',
+                q3: 'A',
+                q4: 'A',
+                q5: 'B'
+            },
+            part2: {
+                q6: 'C',
+                q7: 'A',
+                q8: 'G',
+                q9: 'E',
+                q10: 'F'
+            },
+            part3: {
+                q11: 'B',
+                q12: 'C',
+                q13: 'B',
+                q14: 'B',
+                q15: 'C'
+            },
+            part4: {
+                q16: 'C',
+                q17: 'H',
+                q18: 'E',
+                q19: 'B',
+                q20: 'F'
+            },
+            part5: {
+                q21: 'B',
+                q22: 'A',
+                q23: 'B',
+                q24: 'B',
+                q25: 'A',
+                q26: 'B'
+            },
+            part6: {
+                q27: 'THE',
+                q28: 'FEW',
+                q29: 'ABOUT',
+                q30: 'GET',
+                q31: 'OUT',
+                q32: 'TELL'
+            }
+        };
+
+        // Sentence options for Part 4 gap filling - PET005
+        const sentenceOptions = {
+            A: "After eight months of training, this was going to be easy.",
+            B: "I slowed down, and the rest of my group moved away.",
+            C: "But I had trained for this, and I was going to do it.",
+            D: "There was no way I could finish the race now.",
+            E: "The horn blew to start the race.",
+            F: "I was very tempted to turn down my street and go home.",
+            G: "I was so glad that I had decided to do this.",
+            H: "Thousands of runners from all over the world were gathered for the race."
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+

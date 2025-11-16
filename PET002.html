@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B1 PET Cambridge Test - Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>B1 PET Cambridge English Test</h1>
+            <p class="test-info">Practice Test - PET002</p>
+        </header>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div class="test-section" id="part1" style="display: block;">
+            <h2>Part 1 - Reading Signs and Messages</h2>
+            <p class="instructions">For each question, choose the correct answer (A, B, or C).</p>
+
+            <!-- Question 1 -->
+            <div class="question">
+                <div class="question-number">Question 1</div>
+                <div class="question-text">
+                    <div class="message-box">
+                        <strong>Mobile phones are not permitted in this area.</strong><br>
+                        Please go to reception or leave the building if you want to use your phone.
+                    </div>
+                    <p><strong>What does this sign mean?</strong></p>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q1" value="A">
+                        <span>A. It is forbidden to use a mobile phone in any part of this centre.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="B">
+                        <span>B. You are allowed to use your mobile phone in one area of this centre.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="C">
+                        <span>C. You can use the receptionist's phone if you need to make a call.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <div class="question-number">Question 2</div>
+                <div class="question-text">
+                    <div class="message-box">
+                        <strong>To: David</strong><br>
+                        <strong>From: Aisha</strong><br>
+                        <strong>Subject: Book</strong><br><br>
+                        I'm really sorry I've lost the book you lent me. Where did you buy it? I'm going into town tomorrow and I'll get you another one.
+                    </div>
+                    <p><strong>Aisha wants David to—</strong></p>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q2" value="A">
+                        <span>A. lend her a book.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="B">
+                        <span>B. go into town with her.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="C">
+                        <span>C. give her the name of a shop.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <div class="question-number">Question 3</div>
+                <div class="question-text">
+                    <div class="message-box">
+                        <strong>Take this medicine</strong><br>
+                        every six hours<br>
+                        on an empty stomach.
+                    </div>
+                    <p><strong>What does this label mean?</strong></p>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q3" value="A">
+                        <span>A. You must eat six hours before you take this medicine.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="B">
+                        <span>B. You can eat after you've taken this medicine.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="C">
+                        <span>C. You need to have this medicine six times a day.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <div class="question-number">Question 4</div>
+                <div class="question-text">
+                    <div class="message-box">
+                        <strong>These changing rooms are for people having tennis lessons.</strong><br>
+                        If you are not having lessons, please use the main changing room.<br>
+                        – The Manager
+                    </div>
+                    <p><strong>What does this notice mean?</strong></p>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q4" value="A">
+                        <span>A. You can only use the main changing room if you are having lessons.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="B">
+                        <span>B. Only leisure centre staff are allowed in these changing rooms.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="C">
+                        <span>C. These changing rooms are for people learning to play tennis.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <div class="question-number">Question 5</div>
+                <div class="question-text">
+                    <div class="message-box">
+                        <strong>Please switch off the lights when you leave.</strong><br>
+                        The security guard will lock the doors when you have left.
+                    </div>
+                    <p><strong>What does this notice mean?</strong></p>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q5" value="A">
+                        <span>A. You must lock the doors and turn off the lights when you go home.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5" value="B">
+                        <span>B. You must ask the security guard to let you turn off the lights.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5" value="C">
+                        <span>C. The security guard doesn't usually turn off the lights in this building.</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 2</button>
+            </div>
+        </div>
+
+        <!-- Part 2 - Matching Exercise -->
+        <div class="test-section" id="part2" style="display: none;">
+            <h2>Part 2 - Matching People to Museums</h2>
+            <p class="instructions">For each question, choose the correct answer. Match each person to the most suitable museum (A-H).</p>
+
+            <!-- Question 6 -->
+            <div class="question carousel-question">
+                <div class="question-number">Question 6</div>
+                <div class="question-text">
+                    <p><strong>Lisa</strong> is doing a history project at school. She wants to visit a general history museum before she decides what period of history to study. She'd like to have a look at all the different times in history worldwide.</p>
+                </div>
+                
+                <!-- Carousel -->
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide('q6', -1)">‹</button>
+                    
+                    <div class="carousel-slides" id="carousel-q6">
+                        <div class="cafe-slide active" data-value="A">
+                            <div class="cafe-letter">A</div>
+                            <h4>City Museum</h4>
+                            <p>This weekend: dinosaur drawing for children aged 4–8 (adults, please stay, you can take part too). Making a pyramid and watching a video about ancient Egypt for children aged 9–10. For children aged 12, we have tablets with the new museum app Imagine: you can look at sites where dinosaur bones have been found as if you were there. Every activity is free of charge.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="B">
+                            <div class="cafe-letter">B</div>
+                            <h4>Transport Museum</h4>
+                            <p>We have exhibitions on transport through the ages from ancient Greece to the 21st century. A great place to visit if you like trains, planes, and automobiles! Don't miss it—it's a wonderful journey through history.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="C">
+                            <div class="cafe-letter">C</div>
+                            <h4>The Glass Place</h4>
+                            <p>Read about the history of glass-making. Watch a glass-making demonstration and visit the gift shop where you can buy amazing glass items, including jewellery. Our new collection has just arrived. There are earrings, bracelets, and rings. All designs are original and unique.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="D">
+                            <div class="cafe-letter">D</div>
+                            <h4>History Museum: Looking Back</h4>
+                            <p>Looking Back is a special exhibition that explores the history of the past 100 years, looking at houses, schools, shops, work, and developments in transport. There are recordings in each exhibit with interviews from local people who tell their stories. If you ever wondered what life was like in the past, come and visit this spectacular exhibition.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="E">
+                            <div class="cafe-letter">E</div>
+                            <h4>Fun Science</h4>
+                            <p>Learn about science and have fun at the same time. Do experiments and find things out for yourself. Try the rocket simulator or watch a 3D film on stars and planets. Interact with sound, electricity, light, and elements at the different science fun labs and collect stamps on your science passport.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="F">
+                            <div class="cafe-letter">F</div>
+                            <h4>Time Museum</h4>
+                            <p>If you enjoy global history, come and visit us! Start by exploring the ancient world of Egypt and end by watching a video about Asia's most recent inventions. You can access timelines for specific regions with our new software. This interactive learning experience lets you travel through time—there's something for everyone!</p>
+                        </div>
+                        <div class="cafe-slide" data-value="G">
+                            <div class="cafe-letter">G</div>
+                            <h4>Chocolate Museum</h4>
+                            <p>Watch a video about the history of chocolate, then visit the shop and choose from our huge selection of chocolate items. A great place for the whole family.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="H">
+                            <div class="cafe-letter">H</div>
+                            <h4>Natural History: Dinosaurs</h4>
+                            <p>We have a new exhibition of moving dinosaur models for adults and young people. Not recommended for children aged eight and under as the dinosaurs are very noisy and a bit frightening!</p>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn next" onclick="changeSlide('q6', 1)">›</button>
+                </div>
+                
+                <div class="carousel-indicators" id="indicators-q6"></div>
+                <input type="hidden" name="q6" id="answer-q6" value="A">
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question carousel-question">
+                <div class="question-number">Question 7</div>
+                <div class="question-text">
+                    <p><strong>Marcus</strong> is going to a big museum with his family this weekend. He doesn't usually go to museums because he gets bored easily, but he's very interested in space. Marcus hopes they'll go to a museum that has plenty of equipment for him to use.</p>
+                </div>
+                
+                <!-- Carousel -->
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide('q7', -1)">‹</button>
+                    
+                    <div class="carousel-slides" id="carousel-q7">
+                        <div class="cafe-slide active" data-value="A">
+                            <div class="cafe-letter">A</div>
+                            <h4>City Museum</h4>
+                            <p>This weekend: dinosaur drawing for children aged 4-8 (adults, please stay, you can take part too). Making a pyramid and watching a video about ancient Egypt for children aged 9-10. For children aged 12, we have tablets with the new museum app Imagine: you can look at sites where dinosaur bones have been found as if you were there.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="B">
+                            <div class="cafe-letter">B</div>
+                            <h4>Transport Museum</h4>
+                            <p>Ever wondered what it was like to travel around ancient Greece? Or perhaps you would like to find out how people in Britain travelled in the 21st century? We have information, pictures and videos from different times in history and there is always something exciting to discover.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="C">
+                            <div class="cafe-letter">C</div>
+                            <h4>The Glass Place</h4>
+                            <p>Come and see glass-making at the Glass Place. Watch items like bowls and decorations being made and visit our jewellery shop. After your visit, stop at the café next door, eat cake, drink hot chocolate and take a look at the clothes shops. There's plenty to see and do!</p>
+                        </div>
+                        <div class="cafe-slide" data-value="D">
+                            <div class="cafe-letter">D</div>
+                            <h4>History Museum: Looking Back</h4>
+                            <p>What were your grandparents doing 50 or more years ago? You can find out at the History Museum: Looking Back, which has a lot of information about the past 100 years. There are recordings of people talking about their lives, and there are also photos and videos to watch. We promise you won't be disappointed.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="E">
+                            <div class="cafe-letter">E</div>
+                            <h4>Fun Science</h4>
+                            <p>This exciting museum is great for children and adults. There are experiments you can do yourself, a rocket simulator and 3D films. Fun Science is the best museum in the country! Don't miss the special Space Exhibition, which finishes in a few weeks. Book online before tickets run out.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="F">
+                            <div class="cafe-letter">F</div>
+                            <h4>Time Museum</h4>
+                            <p>Do you want to find out about global history, learn more about ancient Egypt or Asia, or join an interactive timeline? Then come to the Time Museum. Our enthusiastic and helpful staff make sure everyone enjoys their visit here. Remember to book online for museum activities, such as Children's Week.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="G">
+                            <div class="cafe-letter">G</div>
+                            <h4>Chocolate Museum</h4>
+                            <p>Did you know there is a museum all about chocolate? You can learn about the history of chocolate-making by watching a video. The museum's chocolate shop sells the finest chocolate around. Don't just take our word for it… come and see for yourself.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="H">
+                            <div class="cafe-letter">H</div>
+                            <h4>Natural History: Dinosaurs</h4>
+                            <p>At the Natural History Museum, you can see moving models of dinosaurs. It's amazing! If you take your children, though, remember it might not be suitable for children under the age of 8, as the models are very realistic. For more information about facilities, ticket prices and special events, visit our website.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn next" onclick="changeSlide('q7', 1)">›</button>
+                </div>
+                
+                <div class="carousel-indicators" id="indicators-q7"></div>
+                <input type="hidden" name="q7" id="answer-q7" value="A">
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question carousel-question">
+                <div class="question-number">Question 8</div>
+                <div class="question-text">
+                    <p><strong>Ben</strong>, aged 8, and <strong>Erica</strong>, aged 12, are going to a museum with their aunt, Marilyn. Ben and Erica love learning new things and they really like doing creative activities. Luckily, Marilyn likes these things, too! She wants to find a museum that they can all enjoy together.</p>
+                </div>
+                
+                <!-- Carousel -->
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide('q8', -1)">‹</button>
+                    
+                    <div class="carousel-slides" id="carousel-q8">
+                        <div class="cafe-slide active" data-value="A">
+                            <div class="cafe-letter">A</div>
+                            <h4>City Museum</h4>
+                            <p>This weekend: dinosaur drawing for children aged 4-8 (adults, please stay, you can take part too). Making a pyramid and watching a video about ancient Egypt for children aged 9-10. For children aged 12, we have tablets with the new museum app Imagine: you can look at sites where dinosaur bones have been found as if you were there.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="B">
+                            <div class="cafe-letter">B</div>
+                            <h4>Transport Museum</h4>
+                            <p>Ever wondered what it was like to travel around ancient Greece? Or perhaps you would like to find out how people in Britain travelled in the 21st century? We have information, pictures and videos from different times in history and there is always something exciting to discover.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="C">
+                            <div class="cafe-letter">C</div>
+                            <h4>The Glass Place</h4>
+                            <p>Come and see glass-making at the Glass Place. Watch items like bowls and decorations being made and visit our jewellery shop. After your visit, stop at the café next door, eat cake, drink hot chocolate and take a look at the clothes shops. There's plenty to see and do!</p>
+                        </div>
+                        <div class="cafe-slide" data-value="D">
+                            <div class="cafe-letter">D</div>
+                            <h4>History Museum: Looking Back</h4>
+                            <p>What were your grandparents doing 50 or more years ago? You can find out at the History Museum: Looking Back, which has a lot of information about the past 100 years. There are recordings of people talking about their lives, and there are also photos and videos to watch. We promise you won't be disappointed.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="E">
+                            <div class="cafe-letter">E</div>
+                            <h4>Fun Science</h4>
+                            <p>This exciting museum is great for children and adults. There are experiments you can do yourself, a rocket simulator and 3D films. Fun Science is the best museum in the country! Don't miss the special Space Exhibition, which finishes in a few weeks. Book online before tickets run out.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="F">
+                            <div class="cafe-letter">F</div>
+                            <h4>Time Museum</h4>
+                            <p>Do you want to find out about global history, learn more about ancient Egypt or Asia, or join an interactive timeline? Then come to the Time Museum. Our enthusiastic and helpful staff make sure everyone enjoys their visit here. Remember to book online for museum activities, such as Children's Week.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="G">
+                            <div class="cafe-letter">G</div>
+                            <h4>Chocolate Museum</h4>
+                            <p>Did you know there is a museum all about chocolate? You can learn about the history of chocolate-making by watching a video. The museum's chocolate shop sells the finest chocolate around. Don't just take our word for it… come and see for yourself.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="H">
+                            <div class="cafe-letter">H</div>
+                            <h4>Natural History: Dinosaurs</h4>
+                            <p>At the Natural History Museum, you can see moving models of dinosaurs. It's amazing! If you take your children, though, remember it might not be suitable for children under the age of 8, as the models are very realistic. For more information about facilities, ticket prices and special events, visit our website.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn next" onclick="changeSlide('q8', 1)">›</button>
+                </div>
+                
+                <div class="carousel-indicators" id="indicators-q8"></div>
+                <input type="hidden" name="q8" id="answer-q8" value="A">
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question carousel-question">
+                <div class="question-number">Question 9</div>
+                <div class="question-text">
+                    <p><strong>Yoko</strong> is interested in art and craft. She'd like to go to a small museum where she can see things being made and buy some unusual gifts for her friends.</p>
+                </div>
+                
+                <!-- Carousel -->
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide('q9', -1)">‹</button>
+                    
+                    <div class="carousel-slides" id="carousel-q9">
+                        <div class="cafe-slide active" data-value="A">
+                            <div class="cafe-letter">A</div>
+                            <h4>City Museum</h4>
+                            <p>This weekend: dinosaur drawing for children aged 4-8 (adults, please stay, you can take part too). Making a pyramid and watching a video about ancient Egypt for children aged 9-10. For children aged 12, we have tablets with the new museum app Imagine: you can look at sites where dinosaur bones have been found as if you were there.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="B">
+                            <div class="cafe-letter">B</div>
+                            <h4>Transport Museum</h4>
+                            <p>Ever wondered what it was like to travel around ancient Greece? Or perhaps you would like to find out how people in Britain travelled in the 21st century? We have information, pictures and videos from different times in history and there is always something exciting to discover.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="C">
+                            <div class="cafe-letter">C</div>
+                            <h4>The Glass Place</h4>
+                            <p>Come and see glass-making at the Glass Place. Watch items like bowls and decorations being made and visit our jewellery shop. After your visit, stop at the café next door, eat cake, drink hot chocolate and take a look at the clothes shops. There's plenty to see and do!</p>
+                        </div>
+                        <div class="cafe-slide" data-value="D">
+                            <div class="cafe-letter">D</div>
+                            <h4>History Museum: Looking Back</h4>
+                            <p>What were your grandparents doing 50 or more years ago? You can find out at the History Museum: Looking Back, which has a lot of information about the past 100 years. There are recordings of people talking about their lives, and there are also photos and videos to watch. We promise you won't be disappointed.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="E">
+                            <div class="cafe-letter">E</div>
+                            <h4>Fun Science</h4>
+                            <p>This exciting museum is great for children and adults. There are experiments you can do yourself, a rocket simulator and 3D films. Fun Science is the best museum in the country! Don't miss the special Space Exhibition, which finishes in a few weeks. Book online before tickets run out.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="F">
+                            <div class="cafe-letter">F</div>
+                            <h4>Time Museum</h4>
+                            <p>Do you want to find out about global history, learn more about ancient Egypt or Asia, or join an interactive timeline? Then come to the Time Museum. Our enthusiastic and helpful staff make sure everyone enjoys their visit here. Remember to book online for museum activities, such as Children's Week.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="G">
+                            <div class="cafe-letter">G</div>
+                            <h4>Chocolate Museum</h4>
+                            <p>Did you know there is a museum all about chocolate? You can learn about the history of chocolate-making by watching a video. The museum's chocolate shop sells the finest chocolate around. Don't just take our word for it… come and see for yourself.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="H">
+                            <div class="cafe-letter">H</div>
+                            <h4>Natural History: Dinosaurs</h4>
+                            <p>At the Natural History Museum, you can see moving models of dinosaurs. It's amazing! If you take your children, though, remember it might not be suitable for children under the age of 8, as the models are very realistic. For more information about facilities, ticket prices and special events, visit our website.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn next" onclick="changeSlide('q9', 1)">›</button>
+                </div>
+                
+                <div class="carousel-indicators" id="indicators-q9"></div>
+                <input type="hidden" name="q9" id="answer-q9" value="A">
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question carousel-question">
+                <div class="question-number">Question 10</div>
+                <div class="question-text">
+                    <p>Brother and sister, <strong>Robert and Meg</strong>, are trying to find out about the history of their great-grandparents. They want to know more about what life was like for ordinary people in the 1920s and 1930s.</p>
+                </div>
+                
+                <!-- Carousel -->
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="changeSlide('q10', -1)">‹</button>
+                    
+                    <div class="carousel-slides" id="carousel-q10">
+                        <div class="cafe-slide active" data-value="A">
+                            <div class="cafe-letter">A</div>
+                            <h4>City Museum</h4>
+                            <p>This weekend: dinosaur drawing for children aged 4-8 (adults, please stay, you can take part too). Making a pyramid and watching a video about ancient Egypt for children aged 9-10. For children aged 12, we have tablets with the new museum app Imagine: you can look at sites where dinosaur bones have been found as if you were there.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="B">
+                            <div class="cafe-letter">B</div>
+                            <h4>Transport Museum</h4>
+                            <p>Ever wondered what it was like to travel around ancient Greece? Or perhaps you would like to find out how people in Britain travelled in the 21st century? We have information, pictures and videos from different times in history and there is always something exciting to discover.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="C">
+                            <div class="cafe-letter">C</div>
+                            <h4>The Glass Place</h4>
+                            <p>Come and see glass-making at the Glass Place. Watch items like bowls and decorations being made and visit our jewellery shop. After your visit, stop at the café next door, eat cake, drink hot chocolate and take a look at the clothes shops. There's plenty to see and do!</p>
+                        </div>
+                        <div class="cafe-slide" data-value="D">
+                            <div class="cafe-letter">D</div>
+                            <h4>History Museum: Looking Back</h4>
+                            <p>What were your grandparents doing 50 or more years ago? You can find out at the History Museum: Looking Back, which has a lot of information about the past 100 years. There are recordings of people talking about their lives, and there are also photos and videos to watch. We promise you won't be disappointed.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="E">
+                            <div class="cafe-letter">E</div>
+                            <h4>Fun Science</h4>
+                            <p>This exciting museum is great for children and adults. There are experiments you can do yourself, a rocket simulator and 3D films. Fun Science is the best museum in the country! Don't miss the special Space Exhibition, which finishes in a few weeks. Book online before tickets run out.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="F">
+                            <div class="cafe-letter">F</div>
+                            <h4>Time Museum</h4>
+                            <p>Do you want to find out about global history, learn more about ancient Egypt or Asia, or join an interactive timeline? Then come to the Time Museum. Our enthusiastic and helpful staff make sure everyone enjoys their visit here. Remember to book online for museum activities, such as Children's Week.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="G">
+                            <div class="cafe-letter">G</div>
+                            <h4>Chocolate Museum</h4>
+                            <p>Did you know there is a museum all about chocolate? You can learn about the history of chocolate-making by watching a video. The museum's chocolate shop sells the finest chocolate around. Don't just take our word for it… come and see for yourself.</p>
+                        </div>
+                        <div class="cafe-slide" data-value="H">
+                            <div class="cafe-letter">H</div>
+                            <h4>Natural History: Dinosaurs</h4>
+                            <p>At the Natural History Museum, you can see moving models of dinosaurs. It's amazing! If you take your children, though, remember it might not be suitable for children under the age of 8, as the models are very realistic. For more information about facilities, ticket prices and special events, visit our website.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn next" onclick="changeSlide('q10', 1)">›</button>
+                </div>
+                
+                <div class="carousel-indicators" id="indicators-q10"></div>
+                <input type="hidden" name="q10" id="answer-q10" value="A">
+            </div>
+
+            <!-- Museum Reviews Reference removed since they're now in carousels -->
+            <div class="reference-box" style="display: none;">
+                <h3>Museum Reviews Reference</h3>
+                <div class="cafe-grid">
+                    <div class="cafe-card">
+                        <strong>A. City Museum</strong>
+                        <p>This weekend: dinosaur drawing for children aged 4-8 (adults, please stay, you can take part too). Making a pyramid and watching a video about ancient Egypt for children aged 9-10. For children aged 12, we have tablets with the new museum app Imagine: you can look at sites where dinosaur bones have been found as if you were there.</p>
+                    </div>
+                    <div class="cafe-card">
+                        <strong>B. Transport Museum</strong>
+                        <p>Ever wondered what it was like to travel around ancient Greece? Or perhaps you would like to find out how people in Britain travelled in the 21st century? We have information, pictures and videos from different times in history and there is always something exciting to discover.</p>
+                    </div>
+                    <div class="cafe-card">
+                        <strong>C. The Glass Place</strong>
+                        <p>Come and see glass-making at the Glass Place. Watch items like bowls and decorations being made and visit our jewellery shop. After your visit, stop at the café next door, eat cake, drink hot chocolate and take a look at the clothes shops. There's plenty to see and do!</p>
+                    </div>
+                    <div class="cafe-card">
+                        <strong>D. History Museum: Looking Back</strong>
+                        <p>What were your grandparents doing 50 or more years ago? You can find out at the History Museum: Looking Back, which has a lot of information about the past 100 years. There are recordings of people talking about their lives, and there are also photos and videos to watch. We promise you won't be disappointed.</p>
+                    </div>
+                    <div class="cafe-card">
+                        <strong>E. Fun Science</strong>
+                        <p>This exciting museum is great for children and adults. There are experiments you can do yourself, a rocket simulator and 3D films. Fun Science is the best museum in the country! Don't miss the special Space Exhibition, which finishes in a few weeks. Book online before tickets run out.</p>
+                    </div>
+                    <div class="cafe-card">
+                        <strong>F. Time Museum</strong>
+                        <p>Do you want to find out about global history, learn more about ancient Egypt or Asia, or join an interactive timeline? Then come to the Time Museum. Our enthusiastic and helpful staff make sure everyone enjoys their visit here. Remember to book online for museum activities, such as Children's Week.</p>
+                    </div>
+                    <div class="cafe-card">
+                        <strong>G. Chocolate Museum</strong>
+                        <p>Did you know there is a museum all about chocolate? You can learn about the history of chocolate-making by watching a video. The museum's chocolate shop sells the finest chocolate around. Don't just take our word for it… come and see for yourself.</p>
+                    </div>
+                    <div class="cafe-card">
+                        <strong>H. Natural History: Dinosaurs</strong>
+                        <p>At the Natural History Museum, you can see moving models of dinosaurs. It's amazing! If you take your children, though, remember it might not be suitable for children under the age of 8, as the models are very realistic. For more information about facilities, ticket prices and special events, visit our website.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 1</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 3</button>
+            </div>
+        </div>
+
+        <!-- Part 3 - Reading Comprehension -->
+        <div class="test-section" id="part3" style="display: none;">
+            <h2>Part 3 - Reading Comprehension</h2>
+            <p class="instructions">Read the text and answer the questions. Choose the correct answer (A, B, C, or D).</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Harry Parnell: Photographer of the Stars</h3>
+                <p>I've always been interested in photography. When I was a child, I used to borrow my parents' camera. This annoyed them, so when I was about ten years old, they bought me my own camera. After that, I spent my free time going around taking pictures. I enjoyed taking pictures of flowers, trees, and animals, but most of all, I liked taking pictures of people. I still have my childhood photo albums. Most pictures weren't that great, but I like looking at them. They remind me of what I first felt when I started taking pictures.</p>
+                
+                <p>When I finished school, I did a photography course and then I got a job working for my local paper. I liked the people I worked with, but I found it quite boring after a while. I used to have to take dull pictures of local buildings and new types of cars; that kind of thing. After a couple of years, I trained in digital photography and portraits with another photographer. Then, I moved to a national newspaper and that was more interesting, but I finally decided to work for myself taking pictures of famous people. I like exploring how settings and people interact. Many famous people got to know me and liked my artistic talent. I have been working as a portrait photographer for many years now.</p>
+                
+                <p>When I tell people what I do for a living, they imagine that I'm an unpleasant person who follows famous people, takes embarrassing pictures of them, and makes a lot of money. Actually, I don't do that. Usually, the people I photograph want me to photograph them. We create an atmosphere in their own garden or outdoors where they can feel comfortable. The only thing that can happen is that sometimes they suddenly decide they don't want to be photographed. That can be annoying, especially if they've asked you there in the first place. But that doesn't happen very often.</p>
+                
+                <p>I find my job exciting and challenging. It has a creative side and also a technical side. I have to imagine and shoot the best photo and I also have to use different accessories to get different effects.</p>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="question">
+                <div class="question-number">Question 11</div>
+                <div class="question-text">
+                    <p><strong>What does the writer say about his childhood?</strong></p>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q11" value="A">
+                        <span>A. He liked taking pictures of his parents.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q11" value="B">
+                        <span>B. He discovered he enjoyed taking pictures of people best.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q11" value="C">
+                        <span>C. He disliked taking photos of nature.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q11" value="D">
+                        <span>D. He never had his own camera.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="question">
+                <div class="question-number">Question 12</div>
+                <div class="question-text">
+                    <p><strong>What did the writer do in his first job?</strong></p>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q12" value="A">
+                        <span>A. He took pictures of ordinary people.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q12" value="B">
+                        <span>B. He photographed uninteresting things.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q12" value="C">
+                        <span>C. He travelled around the country a lot.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q12" value="D">
+                        <span>D. He stayed in the office most of the time.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question">
+                <div class="question-number">Question 13</div>
+                <div class="question-text">
+                    <p><strong>What does the writer think people believe about him?</strong></p>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q13" value="A">
+                        <span>A. He doesn't earn much money.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q13" value="B">
+                        <span>B. He has an embarrassing job.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q13" value="C">
+                        <span>C. He will probably be famous one day.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q13" value="D">
+                        <span>D. He isn't a nice person.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question">
+                <div class="question-number">Question 14</div>
+                <div class="question-text">
+                    <p><strong>When talking about the people he photographs now, the writer says</strong></p>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q14" value="A">
+                        <span>A. they are usually happy to be photographed.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q14" value="B">
+                        <span>B. they're often unpleasant.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q14" value="C">
+                        <span>C. nobody ever upsets him.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q14" value="D">
+                        <span>D. they sometimes forget to pay him.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="question">
+                <div class="question-number">Question 15</div>
+                <div class="question-text">
+                    <p><strong>Which of the following is the best description of the writer?</strong></p>
+                </div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q15" value="A">
+                        <span>A. The talented photographer who has worked in different places but has always enjoyed his career.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q15" value="B">
+                        <span>B. The photographer who prefers taking pictures of people and enjoys embarrassing the rich and famous.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q15" value="C">
+                        <span>C. The photographer who likes working for himself and enjoys his work most of the time.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q15" value="D">
+                        <span>D. The photographer who has taken pictures for many years and has always wanted to be famous.</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 2</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 4</button>
+            </div>
+        </div>
+
+        <!-- Part 4 - Gap Filling -->
+        <div class="test-section" id="part4" style="display: none;">
+            <h2>Part 4 - Sentence Completion</h2>
+            <p class="instructions">Five sentences have been removed from the text below. For each question, choose the correct answer. There are three extra sentences which you do not need to use.</p>
+
+            <!-- Reading Passage with Gaps -->
+            <div class="reading-passage">
+                <h3>Lost Luggage</h3>
+                
+                <p>Two years ago, I went on holiday to Rome with my family. It was a four-hour train journey from our home, and we all helped to plan the trip. We were looking forward to seeing the famous sights! Everything went really well and we had a great time visiting the amazing tourist attractions. I was in charge of taking all the photos with my brand new phone, which had an excellent camera. We stayed in Rome for two weeks, and it was really incredible.</p>
+                
+                <p>On the train journey back home, I decided to open my backpack, but I couldn't find it. <span class="gap-marker">16</span> <span class="inline-gap" id="gap-16">______</span> I was very upset because I'd packed my phone in that backpack, along with my travel journal. <span class="gap-marker">17</span> <span class="inline-gap" id="gap-17">______</span> Weeks passed, and then months. At first, I contacted the train company every week, but after some time, it was clear that my backpack was never going to be found. After a while, I forgot all about it.</p>
+                
+                <p>Last month, I took the train to Florence on a school trip. Incredibly, my backpack went missing again! <span class="gap-marker">18</span> <span class="inline-gap" id="gap-18">______</span> After Rome, I always kept my phone and other important items in my pockets.</p>
+                
+                <p>Two weeks after the Florence trip, I received a phone call from the train company. They told me they had my backpack, and they would send it to my local station. I assumed it was my backpack from the school trip. <span class="gap-marker">19</span> <span class="inline-gap" id="gap-19">______</span> Someone from the train company had found the backpack from Rome in a dusty old storeroom! Everything inside it was safe, and I finally got to share the photos with my family. <span class="gap-marker">20</span> <span class="inline-gap" id="gap-20">______</span> I decided we should all go back to Rome for another holiday … but this time, I would be much more careful with my things!</p>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="question">
+                <div class="question-number">Question 16</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q16" value="A" onchange="updateGap(16, 'A')">
+                        <span>A. I never travelled with the same train company again.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q16" value="B" onchange="updateGap(16, 'B')">
+                        <span>B. When I arrived at the station, I couldn't believe my eyes!</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q16" value="C" onchange="updateGap(16, 'C')">
+                        <span>C. All my memories of Rome were in that backpack.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q16" value="D" onchange="updateGap(16, 'D')">
+                        <span>D. I couldn't leave the station without my bag.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q16" value="E" onchange="updateGap(16, 'E')">
+                        <span>E. It was so wonderful to see them.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q16" value="F" onchange="updateGap(16, 'F')">
+                        <span>F. I knew I would never see my new phone again.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q16" value="G" onchange="updateGap(16, 'G')">
+                        <span>G. I searched and searched, but it was nowhere to be seen!</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q16" value="H" onchange="updateGap(16, 'H')">
+                        <span>H. But, this time, there were no precious memories inside.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="question">
+                <div class="question-number">Question 17</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q17" value="A" onchange="updateGap(17, 'A')">
+                        <span>A. I never travelled with the same train company again.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q17" value="B" onchange="updateGap(17, 'B')">
+                        <span>B. When I arrived at the station, I couldn't believe my eyes!</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q17" value="C" onchange="updateGap(17, 'C')">
+                        <span>C. All my memories of Rome were in that backpack.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q17" value="D" onchange="updateGap(17, 'D')">
+                        <span>D. I couldn't leave the station without my bag.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q17" value="E" onchange="updateGap(17, 'E')">
+                        <span>E. It was so wonderful to see them.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q17" value="F" onchange="updateGap(17, 'F')">
+                        <span>F. I knew I would never see my new phone again.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q17" value="G" onchange="updateGap(17, 'G')">
+                        <span>G. I searched and searched, but it was nowhere to be seen!</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q17" value="H" onchange="updateGap(17, 'H')">
+                        <span>H. But, this time, there were no precious memories inside.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 18 -->
+            <div class="question">
+                <div class="question-number">Question 18</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q18" value="A" onchange="updateGap(18, 'A')">
+                        <span>A. I never travelled with the same train company again.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q18" value="B" onchange="updateGap(18, 'B')">
+                        <span>B. When I arrived at the station, I couldn't believe my eyes!</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q18" value="C" onchange="updateGap(18, 'C')">
+                        <span>C. All my memories of Rome were in that backpack.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q18" value="D" onchange="updateGap(18, 'D')">
+                        <span>D. I couldn't leave the station without my bag.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q18" value="E" onchange="updateGap(18, 'E')">
+                        <span>E. It was so wonderful to see them.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q18" value="F" onchange="updateGap(18, 'F')">
+                        <span>F. I knew I would never see my new phone again.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q18" value="G" onchange="updateGap(18, 'G')">
+                        <span>G. I searched and searched, but it was nowhere to be seen!</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q18" value="H" onchange="updateGap(18, 'H')">
+                        <span>H. But, this time, there were no precious memories inside.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="question">
+                <div class="question-number">Question 19</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q19" value="A" onchange="updateGap(19, 'A')">
+                        <span>A. I never travelled with the same train company again.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q19" value="B" onchange="updateGap(19, 'B')">
+                        <span>B. When I arrived at the station, I couldn't believe my eyes!</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q19" value="C" onchange="updateGap(19, 'C')">
+                        <span>C. All my memories of Rome were in that backpack.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q19" value="D" onchange="updateGap(19, 'D')">
+                        <span>D. I couldn't leave the station without my bag.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q19" value="E" onchange="updateGap(19, 'E')">
+                        <span>E. It was so wonderful to see them.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q19" value="F" onchange="updateGap(19, 'F')">
+                        <span>F. I knew I would never see my new phone again.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q19" value="G" onchange="updateGap(19, 'G')">
+                        <span>G. I searched and searched, but it was nowhere to be seen!</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q19" value="H" onchange="updateGap(19, 'H')">
+                        <span>H. But, this time, there were no precious memories inside.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="question">
+                <div class="question-number">Question 20</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q20" value="A" onchange="updateGap(20, 'A')">
+                        <span>A. I never travelled with the same train company again.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q20" value="B" onchange="updateGap(20, 'B')">
+                        <span>B. When I arrived at the station, I couldn't believe my eyes!</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q20" value="C" onchange="updateGap(20, 'C')">
+                        <span>C. All my memories of Rome were in that backpack.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q20" value="D" onchange="updateGap(20, 'D')">
+                        <span>D. I couldn't leave the station without my bag.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q20" value="E" onchange="updateGap(20, 'E')">
+                        <span>E. It was so wonderful to see them.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q20" value="F" onchange="updateGap(20, 'F')">
+                        <span>F. I knew I would never see my new phone again.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q20" value="G" onchange="updateGap(20, 'G')">
+                        <span>G. I searched and searched, but it was nowhere to be seen!</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q20" value="H" onchange="updateGap(20, 'H')">
+                        <span>H. But, this time, there were no precious memories inside.</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 3</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 5</button>
+            </div>
+        </div>
+
+        <!-- Part 5 - Multiple Choice Cloze -->
+        <div class="test-section" id="part5" style="display: none;">
+            <h2>Part 5 - Multiple Choice Cloze</h2>
+            <p class="instructions">For each question, choose the correct answer to complete the text.</p>
+
+            <!-- Reading Passage with Inline Dropdown Boxes -->
+            <div class="reading-passage">
+                <h3>The Benefits of Travel</h3>
+                
+                <p>Going away, even for a short time, is very important for everybody. Whether it's for work, study or fun, travel gives you the opportunity to relax. Even if it's a short 
+                <select class="inline-select" name="q21" onchange="saveDropdownAnswer(21, this.value)">
+                    <option value="">— 21 —</option>
+                    <option value="A">trip</option>
+                    <option value="B">destination</option>
+                    <option value="C">plan</option>
+                    <option value="D">route</option>
+                </select>, it allows you time to think about something else. It provides you with a break from your daily 
+                <select class="inline-select" name="q22" onchange="saveDropdownAnswer(22, this.value)">
+                    <option value="">— 22 —</option>
+                    <option value="A">practice</option>
+                    <option value="B">routine</option>
+                    <option value="C">habit</option>
+                    <option value="D">custom</option>
+                </select>.</p>
+                
+                <p>If you're 
+                <select class="inline-select" name="q23" onchange="saveDropdownAnswer(23, this.value)">
+                    <option value="">— 23 —</option>
+                    <option value="A">advised</option>
+                    <option value="B">offered</option>
+                    <option value="C">recommended</option>
+                    <option value="D">suggested</option>
+                </select>
+                the chance to go on a work trip, you should always take it. If you're going away for fun, you 
+                <select class="inline-select" name="q24" onchange="saveDropdownAnswer(24, this.value)">
+                    <option value="">— 24 —</option>
+                    <option value="A">ought</option>
+                    <option value="B">need</option>
+                    <option value="C">must</option>
+                    <option value="D">could</option>
+                </select>
+                choose the right person to travel with. Make sure it's 
+                <select class="inline-select" name="q25" onchange="saveDropdownAnswer(25, this.value)">
+                    <option value="">— 25 —</option>
+                    <option value="A">somebody</option>
+                    <option value="B">everyone</option>
+                    <option value="C">something</option>
+                    <option value="D">everything</option>
+                </select>
+                you get on with.</p>
+                
+                <p>Sometimes it's a good idea to go alone because then you'll be 
+                <select class="inline-select" name="q26" onchange="saveDropdownAnswer(26, this.value)">
+                    <option value="">— 26 —</option>
+                    <option value="A">open</option>
+                    <option value="B">free</option>
+                    <option value="C">empty</option>
+                    <option value="D">clear</option>
+                </select>
+                to do what you want. Whatever you decide, there's no doubt you'll come home feeling happy and with many new stories about the places you've visited on the way.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 4</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 6</button>
+            </div>
+        </div>
+
+        <!-- Part 6 - Open Cloze -->
+        <div class="test-section" id="part6" style="display: none;">
+            <h2>Part 6 - Open Cloze</h2>
+            <p class="instructions">For each question, write the correct answer. Write one word for each gap.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>Greetings from Stonehenge!</h3>
+                
+                <p>Stonehenge is one of the most famous sites in the UK, and it's also one of the oldest. It's a group of prehistoric stones, arranged 
+                <input type="text" class="inline-input" name="q27" maxlength="15" placeholder="27" oninput="saveTextAnswer(27, this.value)" style="text-transform: uppercase;">
+                circles. Some of the stones came 
+                <input type="text" class="inline-input" name="q28" maxlength="15" placeholder="28" oninput="saveTextAnswer(28, this.value)" style="text-transform: uppercase;">
+                260 kilometres away, and are very large and heavy.</p>
+                
+                <p>Stonehenge has stood in the British countryside 
+                <input type="text" class="inline-input" name="q29" maxlength="15" placeholder="29" oninput="saveTextAnswer(29, this.value)" style="text-transform: uppercase;">
+                5,000 years. Millions of people have visited it, but nobody is quite sure why the stones were placed 
+                <input type="text" class="inline-input" name="q30" maxlength="15" placeholder="30" oninput="saveTextAnswer(30, this.value)" style="text-transform: uppercase;">. Some people believe that Stonehenge was a giant calendar because the sun lines up 
+                <input type="text" class="inline-input" name="q31" maxlength="15" placeholder="31" oninput="saveTextAnswer(31, this.value)" style="text-transform: uppercase;">
+                the stones at certain times of year.</p>
+                
+                <p>It's certainly a popular place to visit, although visitors have to keep a short distance 
+                <input type="text" class="inline-input" name="q32" maxlength="15" placeholder="32" oninput="saveTextAnswer(32, this.value)" style="text-transform: uppercase;">
+                from the stones and are not allowed to touch them.</p>
+            </div>
+
+            <div class="help-box">
+                <p><strong>Tip:</strong> Each gap requires only ONE word. Think about grammar and context.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 5</button>
+                <button class="btn btn-success" onclick="finishTest()">Finish Test</button>
+            </div>
+        </div>
+
+        <!-- Results section -->
+        <div class="test-section" id="results" style="display: none;">
+            <h2>Test Complete!</h2>
+            <div id="resultsContent"></div>
+            <div class="navigation">
+                <button class="btn btn-success" onclick="downloadPDF()">📄 Save Results as PDF</button>
+                <button class="btn btn-primary" onclick="window.location.href='index.html'">← Back to Portal</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // PET002 - Answer key and test code
+        const TEST_CODE = 'PET002';
+        
+        // Answer key for all parts - PET002
+        const answers = {
+            part1: {
+                q1: 'B',
+                q2: 'C',
+                q3: 'B',
+                q4: 'C',
+                q5: 'C'
+            },
+            part2: {
+                q6: 'F',
+                q7: 'E',
+                q8: 'A',
+                q9: 'C',
+                q10: 'D'
+            },
+            part3: {
+                q11: 'B',
+                q12: 'B',
+                q13: 'D',
+                q14: 'A',
+                q15: 'C'
+            },
+            part4: {
+                q16: 'G',
+                q17: 'C',
+                q18: 'H',
+                q19: 'B',
+                q20: 'E'
+            },
+            part5: {
+                q21: 'A',
+                q22: 'B',
+                q23: 'B',
+                q24: 'C',
+                q25: 'A',
+                q26: 'B'
+            },
+            part6: {
+                q27: 'IN',
+                q28: 'FROM',
+                q29: 'FOR',
+                q30: 'THERE',
+                q31: 'WITH',
+                q32: 'AWAY'
+            }
+        };
+
+        // Sentence options for Part 4 gap filling - PET002
+        const sentenceOptions = {
+            A: "I never travelled with the same train company again.",
+            B: "When I arrived at the station, I couldn't believe my eyes!",
+            C: "All my memories of Rome were in that backpack.",
+            D: "I couldn't leave the station without my bag.",
+            E: "It was so wonderful to see them.",
+            F: "I knew I would never see my new phone again.",
+            G: "I searched and searched, but it was nowhere to be seen!",
+            H: "But, this time, there were no precious memories inside."
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+

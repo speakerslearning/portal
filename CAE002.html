@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAE002 - C1 Advanced Cambridge English Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>C1 Advanced (CAE) Cambridge English Test</h1>
+            <p class="test-info">Practice Test - CAE002</p>
+        </header>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div class="test-section" id="part1" style="display: block;">
+            <h2>Part 1 - Multiple Choice Cloze</h2>
+            <p class="instructions">For questions 1–8, read the text below and decide which answer (A, B, C or D) best fits each gap.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Word-of-mouth success – what publishers dream of</h3>
+                
+                <p>'Word of mouth', a phrase that first <strong>(0) appears</strong> in Shakespeare's play Twelfth Night, is the kind of publicity all publishers want for their books. Positive reviews are useful, but it's only when lots of people start talking about a book that it really 
+                <select class="inline-select" name="q1" onchange="saveDropdownAnswer(1, this.value)">
+                    <option value="">— 1 —</option>
+                    <option value="A">pushes</option>
+                    <option value="B">hits</option>
+                    <option value="C">makes</option>
+                    <option value="D">gets</option>
+                </select>
+                it sales-wise. Word of mouth is what 
+                <select class="inline-select" name="q2" onchange="saveDropdownAnswer(2, this.value)">
+                    <option value="">— 2 —</option>
+                    <option value="A">formed</option>
+                    <option value="B">ran</option>
+                    <option value="C">rested</option>
+                    <option value="D">lay</option>
+                </select>
+                behind the initial success of J.K. Rowling's Harry Potter books, for example.</p>
+                
+                <p>Some publishers will go to any 
+                <select class="inline-select" name="q3" onchange="saveDropdownAnswer(3, this.value)">
+                    <option value="">— 3 —</option>
+                    <option value="A">lengths</option>
+                    <option value="B">extents</option>
+                    <option value="C">terms</option>
+                    <option value="D">measures</option>
+                </select>
+                to stimulate the phenomenon. Years ago, one company paid its own staff to read books published by the company whenever they travelled on public transport. The thinking was that the bright yellow covers would 
+                <select class="inline-select" name="q4" onchange="saveDropdownAnswer(4, this.value)">
+                    <option value="">— 4 —</option>
+                    <option value="A">show off</option>
+                    <option value="B">stick up</option>
+                    <option value="C">stand out</option>
+                    <option value="D">shine on</option>
+                </select>
+                and become the subject of casual conversations among passengers, which would in 
+                <select class="inline-select" name="q5" onchange="saveDropdownAnswer(5, this.value)">
+                    <option value="">— 5 —</option>
+                    <option value="A">order</option>
+                    <option value="B">turn</option>
+                    <option value="C">line</option>
+                    <option value="D">sequence</option>
+                </select>
+                boost sales.</p>
+                
+                <p>With the 
+                <select class="inline-select" name="q6" onchange="saveDropdownAnswer(6, this.value)">
+                    <option value="">— 6 —</option>
+                    <option value="A">advent</option>
+                    <option value="B">entrance</option>
+                    <option value="C">outset</option>
+                    <option value="D">opening</option>
+                </select>
+                of social networking, creating word of mouth has almost become a science. However, despite Twitter, Facebook and the rest, publishers still find it as difficult as ever to generate that 
+                <select class="inline-select" name="q7" onchange="saveDropdownAnswer(7, this.value)">
+                    <option value="">— 7 —</option>
+                    <option value="A">remote</option>
+                    <option value="B">isolated</option>
+                    <option value="C">hidden</option>
+                    <option value="D">elusive</option>
+                </select>
+                thing, a viral conversation about a new book that persuades lots of people to buy it. It still seems to be unclear what the 
+                <select class="inline-select" name="q8" onchange="saveDropdownAnswer(8, this.value)">
+                    <option value="">— 8 —</option>
+                    <option value="A">root</option>
+                    <option value="B">key</option>
+                    <option value="C">base</option>
+                    <option value="D">guide</option>
+                </select>
+                to achieving word of mouth is.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 2</button>
+            </div>
+        </div>
+
+        <!-- Part 2 - Open Cloze -->
+        <div class="test-section" id="part2" style="display: none;">
+            <h2>Part 2 - Open Cloze</h2>
+            <p class="instructions">For questions 9–16, read the text below and think of the word which best fits each gap. Use only one word in each gap. Write your answers IN CAPITAL LETTERS.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>Ice water diver</h3>
+                
+                <p>Marine biologist Rhian Waller regularly dives in freezing Alaskan fjords to study corals that flourish 
+                <input type="text" class="inline-input" name="q9" maxlength="15" placeholder="9" oninput="saveTextAnswer(9, this.value)" style="text-transform: uppercase;">
+                the icy depths. The organisms she examines are not the colourful corals 
+                <input type="text" class="inline-input" name="q10" maxlength="15" placeholder="10" oninput="saveTextAnswer(10, this.value)" style="text-transform: uppercase;">
+                to tropical seas. Rather, they are deep-sea corals that exist in total darkness up to 1000 metres below the surface.</p>
+                
+                <p>Rhian and her colleagues use specialist research vessels equipped 
+                <input type="text" class="inline-input" name="q11" maxlength="15" placeholder="11" oninput="saveTextAnswer(11, this.value)" style="text-transform: uppercase;">
+                remotely operated vehicles (ROVs). These robotic submarines carry cameras and collection tools. 
+                <input type="text" class="inline-input" name="q12" maxlength="15" placeholder="12" oninput="saveTextAnswer(12, this.value)" style="text-transform: uppercase;">, 
+                <input type="text" class="inline-input" name="q13" maxlength="15" placeholder="13" oninput="saveTextAnswer(13, this.value)" style="text-transform: uppercase;">
+                Rhian prefers to dive herself whenever possible. "There's 
+                <input type="text" class="inline-input" name="q14" maxlength="15" placeholder="14" oninput="saveTextAnswer(14, this.value)" style="text-transform: uppercase;">
+                like being there in person," she says.</p>
+                
+                <p>Diving 
+                <input type="text" class="inline-input" name="q15" maxlength="15" placeholder="15" oninput="saveTextAnswer(15, this.value)" style="text-transform: uppercase;">
+                these conditions is no easy task. Visibility is extremely limited and the water is so cold 
+                <input type="text" class="inline-input" name="q16" maxlength="15" placeholder="16" oninput="saveTextAnswer(16, this.value)" style="text-transform: uppercase;">
+                even a few minutes' exposure can be life-threatening. Rhian is, however, passionate about her research and convinced that deep-sea corals deserve greater conservation attention.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 1</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 3</button>
+            </div>
+        </div>
+
+        <!-- Part 3 - Word Formation -->
+        <div class="test-section" id="part3" style="display: none;">
+            <h2>Part 3 - Word Formation</h2>
+            <p class="instructions">For questions 17–24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. Write your answers IN CAPITAL LETTERS.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>Leaders with long faces</h3>
+                
+                <p>In most presidential elections in the USA in the twentieth century, the taller of the two candidates won. This association of <span class="word-given">HIGH</span> 
+                <input type="text" class="inline-input" name="q17" maxlength="20" placeholder="17" oninput="saveTextAnswer(17, this.value)" style="text-transform: uppercase;">
+                with success is something that has been widely accepted. <span class="word-given">INTEREST</span> 
+                <input type="text" class="inline-input" name="q18" maxlength="20" placeholder="18" oninput="saveTextAnswer(18, this.value)" style="text-transform: uppercase;">, some recent research suggests that people's confidence in a potential leader can also be influenced by how long that person's face is.</p>
+                
+                <p>According to Daniel Re, one of the main researchers, our natural attraction to facial <span class="word-given">CHARACTER</span> 
+                <input type="text" class="inline-input" name="q19" maxlength="20" placeholder="19" oninput="saveTextAnswer(19, this.value)" style="text-transform: uppercase;">
+                that suggest tallness, as long faces do, is thought to have evolved long ago when the <span class="word-given">SURVIVE</span> 
+                <input type="text" class="inline-input" name="q20" maxlength="20" placeholder="20" oninput="saveTextAnswer(20, this.value)" style="text-transform: uppercase;">
+                of a community depended on choosing the right leader. 'Especially when we're faced with a <span class="word-given">THREAT</span> 
+                <input type="text" class="inline-input" name="q21" maxlength="20" placeholder="21" oninput="saveTextAnswer(21, this.value)" style="text-transform: uppercase;">
+                situation, we seem to prefer the most dominant-looking people for leadership,' he says.</p>
+                
+                <p>In the study, <span class="word-given">VOLUNTARY</span> 
+                <input type="text" class="inline-input" name="q22" maxlength="20" placeholder="22" oninput="saveTextAnswer(22, this.value)" style="text-transform: uppercase;">
+                were asked to manipulate faces on a computer screen in order to make them look like people they would want as national leaders. A significant number chose to <span class="word-given">LONG</span> 
+                <input type="text" class="inline-input" name="q23" maxlength="20" placeholder="23" oninput="saveTextAnswer(23, this.value)" style="text-transform: uppercase;">
+                the faces, particularly for male leaders in difficult times.</p>
+                
+                <p>As Dr Re noted, the implication is that 'leadership choices are affected by physical features that are <span class="word-given">RELEVANT</span> 
+                <input type="text" class="inline-input" name="q24" maxlength="20" placeholder="24" oninput="saveTextAnswer(24, this.value)" style="text-transform: uppercase;">
+                to political expertise.'</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 2</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 4</button>
+            </div>
+        </div>
+
+        <!-- Part 4 - Key Word Transformations -->
+        <div class="test-section" id="part4" style="display: none;">
+            <h2>Part 4 - Key Word Transformations</h2>
+            <p class="instructions">For questions 25–30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given. Write your answers IN CAPITAL LETTERS.</p>
+            <p class="instructions"><strong>Note:</strong> Each question is worth up to 2 points (1 point for each key part of the answer).</p>
+
+            <div class="reading-passage">
+                <div class="transformation-question">
+                    <p><strong>25.</strong> I only watched that film because you recommended it to me.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">NEVER</span></p>
+                    <p>I would <input type="text" class="inline-input-long" name="q25" maxlength="60" placeholder="25" oninput="saveTextAnswer(25, this.value)" style="text-transform: uppercase;"> you hadn't recommended it to me.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>26.</strong> It seems as if we misunderstood what the aims of the course were.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">BEEN</span></p>
+                    <p>There seems <input type="text" class="inline-input-long" name="q26" maxlength="60" placeholder="26" oninput="saveTextAnswer(26, this.value)" style="text-transform: uppercase;"> what the aims of the course were.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>27.</strong> The traffic was so bad that there was obviously no way we would get to the theatre on time, so we went home.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">STAND</span></p>
+                    <p>The traffic was so bad that we obviously didn't <input type="text" class="inline-input-long" name="q27" maxlength="60" placeholder="27" oninput="saveTextAnswer(27, this.value)" style="text-transform: uppercase;"> to the theatre on time, so we went home.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>28.</strong> Michelle's brother talks a lot more than she does.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">NOWHERE</span></p>
+                    <p>Michelle is <input type="text" class="inline-input-long" name="q28" maxlength="60" placeholder="28" oninput="saveTextAnswer(28, this.value)" style="text-transform: uppercase;"> her brother.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>29.</strong> There's a rumour that Jordi Marse, the Barcelona manager, has resigned this morning.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">HANDED</span></p>
+                    <p>Jordi Marse, the Barcelona manager, <input type="text" class="inline-input-long" name="q29" maxlength="60" placeholder="29" oninput="saveTextAnswer(29, this.value)" style="text-transform: uppercase;"> his resignation this morning.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>30.</strong> I'm sure people will object to the idea of building a new runway at the city airport.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">BOUND</span></p>
+                    <p>There <input type="text" class="inline-input-long" name="q30" maxlength="60" placeholder="30" oninput="saveTextAnswer(30, this.value)" style="text-transform: uppercase;"> the idea of building a new runway at the city airport.</p>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 3</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 5</button>
+            </div>
+        </div>
+
+        <!-- Part 5 - Multiple Choice Reading -->
+        <div class="test-section" id="part5" style="display: none;">
+            <h2>Part 5 - Multiple Choice Reading</h2>
+            <p class="instructions">You are going to read an article about cycling. For questions 31–36, choose the answer (A, B, C or D) which you think fits best according to the text.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Cycling</h3>
+                <p><em>Keen cyclist Simon Usborne looks at some research on cycling.</em></p>
+                
+                <p>You need only look at a professional cyclist to appreciate the potential effects of cycling on the body. But what about the mind? It's a question that has long challenged psychologists, neurologists and anyone who has wondered how, sometimes, riding a bike can induce what feels close to a state of meditation.</p>
+
+                <p>I'm usually incapable of emptying my mind but there have been occasions on my bike when I realise I have no recollection of the preceding kilometres. Whether riding along country lanes in spring, or doing city commutes, time can pass unnoticed in a blissful blur of rhythm and rolling, and I'm not alone in feeling this.</p>
+
+                <p>But what do we really know about how cycling affects us? Danish scientists who set out to measure the benefits of breakfast and lunch for academic achievement among children found diet helped, but that the way pupils travelled to school was far more significant. Those who cycled or walked did better than those who travelled by car or public transport. Another study by the University of California showed that old people who were most active, including those who cycled, had five per cent more grey matter than those who were least active.</p>
+
+                <p>But what is it about cycling that makes us believe it has a special effect? Psychiatrist John Ratey thinks cycling increases 'the chemistry in your brain that makes you feel calm,' but also that carrying out multiple operations, like negotiating a junction or jostling for space in a race, can be an effective therapy. He is currently leading a study in which more than 20 pupils with attention deficit hyperactivity disorder (ADHD), a condition affecting the ability to apply one's mind to something, are expected to show improved symptoms after a course of cycling. The link between cycling and ADHD is well-established. 'It's like taking a little bit of Ritalin,' Dr Ratey says, Ritalin being a stimulant commonly used to treat ADHD. Exercise can achieve the same effect as prescribed medicine, but not all exercise is equal, as shown in a German study involving 115 students, half of whom did activities such as cycling that involved complex coordinated movements, while the rest performed more straightforward exercises with the same aerobic demands. Both groups did better than they previously had in concentration tests, but the 'complex' group did a lot better.</p>
+
+                <p>There have been other interesting findings too. In 2003, neuroscientist Dr Jay Alberts rode a tandem bicycle across the American state of Ohio with a friend who has Parkinson's disease (a condition affecting the nervous system). The idea was to raise awareness of the disease, but to the surprise of both riders, the patient showed significant improvements. Dr Alberts then scanned the brains of 26 Parkinson's patients during and after an eight-week exercise programme using stationary bikes. Half the patients were allowed to ride at their own pace, while the others were pushed incrementally harder, just as the scientist's tandem companion had been. All patients improved, and the 'tandem' group showed particularly significant increases in connectivity between areas of grey matter responsible for functions such as walking and picking things up. Cycling, and cycling harder, was helping to heal their brains.</p>
+
+                <p>We don't know how this happens, but there is more startling evidence of the link between Parkinson's and cycling. A video on the internet features a 58-year-old Dutchman with severe Parkinson's. At first, we watch the patient trying to walk along a hospital ward. He can barely stand and his hands shake uncontrollably. Cut to the car park, where we find the man on a bicycle being supported by staff. With a push, he's off, cycling past cars with perfect balance and coordination. After a loop, he comes to a stop and hops to the ground, where he is immediately immobile again. Doctors don't fully understand this discrepancy either, but say the bicycle's rotating pedals may act as some sort of visual cue that aided the patient's brain.</p>
+
+                <p>The science of cycling is evidently incomplete, but perhaps the most remarkable thing about it for the everyday rider, its effects on hyperactive children notwithstanding, is that it can require no conscious focus at all. The apparent mindlessness of pedalling can not only make us happier, but also leave room for other thoughts. On the seat of my bike, I've solved problems at work, made life decisions and reflected usefully on emotional troubles, as, I'm sure, have countless others.</p>
+            </div>
+
+            <!-- Questions -->
+            <div class="questions-container">
+                <!-- Question 31 -->
+                <div class="question">
+                    <div class="question-number">Question 31</div>
+                    <div class="question-text">
+                        <p><strong>What is the writer's main intention in the second paragraph?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q31" value="A" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>A. to give some personal information</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="B" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>B. to introduce a new subject</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="C" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>C. to express his opinion</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="D" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>D. to illustrate a point</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 32 -->
+                <div class="question">
+                    <div class="question-number">Question 32</div>
+                    <div class="question-text">
+                        <p><strong>According to the third paragraph, what do certain studies show?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q32" value="A" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>A. Cyclists tend to live longer than non-cyclists.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="B" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>B. Cycling seems to be the healthiest form of exercise.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="C" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>C. Intellectual performance appears to be boosted by cycling.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="D" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>D. Older people appreciate the value of exercise more than young people do.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 33 -->
+                <div class="question">
+                    <div class="question-number">Question 33</div>
+                    <div class="question-text">
+                        <p><strong>What do the studies described in the fourth paragraph suggest?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q33" value="A" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>A. Cycling has as much impact on physical fitness as simpler physical activities.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="B" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>B. The variety of tasks involved in cycling can be hard for some children to cope with.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="C" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>C. Children suffer from ADHD because they are deprived of physical exercise like cycling.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="D" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>D. The act of cycling can improve the ability to focus attention on a task.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 34 -->
+                <div class="question">
+                    <div class="question-number">Question 34</div>
+                    <div class="question-text">
+                        <p><strong>Studies of people with Parkinson's disease reveal that</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q34" value="A" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>A. cycling on ordinary bikes is better than cycling on stationary bikes.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="B" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>B. the social aspects of cycling are important for people with Parkinson's.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="C" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>C. the more effort Parkinson's sufferers put into cycling the more good it does them.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="D" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>D. not every person who suffers from Parkinson's will benefit from cycling.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 35 -->
+                <div class="question">
+                    <div class="question-number">Question 35</div>
+                    <div class="question-text">
+                        <p><strong>What does 'this discrepancy' in line 37 refer to?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q35" value="A" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>A. how cycling could be incorporated into treatment for Parkinson's</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="B" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>B. why someone with Parkinson's can cycle but not walk</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="C" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>C. why Parkinson's affects some people and not others</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="D" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>D. how a link between cycling and Parkinson's was discovered</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 36 -->
+                <div class="question">
+                    <div class="question-number">Question 36</div>
+                    <div class="question-text">
+                        <p><strong>With the phrase 'its effects on hyperactive children notwithstanding', the writer is referring to the fact that cycling</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q36" value="A" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>A. is more life-enhancing to adults than younger people.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="B" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>B. enables people to think more effectively.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="C" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>C. can be both complex and mindless.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="D" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>D. is not yet fully understood.</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 4</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 6</button>
+            </div>
+        </div>
+
+        <!-- Part 6 - Gapped Text -->
+        <div class="test-section" id="part6" style="display: none;">
+            <h2>Part 6 - Cross-text Multiple Matching</h2>
+            <p class="instructions">You are going to read four reviews of a book about artificial intelligence. For questions 37–40, choose from reviews A–D. The reviews may be chosen more than once.</p>
+
+            <!-- Reading Passages -->
+            <div class="reading-passage">
+                <h3>Zoos</h3>
+                <p class="instructions">Zoos are notable tourist attractions as well as being centres of research and conservation. However, there is a long-running debate about whether it is right to keep wild animals in captivity, particularly in urban locations. Here are four contributions to a recent online discussion about the subject.</p>
+                
+                <div class="review-section">
+                    <h4>A</h4>
+                    <p>With the destruction of natural habitats in so many parts of the world, zoos play an increasingly important role in conservation. Without their intervention, many more of the world's surviving species would become extinct. Zoos are able to intervene because of their expertise, which is developed through long-term, sustained studies at the zoos themselves, but also in support of field work in the wild. One advantage of having this scientific work done in zoos is that it becomes more easily accessible to the wider public. Zoos are great vehicles for informing people of all ages, though particularly younger ones, in a direct and memorable way, about the proper treatment of animals, and how crucial they are to the world's different ecosystems. This has not always been the case, but modern zoos look after animals well and, as such, present a valuable model to the wider population.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>B</h4>
+                    <p>There have been many bad zoos in the past, but zoo animals today are well-fed and cared for in spacious surroundings. Zoologists and animal psychologists are brought in to design species-appropriate enclosures and activities. Studies of animals in zoos provide information that would be very hard to obtain in the wild. A study of gorillas at zoos in the UK and the USA, for example, discovered that happiness can increase the primates' lives by up to 11 years, and findings of this kind are useful for zoologists in both zoos and the wild. Sadly, zoos' efforts to breed animals that are close to extinction have mostly failed. The issue here is that the odds against reviving a species from a tiny captive community are very high. But generally, as institutions of scientific endeavour, zoos are crucial in the wider dissemination of knowledge, skills and values with regard to wildlife.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>C</h4>
+                    <p>Care of wild animals in captivity tends to be much more humane than it was in the past, but the fact is that zoos are for commerce and entertainment. Most visitors go to zoos to be diverted by weird and wonderful creatures rather than to learn. One zoo study found that visitors spent less than eight seconds per snake and one minute per lion. What could possibly be learned from that? It is also widely acknowledged that, despite the best intentions of scientists, most zoo-based attempts to breed species in order to stave off extinction have been strikingly unsuccessful. Captive breeding programmes will only ever work in large nature reserves. Moreover, claims that zoos are ideal locations for studying animal behaviour conveniently ignore the point that environments affect behaviour, and so studies of animals in zoos may only tell us about captive populations and provide little data about animals in their natural habitats.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>D</h4>
+                    <p>However well intentioned zoo-keepers may be, zoos can never replicate the natural habitats of most wild animals. As a result, zoo animals are psychologically affected and often display abnormal, even self-destructive, behaviour. Attempts to use zoos for breeding threatened species are also well-intentioned, but, with rare exceptions, they fail to bear fruit. The key factor again is probably that zoos are nothing like nature, and wild animals simply do not breed well in confinement. The notion that zoos can be places of learning, enlightening the population about wildlife, is also well meant, but how much can visitors really discover about wild animals from seeing them in cages and small enclosures? The only way to understand an animal properly is to see it in its natural environment, and, if that is not possible, then film and books will give a more accurate picture than the artificial and misleading context of a zoo.</p>
+                </div>
+            </div>
+
+            <!-- Matching Questions -->
+            <div class="cross-text-questions">
+                <h4>Which contributor...</h4>
+                
+                <div class="match-question" onclick="openReviewModal(37)">
+                    <div class="match-number">37</div>
+                    <div class="match-text">takes a similar view to D regarding the role zoos play in educating the public?</div>
+                    <div class="match-answer" id="match37">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(38)">
+                    <div class="match-number">38</div>
+                    <div class="match-text">has a different opinion from the others about the well-being of animals kept in zoos?</div>
+                    <div class="match-answer" id="match38">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(39)">
+                    <div class="match-number">39</div>
+                    <div class="match-text">takes a different view from the others regarding zoos and endangered species in zoos?</div>
+                    <div class="match-answer" id="match39">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(40)">
+                    <div class="match-number">40</div>
+                    <div class="match-text">shares A's opinion of zoos as centres of research?</div>
+                    <div class="match-answer" id="match40">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 5</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 7</button>
+            </div>
+        </div>
+
+        <!-- Part 7 - Gapped Text -->
+        <div class="test-section" id="part7" style="display: none;">
+            <h2>Part 7 - Gapped Text</h2>
+            <p class="instructions">You are going to read an article about care farms. Six paragraphs have been removed from the article. Choose from the paragraphs A-G the one which fits each gap (41-46). There is one extra paragraph which you do not need to use.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Care farms</h3>
+                
+                <p>Before breakfast, two young people head down to the woods, struggling a little with the heavy bag of food for the pigs. 'Scatter them in different piles,' says the farm staff member. 'If you put them in one place, the smaller pigs won't be able to get anything.' The pigs, which are enormous, surge towards us, and their new feeders step backwards. 'I'm not doing that,' says 15-year-old Daniel firmly.</p>
+
+                <div class="gap-carousel" id="gap41" onclick="openSentenceModal(41)">
+                    <strong>41</strong>
+                    <div class="selected-sentence" id="display41">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>The teenagers are part of a group from a London secondary school who are staying at Jamie Fielden's farm, one of a number of 'care farms' providing a type of eco-therapy. The pupils brought here have been chosen by their teachers: 14-year-old Sofia, for example, has a difficult home life, Georgia, 14, is extremely quiet, and Sam, 13, has challenging behaviour.</p>
+
+                <p>Besides farmwork, the young people have group sessions with the farm psychotherapist who teaches them techniques for calming down, or for dealing with difficult situations. They can do 'horse-whispering' with her, one-to-one therapy making use of one of the farm horses. Phones and sweets are banned, as part of the focus on creating a calm, supportive atmosphere and reducing over-stimulation.</p>
+
+                <div class="gap-carousel" id="gap42" onclick="openSentenceModal(42)">
+                    <strong>42</strong>
+                    <div class="selected-sentence" id="display42">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>And the young people seem to be thriving. Aaron, a 12-year-old with serious attendance issues, is clearly taken with the horse whispering: 'I feel as though the horse is calm and I'm calm. I had to work out how to speak calmly to make her do what I wanted.'</p>
+
+                <div class="gap-carousel" id="gap43" onclick="openSentenceModal(43)">
+                    <strong>43</strong>
+                    <div class="selected-sentence" id="display43">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>And this is what Fielden aims to provide. Trained as a teacher, he wants to 'give young people a chance to have the experiences that I had as a kid growing up on a farm'. He set up the farm with a couple of other teachers and his mother, a psychotherapist, a few years ago. The farm's main source of income is the fees schools pay to send pupils there, and since opening, more than 700 children have attended.</p>
+
+                <div class="gap-carousel" id="gap44" onclick="openSentenceModal(44)">
+                    <strong>44</strong>
+                    <div class="selected-sentence" id="display44">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>Care farms first appeared over a decade ago in the UK. Now, there are more than 80, and they have their own association called Care Farm UK. Founder member Ian Egginton-Metters says: 'There is evidence that "green care" works. Charities give funding for our eco-therapy projects, which are focused around taking people out of institutions and putting them in the natural environment.'</p>
+
+                <div class="gap-carousel" id="gap45" onclick="openSentenceModal(45)">
+                    <strong>45</strong>
+                    <div class="selected-sentence" id="display45">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>Whatever the reasons, however, there is clearly an impact. A week after the pupils arrive back at school in west London from Jamie's Farm, teachers report on a difference in behaviour. Georgia gave a talk to her class about her experiences, Sofia's participation in class is better than it has ever been, and Sam says he wants to go back to the farm next year. There is no doubt amongst the teachers that they will continue to send troubled pupils to the farm in years to come.</p>
+
+                <div class="gap-carousel" id="gap46" onclick="openSentenceModal(46)">
+                    <strong>46</strong>
+                    <div class="selected-sentence" id="display46">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paragraph Options Reference -->
+            <div class="sentence-options">
+                <h4>Available Paragraphs (A-G):</h4>
+                <div class="sentence-option">
+                    <strong>A</strong> A classmate, Hasan, describes a similar sense of tranquillity. 'I expected to be really annoyed and bored here, but as soon as we arrived it was fantastic. There's so much space. You don't get stressed out. There's time to think.' Like his peers, he has a complicated home life and needs support.
+                </div>
+                <div class="sentence-option">
+                    <strong>B</strong> Along with this, the teachers accompanying them are encouraged to form closer bonds with their charges and to observe the way that farm staff interact with the young people, and the methods they use to get the behaviour they want.
+                </div>
+                <div class="sentence-option">
+                    <strong>C</strong> This expansion of the sector is evident, but there are differing explanations as to why care farming makes a difference, ranging from those pointing to the therapeutic aspect of the physical labour and the contact with plants and animals, to others claiming it is all to do with taking people away from their problems at home.
+                </div>
+                <div class="sentence-option">
+                    <strong>D</strong> Before coming here he was sceptical, but no longer. 'There's something about coming here, from very chaotic environments, as most of these young people do, that does them good. You have to work hard, take responsibility, and you're a valued member of the community.'
+                </div>
+                <div class="sentence-option">
+                    <strong>E</strong> Sofia, however, who is a good head shorter than her fellow pupil, moves forward, methodically pouring out a dozen small heaps under the trees. 'She's a natural,' says her supervisor admiringly. Sofia does not look up, but a little smile flickers across her young face.
+                </div>
+                <div class="sentence-option">
+                    <strong>F</strong> An impressive figure, but isn't it an expensive option for schools? Fielden believes the results justify the cost. Eight out of ten children who stay at the farm show a persistent improvement in behaviour. 'Head teachers tell me they're rebooking because they're no longer seeing those children in trouble. That's what we want.'
+                </div>
+                <div class="sentence-option">
+                    <strong>G</strong> Most of them, they soon tell me, have never been to the countryside before. For five days, they get up early, eat wholesome food and do various chores dependent on the season. It is summer and they are pulling up coriander from the vegetable beds, feeding animals and helping with the harvest.
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 6</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 8</button>
+            </div>
+        </div>
+
+        <!-- Part 8 - Multiple Matching -->
+        <div class="test-section" id="part8" style="display: none;">
+            <h2>Part 8 - Multiple Matching</h2>
+            <p class="instructions">You are going to read reviews of four books about architecture. For questions 47-56, choose from the reviews (A-D). The reviews may be chosen more than once.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Reviews of books about architecture</h3>
+                
+                <div class="review-section">
+                    <h4>A. The Meaning of Home by Edwin Heathcote</h4>
+                    <p>This book is so slim and whimsical-looking you could easily mistake it for 'bookshop candy' — those cute, little tomes perched around cash registers — but don't be fooled. While entertaining enough, it also draws on the work of such heavy-hitting intellectuals as Ludwig Wittgenstein, Walter Benjamin and Carl Jung. It grew from Heathcote's popular series of newspaper columns but here he expands on those pieces with each of the 34 chapters focusing on an individual household room or a discrete building component (floor, ceiling, roof, etc.). Each chapter is a densely packed mixture of observations and curiosities, delivered in an almost stream-of-consciousness narrative, drawing on tidbits of history, folklore, mythology, philosophy, architectural innovation, scientific research, symbols, rituals and literature, plus cinema and other areas of popular culture.</p>
+                    <p>Many of the ideas are fascinating, though some rooms get far more interesting treatment than others — and certain observations (such as the notion that traditional cellars in legend, movies, and real life are often dark, creepy places, harbouring unknowns) state the obvious. Nonetheless, what comes across overall is how passionately Heathcote has reconsidered the home and how broadly he has read and observed.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>B. Why We Build by Rowan Moore</h4>
+                    <p>Rowan Moore, a trained architect and architecture critic for The Observer newspaper, has produced a thought-provoking, philosophical look at the relationship between people and buildings, from the often power-crazed planners and architects to those who come later, and work and live in them. One could say there are almost two books here: partly a biography of the brilliant Brazilian architect, Lina Bo Bardi; it is also a much wider exploration of the impetuses behind modern architecture. Moore takes us from the extraordinary artificial Palm Islands in Dubai to the Dome in London, via many buildings, periodically returning to descriptions of Bo Bardi's poetic and humane work. Justifiably hard-hitting in his treatment of many of the skyscrapers that have gone up in London in the last two decades, his elegant, sharp wit is regularly put to good use, revealing the waste, vanity and muddled-thinking associated with many of the larger construction projects.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>C. The Architect's Home by Peter Gossel</h4>
+                    <p>A favourite fiction about modern architects is that they don't live in their own creations but favour elegant historical houses while condemning others to their concrete monstrosities. The 480 pages devoted to 100 projects by European architects, mostly from the past 100 years, in Peter Gossel's book amply refute this charge. Beautifully produced, with well-chosen images and prose that is informative if not always very digestible, The Architect's Home shows how absolutely wonderful modern architecture can be.</p>
+                    <p>We have the fabulous creations of some of the twentieth century's architectural greats such as Le Corbusier, Gropius and Aalto, but alongside them Gossel has unearthed a number of unfamiliar gems such as Charlotte Perriand's house in the Savoie mountains of France and the black-painted studio of the Swede, Sigurd Lewerentz. There are a fair number of strange omissions such as Konstantin Melnikov's amazing house in Moscow, but, on the whole, the demonstration that, when given the chance, modern architects do in fact build adventurous and imaginative homes for themselves is very welcome.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>D. 20th Century World Architecture by Phaidon editors</h4>
+                    <p>In the middle of the last century, writers such as Nikolaus Pevsner tried to define the architecture of their epoch. It was about the inevitable progression to an architecture suitable to the machine age. This so-called 'modern movement' was led by a small number of masters — Walter Gropius, Le Corbusier and Mies van der Rohe — and its advance was marked out by a few canonical works, such as villas, exhibition pavilions and factories. When the inevitable reaction came, and traditionalists called for a return of decoration and historical styles, the distilled version of modern architecture promoted by Pevsner and others became a useful caricature.</p>
+                    <p>The reality was more complicated, and now the publishers Phaidon have produced this huge book to put the record straight. They have largely succeeded. Setting architecture in wider geographical and cultural contexts, the book's range is highly impressive. It is hard to quibble with any inclusions or exclusions of either people or their constructions. My only reservation is that it suffers from some uncertainty of purpose. Clearly not a guidebook — with 3800 photographs of 757 buildings it is almost too heavy to lift — it's not quite an encyclopedia either.</p>
+                </div>
+            </div>
+
+            <!-- Matching Questions -->
+            <div class="cross-text-questions">
+                <h4>Questions 47-56</h4>
+                <p><strong>About which book is the following stated?</strong></p>
+                
+                <div class="match-question" onclick="openReviewModal(47)">
+                    <div class="match-number">47</div>
+                    <div class="match-text">The exact function of the book is difficult to determine.</div>
+                    <div class="match-answer" id="match47">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(48)">
+                    <div class="match-number">48</div>
+                    <div class="match-text">Sometimes the style of writing can be difficult to read.</div>
+                    <div class="match-answer" id="match48">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(49)">
+                    <div class="match-number">49</div>
+                    <div class="match-text">Very few architects or buildings of note are left out of it.</div>
+                    <div class="match-answer" id="match49">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(50)">
+                    <div class="match-number">50</div>
+                    <div class="match-text">It contains examples of well-directed humour.</div>
+                    <div class="match-answer" id="match50">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(51)">
+                    <div class="match-number">51</div>
+                    <div class="match-text">Useful references to little-known architectural work are included.</div>
+                    <div class="match-answer" id="match51">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(52)">
+                    <div class="match-number">52</div>
+                    <div class="match-text">It is based on other writing by the same author.</div>
+                    <div class="match-answer" id="match52">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(53)">
+                    <div class="match-number">53</div>
+                    <div class="match-text">It provides evidence that one view of architects is false.</div>
+                    <div class="match-answer" id="match53">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(54)">
+                    <div class="match-number">54</div>
+                    <div class="match-text">It gives a more accurate account than previous books on the same subject.</div>
+                    <div class="match-answer" id="match54">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(55)">
+                    <div class="match-number">55</div>
+                    <div class="match-text">The size of it is misleading.</div>
+                    <div class="match-answer" id="match55">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(56)">
+                    <div class="match-number">56</div>
+                    <div class="match-text">The author is rightly critical of architecture from a particular period.</div>
+                    <div class="match-answer" id="match56">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 7</button>
+                <button class="btn btn-primary" onclick="finishTest()">Finish Test</button>
+            </div>
+        </div>
+
+        <!-- Sentence Selection Modal (for Part 7) -->
+        <div id="sentenceModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select paragraph for gap <span id="modalSentenceNumber"></span></h3>
+                    <button class="modal-close" onclick="closeSentenceModal()">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="sentence-choice" onclick="selectSentence('A')">
+                        <strong>A</strong> A classmate, Hasan, describes a similar sense of tranquillity. 'I expected to be really annoyed and bored here, but as soon as we arrived it was fantastic. There's so much space. You don't get stressed out. There's time to think.' Like his peers, he has a complicated home life and needs support.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('B')">
+                        <strong>B</strong> Along with this, the teachers accompanying them are encouraged to form closer bonds with their charges and to observe the way that farm staff interact with the young people, and the methods they use to get the behaviour they want.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('C')">
+                        <strong>C</strong> This expansion of the sector is evident, but there are differing explanations as to why care farming makes a difference, ranging from those pointing to the therapeutic aspect of the physical labour and the contact with plants and animals, to others claiming it is all to do with taking people away from their problems at home.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('D')">
+                        <strong>D</strong> Before coming here he was sceptical, but no longer. 'There's something about coming here, from very chaotic environments, as most of these young people do, that does them good. You have to work hard, take responsibility, and you're a valued member of the community.'
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('E')">
+                        <strong>E</strong> Sofia, however, who is a good head shorter than her fellow pupil, moves forward, methodically pouring out a dozen small heaps under the trees. 'She's a natural,' says her supervisor admiringly. Sofia does not look up, but a little smile flickers across her young face.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('F')">
+                        <strong>F</strong> An impressive figure, but isn't it an expensive option for schools? Fielden believes the results justify the cost. Eight out of ten children who stay at the farm show a persistent improvement in behaviour. 'Head teachers tell me they're rebooking because they're no longer seeing those children in trouble. That's what we want.'
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('G')">
+                        <strong>G</strong> Most of them, they soon tell me, have never been to the countryside before. For five days, they get up early, eat wholesome food and do various chores dependent on the season. It is summer and they are pulling up coriander from the vegetable beds, feeding animals and helping with the harvest.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review Selection Modal -->
+        <div id="reviewModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="reviewModalTitle">Select answer for question <span id="modalReviewNumber"></span></h3>
+                    <button class="modal-close" onclick="closeReviewModal()">×</button>
+                </div>
+                <div class="modal-body" id="reviewModalBody">
+                    <!-- Content will be dynamically inserted by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="test-section" id="results" style="display: none;">
+            <h2>C1 Advanced (CAE) - Test Complete!</h2>
+            <div id="resultsContent"></div>
+            <div class="navigation">
+                <button class="btn btn-success" onclick="downloadPDF()">📄 Save Results as PDF</button>
+                <button class="btn btn-primary" onclick="window.location.href='index.html'">← Back to Portal</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // CAE002 - Answer key and test code
+        const TEST_CODE = 'CAE002';
+        
+        // Answer key for CAE002
+        const answers = {
+            part1: {
+                q1: 'C', q2: 'D', q3: 'A', q4: 'C',
+                q5: 'B', q6: 'A', q7: 'D', q8: 'B'
+            },
+            part2: {
+                q9: 'YET', q10: 'WHAT', q11: 'UNTIL', q12: 'ENOUGH',
+                q13: 'NOT', q14: 'OF', q15: 'SUCH', q16: 'ALL'
+            },
+            part3: {
+                q17: 'HEIGHT', q18: 'INTERESTINGLY', q19: 'CHARACTERISTICS', q20: 'SURVIVAL',
+                q21: 'THREATENING', q22: 'VOLUNTEERS', q23: 'LENGTHEN', q24: 'IRRELEVANT'
+            },
+            part4: {
+                q25: { full: 'NEVER HAVE WATCHED THAT FILM IF', part1: 'NEVER HAVE WATCHED', part2: 'THAT FILM IF' },
+                q26: { full: 'TO HAVE BEEN A MISUNDERSTANDING ABOUT', part1: 'TO HAVE BEEN', part2: 'A MISUNDERSTANDING ABOUT' },
+                q27: { full: 'STAND A CHANCE OF GETTING', part1: 'STAND A CHANCE', part2: 'OF GETTING' },
+                q28: { full: 'NOWHERE NEAR AS TALKATIVE AS', part1: 'NOWHERE NEAR', part2: 'AS TALKATIVE AS' },
+                q29: { full: 'IS RUMOURED TO HAVE HANDED IN', part1: 'IS RUMOURED TO', part2: 'HAVE HANDED IN' },
+                q30: { full: 'ARE BOUND TO BE OBJECTIONS TO', part1: 'ARE BOUND TO BE', part2: 'OBJECTIONS TO' }
+            },
+            part5: {
+                q31: 'D', q32: 'C', q33: 'D', q34: 'C', q35: 'B', q36: 'C'
+            },
+            part6: {
+                q37: 'C', q38: 'D', q39: 'A', q40: 'B'
+            },
+            part7: {
+                q41: 'E', q42: 'G', q43: 'B', q44: 'A', q45: 'F', q46: 'C'
+            },
+            part8: {
+                q47: 'D', q48: 'C', q49: 'D', q50: 'B', q51: 'C', 
+                q52: 'A', q53: 'C', q54: 'D', q55: 'A', q56: 'B'
+            }
+        };
+    </script>
+    <script src="script-CAE002.js"></script>
+</body>
+</html>

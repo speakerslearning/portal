@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C1 CAE Cambridge Test - Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>C1 Advanced (CAE) Cambridge English Test</h1>
+            <p class="test-info">Practice Test - CAE001</p>
+        </header>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div class="test-section" id="part1" style="display: block;">
+            <h2>Part 1 - Multiple Choice Cloze</h2>
+            <p class="instructions">For questions 1–8, read the text below and decide which answer (A, B, C or D) best fits each gap.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>A Stone-Age restaurant</h3>
+                
+                <p>At first glance, Berlin's Sauvage restaurant looks much like many other fashionable eateries. But look closely and you'll discover that it offers an unusual experience 
+                <select class="inline-select" name="q1" onchange="saveDropdownAnswer(1, this.value)">
+                    <option value="">— 1 —</option>
+                    <option value="A">consisting</option>
+                    <option value="B">starring</option>
+                    <option value="C">highlighting</option>
+                    <option value="D">featuring</option>
+                </select>
+                Paleolithic (or Stone-Age) food.</p>
+                
+                <p>Diners sit at candle-lit tables and eat meals 
+                <select class="inline-select" name="q2" onchange="saveDropdownAnswer(2, this.value)">
+                    <option value="">— 2 —</option>
+                    <option value="A">based</option>
+                    <option value="B">linked</option>
+                    <option value="C">derived</option>
+                    <option value="D">inspired</option>
+                </select>
+                on the dietary habits of our prehistoric 
+                <select class="inline-select" name="q3" onchange="saveDropdownAnswer(3, this.value)">
+                    <option value="">— 3 —</option>
+                    <option value="A">founders</option>
+                    <option value="B">originators</option>
+                    <option value="C">ancestors</option>
+                    <option value="D">pioneers</option>
+                </select>
+                who lived between two million and 200,000 years ago. The food includes unprocessed fruit, vegetables, meat, fish, eggs, nuts and seeds, but sugar, bread, rice and dairy products are 
+                <select class="inline-select" name="q4" onchange="saveDropdownAnswer(4, this.value)">
+                    <option value="">— 4 —</option>
+                    <option value="A">tightly</option>
+                    <option value="B">precisely</option>
+                    <option value="C">extremely</option>
+                    <option value="D">strictly</option>
+                </select>
+                forbidden, as they were unavailable to Stone Age hunter-gatherers.</p>
+                
+                <p>The restaurant's owners insist that the 'Paleo diet' 
+                <select class="inline-select" name="q5" onchange="saveDropdownAnswer(5, this.value)">
+                    <option value="">— 5 —</option>
+                    <option value="A">brings about</option>
+                    <option value="B">sets up</option>
+                    <option value="C">pulls out</option>
+                    <option value="D">follows with</option>
+                </select>
+                greater energy levels, increased muscle mass and clearer skin. "Many people think this diet is just a passing fashion, but it's a world-wide 
+                <select class="inline-select" name="q6" onchange="saveDropdownAnswer(6, this.value)">
+                    <option value="">— 6 —</option>
+                    <option value="A">situation</option>
+                    <option value="B">phenomenon</option>
+                    <option value="C">circumstance</option>
+                    <option value="D">incident</option>
+                </select>
+                ," says one. It is probably strongest in the USA, where thousands of people have apparently gone 'Paleo'. One of the best-known people to 
+                <select class="inline-select" name="q7" onchange="saveDropdownAnswer(7, this.value)">
+                    <option value="">— 7 —</option>
+                    <option value="A">enter</option>
+                    <option value="B">adopt</option>
+                    <option value="C">assume</option>
+                    <option value="D">exert</option>
+                </select>
+                the caveman cuisine is the veteran pop singer Tom Jones, who 
+                <select class="inline-select" name="q8" onchange="saveDropdownAnswer(8, this.value)">
+                    <option value="">— 8 —</option>
+                    <option value="A">asserts</option>
+                    <option value="B">maintains</option>
+                    <option value="C">claims</option>
+                    <option value="D">states</option>
+                </select>
+                to have lost more than ten kilos after switching to it.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 2</button>
+            </div>
+        </div>
+
+        <!-- Part 2 - Open Cloze -->
+        <div class="test-section" id="part2" style="display: none;">
+            <h2>Part 2 - Open Cloze</h2>
+            <p class="instructions">For questions 9–16, read the text below and think of the word which best fits each gap. Use only one word in each gap. Write your answers IN CAPITAL LETTERS.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>Body language – do we really understand it?</h3>
+                
+                <p>Newspapers accuse a well-known footballer of anti-social behaviour in a night club. His manager makes a public statement in 
+                <input type="text" class="inline-input" name="q9" maxlength="15" placeholder="9" oninput="saveTextAnswer(9, this.value)" style="text-transform: uppercase;">
+                he asserts that the young man is innocent. When asked 
+                <input type="text" class="inline-input" name="q10" maxlength="15" placeholder="10" oninput="saveTextAnswer(10, this.value)" style="text-transform: uppercase;">
+                makes him so sure, the manager says "he looked me straight in the eye when he told me."</p>
+                
+                <p>Can we really know 
+                <input type="text" class="inline-input" name="q11" maxlength="15" placeholder="11" oninput="saveTextAnswer(11, this.value)" style="text-transform: uppercase;">
+                or not someone is telling the truth just by looking in their eyes? Psychologist Robert James is far 
+                <input type="text" class="inline-input" name="q12" maxlength="15" placeholder="12" oninput="saveTextAnswer(12, this.value)" style="text-transform: uppercase;">
+                convinced. "
+                <input type="text" class="inline-input" name="q13" maxlength="15" placeholder="13" oninput="saveTextAnswer(13, this.value)" style="text-transform: uppercase;">
+                and large, maintaining eye contact is something liars do because eye movements are fairly easy to control."</p>
+                
+                <p>Communications expert Becky Rhodes shares his scepticism. "Body language clues are never precise 
+                <input type="text" class="inline-input" name="q14" maxlength="15" placeholder="14" oninput="saveTextAnswer(14, this.value)" style="text-transform: uppercase;">
+                to rely on with absolute confidence," she says. She illustrates this by describing the "Othello error," named 
+                <input type="text" class="inline-input" name="q15" maxlength="15" placeholder="15" oninput="saveTextAnswer(15, this.value)" style="text-transform: uppercase;">
+                Shakespeare's tragic character who claims his wife has been deceiving him and then interprets her shocked reaction 
+                <input type="text" class="inline-input" name="q16" maxlength="15" placeholder="16" oninput="saveTextAnswer(16, this.value)" style="text-transform: uppercase;">
+                guilt.</p>
+                
+                <p>"Personally, the minute I see a security guard watching me in a shop, I start looking guilty, so my body language definitely doesn't reflect the truth about me."</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 1</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 3</button>
+            </div>
+        </div>
+
+        <!-- Part 3 - Word Formation -->
+        <div class="test-section" id="part3" style="display: none;">
+            <h2>Part 3 - Word Formation</h2>
+            <p class="instructions">For questions 17–24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. Write your answers IN CAPITAL LETTERS.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>Fog catchers – a way of getting water into the desert</h3>
+                
+                <p>In the Atacama Desert of northern Chile, water shortages are nothing new. In one of the driest places on earth, some local <span class="word-given">RESIDE</span> 
+                <input type="text" class="inline-input" name="q17" maxlength="20" placeholder="17" oninput="saveTextAnswer(17, this.value)" style="text-transform: uppercase;">
+                have never seen a drop of rain.</p>
+                
+                <p><span class="word-given">HISTORY</span> 
+                <input type="text" class="inline-input" name="q18" maxlength="20" placeholder="18" oninput="saveTextAnswer(18, this.value)" style="text-transform: uppercase;">, water supplies for the few remote settlements have been trucked in. In the last 20 years, however, some communities have turned to 'fog catchers' as an alternative source of water and a means of <span class="word-given">VITAL</span> 
+                <input type="text" class="inline-input" name="q19" maxlength="20" placeholder="19" oninput="saveTextAnswer(19, this.value)" style="text-transform: uppercase;">
+                the arid land.</p>
+                
+                <p>Although it never rains, a heavy <span class="word-given">COAST</span> 
+                <input type="text" class="inline-input" name="q20" maxlength="20" placeholder="20" oninput="saveTextAnswer(20, this.value)" style="text-transform: uppercase;">
+                fog often rolls off the Pacific Ocean and across the desert. As it reaches the rocky foothills of the Andes mountains, <span class="word-given">MOIST</span> 
+                <input type="text" class="inline-input" name="q21" maxlength="20" placeholder="21" oninput="saveTextAnswer(21, this.value)" style="text-transform: uppercase;">
+                is captured in large, specially designed nets. Droplets run down the nets into pipes, and then into <span class="word-given">STORE</span> 
+                <input type="text" class="inline-input" name="q22" maxlength="20" placeholder="22" oninput="saveTextAnswer(22, this.value)" style="text-transform: uppercase;">
+                tanks. This water is fresh enough to drink, but enough is also collected for other uses like washing and farming.</p>
+                
+                <p>This simple and <span class="word-given">INVENT</span> 
+                <input type="text" class="inline-input" name="q23" maxlength="20" placeholder="23" oninput="saveTextAnswer(23, this.value)" style="text-transform: uppercase;">
+                technology is relatively cheap and easy to manage, which is why 'fog catchers' are now being tried out in other parts of the world where <span class="word-given">REVERSE</span> 
+                <input type="text" class="inline-input" name="q24" maxlength="20" placeholder="24" oninput="saveTextAnswer(24, this.value)" style="text-transform: uppercase;">
+                of desertification is a high priority.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 2</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 4</button>
+            </div>
+        </div>
+
+        <!-- Part 4 - Key Word Transformations -->
+        <div class="test-section" id="part4" style="display: none;">
+            <h2>Part 4 - Key Word Transformations</h2>
+            <p class="instructions">For questions 25–30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given. Write your answers IN CAPITAL LETTERS.</p>
+            <p class="instructions"><strong>Note:</strong> Each question is worth up to 2 points (1 point for each key part of the answer).</p>
+
+            <div class="reading-passage">
+                <div class="transformation-question">
+                    <p><strong>25.</strong> Paula knew nothing at all about who the folder belonged to and why it appeared on her desk.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">WHOSE</span></p>
+                    <p>Paula had absolutely <input type="text" class="inline-input-long" name="q25" maxlength="60" placeholder="25" oninput="saveTextAnswer(25, this.value)" style="text-transform: uppercase;"> and why it appeared on her desk.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>26.</strong> Naomi said Michael should formally complain about the service they'd had at the hotel.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">MAKE</span></p>
+                    <p>Naomi encouraged <input type="text" class="inline-input-long" name="q26" maxlength="60" placeholder="26" oninput="saveTextAnswer(26, this.value)" style="text-transform: uppercase;"> about the service they'd had at the hotel.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>27.</strong> The stadium was demolished in 2003, and there are still no plans to build a new one.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">PLACE</span></p>
+                    <p>The <input type="text" class="inline-input-long" name="q27" maxlength="60" placeholder="27" oninput="saveTextAnswer(27, this.value)" style="text-transform: uppercase;"> in 2003, and there are still no plans to build a new one.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>28.</strong> Jenny's achievements impress me much less than her sister's do.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">NEARLY</span></p>
+                    <p>I don't think Jenny's achievements are <input type="text" class="inline-input-long" name="q28" maxlength="60" placeholder="28" oninput="saveTextAnswer(28, this.value)" style="text-transform: uppercase;"> her sister.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>29.</strong> Unless someone comes late, we should be able to get through all the points in today's meeting.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">TURNS</span></p>
+                    <p>As <input type="text" class="inline-input-long" name="q29" maxlength="60" placeholder="29" oninput="saveTextAnswer(29, this.value)" style="text-transform: uppercase;"> on time, we should be able to get through all the points in today's meeting.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>30.</strong> I wanted to get a mechanic to service my car before I went on holiday, but I didn't have time.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">HAVE</span></p>
+                    <p>I would like <input type="text" class="inline-input-long" name="q30" maxlength="60" placeholder="30" oninput="saveTextAnswer(30, this.value)" style="text-transform: uppercase;"> before I went on holiday, but I didn't have time.</p>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 3</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 5</button>
+            </div>
+        </div>
+
+        <!-- Part 5 - Multiple Choice Reading -->
+        <div class="test-section" id="part5" style="display: none;">
+            <h2>Part 5 - Multiple Choice Reading</h2>
+            <p class="instructions">You are going to read an article about birdwatching. For questions 31–36, choose the answer (A, B, C or D) which you think fits best according to the text.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Birdwatching</h3>
+                <p><em>Bird expert Tim Birkhead looks at the fascinating subject of what we know or can know about birds.</em></p>
+                
+                <p>The sight of two lovebirds nibbling each other's necks is enough of a cliché that we barely give it a second thought. These small parrots are called lovebirds because their closeness and mutual preening resemble human affection. But what do they feel when they behave like that? Indeed, do they feel anything at all? Even asking the question seems wrong somehow, especially if you consider yourself an ethologist, a student of animal behaviour. The Nobel Prize winner, Niko Tinbergen, warned fellow ethologists to steer well clear of feelings. 'This is not the method we shall follow in our study of animal behaviour,' he announced in 1951. Like most ethologists, through much of my career I have hardly deviated from this hard-nosed approach. But every so often, I have seen something that simply wouldn't sit easily with it.</p>
+
+                <p>When my boyhood birdwatching became an obsession rather than simply a hobby, my despairing father warned me that I'd never make a career out of it, but luckily I did. Birdwatching is the best possible training for studying animal behaviour; to study birds well, you have to almost think like a bird. I spent years on various remote islands watching those great seabirds, guillemots. Intensely social, guillemots live shoulder-to-shoulder in huge city-like colonies. Like us they form friendships and long-term pair bonds and, like lovebirds, they show their affection for their partners through mutual preening and striking greeting ceremonies.</p>
+
+                <p>Once as I watched, an incubating guillemot stood up from its egg and roared out its greeting – apparently to no one. I was perplexed, but on looking out to sea – hundreds of metres away – there was a guillemot flying towards the colony. A few seconds later, it landed beside its partner. Guillemots were never quite the same for me after this. They can see so much better than I can, and they must have some kind of guillemot-recognition system in their brain. The moment eventually inspired me to explore and write about the way birds use vision, hearing, touch, smell, taste and feelings to experience the world.</p>
+
+                <p>While it was relatively straightforward to describe how much better or worse a bird sees, hears, smells or touches than we do, trying to understand – scientifically – how a bird feels is fraught with difficulties. As the philosopher Thomas Nagel pointed out in his 1974 essay What is it like to be a bat?, we cannot know what it is like to be another person, let alone another species. He chose bats because they are mammals and we share a lot of physiology and neurobiology with them, and because bats possess a sense most of us don't have: echolocation (listening for echoes to locate things). I suspect Nagel thought that no human can echolocate, but in fact some blind people do so extremely well. Nagel's point, however, is this: because it is impossible to know what it is like to be another person, trying to imagine what non-humans feel is a waste of time.</p>
+
+                <p>It isn't. The behavioural thinking that I have followed all these years has served me, and other scientists like me, well. But it's also a kind of trap. Anything that doesn't fit gets ignored because the intellectual framework doesn't permit one to say something different for fear of being labelled unprofessional. But ways of thinking come and go. As our knowledge of animal behaviour has increased, and with it the realisation that so many behaviours we once considered uniquely human, like tool use and language, aren't, the boundaries are changing.</p>
+
+                <p>It's all very well to study the survival value of long-term pair bonds or mutual preening, but without knowing anything about the sensory bases for these behaviours, our understanding is always going to be incomplete. A few years ago, behavioural zoologists discovered 'symmetry,' and assumed that symmetry (for example, in a perfectly proportioned human face or a peacock's tail) constituted beauty and quality, and was therefore the basis for the selection of partners. Few researchers bothered to test whether animals could assess symmetry in the same way as we can. One who did checked whether female starlings could distinguish males based on the symmetry of their feathers. These highly social birds couldn't. Their senses weren't up to it. Any study that had assessed starling partner choice on the basis of symmetry without knowing this would have reached false conclusions. In contrast, the sense of vision in starlings (and most other birds) is far better than our own: they can discriminate many more colours than we can, and they use this to assess potential partners.</p>
+            </div>
+
+            <!-- Questions -->
+            <div class="questions-container">
+                <!-- Question 31 -->
+                <div class="question">
+                    <div class="question-number">Question 31</div>
+                    <div class="question-text">
+                        <p><strong>What does the writer suggest about birds in the first paragraph?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q31" value="A" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>A. The names commonly given to them can be inappropriate.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="B" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>B. People are often too subjective in the way they think about them.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="C" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>C. Insufficient attention is paid to the way they behave towards each other.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="D" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>D. Most serious research on them ignores the idea they might have emotions.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 32 -->
+                <div class="question">
+                    <div class="question-number">Question 32</div>
+                    <div class="question-text">
+                        <p><strong>What does the writer say about himself in the second paragraph?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q32" value="A" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>A. His personal sympathies lie with particular species of birds.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="B" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>B. He has managed to achieve what was expected of him.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="C" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>C. He recognised early on how unusual his interests were.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="D" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>D. His understanding of birds stems from lengthy observation.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 33 -->
+                <div class="question">
+                    <div class="question-number">Question 33</div>
+                    <div class="question-text">
+                        <p><strong>The writer describes a particular incident in the third paragraph to explain</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q33" value="A" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>A. what originally attracted him to guillemots.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="B" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>B. what led him to investigate birds' senses.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="C" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>C. the challenges that birdwatchers encounter.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="D" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>D. the sophistication of guillemot communication.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 34 -->
+                <div class="question">
+                    <div class="question-number">Question 34</div>
+                    <div class="question-text">
+                        <p><strong>Why does the writer refer to an idea put forward by Thomas Nagel?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q34" value="A" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>A. to underline the differences between birds and mammals</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="B" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>B. to explain scientists' neglect of an aspect of animal research</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="C" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>C. to emphasise the significance of the subject he is studying</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="D" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>D. to draw attention to advances in scientific knowledge</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 35 -->
+                <div class="question">
+                    <div class="question-number">Question 35</div>
+                    <div class="question-text">
+                        <p><strong>What point does the writer make in the fifth paragraph?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q35" value="A" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>A. The way animals behave may have changed over time.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="B" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>B. Scientific debate has become more and more competitive.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="C" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>C. Research has shown the limitations of certain ideas about animals.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="D" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>D. The cautious approach he adopted in his work is a source of regret to him.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 36 -->
+                <div class="question">
+                    <div class="question-number">Question 36</div>
+                    <div class="question-text">
+                        <p><strong>The writer discusses the study of 'symmetry' to illustrate</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q36" value="A" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>A. the danger of ignoring birds' senses as a subject of study.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="B" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>B. the fact that birds tend to have better eyesight than humans.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="C" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>C. the idea that theories in science are disproved on a regular basis.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="D" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>D. the error in regarding beauty as a key factor in birds' choice of partners.</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 4</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 6</button>
+            </div>
+        </div>
+
+        <!-- Part 6 - Gapped Text -->
+        <div class="test-section" id="part6" style="display: none;">
+            <h2>Part 6 - Cross-text Multiple Matching</h2>
+            <p class="instructions">You are going to read four reviews of a book about artificial intelligence. For questions 37–40, choose from reviews A–D. The reviews may be chosen more than once.</p>
+
+            <!-- Reading Passages -->
+            <div class="reading-passage">
+                <h3>Should entry to museums be free of charge?</h3>
+                <p class="instructions">The views of four speakers at a conference on museum funding are summarised here.</p>
+                
+                <div class="review-section">
+                    <h4>A</h4>
+                    <p>In the late 1990s, the then UK government decided to end admission charges to a number of leading museums and art galleries in the country, and within a few years visitor numbers to these institutions had almost doubled; one report estimated an increase from 27 to 42 million visitors within a year. This is the clearest possible evidence for the popularity of free museum admission, with both local citizens and tourists. It is no coincidence that the UK saw an impressive growth in tourism to the country in the same period, and there is no need to go into detail here about the implications of this for employment and general prosperity. Add to this the contribution that museums make in communicating culture, knowledge and inspiration to visitors, particularly younger ones, and it becomes obvious that the state investment required to fund free entry to museums pays off handsomely.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>B</h4>
+                    <p>It is hardly surprising that surveys show most people favour free museum admission. Why would anyone spurn a free chance to see a collection of beautiful paintings or some fascinating historical objects? The fact is, however, that although visitor numbers generally go up when admission is free, more detailed analysis of the figures reveals some complex issues. For example, it is far from certain that free museum access automatically brings in the tourists. Most market research indicates that they want quality and will pay for it if necessary. Moreover, the evidence suggests that people who run museums which rely on the state for their funding have little incentive to make their collections more exciting and imaginatively displayed in order to boost visitor numbers; the fee, or absence of one, does their work for them. The need to attract paying customers, on the other hand, tends to concentrate the minds of museum and gallery directors.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>C</h4>
+                    <p>Free admission to museums and galleries usually causes attendance to rise and, with effective marketing, stimulates growth in the tourist industry. However, studies have also found that, by and large, increased entries are accounted for by tourists, who do not pay local income taxes, and more frequent visits by local people who already go to museums, rather than a wider spread of the population. In other words, all taxpayers subsidise museum access for tourists and a limited local largely middle-class demographic who could afford to pay for museum admission. Therefore, the claim that free museums make the wider population more knowledgeable and cultured is questionable at best. The fact is, the majority have little interest in museums and are resentful when they learn how much they are paying for them. They would be even more perturbed to hear that state-funded museums, free of the need to compete to survive, tend to be complacent and unenterprising.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>D</h4>
+                    <p>Museums have a crucial role to play in preserving and transmitting a nation's history and heritage, and in broadening intellectual and cultural horizons, among the younger generation in particular. Opinion polls show that most people understand this and, for this reason, favour free access. They also show people understand that free museum admission requires state funding, which in turn depends on taxation. While most of us dislike paying taxes, we know what they are for. People can also appreciate that government funding gives those who run museums a certain level of security which allows them to plan for the longer-term. This tends to lift the quality of museum collections and the way they are displayed and explained to visitors. Great museums which have free access also help to boost tourism, which is so central to the economic well-being of many countries nowadays.</p>
+                </div>
+            </div>
+
+            <!-- Matching Questions -->
+            <div class="cross-text-questions">
+                <h4>Which contributor...</h4>
+                
+                <div class="match-question" onclick="openReviewModal(37)">
+                    <div class="match-number">37</div>
+                    <div class="match-text">shares A's view regarding the role of museums in education?</div>
+                    <div class="match-answer" id="match37">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(38)">
+                    <div class="match-number">38</div>
+                    <div class="match-text">has a different opinion from the others about the possible impact of the cost of entry to museums on tourism?</div>
+                    <div class="match-answer" id="match38">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(39)">
+                    <div class="match-number">39</div>
+                    <div class="match-text">has the same opinion as C on the way state funding affects the development of museums?</div>
+                    <div class="match-answer" id="match39">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(40)">
+                    <div class="match-number">40</div>
+                    <div class="match-text">takes a different view from the others regarding public attitudes towards the cost of entry to museums?</div>
+                    <div class="match-answer" id="match40">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 5</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 7</button>
+            </div>
+        </div>
+
+        <!-- Part 7 - Gapped Text -->
+        <div class="test-section" id="part7" style="display: none;">
+            <h2>Part 7 - Gapped Text</h2>
+            <p class="instructions">You are going to read an article about the ancient Maya civilisation. Six paragraphs have been removed from the article. Choose from the paragraphs A-G the one which fits each gap (41-46). There is one extra paragraph which you do not need to use.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>The rise and fall of the ancient Maya civilisation</h3>
+                
+                <p>No civilisation has fallen quite like the Maya, seemingly swallowed by the jungle after centuries of urban, cultural and agricultural evolution. What went wrong? Recent discoveries point not to a cataclysmic eruption, earthquake or plague but rather to climate change. But first came the boom years, roughly AD 300 to 660. At the beginning of the so-called Classic Maya period, some 60 Maya cities sprang up across much of modern-day Guatemala, Belize and Mexico's Yucatán Peninsula.</p>
+
+                <div class="gap-carousel" id="gap41" onclick="openSentenceModal(41)">
+                    <strong>41</strong>
+                    <div class="selected-sentence" id="display41">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>Then came the bust, a decline that lasted at least two centuries. By 1100, the residents of once-thriving Maya cities seem to have just disappeared. In the nineteenth century, when explorers began discovering the overgrown ruins of 'lost cities', theorists imagined an immense volcanic eruption or earthquake — or maybe an empire-wide pandemic.</p>
+
+                <div class="gap-carousel" id="gap42" onclick="openSentenceModal(42)">
+                    <strong>42</strong>
+                    <div class="selected-sentence" id="display42">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>One study of stalagmites in a cavern in Belize links swings in weather patterns to both the rise and fall of the empire. Formed by water and minerals dripping from above, stalagmites grow more quickly in rainier years, giving scientists a reliable record of historical rainfall trends. 'The early Classic Maya period was unusually wet,' according to lead researcher Douglas Kennett. 'And during this time,' he says, 'the population proliferated, aided by a surge in agriculture.'</p>
+
+                <div class="gap-carousel" id="gap43" onclick="openSentenceModal(43)">
+                    <strong>43</strong>
+                    <div class="selected-sentence" id="display43">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>But the long wet spell turned out to be an anomaly. When the climate pendulum swung back, hard times followed. 'Mayan systems were founded on those high rainfall patterns,' Kennett said. 'They could not support themselves when patterns changed.'</p>
+
+                <p>The following centuries were characterised by repeated and, at times extreme, drought. Agriculture declined and, not coincidentally, social conflict rose.</p>
+
+                <div class="gap-carousel" id="gap44" onclick="openSentenceModal(44)">
+                    <strong>44</strong>
+                    <div class="selected-sentence" id="display44">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>But times would get even harder. The stalagmite record suggests that between 1020 and 1100 the region suffered its longest dry spell of the last 2,000 years. With it, the study suggests, came crop failure, famine, mass migration and death. By the time Spanish conquistadors arrived in the sixteenth century, inland Maya populations had decreased by 90 per cent, and urban centres and farms had been abandoned and reclaimed by forest.</p>
+
+                <div class="gap-carousel" id="gap45" onclick="openSentenceModal(45)">
+                    <strong>45</strong>
+                    <div class="selected-sentence" id="display45">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>According to climate scientist Benjamin Cook, this widespread deforestation reduced the flow of moisture from the ground to the atmosphere, interrupting the natural rain cycle and in turn reducing rainfall. Computer simulations that Cook ran for one study show that localised drying decreased atmospheric moisture flow by five to fifteen per cent annually. 'Even a ten per cent decrease is considered an environmental catastrophe,' he says.</p>
+
+                <div class="gap-carousel" id="gap46" onclick="openSentenceModal(46)">
+                    <strong>46</strong>
+                    <div class="selected-sentence" id="display46">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paragraph Options Reference -->
+            <div class="sentence-options">
+                <h4>Available Paragraphs (A-G):</h4>
+                <div class="sentence-option">
+                    <strong>A</strong> To some extent, however, the Maya may have shaped their own decline. At the height of the civilisation, the area had a population of tens of millions, and vast numbers of trees would have been cut down to make space for cities and farms, and to provide fuel.
+                </div>
+                <div class="sentence-option">
+                    <strong>B</strong> Indeed, it was during the rainiest decades of this era, from AD 440 to 660, that the cities sprouted. In fact, all the hallmarks of Maya civilisation — sophisticated political systems, monumental architecture, complex religion — came into full flower during this era.
+                </div>
+                <div class="sentence-option">
+                    <strong>C</strong> One common misconception is that the Maya completely vanished after the arrival of the Spanish in the sixteenth century. There are, in fact, Mayan people still in the area today, with their own culture and traditions. The mystery, historically, is why their cities were abandoned and never reclaimed.
+                </div>
+                <div class="sentence-option">
+                    <strong>D</strong> With their pyramids, squares, ball courts and government buildings, they were where the urban Maya discussed philosophy, developed an accurate solar-year calendar and relished the world's first hot chocolate. Farmers, too, were riding high, turning hillsides into terraced fields to feed the fast-growing population.
+                </div>
+                <div class="sentence-option">
+                    <strong>E</strong> Add this to the broader trend and the situation becomes dire — a cautionary tale for the modern world, some warn. The fear is that, as more and more forestland is turned into farms and cities, and as global temperatures continue to rise, we may risk the same fate that befell the Maya.
+                </div>
+                <div class="sentence-option">
+                    <strong>F</strong> The Maya religious and political system was based on the belief that rulers were in direct communication with the gods. When these divine connections failed to produce rainfall and good harvests, tensions probably developed. In only 25 years between 750 and 775, for example, 39 rulers commissioned the same number of stone monuments — evidence of 'rivalry, war, and strategic alliances,' according to Kennett's study.
+                </div>
+                <div class="sentence-option">
+                    <strong>G</strong> Today, however, scientists generally agree that the Maya collapse has many roots, all intertwined — overpopulation, warfare, famine, drought. And one of the hottest fields of inquiry in recent years has centred on climate change, perhaps of the Maya's own doing.
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 6</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 8</button>
+            </div>
+        </div>
+
+        <!-- Part 8 - Multiple Matching -->
+        <div class="test-section" id="part8" style="display: none;">
+            <h2>Part 8 - Multiple Matching</h2>
+            <p class="instructions">You are going to read about... For questions 47-56, choose from the sections (A-D). The sections may be chosen more than once.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Students who start businesses</h3>
+                <p class="instructions">Meet some enterprising students who have started their own businesses while at university.</p>
+                
+                <div class="review-section">
+                    <h4>A. Lisa James</h4>
+                    <p>As she's doing business studies, it may not be surprising that Lisa James has set up her own company, but it's happened on a much greater scale than she'd envisaged. The idea for Carefree Flowers came from a visit to a friend who was in hospital. Real flowers were banned, so instead, Lisa created an arrangement of origami paper ones, each containing an individualised message. Before long, Lisa and her mother, Maria, had set up Carefree Flowers to cater for the demand.</p>
+                    <p>Lisa handles the marketing and design. "Mum does the rest, so I can do my coursework, though not much else — I don't go to parties, for example." She's also good at managing her time. "It's something I got used to at school — I did competitive athletics and had to fit it around schoolwork."</p>
+                    <p>Lisa plans to continue developing the business, but she can't look too far ahead. "Someone else might see the potential in it and take our trade away. That'd hurt, but if it happened, I guess I'd start another business."</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>B. Joanna Payne</h4>
+                    <p>Joanna Payne is in her final year of a computer science degree. Her university offers 'sandwich' courses, meaning that students can spend a year of their four-year degree working for a business. When Joanna proposed devoting the year to setting up her own business, her lecturers were hesitant but agreed. Joanna launched Buccaneer Productions, specialising in creating games for smartphones. The three games she's released so far have impressed the university so much that it's now policy to encourage sandwich-year entrepreneurship. Joanna's sandwich year was busy, but her life is even more hectic now as she has to juggle lectures and a dissertation with running the business. "I'd love to go out at weekends like my course mates do, but I can't afford the time," she says. "The apps market is really fast-moving and tough, and you've got to keep on top of it, otherwise it can all come crashing down." The upside, of course, is that Joanna now has a pretty good idea of what it takes to set up an apps business.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>C. Alexis Taylor</h4>
+                    <p>When Alexis Taylor graduates in psychology, she will leave university with a well-established business, Taylor Tutors. The company offers one-to-one tutoring for high school students. All the tutors are students with recent experience of school. Alexis came up with the idea in her first year. "It seemed an obvious way to earn some money," says Alexis. "I set up a database of students from my university, did some marketing in local schools, and it pretty much evolved as I'd imagined. I don't know why no one else has done it. I worry they might do actually." She thinks she was fortunate to have chanced upon a mentor, John Martino, an older businessman who kept her on track at times.</p>
+                    <p>Her business and the degree are both relatively flexible, but Alexis admits to having missed classes and deadlines in her psychology degree. "Also, I probably haven't done as much reading as I should've — psychology's a heavy subject in that sense." But she's convinced she's done enough, and her entrepreneurial experience will stand her in good stead.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>D. Zoe Roberts</h4>
+                    <p>Two months after Zoe started her art degree, her bicycle was stolen. "It was a real shock and I immediately wanted to do something," she says. With the help of a lecturer, she designed a Cycle Wrapper, a cover to reduce bike theft and protect bikes from the weather.</p>
+                    <p>Eighteen months later, it's still just a prototype. Zoe has set up a company, filed a patent, talked to potential investors and manufacturers, and even persuaded the university authorities that the Wrapper could bear the university name. But a product launch still seems a distant concept. "I had no idea it would take so long," she says. "I've spent as much time on this project as on my degree. Sometimes I wonder whether it's been worth it. But it's transformed me. I'm much tougher than I used to be. People have told me to give up. They say the Wrapper will never work. But a gut feeling tells me it'll come good and I need to stick with it. As a poor student, I've got nothing to lose really, so that's what I'll do."</p>
+                </div>
+            </div>
+
+            <!-- Matching Questions -->
+            <div class="cross-text-questions">
+                <h4>Questions 47-56</h4>
+                <p><strong>Which student...</strong></p>
+                
+                <div class="match-question" onclick="openReviewModal(47)">
+                    <div class="match-number">47</div>
+                    <div class="match-text">acknowledges the value of taking expert advice?</div>
+                    <div class="match-answer" id="match47">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(48)">
+                    <div class="match-number">48</div>
+                    <div class="match-text">is unconcerned about the possibility of failure?</div>
+                    <div class="match-answer" id="match48">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(49)">
+                    <div class="match-number">49</div>
+                    <div class="match-text">is surprised at the lack of competition for her business?</div>
+                    <div class="match-answer" id="match49">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(50)">
+                    <div class="match-number">50</div>
+                    <div class="match-text">has established a precedent in her university?</div>
+                    <div class="match-answer" id="match50">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(51)">
+                    <div class="match-number">51</div>
+                    <div class="match-text">accepts that her business may have had a negative impact on her studies?</div>
+                    <div class="match-answer" id="match51">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(52)">
+                    <div class="match-number">52</div>
+                    <div class="match-text">has created a business which has exceeded her expectations?</div>
+                    <div class="match-answer" id="match52">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(53)">
+                    <div class="match-number">53</div>
+                    <div class="match-text">believes her personality has changed through working on her business?</div>
+                    <div class="match-answer" id="match53">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(54)">
+                    <div class="match-number">54</div>
+                    <div class="match-text">regrets missing out on certain aspects of student life?</div>
+                    <div class="match-answer" id="match54">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(55)">
+                    <div class="match-number">55</div>
+                    <div class="match-text">thinks that entrepreneurs like her should follow their instincts?</div>
+                    <div class="match-answer" id="match55">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(56)">
+                    <div class="match-number">56</div>
+                    <div class="match-text">claims to have benefited from skills acquired while taking part in an unrelated activity?</div>
+                    <div class="match-answer" id="match56">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 7</button>
+                <button class="btn btn-primary" onclick="finishTest()">Finish Test</button>
+            </div>
+        </div>
+
+        <!-- Sentence Selection Modal (for Part 7) -->
+        <div id="sentenceModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select paragraph for gap <span id="modalSentenceNumber"></span></h3>
+                    <button class="modal-close" onclick="closeSentenceModal()">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="sentence-choice" onclick="selectSentence('A')">
+                        <strong>A</strong> To some extent, however, the Maya may have shaped their own decline. At the height of the civilisation, the area had a population of tens of millions, and vast numbers of trees would have been cut down to make space for cities and farms, and to provide fuel.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('B')">
+                        <strong>B</strong> Indeed, it was during the rainiest decades of this era, from AD 440 to 660, that the cities sprouted. In fact, all the hallmarks of Maya civilisation — sophisticated political systems, monumental architecture, complex religion — came into full flower during this era.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('C')">
+                        <strong>C</strong> One common misconception is that the Maya completely vanished after the arrival of the Spanish in the sixteenth century. There are, in fact, Mayan people still in the area today, with their own culture and traditions. The mystery, historically, is why their cities were abandoned and never reclaimed.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('D')">
+                        <strong>D</strong> With their pyramids, squares, ball courts and government buildings, they were where the urban Maya discussed philosophy, developed an accurate solar-year calendar and relished the world's first hot chocolate. Farmers, too, were riding high, turning hillsides into terraced fields to feed the fast-growing population.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('E')">
+                        <strong>E</strong> Add this to the broader trend and the situation becomes dire — a cautionary tale for the modern world, some warn. The fear is that, as more and more forestland is turned into farms and cities, and as global temperatures continue to rise, we may risk the same fate that befell the Maya.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('F')">
+                        <strong>F</strong> The Maya religious and political system was based on the belief that rulers were in direct communication with the gods. When these divine connections failed to produce rainfall and good harvests, tensions probably developed. In only 25 years between 750 and 775, for example, 39 rulers commissioned the same number of stone monuments — evidence of 'rivalry, war, and strategic alliances,' according to Kennett's study.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('G')">
+                        <strong>G</strong> Today, however, scientists generally agree that the Maya collapse has many roots, all intertwined — overpopulation, warfare, famine, drought. And one of the hottest fields of inquiry in recent years has centred on climate change, perhaps of the Maya's own doing.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review Selection Modal -->
+        <div id="reviewModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="reviewModalTitle">Select answer for question <span id="modalReviewNumber"></span></h3>
+                    <button class="modal-close" onclick="closeReviewModal()">×</button>
+                </div>
+                <div class="modal-body" id="reviewModalBody">
+                    <!-- Content will be dynamically inserted by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="test-section" id="results" style="display: none;">
+            <h2>C1 Advanced (CAE) - Test Complete!</h2>
+            <div id="resultsContent"></div>
+            <div class="navigation">
+                <button class="btn btn-success" onclick="downloadPDF()">📄 Save Results as PDF</button>
+                <button class="btn btn-primary" onclick="window.location.href='index.html'">← Back to Portal</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // CAE001 - Answer key and test code
+        const TEST_CODE = 'CAE001';
+        
+        // Answer key for CAE001
+        const answers = {
+            part1: {
+                q1: 'D', q2: 'A', q3: 'C', q4: 'D',
+                q5: 'A', q6: 'B', q7: 'B', q8: 'C'
+            },
+            part2: {
+                q9: 'WHICH', q10: 'WHAT', q11: 'WHETHER', q12: 'FROM',
+                q13: 'BY', q14: 'ENOUGH', q15: 'AFTER', q16: 'AS'
+            },
+            part3: {
+                q17: 'RESIDENTS', q18: 'HISTORICALLY', q19: 'REVITALISING', q20: 'COASTAL',
+                q21: 'MOISTURE', q22: 'STORAGE', q23: 'INVENTIVE', q24: 'REVERSAL'
+            },
+            part4: {
+                q25: { full: 'NO IDEA WHOSE FOLDER IT WAS', part1: 'NO IDEA', part2: 'WHOSE FOLDER IT WAS' },
+                q26: { full: 'MICHAEL TO MAKE A FORMAL COMPLAINT', part1: 'MICHAEL TO MAKE', part2: 'A FORMAL COMPLAINT' },
+                q27: { full: 'DEMOLITION OF THE STADIUM TOOK PLACE', part1: 'DEMOLITION OF THE STADIUM', part2: 'TOOK PLACE' },
+                q28: { full: 'NEARLY AS IMPRESSIVE AS THOSE OF', part1: 'NEARLY AS IMPRESSIVE AS', part2: 'THOSE OF' },
+                q29: { full: 'LONG AS EVERYONE TURNS UP', part1: 'LONG AS', part2: 'EVERYONE TURNS UP' },
+                q30: { full: 'TO HAVE HAD MY CAR SERVICED', part1: 'TO HAVE HAD', part2: 'MY CAR SERVICED' }
+            },
+            part5: {
+                q31: 'D', q32: 'D', q33: 'B', q34: 'B', q35: 'C', q36: 'A'
+            },
+            part6: {
+                q37: 'D', q38: 'B', q39: 'B', q40: 'C'
+            },
+            part7: {
+                q41: 'D', q42: 'G', q43: 'B', q44: 'F', q45: 'A', q46: 'E'
+            },
+            part8: {
+                q47: 'C', q48: 'D', q49: 'C', q50: 'B', q51: 'C', 
+                q52: 'A', q53: 'D', q54: 'B', q55: 'D', q56: 'A'
+            }
+        };
+    </script>
+    <script src="script-CAE001.js"></script>
+</body>
+</html>

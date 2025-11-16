@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2 FCE Cambridge Test - Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>B2 First (FCE) Cambridge English Test</h1>
+            <p class="test-info">Practice Test - FCE005</p>
+        </header>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div class="test-section" id="part1" style="display: block;">
+            <h2>Part 1</h2>
+            <p class="instructions">For questions 1–8, read the text below and decide which answer (A, B, C or D) best fits each gap.</p>
+            <p class="instructions">In the exam, mark your answers on the separate answer sheet.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>What is a coincidence?</h3>
+                
+                <p>A coincidence is a surprising thing that happens to us. For example, two friends go shopping alone on the same day. When they meet up afterwards, they discover that they've each bought an identical T-shirt. Many people 
+                <select class="inline-select" name="q1" onchange="saveDropdownAnswer(1, this.value)">
+                    <option value="">— 1 —</option>
+                    <option value="A">regard</option>
+                    <option value="B">think</option>
+                    <option value="C">consider</option>
+                    <option value="D">believe</option>
+                </select>
+                coincidences as significant or mysterious. But the simple 
+                <select class="inline-select" name="q2" onchange="saveDropdownAnswer(2, this.value)">
+                    <option value="">— 2 —</option>
+                    <option value="A">explanation</option>
+                    <option value="B">definition</option>
+                    <option value="C">motivation</option>
+                    <option value="D">resolution</option>
+                </select>
+                could be that friends tend to have similar taste in clothes.</p>
+                
+                <p>In reality, life is 
+                <select class="inline-select" name="q3" onchange="saveDropdownAnswer(3, this.value)">
+                    <option value="">— 3 —</option>
+                    <option value="A">heavy</option>
+                    <option value="B">rich</option>
+                    <option value="C">full</option>
+                    <option value="D">crowded</option>
+                </select>
+                of coincidences, but normally we don't notice them. For example, in almost fifty percent of all football matches, two players share the same birthday. This seems surprising, 
+                <select class="inline-select" name="q4" onchange="saveDropdownAnswer(4, this.value)">
+                    <option value="">— 4 —</option>
+                    <option value="A">given</option>
+                    <option value="B">except</option>
+                    <option value="C">even</option>
+                    <option value="D">instead</option>
+                </select>
+                that there are 365 possible birthdays in the year. But most of these matches will be played without anybody being 
+                <select class="inline-select" name="q5" onchange="saveDropdownAnswer(5, this.value)">
+                    <option value="">— 5 —</option>
+                    <option value="A">noticed</option>
+                    <option value="B">known</option>
+                    <option value="C">aware</option>
+                    <option value="D">intelligent</option>
+                </select>
+                that the coincidence exists. 
+                <select class="inline-select" name="q6" onchange="saveDropdownAnswer(6, this.value)">
+                    <option value="">— 6 —</option>
+                    <option value="A">Therefore</option>
+                    <option value="B">Whereas</option>
+                    <option value="C">Meanwhile</option>
+                    <option value="D">Unless</option>
+                </select>
+                your birthday is today or tomorrow, you don't generally go around telling people when it is. What's more, without realising it, you probably 
+                <select class="inline-select" name="q7" onchange="saveDropdownAnswer(7, this.value)">
+                    <option value="">— 7 —</option>
+                    <option value="A">make</option>
+                    <option value="B">come</option>
+                    <option value="C">have</option>
+                    <option value="D">go</option>
+                </select>
+                into contact with lots of people born on the same day as you. But when a coincidence is 
+                <select class="inline-select" name="q8" onchange="saveDropdownAnswer(8, this.value)">
+                    <option value="">— 8 —</option>
+                    <option value="A">taken</option>
+                    <option value="B">carried</option>
+                    <option value="C">brought</option>
+                    <option value="D">shown</option>
+                </select>
+                to your attention, it still seems amazing.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 2</button>
+            </div>
+        </div>
+
+        <!-- Part 2 - Open Cloze -->
+        <div class="test-section" id="part2" style="display: none;">
+            <h2>Part 2</h2>
+            <p class="instructions">For questions 9–16, read the text below and think of the word which best fits each gap. Use only one word in each gap.</p>
+            <p class="instructions">In the exam, write your answers IN CAPITAL LETTERS on the separate answer sheet.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>The Recyclists</h3>
+                
+                <p>What do you do to help fight climate change? Two teenage boys from Scotland have just won an award for their efforts. Niall Watson and Roarke Hughes call themselves the Recyclists. They pedal <input type="text" class="inline-input" name="q9" maxlength="15" placeholder="9" oninput="saveTextAnswer(9, this.value)" style="text-transform: uppercase;"> their neighbourhood on their bikes collecting rubbish to be recycled. In the area <input type="text" class="inline-input" name="q10" maxlength="15" placeholder="10" oninput="saveTextAnswer(10, this.value)" style="text-transform: uppercase;"> the boys live, the local council only collects a few types of refuse to be recycled, so the boys help their community to recycle more, in <input type="text" class="inline-input" name="q11" maxlength="15" placeholder="11" oninput="saveTextAnswer(11, this.value)" style="text-transform: uppercase;"> for a small fee.</p>
+                
+                <p>Their business venture started three years <input type="text" class="inline-input" name="q12" maxlength="15" placeholder="12" oninput="saveTextAnswer(12, this.value)" style="text-transform: uppercase;"> as a way of making some extra pocket money. Now Niall and Roarke have expanded their business. They have invested <input type="text" class="inline-input" name="q13" maxlength="15" placeholder="13" oninput="saveTextAnswer(13, this.value)" style="text-transform: uppercase;"> some chickens and now also sell their own organic eggs <input type="text" class="inline-input" name="q14" maxlength="15" placeholder="14" oninput="saveTextAnswer(14, this.value)" style="text-transform: uppercase;"> they cycle round the town.</p>
+                
+                <p>The judges of the 'Ethical Kids Award', <input type="text" class="inline-input" name="q15" maxlength="15" placeholder="15" oninput="saveTextAnswer(15, this.value)" style="text-transform: uppercase;"> the boys won, were very impressed by them, saying: 'The Recyclists captured our imaginations straightaway. Their idea was innovative and green at the <input type="text" class="inline-input" name="q16" maxlength="15" placeholder="16" oninput="saveTextAnswer(16, this.value)" style="text-transform: uppercase;"> time.'</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 1</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 3</button>
+            </div>
+        </div>
+
+        <!-- Part 3 - Word Formation -->
+        <div class="test-section" id="part3" style="display: none;">
+            <h2>Part 3</h2>
+            <p class="instructions">For questions 17–24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line.</p>
+            <p class="instructions">In the exam, write your answers IN CAPITAL LETTERS on the separate answer sheet.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>Travel posters</h3>
+                
+                <p>Travel posters were an important form of advertising in the first part of the twentieth century. The classic travel poster was designed to make people believe that they could <span class="word-given">JOY</span> 
+                <input type="text" class="inline-input" name="q17" maxlength="20" placeholder="17" oninput="saveTextAnswer(17, this.value)" style="text-transform: uppercase;">
+                a more luxurious lifestyle. They aimed to tempt people away from their ordinary working lives by presenting them with images of <span class="word-given">RELAX</span> 
+                <input type="text" class="inline-input" name="q18" maxlength="20" placeholder="18" oninput="saveTextAnswer(18, this.value)" style="text-transform: uppercase;">
+                and glamour.</p>
+                
+                <p>As travel became less <span class="word-given">SPEND</span> 
+                <input type="text" class="inline-input" name="q19" maxlength="20" placeholder="19" oninput="saveTextAnswer(19, this.value)" style="text-transform: uppercase;">
+                , posters were produced to advertise railways, cruise liners, motoring and airlines, as well as individual tourist destinations. The golden age of posters, however, was the period from 1910–1950, before television made other ways of advertising more <span class="word-given">EFFECT</span> 
+                <input type="text" class="inline-input" name="q20" maxlength="20" placeholder="20" oninput="saveTextAnswer(20, this.value)" style="text-transform: uppercase;">
+                .</p>
+                
+                <p>The value of a poster is often linked to the <span class="word-given">ART</span> 
+                <input type="text" class="inline-input" name="q21" maxlength="20" placeholder="21" oninput="saveTextAnswer(21, this.value)" style="text-transform: uppercase;">
+                who created the original. Some of the leading poster designers, influenced by <span class="word-given">MOVE</span> 
+                <input type="text" class="inline-input" name="q22" maxlength="20" placeholder="22" oninput="saveTextAnswer(22, this.value)" style="text-transform: uppercase;">
+                such as cubism and surrealism, created their own style and use of colours, which is <span class="word-given">INSTANT</span> 
+                <input type="text" class="inline-input" name="q23" maxlength="20" placeholder="23" oninput="saveTextAnswer(23, this.value)" style="text-transform: uppercase;">
+                recognisable. Posters designed by these people are often the most striking and can command <span class="word-given">SURPRISE</span> 
+                <input type="text" class="inline-input" name="q24" maxlength="20" placeholder="24" oninput="saveTextAnswer(24, this.value)" style="text-transform: uppercase;">
+                high prices.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 2</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 4</button>
+            </div>
+        </div>
+
+        <!-- Part 4 - Key Word Transformations -->
+        <div class="test-section" id="part4" style="display: none;">
+            <h2>Part 4</h2>
+            <p class="instructions">For questions 25–30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given.</p>
+            <p class="instructions">You must use between two and five words, including the word given.</p>
+            <p class="instructions">In the exam, write only the missing words IN CAPITAL LETTERS on the separate answer sheet.</p>
+
+            <div class="reading-passage">
+                <div class="transformation-question">
+                    <p><strong>25.</strong> Is it all right if I turn the television off?</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">MIND</span></p>
+                    <p>Would <input type="text" class="inline-input-long" name="q25" maxlength="50" placeholder="25" oninput="saveTextAnswer(25, this.value)" style="text-transform: uppercase;"> the television off?</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>26.</strong> We're not going to have our car washed because it costs too much.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">AFFORD</span></p>
+                    <p>We <input type="text" class="inline-input-long" name="q26" maxlength="50" placeholder="26" oninput="saveTextAnswer(26, this.value)" style="text-transform: uppercase;"> have our car washed.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>27.</strong> Grace knows a lot about Web design, even though she has never studied it.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">HAVING</span></p>
+                    <p>Despite <input type="text" class="inline-input-long" name="q27" maxlength="50" placeholder="27" oninput="saveTextAnswer(27, this.value)" style="text-transform: uppercase;"> , Grace knows a lot about Web design.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>28.</strong> Damon looked so funny in his brother's tracksuit that we had to laugh.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">HELP</span></p>
+                    <p>We <input type="text" class="inline-input-long" name="q28" maxlength="50" placeholder="28" oninput="saveTextAnswer(28, this.value)" style="text-transform: uppercase;"> at Damon because he looked so funny in his brother's tracksuit.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>29.</strong> An electric fence kept visitors away from the animals.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">PREVENTED</span></p>
+                    <p>An electric fence <input type="text" class="inline-input-long" name="q29" maxlength="50" placeholder="29" oninput="saveTextAnswer(29, this.value)" style="text-transform: uppercase;"> close to the animals.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>30.</strong> Graham likes to spend time alone just before a race.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">BY</span></p>
+                    <p>Graham likes to spend time <input type="text" class="inline-input-long" name="q30" maxlength="50" placeholder="30" oninput="saveTextAnswer(30, this.value)" style="text-transform: uppercase;"> just before a race.</p>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 3</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 5</button>
+            </div>
+        </div>
+
+        <!-- Part 5 - Multiple Choice Reading -->
+        <div class="test-section" id="part5" style="display: none;">
+            <h2>Part 5</h2>
+            <p class="instructions">You are going to read an article about an actor. For questions 31–36, choose the answer (A, B, C or D) which you think fits best according to the text.</p>
+            <p class="instructions">In the exam, mark your answers on the separate answer sheet.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <p>'This came today, Jo. I forgot to tell you,' Dad said, an opened brown envelope in his hand. He took out a letter, saying as he handed it to me, 'The big house at the back of ours has been bought by a property developer. The letter's from the City Council, asking if we object. They've applied for permission to pull down the house and put up an apartment block instead, plus eight three-storey houses on the garden.' This came as such a shock that I didn't say anything about it at all at first.</p>
+                
+                <p>Dad had been right when he'd said that whoever bought the big house would probably really be buying the garden. What neither of us had realised, though, was that it wouldn't be the garden itself they'd be after. I couldn't imagine it with a big block of flats and houses standing on it, the earth covered over and suffocated; my greatest fear was that there would be nowhere for the butterflies and bees to come any more. Some might move into our little gardens, but there wouldn't be much room.</p>
+                
+                <p>That night I had a dream about bulldozers and I woke up in the morning with a terrible jump. I supposed that everyone else in our street would have had the same letter as us. I wondered why they weren't all out there, talking over their garden walls – painting banners, tying themselves to trees – protesting. Come to think of it, why wasn't I? Before I had time to feel guilty about that, though, the scramble to get to school began and I stopped thinking about it for a while.</p>
+                
+                <p>I often go into Dad's study after school. He always pretends he wants to be left till about six, but he's on his own all day and I think he must need a bit of company by four-ish, to see him through. That day he was trying to finish designing a book called Home Maintenance. He'd scanned a lot of pictures and diagrams into the computer and he was busy numbering them, muttering that the text was too long as always.</p>
+                
+                <p>'Everyone will have had that letter we had, won't they?' I said, leaning against his work table to watch him. Dad said they would. I noticed he was wearing his chewed-up grey sweater, the one he puts on when he's expecting a job to be challenging. 'Well, will they do anything?'</p>
+                
+                <p>'Like what?' He wasn't paying attention. He was sliding a diagram about on the screen, and trying to fit some text in beside it. It wasn't going to be easy.</p>
+                
+                <p>'Well, will they do something to stop it happening?'</p>
+                
+                <p>'Shouldn't think so,' he said. 'It's not going to be stopped by anything we say.'</p>
+                
+                <p>I felt sure he was missing the point. Even though he was making a big thing about looking at me and not looking at his screen, I knew what his mind was really on. 'The developers have asked for permission,' I said, in the same annoyingly patient voice he'd been using. 'If you ask for permission that means someone could refuse. The Council must be able to.'</p>
+                
+                <p>'They could,' said Dad, speaking even more 'patiently'. 'Our not wanting it isn't a good enough reason, Jo. We've got our own houses and gardens, nobody's taking those away.'</p>
+                
+                <p>'We could try,' I said, but Dad shook his head.</p>
+            </div>
+
+            <!-- Questions -->
+            <div class="questions-container">
+                <!-- Question 31 -->
+                <div class="question">
+                    <div class="question-number">Question 31</div>
+                    <div class="question-text">
+                        <p><strong>From the first paragraph, we learn that the letter Jo's father gave her</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q31" value="A" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>A. informed the family of a decision already made.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="B" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>B. contained news that the family had been expecting.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="C" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>C. was replying to a question that the family had asked.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="D" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>D. was giving the family the chance to give their opinion.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 32 -->
+                <div class="question">
+                    <div class="question-number">Question 32</div>
+                    <div class="question-text">
+                        <p><strong>What concerns Jo most about the proposed housing development?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q32" value="A" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>A. how it would change her family's garden</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="B" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>B. how the building work would be carried out</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="C" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>C. the effect it would have on the local wildlife</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="D" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>D. the type of buildings that would be constructed</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 33 -->
+                <div class="question">
+                    <div class="question-number">Question 33</div>
+                    <div class="question-text">
+                        <p><strong>The word 'that' in line 16 refers to Jo's</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q33" value="A" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>A. attitude towards her neighbours.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="B" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>B. failure to protest against the plans.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="C" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>C. dream about the proposed buildings.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="D" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>D. lateness in getting ready for school.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 34 -->
+                <div class="question">
+                    <div class="question-number">Question 34</div>
+                    <div class="question-text">
+                        <p><strong>In the fourth paragraph, we discover that Jo's father usually</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q34" value="A" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>A. spends most of his day working alone.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="B" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>B. works for a company that makes computers.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="C" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>C. gets home from work at a regular time each day.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="D" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>D. welcomes interruptions during his working day.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 35 -->
+                <div class="question">
+                    <div class="question-number">Question 35</div>
+                    <div class="question-text">
+                        <p><strong>Jo realised that her father was having a difficult day because of</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q35" value="A" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>A. the look on his face.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="B" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>B. the way he was sitting.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="C" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>C. the way he was dressed.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="D" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>D. the fact he stopped to talk to her.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 36 -->
+                <div class="question">
+                    <div class="question-number">Question 36</div>
+                    <div class="question-text">
+                        <p><strong>How does Jo's father feel about the proposed building development?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q36" value="A" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>A. resigned to its going ahead</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="B" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>B. angry not to be able to prevent it</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="C" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>C. sure that they'd soon get used to it</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="D" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>D. worried about the council's attitude towards it</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 4</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 6</button>
+            </div>
+        </div>
+
+        <!-- Part 6 - Gapped Text -->
+        <div class="test-section" id="part6" style="display: none;">
+            <h2>Part 6</h2>
+            <p class="instructions">You are going to read an article about white-water kayaking. Six sentences have been removed from the article. Choose from the sentences A–G the one which fits each gap (37–42). There is one extra sentence which you do not need to use.</p>
+            <p class="instructions">In the exam, mark your answers on the separate answer sheet.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Paddle power</h3>
+                
+                <p>'I guarantee you'll be getting wet today,' says my kayaking coach, Sarah Lind. I've come to the Bala Watersports Centre in North Wales for a crash course in white-water kayaking. If anyone knows what they're talking about, it's thirty-five-year-old Sarah. Having started her kayaking career at the age of eleven, she went on to win a gold medal for Great Britain. For years I've dreamed of paddling white water and this is my big opportunity.</p>
+                
+                <p>The sleepy Welsh town of Bala is the white-water capital of Britain. Local residents include Matt Cook, who once came fourth in the freestyle world championships, and former European freestyle champion Lynsey Evans.</p>
+
+                <div class="gap-carousel" id="gap37" onclick="openSentenceModal(37)">
+                    <strong>37</strong>
+                    <div class="selected-sentence" id="display37">
+                        <span class="placeholder-text">Click to select sentence...</span>
+                    </div>
+                </div>
+                
+                <p>These create a natural playground for paddlers. One of the toughest sections of white water lies on the Tryweryn river, which cuts straight through Bala. Graded four out of six (six being impassable), it is a swirling mass of furious white water, interspersed by slippery rocks. Used for the world championships, it's where the world's best paddlers pit their wits and strength against nature. And later on today, it will be the venue for my first white-water voyage.</p>
+
+                <p>Before allowing us near any white water, Sarah insists that we head out onto the calm waters of Bala Lake to learn a few basic skills.</p>
+
+                <div class="gap-carousel" id="gap38" onclick="openSentenceModal(38)">
+                    <strong>38</strong>
+                    <div class="selected-sentence" id="display38">
+                        <span class="placeholder-text">Click to select sentence...</span>
+                    </div>
+                </div>
+                
+                <p>As I paddle my first few strokes, it causes my boat to bob about alarmingly. I'm having trouble simply going in a straight line.</p>
+
+                <p>The most important thing you need to master before going out into white water is the 'low brace turn', which breaks down into three main elements. The first is the 'sweep stroke'.</p>
+
+                <div class="gap-carousel" id="gap39" onclick="openSentenceModal(39)">
+                    <strong>39</strong>
+                    <div class="selected-sentence" id="display39">
+                        <span class="placeholder-text">Click to select sentence...</span>
+                    </div>
+                </div>
+                
+                <p>While doing this you need to 'edge' – or cause the kayak to tip slightly towards the side that you wish to turn. This is achieved by straightening the leg that corresponds to the direction in which you wish to turn, while bending your other leg and bracing it against the top of the boat.</p>
+
+                <p>Finally, you need to put your paddle into the 'brace' position: bar held against your stomach, arms parallel with your shoulders. The idea is that if at this point you find yourself tipping over too far, you can use your paddle to prevent the kayak turning over.</p>
+
+                <div class="gap-carousel" id="gap40" onclick="openSentenceModal(40)">
+                    <strong>40</strong>
+                    <div class="selected-sentence" id="display40">
+                        <span class="placeholder-text">Click to select sentence...</span>
+                    </div>
+                </div>
+                
+                <p>I flounder around in the freezing cold lake like an ant stuck in a puddle, and my breath is snatched away.</p>
+
+                <p>After we eventually master the basics, it's time to tackle some world championship level white water, on the Tryweryn.</p>
+
+                <div class="gap-carousel" id="gap41" onclick="openSentenceModal(41)">
+                    <strong>41</strong>
+                    <div class="selected-sentence" id="display41">
+                        <span class="placeholder-text">Click to select sentence...</span>
+                    </div>
+                </div>
+                
+                <p>I can hardly hear myself think. The first section of the course involves crossing a segment of high-speed water punctuated by slippery stone slabs. This is where the 'edging' technique I learned earlier comes into play.</p>
+
+                <p>The next section involves traversing an even angrier patch of white water. All I remember is paddling frantically through a narrow corridor of rocks, as the water splashes up in my face and my boat bounces its way through the swirling torrent.</p>
+
+                <div class="gap-carousel" id="gap42" onclick="openSentenceModal(42)">
+                    <strong>42</strong>
+                    <div class="selected-sentence" id="display42">
+                        <span class="placeholder-text">Click to select sentence...</span>
+                    </div>
+                </div>
+                
+                <p>Eventually, things slow down slightly and I'm able to take stock. This is it. I'm off and running: racing down the river at ridiculous speed. Awesome!</p>
+            </div>
+
+            <!-- Sentence Options Reference -->
+            <div class="sentence-options">
+                <h4>Available Sentences (A-G):</h4>
+                <div class="sentence-option">
+                    <strong>A</strong> A stiff breeze is blowing across this massive open space.
+                </div>
+                <div class="sentence-option">
+                    <strong>B</strong> Basically, you use the paddle to turn the boat sharply in the opposite direction.
+                </div>
+                <div class="sentence-option">
+                    <strong>C</strong> Despite my understandable trepidation, Sarah is confident that she can get me to complete it in one piece.
+                </div>
+                <div class="sentence-option">
+                    <strong>D</strong> Despite my best efforts, however, I end up in the water almost immediately.
+                </div>
+                <div class="sentence-option">
+                    <strong>E</strong> Only a shout of 'Right paddle!' from Sarah saves me from going over again.
+                </div>
+                <div class="sentence-option">
+                    <strong>F</strong> Standing on the bank, psyching myself up, the sound of the raging water crashing over rocks is deafening.
+                </div>
+                <div class="sentence-option">
+                    <strong>G</strong> They're attracted here by the huge number of rivers that cascade down from the surrounding mountains.
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 5</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 7</button>
+            </div>
+        </div>
+
+        <!-- Part 7 - Multiple Matching -->
+        <div class="test-section" id="part7" style="display: none;">
+            <h2>Part 7</h2>
+            <p class="instructions">You are going to read an article about a man who holds a number of world records.</p>
+            <p class="instructions">For questions 43–52, choose from the sections A–D. The sections may be chosen more than once.</p>
+            <p class="instructions">In the exam, mark your answers on the separate answer sheet.</p>
+
+            <!-- Reading Passages -->
+            <div class="reading-passage">
+                <h3>For the record</h3>
+                <p><em>Ian Couch holds a number of records for adventurous trips.</em></p>
+                
+                <div class="traveller-section">
+                    <h4>A</h4>
+                    <p>Ian Couch and his travelling companion Ben had prepared themselves thoroughly for the physical and mental demands of the 600 kilometre crossing of the Greenland ice-cap. But two days into the trek, snow was blowing so forcefully there was no distinguishing sky from ground and the temperature had hit –40°C. All they could do was blindly follow their compass and hope they were heading in the right direction. Fortunately, conditions did improve but improved visibility only revealed another potential danger: two male polar bears were following their party. After more than fourteen hours of exhausting skiing and running, they had to set up camp. Despite being exhausted, they decided to take it in turns to sit on guard for hourly watches. The next day local hunters were sent to chase off the bears and, although Ian and Ben had lost vital hours, they still completed the journey in fifteen days – the fastest-ever British crossing. It's just one of eight records that Ian holds.</p>
+                </div>
+
+                <div class="traveller-section">
+                    <h4>B</h4>
+                    <p>Ian became hooked on endurance events after a record-breaking row across the Atlantic Ocean, and he's drawn to tackling super-human challenges. 'Partly it's about finding out what I'm capable of,' says the forty-year-old, who was also part of the first crew to row the entire Indian Ocean unassisted, 'and partly it's knowing we have a limited amount of time to see so many things.' Two years ago, Ian set up Adventure Hub, an activity company that offers support and advice to people who wish to test themselves with ocean rowing, polar exploration, trekking or mountaineering. Ian has been doing this sort of thing since childhood. While still at university, he joined an unsupported row across the Atlantic in 2007. The appeal, he says, was because there weren't many challenges that either hadn't been done before or were still unusual.</p>
+                </div>
+
+                <div class="traveller-section">
+                    <h4>C</h4>
+                    <p>The crew rowed 2,600 miles and set a world record for the fastest thousand-mile row by boat, despite battling incredible storms and close encounters with sharks and whales. He recalls: 'One morning, I came out of the cabin to take the dawn shift and a pod of forty dolphins was swimming around the boat. At that moment, I decided I wanted to do it again.' The following year, Ian started training for the Greenland ice-cap expedition with friend Ben. Hours spent on a cross-country skiing machine and dragging tractor tyres on a harness around his home village to improve his fitness counted for little when Ben suffered severe frostbite on his thumbs two days into the attempt and they had to be evacuated by helicopter so that he could receive medical attention. Although hugely disappointed at the time, the pair returned this April and claimed the British record.</p>
+                </div>
+
+                <div class="traveller-section">
+                    <h4>D</h4>
+                    <p>Not one to rest for long though, six months later he was signed up to lead a crew of twelve people on another trans-Atlantic rowing trip, for which he was awarded his proudest world record to date: the fastest triple ocean crossing. While the four-hour sleep rota was a luxury for the father of two young children, Ian admits he missed his family greatly. At Adventure Hub, plans are underway for another Atlantic row, for which the boxer Jackson Williams has signed up. Nearer home, he's recently organised a sixty-mile ultra run that takes in forest, cliff-top and stony beach. 'It's a flat route, but a good way for non-adventurers to push themselves out of their comfort zone.' There's also an unsupported South Pole trip planned which, for the very first time, will be tackled not using kites or dogs. It's therefore just too tempting for this record-breaking adventurer to resist.</p>
+                </div>
+            </div>
+
+            <!-- Matching Questions -->
+            <div class="matching-questions">
+                <h4>In which section do we read about …</h4>
+                
+                <div class="match-question" onclick="openMatchModal(43)">
+                    <div class="match-number">43</div>
+                    <div class="match-text">activities that help Ian prepare for a trip?</div>
+                    <div class="match-answer" id="match43">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(44)">
+                    <div class="match-number">44</div>
+                    <div class="match-text">Ian having problems finding his way on a trip?</div>
+                    <div class="match-answer" id="match44">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(45)">
+                    <div class="match-number">45</div>
+                    <div class="match-text">the achievement that gives Ian the most satisfaction?</div>
+                    <div class="match-answer" id="match45">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(46)">
+                    <div class="match-number">46</div>
+                    <div class="match-text">Ian needing to stay awake because of an unexpected danger?</div>
+                    <div class="match-answer" id="match46">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(47)">
+                    <div class="match-number">47</div>
+                    <div class="match-text">Ian's desire to do something that few other people had managed before?</div>
+                    <div class="match-answer" id="match47">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(48)">
+                    <div class="match-number">48</div>
+                    <div class="match-text">Ian feeling that a lot must be achieved in a lifetime?</div>
+                    <div class="match-answer" id="match48">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(49)">
+                    <div class="match-number">49</div>
+                    <div class="match-text">an example of Ian not being successful at the first attempt?</div>
+                    <div class="match-answer" id="match49">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(50)">
+                    <div class="match-number">50</div>
+                    <div class="match-text">a specific activity designed for people less experienced than Ian?</div>
+                    <div class="match-answer" id="match50">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(51)">
+                    <div class="match-number">51</div>
+                    <div class="match-text">Ian seeing something that inspired him to go on further trips?</div>
+                    <div class="match-answer" id="match51">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openMatchModal(52)">
+                    <div class="match-number">52</div>
+                    <div class="match-text">a delay that didn't prevent Ian achieving something?</div>
+                    <div class="match-answer" id="match52">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 6</button>
+                <button class="btn btn-primary" onclick="finishTest()">Finish Test</button>
+            </div>
+        </div>
+
+        <!-- Student Selection Modal -->
+        <div id="matchModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select a section for question <span id="modalMatchNumber"></span></h3>
+                    <button class="modal-close" onclick="closeMatchModal()">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="student-choice" onclick="selectMatch(43, 'A')">
+                        <strong>A</strong> Section A
+                    </div>
+                    <div class="student-choice" onclick="selectMatch(43, 'B')">
+                        <strong>B</strong> Section B
+                    </div>
+                    <div class="student-choice" onclick="selectMatch(43, 'C')">
+                        <strong>C</strong> Section C
+                    </div>
+                    <div class="student-choice" onclick="selectMatch(43, 'D')">
+                        <strong>D</strong> Section D
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sentence Selection Modal -->
+        <div id="sentenceModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select a sentence for gap <span id="modalGapNumber"></span></h3>
+                    <button class="modal-close" onclick="closeSentenceModal()">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="sentence-choice" onclick="selectSentence(37, 'A')">
+                        <strong>A</strong> A stiff breeze is blowing across this massive open space.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence(37, 'B')">
+                        <strong>B</strong> Basically, you use the paddle to turn the boat sharply in the opposite direction.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence(37, 'C')">
+                        <strong>C</strong> Despite my understandable trepidation, Sarah is confident that she can get me to complete it in one piece.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence(37, 'D')">
+                        <strong>D</strong> Despite my best efforts, however, I end up in the water almost immediately.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence(37, 'E')">
+                        <strong>E</strong> Only a shout of 'Right paddle!' from Sarah saves me from going over again.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence(37, 'F')">
+                        <strong>F</strong> Standing on the bank, psyching myself up, the sound of the raging water crashing over rocks is deafening.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence(37, 'G')">
+                        <strong>G</strong> They're attracted here by the huge number of rivers that cascade down from the surrounding mountains.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="test-section" id="results" style="display: none;">
+            <h2>Test Complete!</h2>
+            <div id="resultsContent"></div>
+            <div class="navigation">
+                <button class="btn btn-success" onclick="downloadPDF()">📄 Save Results as PDF</button>
+                <button class="btn btn-primary" onclick="window.location.href='index.html'">← Back to Portal</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // FCE004 - Answer key and test code
+        const TEST_CODE = 'FCE005';
+        
+        // Answer key for FCE005
+        const answers = {
+            part1: {
+                q1: 'A', q2: 'A', q3: 'C', q4: 'A',
+                q5: 'C', q6: 'D', q7: 'B', q8: 'C'
+            },
+            part2: {
+                q9: ['AROUND'], q10: ['WHERE'], q11: ['RETURN', 'EXCHANGE'], q12: ['AGO'],
+                q13: ['IN'], q14: ['WHEN', 'AS'], q15: ['WHICH'], q16: ['SAME']
+            },
+            part3: {
+                q17: 'ENJOY', q18: 'RELAXATION', q19: 'EXPENSIVE', q20: 'EFFECTIVE',
+                q21: 'ARTIST', q22: 'MOVEMENTS', q23: 'INSTANTLY', q24: 'SURPRISINGLY'
+            },
+            part4: {
+                q25: { full: ['YOU MIND IF I TURNED', 'YOU MIND ME TURNING'], part1: 'YOU MIND', part2: ['IF I TURNED', 'ME TURNING'] },
+                q26: { full: ['CANNOT AFFORD TO', 'CAN\'T AFFORD TO'], part1: ['CANNOT', 'CAN\'T'], part2: 'AFFORD TO' },
+                q27: { full: 'NEVER HAVING STUDIED IT', part1: 'NEVER HAVING', part2: 'STUDIED IT' },
+                q28: { full: ['COULD NOT HELP LAUGHING', 'COULDN\'T HELP LAUGHING', 'COULD NOT BUT LAUGH', 'COULDN\'T BUT LAUGH'], part1: ['COULD NOT', 'COULDN\'T'], part2: ['HELP LAUGHING', 'BUT LAUGH'] },
+                q29: { full: ['PREVENTED VISITORS GETTING', 'PREVENTED VISITORS FROM GETTING'], part1: 'PREVENTED VISITORS', part2: ['GETTING', 'FROM GETTING'] },
+                q30: { full: 'BY HIMSELF', part1: 'BY', part2: 'HIMSELF' }
+            },
+            part5: {
+                q31: 'D', q32: 'C', q33: 'B', q34: 'A', q35: 'C', q36: 'A'
+            },
+            part6: {
+                q37: 'G', q38: 'A', q39: 'B', q40: 'D', q41: 'F', q42: 'E'
+            },
+            part7: {
+                q43: 'C', q44: 'A', q45: 'D', q46: 'A', q47: 'B',
+                q48: 'B', q49: 'C', q50: 'D', q51: 'C', q52: 'A'
+            }
+        };
+
+        // Sentence texts for Part 6
+        const sentenceTexts = {
+            'A': 'A stiff breeze is blowing across this massive open space.',
+            'B': 'Basically, you use the paddle to turn the boat sharply in the opposite direction.',
+            'C': 'Despite my understandable trepidation, Sarah is confident that she can get me to complete it in one piece.',
+            'D': 'Despite my best efforts, however, I end up in the water almost immediately.',
+            'E': 'Only a shout of \'Right paddle!\' from Sarah saves me from going over again.',
+            'F': 'Standing on the bank, psyching myself up, the sound of the raging water crashing over rocks is deafening.',
+            'G': 'They\'re attracted here by the huge number of rivers that cascade down from the surrounding mountains.'
+        };
+    </script>
+    <script src="script-FCE005.js"></script>
+</body>
+</html>

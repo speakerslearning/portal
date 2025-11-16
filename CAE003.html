@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAE003 - C1 Advanced Cambridge English Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>C1 Advanced (CAE) Cambridge English Test</h1>
+            <p class="test-info">Practice Test - CAE003</p>
+        </header>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div class="test-section" id="part1" style="display: block;">
+            <h2>Part 1 - Multiple Choice Cloze</h2>
+            <p class="instructions">For questions 1–8, read the text below and decide which answer (A, B, C or D) best fits each gap.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Finding new species</h3>
+                
+                <p>A group of scientists recently conducted a biodiversity survey of a tropical forest in Suriname, Latin America. One day, a local guide caught a large catfish, and was on the 
+                <select class="inline-select" name="q1" onchange="saveDropdownAnswer(1, this.value)">
+                    <option value="">— 1 —</option>
+                    <option value="A">edge</option>
+                    <option value="B">line</option>
+                    <option value="C">verge</option>
+                    <option value="D">border</option>
+                </select>
+                of cutting it up for cooking when two of the scientists intervened. They had noticed that the creature had 
+                <select class="inline-select" name="q2" onchange="saveDropdownAnswer(2, this.value)">
+                    <option value="">— 2 —</option>
+                    <option value="A">intensely</option>
+                    <option value="B">utterly</option>
+                    <option value="C">highly</option>
+                    <option value="D">exceptionally</option>
+                </select>
+                long spines, probably to protect it from predators. It 
+                <select class="inline-select" name="q3" onchange="saveDropdownAnswer(3, this.value)">
+                    <option value="">— 3 —</option>
+                    <option value="A">turned</option>
+                    <option value="B">came</option>
+                    <option value="C">carried</option>
+                    <option value="D">gave</option>
+                </select>
+                out to be an undiscovered species. 
+                <select class="inline-select" name="q4" onchange="saveDropdownAnswer(4, this.value)">
+                    <option value="">— 4 —</option>
+                    <option value="A">Opposite</option>
+                    <option value="B">Unlike</option>
+                    <option value="C">Contrary</option>
+                    <option value="D">Distinct</option>
+                </select>
+                any catfish in reference books, the as yet unnamed fish was one of 46 candidates for new species status that the scientists found during their visit.</p>
+                
+                <p>In the 1730s, Swedish botanist Carl Linnaeus 
+                <select class="inline-select" name="q5" onchange="saveDropdownAnswer(5, this.value)">
+                    <option value="">— 5 —</option>
+                    <option value="A">laid on</option>
+                    <option value="B">set out</option>
+                    <option value="C">fixed up</option>
+                    <option value="D">put through</option>
+                </select>
+                rules for classifying species, the most basic biological 
+                <select class="inline-select" name="q6" onchange="saveDropdownAnswer(6, this.value)">
+                    <option value="">— 6 —</option>
+                    <option value="A">category</option>
+                    <option value="B">section</option>
+                    <option value="C">department</option>
+                    <option value="D">version</option>
+                </select>: since then, scientists have catalogued more than 1.7 million species, but it is thought that there may be as many as 8.7 million on earth. Figures for different groups of animals have been 
+                <select class="inline-select" name="q7" onchange="saveDropdownAnswer(7, this.value)">
+                    <option value="">— 7 —</option>
+                    <option value="A">accounted</option>
+                    <option value="B">composed</option>
+                    <option value="C">compiled</option>
+                    <option value="D">joined</option>
+                </select>
+                and most mammal, birds and reptiles are believed to have been discovered. Fish, shellfish and spiders, however, are a different story, and literally millions of species of insects 
+                <select class="inline-select" name="q8" onchange="saveDropdownAnswer(8, this.value)">
+                    <option value="">— 8 —</option>
+                    <option value="A">stay</option>
+                    <option value="B">endure</option>
+                    <option value="C">persist</option>
+                    <option value="D">remain</option>
+                </select>
+                for future generations to discover.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 2</button>
+            </div>
+        </div>
+
+        <!-- Part 2 - Open Cloze -->
+        <div class="test-section" id="part2" style="display: none;">
+            <h2>Part 2 - Open Cloze</h2>
+            <p class="instructions">For questions 9–16, read the text below and think of the word which best fits each gap. Use only one word in each gap. Write your answers IN CAPITAL LETTERS.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>Why you forgot what you came into the room for</h3>
+                
+                <p>The brain may be the least understood organ in the human body. It guides everything we do, but every 
+                <input type="text" class="inline-input" name="q9" maxlength="15" placeholder="9" oninput="saveTextAnswer(9, this.value)" style="text-transform: uppercase;">
+                often it lets us down. One annoying, if 
+                <input type="text" class="inline-input" name="q10" maxlength="15" placeholder="10" oninput="saveTextAnswer(10, this.value)" style="text-transform: uppercase;">
+                exactly life-threatening, example of this is when you walk into a room, 
+                <input type="text" class="inline-input" name="q11" maxlength="15" placeholder="11" oninput="saveTextAnswer(11, this.value)" style="text-transform: uppercase;">
+                to realise you have forgotten what your reason for going there was. Why is 
+                <input type="text" class="inline-input" name="q12" maxlength="15" placeholder="12" oninput="saveTextAnswer(12, this.value)" style="text-transform: uppercase;">
+                an incredibly powerful organ as the brain unable to remind us of something that simple?</p>
+                
+                <p><input type="text" class="inline-input" name="q13" maxlength="15" placeholder="13" oninput="saveTextAnswer(13, this.value)" style="text-transform: uppercase;">
+                spent many years investigating the brain, scientist Gabriel Radvansky thinks he has an answer. He has conducted numerous experiments in 
+                <input type="text" class="inline-input" name="q14" maxlength="15" placeholder="14" oninput="saveTextAnswer(14, this.value)" style="text-transform: uppercase;">
+                participants' memories were tested after crossing a room or exiting through a doorway. Invariably, passing through a doorway resulted 
+                <input type="text" class="inline-input" name="q15" maxlength="15" placeholder="15" oninput="saveTextAnswer(15, this.value)" style="text-transform: uppercase;">
+                more memory errors. Radvansky refers to what happens as an 'event boundary' in the brain. As 
+                <input type="text" class="inline-input" name="q16" maxlength="15" placeholder="16" oninput="saveTextAnswer(16, this.value)" style="text-transform: uppercase;">
+                as the brain is concerned, a doorway is a boundary between one event, or experience, and another. The brain files away all information about the first event, and focuses on the second, the new room; this makes it hard to recall a decision made in a previous room.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 1</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 3</button>
+            </div>
+        </div>
+
+        <!-- Part 3 - Word Formation -->
+        <div class="test-section" id="part3" style="display: none;">
+            <h2>Part 3 - Word Formation</h2>
+            <p class="instructions">For questions 17–24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line. Write your answers IN CAPITAL LETTERS.</p>
+
+            <!-- Reading Passage with Text Input Boxes -->
+            <div class="reading-passage">
+                <h3>Early human development and climate change</h3>
+                
+                <p>According to recent research, it was in times of wetter weather that early human beings in southern Africa made the greatest industrial and cultural leaps forward. <span class="word-given">EMERGE</span> 
+                <input type="text" class="inline-input" name="q17" maxlength="20" placeholder="17" oninput="saveTextAnswer(17, this.value)" style="text-transform: uppercase;">
+                of modern humans is thought to have taken place in Africa over 200,000 years ago, but two eras of <span class="word-given">INNOVATE</span> 
+                <input type="text" class="inline-input" name="q18" maxlength="20" placeholder="18" oninput="saveTextAnswer(18, this.value)" style="text-transform: uppercase;">
+                advances have been identified in southern Africa about 71,500 and 64,000 to 59,000 years ago, which saw the development of personal <span class="word-given">ADORN</span> 
+                <input type="text" class="inline-input" name="q19" maxlength="20" placeholder="19" oninput="saveTextAnswer(19, this.value)" style="text-transform: uppercase;">
+                in the form of shell jewellery, also of bone tools and probably of language. In a computer-based <span class="word-given">CONSTRUCT</span> 
+                <input type="text" class="inline-input" name="q20" maxlength="20" placeholder="20" oninput="saveTextAnswer(20, this.value)" style="text-transform: uppercase;">
+                of climate change over the last 100,000 years, scientists discovered that these two periods were characterised by <span class="word-given">NOTE</span> 
+                <input type="text" class="inline-input" name="q21" maxlength="20" placeholder="21" oninput="saveTextAnswer(21, this.value)" style="text-transform: uppercase;">
+                heavy rainfall in southern Africa, whilst the rest of the continent experienced long-term drought.</p>
+                
+                <p>The researchers believe their <span class="word-given">FIND</span> 
+                <input type="text" class="inline-input" name="q22" maxlength="20" placeholder="22" oninput="saveTextAnswer(22, this.value)" style="text-transform: uppercase;">
+                support the view that there was significant movement of ancient humans to the more hospitable conditions of southern Africa. This would have resulted in population <span class="word-given">GROW</span> 
+                <input type="text" class="inline-input" name="q23" maxlength="20" placeholder="23" oninput="saveTextAnswer(23, this.value)" style="text-transform: uppercase;">, competition for resources and exchange of ideas, which in turn fuelled progress. So, these distant ancestors of ours may well have benefited <span class="word-given">TECHNOLOGY</span> 
+                <input type="text" class="inline-input" name="q24" maxlength="20" placeholder="24" oninput="saveTextAnswer(24, this.value)" style="text-transform: uppercase;">
+                from climate change.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 2</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 4</button>
+            </div>
+        </div>
+
+        <!-- Part 4 - Key Word Transformations -->
+        <div class="test-section" id="part4" style="display: none;">
+            <h2>Part 4 - Key Word Transformations</h2>
+            <p class="instructions">For questions 25–30, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between three and six words, including the word given. Write your answers IN CAPITAL LETTERS.</p>
+            <p class="instructions"><strong>Note:</strong> Each question is worth up to 2 points (1 point for each key part of the answer).</p>
+
+            <div class="reading-passage">
+                <div class="transformation-question">
+                    <p><strong>25.</strong> We've talked a lot about Peter's description of what happened that day at the beach and I'm sure he wasn't lying.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">MUST</span></p>
+                    <p>We've talked a lot about Peter's description of what happened that day at the beach and he <input type="text" class="inline-input-long" name="q25" maxlength="60" placeholder="25" oninput="saveTextAnswer(25, this.value)" style="text-transform: uppercase;"> truth.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>26.</strong> Once Catherine moved to the Finance Department, she soon acquired more responsibilities than she had ever had in her previous job.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">LONG</span></p>
+                    <p>Once Catherine moved to the Finance Department, it <input type="text" class="inline-input-long" name="q26" maxlength="60" placeholder="26" oninput="saveTextAnswer(26, this.value)" style="text-transform: uppercase;"> on more responsibilities than she had ever had in her previous job.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>27.</strong> Radford has contributed in a useful way this season but the team would probably be fine without him.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">THOUGH</span></p>
+                    <p>Useful <input type="text" class="inline-input-long" name="q27" maxlength="60" placeholder="27" oninput="saveTextAnswer(27, this.value)" style="text-transform: uppercase;"> this season, the team would probably be fine without him.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>28.</strong> We could always rely on Maria to challenge our supervisor whenever he became too bossy and demanding.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">STAND</span></p>
+                    <p>Maria could always <input type="text" class="inline-input-long" name="q28" maxlength="60" placeholder="28" oninput="saveTextAnswer(28, this.value)" style="text-transform: uppercase;"> to our supervisor whenever he became too bossy and demanding.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>29.</strong> Everyone in the office was really surprised when the manager decided to cancel the meeting.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">OFF</span></p>
+                    <p>The manager's decision to <input type="text" class="inline-input-long" name="q29" maxlength="60" placeholder="29" oninput="saveTextAnswer(29, this.value)" style="text-transform: uppercase;"> as a real surprise to everyone in the office.</p>
+                </div>
+
+                <div class="transformation-question">
+                    <p><strong>30.</strong> John said that he wouldn't hesitate to recommend Elaine for the coaching job at Darnell Sports Centre.</p>
+                    <p style="text-align: center; margin: 12px 0;"><span class="word-given">HAVE</span></p>
+                    <p>John said that he <input type="text" class="inline-input-long" name="q30" maxlength="60" placeholder="30" oninput="saveTextAnswer(30, this.value)" style="text-transform: uppercase;"> Elaine for the coaching job at Darnell Sports Centre.</p>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 3</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 5</button>
+            </div>
+        </div>
+
+        <!-- Part 5 - Multiple Choice Reading -->
+        <div class="test-section" id="part5" style="display: none;">
+            <h2>Part 5 - Multiple Choice Reading</h2>
+            <p class="instructions">You are going to read an article about cycling. For questions 31–36, choose the answer (A, B, C or D) which you think fits best according to the text.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Hemingway's Boat</h3>
+                <p><em>Sam Leith reviews a biography of the great American novelist and short story writer, Ernest Hemingway: Hemingway's Boat: Everything He Loved in Life, And Lost, 1934–1961, by Paul Hendrickson.</em></p>
+                
+                <p>In Hemingway's Boat, Hendrickson takes the idea that writing about Hemingway's boat Pilar is a way of getting at deep things about the man. Pilar was there all the second half of his life and fishing was more than a recreation for Hemingway: it was at the centre, this book plausibly suggests, of his being in the world. Paul Hendrickson duly set about getting to the core of Hemingway's relationship with Pilar. And how!</p>
+
+                <p>He hasn't just interviewed Hemingway's sons and surviving former friends and helpers. He has investigated the history of the company that built Hemingway's boat, and visited the muddy waterway in which she first floated. If a journalist published a news report on Hemingway's arrival in Cuba, where he lived for many years, Hendrickson will have studied his subsequent career. If Hemingway fished a particular stream on one occasion in his teens, Hendrickson will have fished it too. This is the total immersion school of – well, biography isn't quite the word. It's a sort of mental home invasion.</p>
+
+                <p>The narrative loops around in time – describing the acquisition of the boat, and going forward and back to his childhood, zipping into his legacy, and closing in on his death. As well as the Pilar story, it describes, at some length, a trio of others. There's Arnold Samuelson, a well-educated wanderer who ended up crewing his boat; there's Walter Houk, a junior diplomat, whose wife worked as Hemingway's secretary and who was similarly taken up; and there's Hemingway's youngest son, Gregory ('Gigi'). The author interviewed the latter two, and extensively researched the first, telling their previously under-examined stories fully and sympathetically in the hope that, in the overlap between them, we'd get somewhere close to Hemingway. It works.</p>
+
+                <p>This book places you formidably deep in Hemingway's world and life. It takes you down to the insertions and deletions in manuscripts, and shows you how the sentences were formed; with what agony and then excitement he wrote. Not that it cuts corners on the wild, action-man stuff either. Hemingway was insanely competitive, and behaved with infantile petulance when a guest out-hunted or out-fished him. At one point the author remarks drily, when Hemingway shoots himself in the leg on board Pilar: 'Perhaps if the fisherman hadn't been trying to land the fish and gift it and shoot it in the head all at once, the accident would never have occurred.' And he sure did love shooting. Here we meet Hemingway shooting at bottles, shooting his initials into the top of a shark's head, blowing away seabirds with a shotgun, and so on.</p>
+
+                <p>But here, too, is the Hemingway who knew what a monster he could be, and regretted it. This was a man who was capable of great acts of kindness and generosity, and of remorse. There are some killingly poignant quotes – long, wonderful letters written to the sick children of friends, for instance, and the interviews with his beloved but tragic son Gigi. It gathers to a really moving end. There is so much in this long book which is interesting and enlightening that it defies any attempt to reduce it to a neat outline.</p>
+
+                <p>So I regret that I do have some reservations. Hemingway's Boat has received praise, not only for its research, but for its prose; it's in a style that strikes some people as literary. To my mind, however, it's showily overwritten. Besides the tricksy devices like sudden switches to the present tense, it abounds with pompous turns of phrase – sometimes clumsily repeated, among the crazy level of descriptive detail, with at least three chapters containing the words 'Amid so much ruin, still the beauty'. Which brings to mind all the irritating verbless sentences.</p>
+
+                <p>The problem is, he's doing several things: this is not just a book about Hemingway, it's also a memoir of writing a book about Hemingway, and, in some sense, it's a novelisation of the author's worshipful and faintly competitive relationship with his literary master. He bosses the reader about ('take another look at the photograph') and lets what he takes to be Hemingway-style confidence drift into his prose. It's as if someone has told Hendrickson that this is literary writing, and that it will make the difference between a good book and an astonishing one. I don't think Hemingway – who, as Hendrickson admits, is much harder to imitate than he looks – would have agreed. I'm sure it's just Hendrickson. The fact is, though, this book would have been astonishing without it.</p>
+            </div>
+
+            <!-- Questions -->
+            <div class="questions-container">
+                <!-- Question 31 -->
+                <div class="question">
+                    <div class="question-number">Question 31</div>
+                    <div class="question-text">
+                        <p><strong>The reviewer's main intention in the second paragraph is to illustrate</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q31" value="A" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>A. how difficult it was for Hendrickson to write about Hemingway.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="B" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>B. how detailed Hendrickson's research on Hemingway was.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="C" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>C. how important boats and fishing were to Hemingway.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q31" value="D" onchange="saveDropdownAnswer(31, this.value)">
+                            <span>D. how much variety there was in Hemingway's life.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 32 -->
+                <div class="question">
+                    <div class="question-number">Question 32</div>
+                    <div class="question-text">
+                        <p><strong>According to the reviewer, why did Hendrickson devote so much of his book to Samuelson, Houk and Gregory Hemingway?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q32" value="A" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>A. They had never been written about before by biographers of Hemingway.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="B" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>B. They were the most important people in Hemingway's life.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="C" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>C. They provided clues to Hemingway's true character.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q32" value="D" onchange="saveDropdownAnswer(32, this.value)">
+                            <span>D. They all spent time with Hemingway on his boat.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 33 -->
+                <div class="question">
+                    <div class="question-number">Question 33</div>
+                    <div class="question-text">
+                        <p><strong>What does the reviewer suggest about Hendrickson's biography in the fourth paragraph?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q33" value="A" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>A. It enhances Hemingway's reputation as a writer.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="B" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>B. It goes into too much detail about certain aspects of Hemingway's behaviour.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="C" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>C. It underlines the influence Hemingway's lifestyle had on his writing.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q33" value="D" onchange="saveDropdownAnswer(33, this.value)">
+                            <span>D. It gives a balanced picture of Hemingway as a writer and as a man.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 34 -->
+                <div class="question">
+                    <div class="question-number">Question 34</div>
+                    <div class="question-text">
+                        <p><strong>What point does the reviewer make about Hendrickson's biography in the fifth paragraph?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q34" value="A" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>A. It is difficult to summarise.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="B" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>B. It gets worse as it goes along.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="C" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>C. It can be too sentimental in places.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q34" value="D" onchange="saveDropdownAnswer(34, this.value)">
+                            <span>D. It is best when showing Hemingway's good side.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 35 -->
+                <div class="question">
+                    <div class="question-number">Question 35</div>
+                    <div class="question-text">
+                        <p><strong>The reviewer quotes the words 'Amid so much ruin, still the beauty' to exemplify</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q35" value="A" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>A. a tricksy device.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="B" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>B. a pompous turn of phrase.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="C" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>C. a crazy level of descriptive detail.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q35" value="D" onchange="saveDropdownAnswer(35, this.value)">
+                            <span>D. a verbless sentence.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 36 -->
+                <div class="question">
+                    <div class="question-number">Question 36</div>
+                    <div class="question-text">
+                        <p><strong>What point does the reviewer make in the final paragraph?</strong></p>
+                    </div>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q36" value="A" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>A. Hendrickson makes some of the same mistakes as Hemingway did in his writing.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="B" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>B. Hendrickson's biography would have met Hemingway's approval.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="C" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>C. Hendrickson's book is excellent in spite of the way he writes.</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q36" value="D" onchange="saveDropdownAnswer(36, this.value)">
+                            <span>D. Hendrickson has taken notice of some bad advice.</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 4</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 6</button>
+            </div>
+        </div>
+
+        <!-- Part 6 - Cross-text Multiple Matching -->
+        <div class="test-section" id="part6" style="display: none;">
+            <h2>Part 6 - Cross-text Multiple Matching</h2>
+            <p class="instructions">You are going to read four reviews of Simon Garfield's book about the long and varied history of map-making. For questions 37–40, choose from reviews A–D. The reviews may be chosen more than once.</p>
+
+            <!-- Reading Passages -->
+            <div class="reading-passage">
+                <h3>On The Map by Simon Garfield</h3>
+                <p class="instructions">Four reviews of Simon Garfield's book about the long and varied history of map-making.</p>
+                
+                <div class="review-section">
+                    <h4>A</h4>
+                    <p>On The Map offers a chronological history of maps, atlases, charts and globes from Ancient Egypt to contemporary digital cartography, and along the way provides a wealth of facts and anecdotes, all delivered with the expansive liveliness of an expert story-teller. Simon Garfield acknowledges he is neither a cartographer nor a professional historian, but his painstaking research and enthusiasm more than compensate for any omissions – there is very little on maps of Asia, for example – or for the lack of a rigorous guiding principle of the kind expected in books with more academic pretensions. Garfield, justifiably, is as enthralled by the beautiful, often factually erroneous drawings of the distant past as he is by today's GPS, video-game landscapes and social-media-based graphics. Given Garfield's descriptive intensity, it seems particularly strange that the black-and-white map illustrations that feature throughout are often reduced in scale to an extent that they become practically illegible.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>B</h4>
+                    <p>Perhaps because Simon Garfield is a journalist rather than a historian, his understanding of the average reader's attention span is mercifully realistic. In this eminently readable history of map-making, Garfield rarely offers a train of thought that is not rounded off with a fascinating anecdote or neat piece of cartographic trivia. The fact that the book, which covers a lot of ground in over 400 pages, tends to wander unpredictably or gloss over certain important subjects, only adds to its appeal for the non-specialist. Regrettably, the visual presentation of maps – too many compressed, hard to decipher images – fails to match the standard of the text. Also, some of Garfield's observations on contemporary achievements in map-making like GPS – "a loss to geography, history, navigation … and the sense of being connected to the world around us" – seem overly critical. On the whole, however, this is a fine introduction to the subject.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>C</h4>
+                    <p>Simon Garfield clearly has a gift for digging up intriguing facts and stories, and this wide-ranging history of map-making, from Ptolemy in Ancient Alexandria to the interactive, digital images of today, generously illustrated with well-chosen historical treasures, is entertaining in many respects. Its best chapters tend to be those built around controversies such as the debate over the authenticity of a map claimed to depict sea voyages to America by the Norse hundreds of years before Columbus, but, overall, it suffers from a lack of a clear focus. Ironically, for a book about maps, the reader all too easily gets lost in all the vivid detail and anecdotes. One is also distracted by some awkward phrasing and surprisingly imprecise language. On the whole, however, the book does the job as a lively guide for those who are interested in maps but do not necessarily know much about them.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>D</h4>
+                    <p>All surveys are, by nature, selective, and it is hardly surprising that a book such as On The Map, which attempts to cover over 2,000 years of map-making in an accessible way for readers who know little about the field, should skip or just sample certain subjects – for example, the methods and tools map-makers have used through history are barely touched on. Harder to accept or rationalise is the apparent lack of a guiding principle, besides that of cramming in as many fascinating facts as possible, and making it all fun. Garfield has a talent for communicating a telling detail or a curious turn of events, and he is particularly strong on certain periods of history, including the modern era. His chapter on such achievements as satellite navigation systems and mapping structures in computer games shows an admirably open-minded curiosity.</p>
+                </div>
+            </div>
+
+            <!-- Matching Questions -->
+            <div class="cross-text-questions">
+                <h4>Which reviewer...</h4>
+                
+                <div class="match-question" onclick="openReviewModal(37)">
+                    <div class="match-number">37</div>
+                    <div class="match-text">shares C's opinion about the way the book is organised?</div>
+                    <div class="match-answer" id="match37">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(38)">
+                    <div class="match-number">38</div>
+                    <div class="match-text">has a different opinion from the others about the quality of writing in the book?</div>
+                    <div class="match-answer" id="match38">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(39)">
+                    <div class="match-number">39</div>
+                    <div class="match-text">takes a similar view to A regarding the reproduction of maps in the book?</div>
+                    <div class="match-answer" id="match39">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(40)">
+                    <div class="match-number">40</div>
+                    <div class="match-text">shares D's view on the way the book's author deals with recent developments in map-making?</div>
+                    <div class="match-answer" id="match40">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 5</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 7</button>
+            </div>
+        </div>
+
+        <!-- Part 7 - Gapped Text -->
+        <div class="test-section" id="part7" style="display: none;">
+            <h2>Part 7 - Gapped Text</h2>
+            <p class="instructions">You are going to read an article about sports testing. Six paragraphs have been removed from the article. Choose from the paragraphs A-G the one which fits each gap (41-46). There is one extra paragraph which you do not need to use.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>Have you got what it takes to be a top athlete?</h3>
+                <p><em>Journalist Kate Carter tries out some advanced tests for sports people at Loughborough University's Sports Science Institute</em></p>
+                
+                <p>Not so long ago, identifying a potential sports star was a matter of seeing how well they could sprint around a track, or kick a football. Now, sports scientists use advanced tests to determine fitness, agility, body composition, reaction times and much more. But how does an average recreational athlete compare?</p>
+                
+                <p>A recent convert to running, I'm at the Sports Science Institute lab at Loughborough University, which gathers statistics on athletes from a range of sports, to find out my potential. Dr James Carter, head of the institute, starts by getting my standard physical measurements.</p>
+
+                <div class="gap-carousel" id="gap41" onclick="openSentenceModal(41)">
+                    <strong>41</strong>
+                    <div class="selected-sentence" id="display41">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>I am made to sit in a device called a BodPod, and given a scan to examine bone density and create a picture of my internal body fat. After that, it's on to the treadmill for the VO2 max test, which measures fitness. This consists of running at increasing speed on an ever steeper incline while puffing into a large mask, a disconcerting experience as it reduces your vision to virtually nothing.</p>
+
+                <div class="gap-carousel" id="gap42" onclick="openSentenceModal(42)">
+                    <strong>42</strong>
+                    <div class="selected-sentence" id="display42">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>An average woman has a VO2 max of around 35 ml/kg/min, while an elite athlete might be as high as 70 ml/kg/min (for men the range is around 40–85). Mine is 54, which is respectable for a recreational runner. I also turn out to be a carb burner rather than a fat burner, which I'm taking as licence to eat more. Next up are a couple of cognitive tests to assess my reactions.</p>
+
+                <div class="gap-carousel" id="gap43" onclick="openSentenceModal(43)">
+                    <strong>43</strong>
+                    <div class="selected-sentence" id="display43">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>I don't do so well at the whole-body agility test – a frame with 12 lights at varying heights you have to leap or duck to extinguish – but Dr Carter reassures me that this matters less for endurance than for other sports.</p>
+
+                <div class="gap-carousel" id="gap44" onclick="openSentenceModal(44)">
+                    <strong>44</strong>
+                    <div class="selected-sentence" id="display44">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>You just pedal on a stationary bike, then accelerate madly for ten seconds, before trying to sustain that power for 30 seconds. Just? Add in increasing resistance and it feels as if you are cycling through treacle on a bike with two flat tyres into a headwind. And it hurts.</p>
+
+                <div class="gap-carousel" id="gap45" onclick="openSentenceModal(45)">
+                    <strong>45</strong>
+                    <div class="selected-sentence" id="display45">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+
+                <p>As I start to recover from this final challenge, it occurs to me that it's easy to imagine a future in which babies are screened at birth to join a super breed – or at least an elite training programme. Dr Carter mentions the film Rocky IV which has something similar in it. He is joking – but in truth, it's not so implausible.</p>
+
+                <p>There are, of course, things the tests can't show yet: the psychology of the athlete, tactics, nutrition. But the scientific data that can be recorded is very useful, and not just for professional athletes. I personally have learned a huge amount about what I could feasibly achieve in my next race, as well as specific steps to move up to my goal of a full marathon. And next time I come back, I'm determined to conquer that bike.</p>
+
+                <div class="gap-carousel" id="gap46" onclick="openSentenceModal(46)">
+                    <strong>46</strong>
+                    <div class="selected-sentence" id="display46">
+                        <span class="placeholder-text">Click to select paragraph...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paragraph Options Reference -->
+            <div class="sentence-options">
+                <h4>Available Paragraphs (A-G):</h4>
+                <div class="sentence-option">
+                    <strong>A</strong> The first of these uses a large board full of bulbs, which light up in a random sequence. You hit them to turn them off, while simultaneously shouting out the numbers that appear on a small screen. I do better than the average, which I put down to being used to dealing with two small children.
+                </div>
+                <div class="sentence-option">
+                    <strong>B</strong> For all the cutting-edge equipment and carefully designed assessments, what Dr Carter is unable to evaluate, as he readily admits, are such crucial factors as 'pain tolerance, doing the training day in, day out and self-belief.'
+                </div>
+                <div class="sentence-option">
+                    <strong>C</strong> Looking at someone's genome to determine whether they're suited to team sports or individual endurance may be 'accessible in the next decade,' Dr Carter says. 'Say we've got a group of 15-year-olds who are genetically suited to certain sports, are we going to put them through special regimes for the next decade? That's where some of the research is going.'
+                </div>
+                <div class="sentence-option">
+                    <strong>D</strong> After measuring my handgrip strength (I'm delighted to be 'average', given my arms are like spaghetti), it's time for the final hurdle: the Wingate test. Or as I shall always think of it, the longest half minute of my life. It sounds relatively easy.
+                </div>
+                <div class="sentence-option">
+                    <strong>E</strong> Disappointingly, it turns out I've been kidding myself about my height for years. Weight, though, is less important than body composition and it's the latter that the first of a series of hi-tech tests will assess.
+                </div>
+                <div class="sentence-option">
+                    <strong>F</strong> So much so that hours later I can still feel the lactic acid, brought on by the extreme pedalling, burning in my legs. 'Sprinters, cyclists – this is their test,' explains Dr Carter. Top athletes 'need to be performing well on this or there's something wrong.'
+                </div>
+                <div class="sentence-option">
+                    <strong>G</strong> While I am doing this, Dr Carter records my data. One of the key indicators, he explains, is 'the respiratory exchange ratio, which is the combination or the ratio of oxygen consumed and carbon dioxide produced. When that ratio goes over one, that's when we know to increase the gradient.'
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 6</button>
+                <button class="btn btn-primary" onclick="goToNextSection()">Continue to Part 8</button>
+            </div>
+        </div>
+
+        <!-- Part 8 - Multiple Matching -->
+        <div class="test-section" id="part8" style="display: none;">
+            <h2>Part 8 - Multiple Matching</h2>
+            <p class="instructions">You are going to read reviews of four books about architecture. For questions 47-56, choose from the reviews (A-D). The reviews may be chosen more than once.</p>
+
+            <!-- Reading Passage -->
+            <div class="reading-passage">
+                <h3>What does it take to run a record label?</h3>
+                <p><em>The internet and other developments in technology have had a major impact on the music industry. What are the implications for those wanting to run their own record label? Four people who have set up small, independent record labels share their insights.</em></p>
+                
+                <div class="review-section">
+                    <h4>A – Ben Wolf</h4>
+                    <p>Fundamentally, I'm a music enthusiast. I started off as a DJ in dance clubs, and setting up a record label seemed like the logical next step. There are always unknown factors, but in my experience, the key to success in this business is putting yourself in the position of the other person involved and anticipating their needs or what makes them tick. Why does a DJ want to play a certain record? Who would sell or buy a record? With digital technology, establishing an independent label has become more manageable. The industry has a tendency to bemoan the fact that sales and income are massively down, but what is equally true is that the costs of producing, manufacturing and promoting music have been reduced, so if you're sensible, there's less to lose these days. Two other crucial points: you need to be a team player because no single person could handle everything, and while you need a balance between your professional and your family life, you need to be ready to dedicate yourself to the job 100% when necessary.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>B – Henry Stone</h4>
+                    <p>I'm co-founder of an independent record label. We've discovered some great musical artists, a few of whom have become very popular and have more than paid back what we invested in them, but we don't play the game of predicting which artists will fly or flop in the market. Our focus is on working with creative, inspiring songwriters or musicians, and how to further their message. The mutually supportive relationship I have with my co-founder, Mark, is fundamental to what we've achieved; neither of us could have survived on our own. We've been going for some years but it still doesn't feel like a job. No two days are the same, whether we're promoting an event, filming a documentary, releasing a record, or checking out a band in the studio. You have to be careful with burn-out, though. I'm often up at 7:00 a.m. and still emailing beyond midnight, but I ensure that when I'm with family and friends, work is blocked out entirely. Without perspective and space, your judgement can go to pieces.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>C – Kerry Murphy</h4>
+                    <p>If I was 21 years old, just out of college, and with the understanding of the music industry that I have now, I'm not sure I'd set up a record label. I can think of less time-consuming and more straightforward and lucrative businesses to get into, and it's not going to get any easier. But, if you feel compelled to do it – some of us do – then I would consider a partnership with somebody who has strengths in areas where you are weak, and vice-versa. That's worked for me. Also, I wouldn't get too enamoured with the things that others already do well. We're associated with distributors around the world that are just great at what they do, and we've learned not to interfere. We have even given up having an in-house sales team; outsourcing works fine. Our primary concern now is with the music; making sure our artists are on time, look great and are well funded.</p>
+                </div>
+
+                <div class="review-section">
+                    <h4>D – Riz Amal</h4>
+                    <p>I think now is a great time to start a label if that's your thing. With everything changing so rapidly, no one really knows what the landscape will be in two years' time, let alone 20. The old-school record label model has been dying out for years, and with sales and income falling, as they have been virtually everywhere, the smart thing to do is to try to break the mould. Being a pioneer always brings with it the danger of failure, and it's likely to require all-consuming commitment in terms of time and energy, but there may be no alternative. The lines between what an independent record label does and what the manager of a musician or band does will continue to blur. Labels will need to get involved in artists' tours, in their merchandising and even publishing – activities they have tended to stay away from. As long as the numbers balance, and the budgets and forecasts are realistic, then there's no reason why a new independent label can't work.</p>
+                </div>
+            </div>
+
+            <!-- Matching Questions -->
+            <div class="cross-text-questions">
+                <h4>Questions 47-56</h4>
+                <p><strong>Which person:</strong></p>
+                
+                <div class="match-question" onclick="openReviewModal(47)">
+                    <div class="match-number">47</div>
+                    <div class="match-text">feels innovative approaches make sense in the current economic climate?</div>
+                    <div class="match-answer" id="match47">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(48)">
+                    <div class="match-number">48</div>
+                    <div class="match-text">thinks time away from business is required to ensure good decision-making?</div>
+                    <div class="match-answer" id="match48">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(49)">
+                    <div class="match-number">49</div>
+                    <div class="match-text">believes that making and selling music involves less risk than it used to?</div>
+                    <div class="match-answer" id="match49">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(50)">
+                    <div class="match-number">50</div>
+                    <div class="match-text">values working with people who have different skills?</div>
+                    <div class="match-answer" id="match50">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(51)">
+                    <div class="match-number">51</div>
+                    <div class="match-text">believes record labels should take on traditionally unfamiliar functions?</div>
+                    <div class="match-answer" id="match51">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(52)">
+                    <div class="match-number">52</div>
+                    <div class="match-text">welcomes the variety of work that running a record label entails?</div>
+                    <div class="match-answer" id="match52">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(53)">
+                    <div class="match-number">53</div>
+                    <div class="match-text">believes in delegating certain aspects of business to outside organisations?</div>
+                    <div class="match-answer" id="match53">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(54)">
+                    <div class="match-number">54</div>
+                    <div class="match-text">thinks the future of the music industry is uncertain?</div>
+                    <div class="match-answer" id="match54">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(55)">
+                    <div class="match-number">55</div>
+                    <div class="match-text">emphasises the importance of understanding consumers?</div>
+                    <div class="match-answer" id="match55">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+
+                <div class="match-question" onclick="openReviewModal(56)">
+                    <div class="match-number">56</div>
+                    <div class="match-text">rejects the idea of producing music with commercial success as the main objective?</div>
+                    <div class="match-answer" id="match56">
+                        <span class="match-placeholder">Click to select</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="goToPreviousSection()">Back to Part 7</button>
+                <button class="btn btn-primary" onclick="finishTest()">Finish Test</button>
+            </div>
+        </div>
+
+        <!-- Sentence Selection Modal (for Part 7) -->
+        <div id="sentenceModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Select paragraph for gap <span id="modalSentenceNumber"></span></h3>
+                    <button class="modal-close" onclick="closeSentenceModal()">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="sentence-choice" onclick="selectSentence('A')">
+                        <strong>A</strong> The first of these uses a large board full of bulbs, which light up in a random sequence. You hit them to turn them off, while simultaneously shouting out the numbers that appear on a small screen. I do better than the average, which I put down to being used to dealing with two small children.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('B')">
+                        <strong>B</strong> For all the cutting-edge equipment and carefully designed assessments, what Dr Carter is unable to evaluate, as he readily admits, are such crucial factors as 'pain tolerance, doing the training day in, day out and self-belief.'
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('C')">
+                        <strong>C</strong> Looking at someone's genome to determine whether they're suited to team sports or individual endurance may be 'accessible in the next decade,' Dr Carter says. 'Say we've got a group of 15-year-olds who are genetically suited to certain sports, are we going to put them through special regimes for the next decade? That's where some of the research is going.'
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('D')">
+                        <strong>D</strong> After measuring my handgrip strength (I'm delighted to be 'average', given my arms are like spaghetti), it's time for the final hurdle: the Wingate test. Or as I shall always think of it, the longest half minute of my life. It sounds relatively easy.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('E')">
+                        <strong>E</strong> Disappointingly, it turns out I've been kidding myself about my height for years. Weight, though, is less important than body composition and it's the latter that the first of a series of hi-tech tests will assess.
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('F')">
+                        <strong>F</strong> So much so that hours later I can still feel the lactic acid, brought on by the extreme pedalling, burning in my legs. 'Sprinters, cyclists – this is their test,' explains Dr Carter. Top athletes 'need to be performing well on this or there's something wrong.'
+                    </div>
+                    <div class="sentence-choice" onclick="selectSentence('G')">
+                        <strong>G</strong> While I am doing this, Dr Carter records my data. One of the key indicators, he explains, is 'the respiratory exchange ratio, which is the combination or the ratio of oxygen consumed and carbon dioxide produced. When that ratio goes over one, that's when we know to increase the gradient.'
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review Selection Modal -->
+        <div id="reviewModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="reviewModalTitle">Select answer for question <span id="modalReviewNumber"></span></h3>
+                    <button class="modal-close" onclick="closeReviewModal()">×</button>
+                </div>
+                <div class="modal-body" id="reviewModalBody">
+                    <!-- Content will be dynamically inserted by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="test-section" id="results" style="display: none;">
+            <h2>C1 Advanced (CAE) - Test Complete!</h2>
+            <div id="resultsContent"></div>
+            <div class="navigation">
+                <button class="btn btn-success" onclick="downloadPDF()">📄 Save Results as PDF</button>
+                <button class="btn btn-primary" onclick="window.location.href='index.html'">← Back to Portal</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // CAE003 - Answer key and test code
+        const TEST_CODE = 'CAE003';
+        
+        // Answer key for CAE003
+        const answers = {
+            part1: {
+                q1: 'C', q2: 'D', q3: 'A', q4: 'B',
+                q5: 'B', q6: 'A', q7: 'C', q8: 'D'
+            },
+            part2: {
+                q9: 'SO', q10: 'NOT', q11: 'ONLY', q12: 'SUCH',
+                q13: 'HAVING', q14: 'WHICH', q15: 'IN', q16: 'FAR'
+            },
+            part3: {
+                q17: 'EMERGENCE', q18: 'INNOVATIVE', q19: 'ADORNMENT', q20: 'RECONSTRUCTION',
+                q21: 'NOTABLY', q22: 'FINDINGS', q23: 'GROWTH', q24: 'TECHNOLOGICALLY'
+            },
+            part4: {
+                q25: { full: 'MUST HAVE BEEN TELLING THE', part1: 'MUST HAVE BEEN', part2: 'TELLING THE' },
+                q26: { full: 'WAS NOT LONG BEFORE SHE TOOK', part1: 'WAS NOT LONG BEFORE', part2: 'SHE TOOK' },
+                q27: { full: 'THOUGH RADFORD\'S CONTRIBUTION HAS BEEN', part1: 'THOUGH RADFORD\'S CONTRIBUTION', part2: 'HAS BEEN' },
+                q28: { full: 'BE RELIED ON TO STAND UP', part1: 'BE RELIED ON', part2: 'TO STAND UP' },
+                q29: { full: 'CALL OFF THE MEETING CAME', part1: 'CALL OFF THE MEETING', part2: 'CAME' },
+                q30: { full: 'WOULD HAVE NO HESITATION IN RECOMMENDING', part1: 'WOULD HAVE NO HESITATION', part2: 'IN RECOMMENDING' }
+            },
+            part5: {
+                q31: 'B', q32: 'C', q33: 'D', q34: 'A', q35: 'B', q36: 'C'
+            },
+            part6: {
+                q37: 'D', q38: 'C', q39: 'B', q40: 'A'
+            },
+            part7: {
+                q41: 'E', q42: 'G', q43: 'A', q44: 'D', q45: 'F', q46: 'C'
+            },
+            part8: {
+                q47: 'D', q48: 'B', q49: 'A', q50: 'C', q51: 'D', 
+                q52: 'B', q53: 'C', q54: 'D', q55: 'A', q56: 'B'
+            }
+        };
+    </script>
+    <script src="script-CAE003.js"></script>
+</body>
+</html>
